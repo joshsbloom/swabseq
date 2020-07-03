@@ -149,10 +149,10 @@ dfs= dfs %>% count(Sample, wt=Count, name='well_total') %>%
   right_join(dfs) %>% 
   select(-mergedIndex, -Sample_ID, -index, -index2 ) %>% 
   spread(amplicon, Count) %>% 
-  mutate(S2_normalized_to_S2_spike=(S2)/(S2_spike))%>%
+  mutate(S2_normalized_to_S2_spike=(S2+1)/(S2_spike+1))%>%
   mutate(RPP30_Detected=RPP30>10) %>%  
   mutate(SARS_COV_2_Detected=S2_normalized_to_S2_spike>.003)
-dfs$SARS_COV_2_Detected[!RPP30_Detected]='Inconclusive'
+dfs$SARS_COV_2_Detected[!dfs$RPP30_Detected]='Inconclusive'
 dfs$SARS_COV_2_Detected[dfs$Stotal<2000]='Inconclusive'
 dfs %>%
   write_csv(paste0(rundir, 'Calls_per_sample.csv')) 
