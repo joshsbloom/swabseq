@@ -1,7 +1,7 @@
 the structure of each subfolder is:
 ```
 runs/
-├── v...
+├── v*
 │   ├── bcl_link.txt
 │   ├── bcls
 │   ├── bcls.tar
@@ -9,19 +9,16 @@ runs/
 │   ├── countTable.RDS
 │   ├── ExperimentSetup.xlsx
 │   ├── SampleSheet.csv
-│   └── SwabSeqv10.xlsx
+│   └── SwabSeq.xlsx
 ```
 
-each directory contains:
-+ bcl_link.txt a link to google drive .tar file containing bcls and undemuxed fastq.gz files
+each subdirectory contains:
++ bcl_link.txt a link to google drive .tar file containing bcls and undemuxed fastq.gz files (untar bcl folder in each subdirectory)
 + ExperimentSetup.xlsx an excel file describing experiment setup and goals
-+ SwabSeq...xlsx an excel file formatted for [platemap2samp.py](code/platemap2samp.py) for generating csv sample sheet
++ SwabSeq*.xlsx an excel file formatted for [platemap2samp.py](code/platemap2samp.py) for generating csv sample sheet
 + SampleSheet.csv a properly formatted sample sheet for Illumina instruments, also used to keep track of experiment variables for each sample
 + countTable.csv a table of counts per amplicon
 + countTable.RDS a version 2 RDS file of the counts per amplicon, loaded by scripts in [analysis](analysis/)
-
-
-
 
 
 Statistics for each sequencing run 
