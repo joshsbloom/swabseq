@@ -1,22 +1,45 @@
+#usage: countAmplicons.R [--] [--help] [--opts OPTS] [--rundir RUNDIR]
+#       [--basespaceID BASESPACEID] [--countsOnly COUNTSONLY]
+#       [--extendedAmplicons EXTENDEDAMPLICONS]
+#
+#utility to count amplicons for SwabSeq
+#
+#flags:
+#  -h, --help               show this help message and exit
+#
+#optional arguments:
+#  -x, --opts               RDS file containing argument values
+#  -r, --rundir             path containing SampleSheet [default: .]
+#  -b, --basespaceID        BaseSpace Run ID [default: 1000]
+#  -c, --countsOnly         only output table of counts [default: TRUE]
+#  -e, --extendedAmplicons  additional swabseq amplicons [default:
+#                           FALSE]
+
+
+#parse command line arguments and exit fast if run with -h
+library(argparser)
+p = arg_parser("utility to count amplicons for SwabSeq")
+p=add_argument(p,"--rundir",  default=".", help="path containing SampleSheet")
+p=add_argument(p,"--basespaceID",  default=1000, help="BaseSpace Run ID")
+p=add_argument(p,"--countsOnly",  default=TRUE, help="only output table of counts")
+p=add_argument(p,"--extendedAmplicons", default=F, help="additional swabseq amplicons")
+#p=add_argument(p,"--lbuffer", default=30000001, help="how many reads to load into ram at a time")
+#p=add_argument(p,"--threads", default=64, help="number of threads for bcl2fastq")
+args=parse_args(p) 
+
+#load required packages
 library(ShortRead)
 library(stringdist)
 library(tidyverse)
 library(ggbeeswarm)
 library(viridis)
-
-#output tables of counts per amplicon 
-args=commandArgs(trailingOnly=T)
 #for example ... 
 #rundir='/data/Covid/swabseq/runs/SwabSeqV17/'
 #basespaceID="195853687"
-rundir=args[1]
-basespaceID=args[2]
-outputRDSonly=as.logical(args[3])
-
-print(args[1])
-print(args[2])
-print(args[3])
-
+rundir=args$rundir
+basespaceID=args$basespaceID
+outputCountsOnly=args$countsOnly
+extendedAmplicons=args$extendedAmplicons
 #requires BCLs (or basespaceID), python3.7 in path, bcl2fastq in path and SampleSheet.csv (or xls)
 
 # Generate sample sheet from XLS file ----------------------------------------------------------------
@@ -41,13 +64,17 @@ if(!file.exists(fastqR1)) {
     # run bcl2fastq to generate fastq.gz files (no demux is happening here)
     setwd(paste0(rundir,'bcls/'))
     #note this is using 64 threads and running on a workstation, reduce threads if necessary
-    system("bcl2fastq --runfolder-dir . --output-dir out/ --create-fastq-for-index-reads  --ignore-missing-bcl --use-bases-mask=Y26,I10,I10 --processing-threads 64 --no-lane-splitting --sample-sheet /dev/null")
+    system(paste("bcl2fastq --runfolder-dir . --output-dir out/ --create-fastq-for-index-reads  --ignore-missing-bcl --use-bases-mask=Y26,I10,I10 --processing-threads 64 --no-lane-splitting --sample-sheet /dev/null"))
+    #for sharing, make tar of bcls directory
+    system(paste("tar -cvf", paste0(rundir,'bcls.tar'), "../bcls/"))
     #-----------------------------------------------------------------------------------------------------
 }
 
-
 # read in n reads at a time (reduce if RAM limited)
 nbuffer=3e7
+#nbuffer=as.numeric(args$lbuffer)
+#print(nbuffer)
+
 
 # error correct the indices and count amplicons
 errorCorrectIdxAndCountAmplicons=function(rid, count.table, ind1,ind2,e=1){
@@ -79,6 +106,15 @@ amplicons=list(
     S2_spike='ATAGAACAACCTAGGACTTTTCTATT',
     RPP30='CGCAGAGCCTTCAGGTCAGAACCCGC'
 )
+if(extendedAmplicons) {
+    amplicons=list(
+        S2=      'TATCTTCAACCTAGGACTTTTCTATT',
+        S2_spike='ATAGAACAACCTAGGACTTTTCTATT',
+        RPP30='CGCAGAGCCTTCAGGTCAGAACCCGC',
+        RPP30_spike='GCGTCAGCCTTCAGGTCAGAACCCGC'
+    )
+}
+
 
 # Munginging sample sheet-------------------------------------------------------------------
 ss=read.delim(paste0(rundir,'SampleSheet.csv'), stringsAsFactors=F, skip=14, sep=',')
@@ -90,9 +126,9 @@ ssS=ss[grep('-1$', ss$Sample_ID),]
 ssR=ss[grep('-2$', ss$Sample_ID),]
 
 #initalize output count tables ------------------------------------------------------------
-S2.table=ssS; S2_spike.table=ssS; RPP30.table=ssR
-S2.table$Count=0; S2_spike.table$Count=0; RPP30.table$Count=0
-S2.table$amplicon='S2'; S2_spike.table$amplicon='S2_spike'; RPP30.table$amplicon='RPP30'
+S2.table=ssS; S2_spike.table=ssS; RPP30.table=ssR; RPP30_spike.table=ssR;
+S2.table$Count=0; S2_spike.table$Count=0; RPP30.table$Count=0; RPP30_spike.table$Count=0
+S2.table$amplicon='S2'; S2_spike.table$amplicon='S2_spike'; RPP30.table$amplicon='RPP30'; RPP30_spike.table$amplicon='RPP30_spike'
 #------------------------------------------------------------------------------------------
 
 fastq_dir  <- paste0(rundir, 'bcls/out/')
@@ -127,13 +163,20 @@ repeat{
     S2.table       = errorCorrectIdxAndCountAmplicons(per.amplicon.row.index$S2, S2.table, ind1,ind2, 1)
     S2_spike.table = errorCorrectIdxAndCountAmplicons(per.amplicon.row.index$S2_spike, S2_spike.table, ind1,ind2,1)
     RPP30.table    = errorCorrectIdxAndCountAmplicons(per.amplicon.row.index$RPP30, RPP30.table, ind1,ind2,1)
+    if(extendedAmplicons){
+        RPP30_spike.table    = errorCorrectIdxAndCountAmplicons(per.amplicon.row.index$RPP30_spike, RPP30_spike.table, ind1,ind2,1)
+    }
+
 }
 close(i1); close(i2); close(r1);
 results=list(S2.table=S2.table, S2_spike.table=S2_spike.table, RPP30.table=RPP30.table)
-rbind(S2.table,S2_spike.table,RPP30.table) %>% write_csv(paste0(rundir, 'countTable.csv')) 
+if(extendedAmplicons){ results=list(S2.table=S2.table, S2_spike.table=S2_spike.table, RPP30.table=RPP30.table,RPP30_spike.table=RPP30_spike.table) }
+
+do.call('rbind', results) %>% write_csv(paste0(rundir, 'countTable.csv')) 
 saveRDS(results, file=paste0(rundir, 'countTable.RDS'))
 
-if(outputRDSonly==FALSE) {
+
+if(outputCountsOnly==FALSE) {
     results=readRDS(paste0(rundir, 'countTable.RDS'))
     attach(results)
     # re-formatting ... output count table 
