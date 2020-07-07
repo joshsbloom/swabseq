@@ -63,7 +63,37 @@ dfs %>% filter(Description!= ' ')  %>%
   facet_grid(~Plate_384+Plate_ID+Description) 
 ggsave(paste0(outdir,'plateVis_Calls.png'))
 
+dfs %>% filter(Description!= ' ')  %>% 
+  ggplot(aes(x=Col, y=Row,fill=Stotal>2000)) + 
+  geom_raster() +
+  coord_equal() +
+  #scale_fill_manual(values=c("lightblue", "white", "red"))+
+  facet_grid(~Plate_384+Plate_ID+Description) 
+ggsave(paste0(outdir,'plateVis_Stotal_gt_2000.png'))
 
+dfs %>% filter(Description!= ' ')  %>% 
+  ggplot(aes(x=Col, y=Row,fill=treatment)) + 
+  geom_raster() +
+  coord_equal() +
+  #scale_fill_manual(values=c("lightblue", "white", "red"))+
+  facet_grid(~Plate_384+Plate_ID+Description) 
+ggsave(paste0(outdir,'plateVis_treatment.png'))
+
+dfs %>% filter(Description!= ' ')  %>% 
+  ggplot(aes(x=Col, y=Row,fill=spin)) + 
+  geom_raster() +
+  coord_equal() +
+  #scale_fill_manual(values=c("lightblue", "white", "red"))+
+  facet_grid(~Plate_384+Plate_ID+Description)
+ggsave(paste0(outdir,'plateVis_spin.png'))
+
+dfs %>% filter(Description!= ' ')  %>% 
+  ggplot(aes(x=Col, y=Row,fill=lysate)) + 
+  geom_raster() +
+  coord_equal() +
+  #scale_fill_manual(values=c("lightblue", "white", "red"))+
+  facet_grid(~Plate_384+Plate_ID+Description) 
+ggsave(paste0(outdir,'plateVis_lysate.png'))
 
 
 
