@@ -1,0 +1,298 @@
+>S2 feature_id:S2
+TATCTTCAACCT
+>S2-0.1 feature_id:S2
+AATCTTCAACCT
+>S2-0.2 feature_id:S2
+CATCTTCAACCT
+>S2-0.3 feature_id:S2
+GATCTTCAACCT
+>S2-1.1 feature_id:S2
+TCTCTTCAACCT
+>S2-1.2 feature_id:S2
+TGTCTTCAACCT
+>S2-1.3 feature_id:S2
+TTTCTTCAACCT
+>S2-2.1 feature_id:S2
+TAACTTCAACCT
+>S2-2.2 feature_id:S2
+TACCTTCAACCT
+>S2-2.3 feature_id:S2
+TAGCTTCAACCT
+>S2-3.1 feature_id:S2
+TATATTCAACCT
+>S2-3.2 feature_id:S2
+TATGTTCAACCT
+>S2-3.3 feature_id:S2
+TATTTTCAACCT
+>S2-4.1 feature_id:S2
+TATCATCAACCT
+>S2-4.2 feature_id:S2
+TATCCTCAACCT
+>S2-4.3 feature_id:S2
+TATCGTCAACCT
+>S2-5.1 feature_id:S2
+TATCTACAACCT
+>S2-5.2 feature_id:S2
+TATCTCCAACCT
+>S2-5.3 feature_id:S2
+TATCTGCAACCT
+>S2-6.1 feature_id:S2
+TATCTTAAACCT
+>S2-6.2 feature_id:S2
+TATCTTGAACCT
+>S2-6.3 feature_id:S2
+TATCTTTAACCT
+>S2-7.1 feature_id:S2
+TATCTTCCACCT
+>S2-7.2 feature_id:S2
+TATCTTCGACCT
+>S2-7.3 feature_id:S2
+TATCTTCTACCT
+>S2-8.1 feature_id:S2
+TATCTTCACCCT
+>S2-8.2 feature_id:S2
+TATCTTCAGCCT
+>S2-8.3 feature_id:S2
+TATCTTCATCCT
+>S2-9.1 feature_id:S2
+TATCTTCAAACT
+>S2-9.2 feature_id:S2
+TATCTTCAAGCT
+>S2-9.3 feature_id:S2
+TATCTTCAATCT
+>S2-10.1 feature_id:S2
+TATCTTCAACAT
+>S2-10.2 feature_id:S2
+TATCTTCAACGT
+>S2-10.3 feature_id:S2
+TATCTTCAACTT
+>S2-11.1 feature_id:S2
+TATCTTCAACCA
+>S2-11.2 feature_id:S2
+TATCTTCAACCC
+>S2-11.3 feature_id:S2
+TATCTTCAACCG
+>S2_spikein feature_id:S2_spikein
+ATAGAACAACCT
+>S2_spikein-0.1 feature_id:S2_spikein
+CTAGAACAACCT
+>S2_spikein-0.2 feature_id:S2_spikein
+GTAGAACAACCT
+>S2_spikein-0.3 feature_id:S2_spikein
+TTAGAACAACCT
+>S2_spikein-1.1 feature_id:S2_spikein
+AAAGAACAACCT
+>S2_spikein-1.2 feature_id:S2_spikein
+ACAGAACAACCT
+>S2_spikein-1.3 feature_id:S2_spikein
+AGAGAACAACCT
+>S2_spikein-2.1 feature_id:S2_spikein
+ATCGAACAACCT
+>S2_spikein-2.2 feature_id:S2_spikein
+ATGGAACAACCT
+>S2_spikein-2.3 feature_id:S2_spikein
+ATTGAACAACCT
+>S2_spikein-3.1 feature_id:S2_spikein
+ATAAAACAACCT
+>S2_spikein-3.2 feature_id:S2_spikein
+ATACAACAACCT
+>S2_spikein-3.3 feature_id:S2_spikein
+ATATAACAACCT
+>S2_spikein-4.1 feature_id:S2_spikein
+ATAGCACAACCT
+>S2_spikein-4.2 feature_id:S2_spikein
+ATAGGACAACCT
+>S2_spikein-4.3 feature_id:S2_spikein
+ATAGTACAACCT
+>S2_spikein-5.1 feature_id:S2_spikein
+ATAGACCAACCT
+>S2_spikein-5.2 feature_id:S2_spikein
+ATAGAGCAACCT
+>S2_spikein-5.3 feature_id:S2_spikein
+ATAGATCAACCT
+>S2_spikein-6.1 feature_id:S2_spikein
+ATAGAAAAACCT
+>S2_spikein-6.2 feature_id:S2_spikein
+ATAGAAGAACCT
+>S2_spikein-6.3 feature_id:S2_spikein
+ATAGAATAACCT
+>S2_spikein-7.1 feature_id:S2_spikein
+ATAGAACCACCT
+>S2_spikein-7.2 feature_id:S2_spikein
+ATAGAACGACCT
+>S2_spikein-7.3 feature_id:S2_spikein
+ATAGAACTACCT
+>S2_spikein-8.1 feature_id:S2_spikein
+ATAGAACACCCT
+>S2_spikein-8.2 feature_id:S2_spikein
+ATAGAACAGCCT
+>S2_spikein-8.3 feature_id:S2_spikein
+ATAGAACATCCT
+>S2_spikein-9.1 feature_id:S2_spikein
+ATAGAACAAACT
+>S2_spikein-9.2 feature_id:S2_spikein
+ATAGAACAAGCT
+>S2_spikein-9.3 feature_id:S2_spikein
+ATAGAACAATCT
+>S2_spikein-10.1 feature_id:S2_spikein
+ATAGAACAACAT
+>S2_spikein-10.2 feature_id:S2_spikein
+ATAGAACAACGT
+>S2_spikein-10.3 feature_id:S2_spikein
+ATAGAACAACTT
+>S2_spikein-11.1 feature_id:S2_spikein
+ATAGAACAACCA
+>S2_spikein-11.2 feature_id:S2_spikein
+ATAGAACAACCC
+>S2_spikein-11.3 feature_id:S2_spikein
+ATAGAACAACCG
+>N1 feature_id:N1
+TTTGGTGGACCC
+>N1-0.1 feature_id:N1
+ATTGGTGGACCC
+>N1-0.2 feature_id:N1
+CTTGGTGGACCC
+>N1-0.3 feature_id:N1
+GTTGGTGGACCC
+>N1-1.1 feature_id:N1
+TATGGTGGACCC
+>N1-1.2 feature_id:N1
+TCTGGTGGACCC
+>N1-1.3 feature_id:N1
+TGTGGTGGACCC
+>N1-2.1 feature_id:N1
+TTAGGTGGACCC
+>N1-2.2 feature_id:N1
+TTCGGTGGACCC
+>N1-2.3 feature_id:N1
+TTGGGTGGACCC
+>N1-3.1 feature_id:N1
+TTTAGTGGACCC
+>N1-3.2 feature_id:N1
+TTTCGTGGACCC
+>N1-3.3 feature_id:N1
+TTTTGTGGACCC
+>N1-4.1 feature_id:N1
+TTTGATGGACCC
+>N1-4.2 feature_id:N1
+TTTGCTGGACCC
+>N1-4.3 feature_id:N1
+TTTGTTGGACCC
+>N1-5.1 feature_id:N1
+TTTGGAGGACCC
+>N1-5.2 feature_id:N1
+TTTGGCGGACCC
+>N1-5.3 feature_id:N1
+TTTGGGGGACCC
+>N1-6.1 feature_id:N1
+TTTGGTAGACCC
+>N1-6.2 feature_id:N1
+TTTGGTCGACCC
+>N1-6.3 feature_id:N1
+TTTGGTTGACCC
+>N1-7.1 feature_id:N1
+TTTGGTGAACCC
+>N1-7.2 feature_id:N1
+TTTGGTGCACCC
+>N1-7.3 feature_id:N1
+TTTGGTGTACCC
+>N1-8.1 feature_id:N1
+TTTGGTGGCCCC
+>N1-8.2 feature_id:N1
+TTTGGTGGGCCC
+>N1-8.3 feature_id:N1
+TTTGGTGGTCCC
+>N1-9.1 feature_id:N1
+TTTGGTGGAACC
+>N1-9.2 feature_id:N1
+TTTGGTGGAGCC
+>N1-9.3 feature_id:N1
+TTTGGTGGATCC
+>N1-10.1 feature_id:N1
+TTTGGTGGACAC
+>N1-10.2 feature_id:N1
+TTTGGTGGACGC
+>N1-10.3 feature_id:N1
+TTTGGTGGACTC
+>N1-11.1 feature_id:N1
+TTTGGTGGACCA
+>N1-11.2 feature_id:N1
+TTTGGTGGACCG
+>N1-11.3 feature_id:N1
+TTTGGTGGACCT
+>N1_spikein feature_id:N1_spikein
+AAACCAGGACCC
+>N1_spikein-0.1 feature_id:N1_spikein
+CAACCAGGACCC
+>N1_spikein-0.2 feature_id:N1_spikein
+GAACCAGGACCC
+>N1_spikein-0.3 feature_id:N1_spikein
+TAACCAGGACCC
+>N1_spikein-1.1 feature_id:N1_spikein
+ACACCAGGACCC
+>N1_spikein-1.2 feature_id:N1_spikein
+AGACCAGGACCC
+>N1_spikein-1.3 feature_id:N1_spikein
+ATACCAGGACCC
+>N1_spikein-2.1 feature_id:N1_spikein
+AACCCAGGACCC
+>N1_spikein-2.2 feature_id:N1_spikein
+AAGCCAGGACCC
+>N1_spikein-2.3 feature_id:N1_spikein
+AATCCAGGACCC
+>N1_spikein-3.1 feature_id:N1_spikein
+AAAACAGGACCC
+>N1_spikein-3.2 feature_id:N1_spikein
+AAAGCAGGACCC
+>N1_spikein-3.3 feature_id:N1_spikein
+AAATCAGGACCC
+>N1_spikein-4.1 feature_id:N1_spikein
+AAACAAGGACCC
+>N1_spikein-4.2 feature_id:N1_spikein
+AAACGAGGACCC
+>N1_spikein-4.3 feature_id:N1_spikein
+AAACTAGGACCC
+>N1_spikein-5.1 feature_id:N1_spikein
+AAACCCGGACCC
+>N1_spikein-5.2 feature_id:N1_spikein
+AAACCGGGACCC
+>N1_spikein-5.3 feature_id:N1_spikein
+AAACCTGGACCC
+>N1_spikein-6.1 feature_id:N1_spikein
+AAACCAAGACCC
+>N1_spikein-6.2 feature_id:N1_spikein
+AAACCACGACCC
+>N1_spikein-6.3 feature_id:N1_spikein
+AAACCATGACCC
+>N1_spikein-7.1 feature_id:N1_spikein
+AAACCAGAACCC
+>N1_spikein-7.2 feature_id:N1_spikein
+AAACCAGCACCC
+>N1_spikein-7.3 feature_id:N1_spikein
+AAACCAGTACCC
+>N1_spikein-8.1 feature_id:N1_spikein
+AAACCAGGCCCC
+>N1_spikein-8.2 feature_id:N1_spikein
+AAACCAGGGCCC
+>N1_spikein-8.3 feature_id:N1_spikein
+AAACCAGGTCCC
+>N1_spikein-9.1 feature_id:N1_spikein
+AAACCAGGAACC
+>N1_spikein-9.2 feature_id:N1_spikein
+AAACCAGGAGCC
+>N1_spikein-9.3 feature_id:N1_spikein
+AAACCAGGATCC
+>N1_spikein-10.1 feature_id:N1_spikein
+AAACCAGGACAC
+>N1_spikein-10.2 feature_id:N1_spikein
+AAACCAGGACGC
+>N1_spikein-10.3 feature_id:N1_spikein
+AAACCAGGACTC
+>N1_spikein-11.1 feature_id:N1_spikein
+AAACCAGGACCA
+>N1_spikein-11.2 feature_id:N1_spikein
+AAACCAGGACCG
+>N1_spikein-11.3 feature_id:N1_spikein
+AAACCAGGACCT
+>RPP30
+AGATTTGGACCTGCGAGCGGGTTCTGACCTGAAGGCTCTGCGCGGACTTGTGGAGACAGCCGCTC
