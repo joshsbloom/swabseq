@@ -24,10 +24,10 @@ each subdirectory contains:
 Statistics for each sequencing run 
 ___
 
-Run | Instrument | Read | Cluster PF (%) | % ≥Q30 | Yield | Error Rate% | Reads PF | Density  | Tiles | Legacy Phas/Prephas (%) | Intensity | % PhiX Observed | % PhiX Targeted | Conc. Loaded (pM)
---- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- 
-v7 | MiSeq | 1 | 92.71±0.99 | 97.26 | 218.65Mbp | 0.67±0.32 | 8,745,975 | 363±31 | 38 | 0.102/0.044 | 190±34 | 37.28 | 40 | 16
-v8 | MiSeq | 1 | 95.06±0.83 | 98.29 | 475.38Mbp | 0.16±0.02 | 19,015,232 | 776±11 | 38 | 0.084/0.043 | 146±18 | 38.61 | 40 | 20
+Run | Instrument | Read | Cluster PF (%) | % ≥Q30 | Yield | Error Rate% | Reads PF | Density  | Tiles | Legacy Phas/Prephas (%) | Intensity | % PhiX Observed | % PhiX Targeted | Conc. Loaded (pM) | RT | Indexing Strategy | Notes 
+--- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | ---
+v7 | MiSeq | 1 | 92.71±0.99 | 97.26 | 218.65Mbp | 0.67±0.32 | 8,745,975 | 363±31 | 38 | 0.102/0.044 | 190±34 | 37.28 | 40 | 16 | Luna | UDI | MTS in TE 1:10, Saliva in TE with Protease, and Saliva in TE with Protease 1:10
+v8 | MiSeq | 1 | 95.06±0.83 | 98.29 | 475.38Mbp | 0.16±0.02 | 19,015,232 | 776±11 | 38 | 0.084/0.043 | 146±18 | 38.61 | 40 | 20 | 
 v9 | MiSeq | 1 | 95.47±0.89 | 98.74 | 346.55Mbp | 0.48±0.08 | 13,862,051 | 563±20 | 38 | 0.095/0.029 | 172±26 | 28.37 | 40 | 20
 v10 | MiSeq | 1 | 94.33±0.93 | 97.94 | 440.62Mbp | 0.19±0.04 | 17,624,768 | 727±15 | 38 | 0.103/0.086 | 112±16 | 35.50 | 40 | 20
 v11 | MiSeq | 1 | 94.14±1.02 | 98.37 | 423.37Mbp | 0.52±0.13 | 16,934,964 | 703±31 | 38 | 0.090/0.064 | 152±21 | 30.99 | 40 | 22
