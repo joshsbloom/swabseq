@@ -25,7 +25,7 @@ Statistics for each sequencing run
 ___
 
 Run | Instrument | Read | Cluster PF (%) | % ≥Q30 | Yield | Error Rate% | Reads PF | Density  | Tiles | Legacy Phas/Prephas (%) | Intensity | % PhiX Observed | % PhiX Targeted | Conc. Loaded (pM) | RT | Indexing Strategy | PCR cycles | Notes 
---- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | ---
+--- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- 
 v7 | MiSeq | 1 | 92.71±0.99 | 97.26 | 218.65Mbp | 0.67±0.32 | 8,745,975 | 363±31 | 38 | 0.102/0.044 | 190±34 | 37.28 | 40 | 16 | NEB Luna | UDI | 40 |  MTS in TE diluted; Saliva in TE with Protease with and without dilution
 v8 | MiSeq | 1 | 95.06±0.83 | 98.29 | 475.38Mbp | 0.16±0.02 | 19,015,232 | 776±11 | 38 | 0.084/0.043 | 146±18 | 38.61 | 40 | 20 | NEB Luna | UDI | 40 and 50 | MTS in NS diluted    
 v9 | MiSeq | 1 | 95.47±0.89 | 98.74 | 346.55Mbp | 0.48±0.08 | 13,862,051 | 563±20 | 38 | 0.095/0.029 | 172±26 | 28.37 | 40 | 20 | NEB Luna | UDI | 50 and 60 | MTS in NS diluted; NP in NS real-world samples
