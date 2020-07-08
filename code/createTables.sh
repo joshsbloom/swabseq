@@ -20,4 +20,6 @@ Rscript --vanilla "${basedir}code/countAmplicons.R" -r "${basedir}runs/v20/" -b 
 Rscript --vanilla "${basedir}code/countAmplicons.R" -r "${basedir}runs/v21/" 
 
 Rscript --vanilla "${basedir}code/countAmplicons.R" -r "${basedir}runs/v22/" -b 196030855 -e T
+Rscript --vanilla "${basedir}code/countAmplicons.R" -r "${basedir}runs/v23/" -b 196116944 -e T
+
 

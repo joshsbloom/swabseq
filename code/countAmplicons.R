@@ -115,11 +115,11 @@ if(extendedAmplicons) {
     )
 }
 
-
 # Munginging sample sheet-------------------------------------------------------------------
 ss=read.delim(paste0(rundir,'SampleSheet.csv'), stringsAsFactors=F, skip=14, sep=',')
 ss$mergedIndex=paste0(ss$index, ss$index2)
 
+# this code would be obviated if indices designate wells, for most analyses here there are different indices for s2/s2spike and rpp30
 # subset of indices for S2/S2 spike
 ssS=ss[grep('-1$', ss$Sample_ID),]
 #subset of indices for RPP30
