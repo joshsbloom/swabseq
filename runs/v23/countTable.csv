@@ -959,7 +959,7 @@ Plate10, , ,NA,N1_S2_RPP30,3,2,20uL,taqpath,500,50,50, , ,H09,Plate10-H09-1,TAGT
 Plate10, , ,NA,N1_S2_RPP30,3,2,20uL,taqpath,500,50,50, , ,H10,Plate10-H10-1,CCATGGAATG,TAAGTCAGAG,CCATGGAATGTAAGTCAGAG,0,S2
 Plate10, , ,NA,N1_S2_RPP30,3,2,20uL,taqpath,500,50,50, , ,H11,Plate10-H11-1,CTCTCTCACT,CACATTCGTG,CTCTCTCACTCACATTCGTG,0,S2
 Plate10, , ,NA,N1_S2_RPP30,3,2,20uL,taqpath,500,50,50, , ,H12,Plate10-H12-1,TCCAGTGTAC,CCGCCATAGT,TCCAGTGTACCCGCCATAGT,0,S2
-Plate11,Dilution TE 1:2,ATCC Inactivated ,0,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,A01,Plate11-A01-1,ACGATGAGTC,TCATGGTGGT,ACGATGAGTCTCATGGTGGT,2886,S2
+Plate11,Dilution TE 1:2,ATCC Inactivated ,32000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,A01,Plate11-A01-1,ACGATGAGTC,TCATGGTGGT,ACGATGAGTCTCATGGTGGT,2886,S2
 Plate11,cells to cDNA (2x),ATCC Inactivated ,32000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,A02,Plate11-A02-1,TAAGCGCTCA,CTTAGTCAGG,TAAGCGCTCACTTAGTCAGG,0,S2
 Plate11,cells to cDNA (2x),ATCC Inactivated ,32000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,A03,Plate11-A03-1,TTATCGTTGC,CGATTCCTCG,TTATCGTTGCCGATTCCTCG,1,S2
 Plate11,cells to cDNA (2x),ATCC Inactivated ,32000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,A04,Plate11-A04-1,TTCGCCACAG,ATGTTCTGAG,TTCGCCACAGATGTTCTGAG,0,S2
@@ -970,8 +970,8 @@ Plate11,cells to cDNA (4x),ATCC Inactivated ,32000,N1_S2_RPP30,3,3,20uL,taqpath,
 Plate11,cells to cDNA (4x),ATCC Inactivated ,32000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,A09,Plate11-A09-1,GTAGCCTATG,TTCAAGGCTA,GTAGCCTATGTTCAAGGCTA,0,S2
 Plate11,Dilution TE 1:2,ATCC Inactivated ,32000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,A10,Plate11-A10-1,CCAATGATCC,CTAATGAACG,CCAATGATCCCTAATGAACG,480,S2
 Plate11,Dilution TE 1:2,ATCC Inactivated ,32000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,A11,Plate11-A11-1,TACGTTCGCT,AACCGTACTA,TACGTTCGCTAACCGTACTA,1295,S2
-Plate11,Dilution TE 1:2,ATCC Inactivated ,0,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,A12,Plate11-A12-1,GACTTGGTAC,CGTGTTGCAC,GACTTGGTACCGTGTTGCAC,506,S2
-Plate11,Dilution TE 1:2,ATCC Inactivated ,0,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,B01,Plate11-B01-1,ACCAATTGAG,AACACACAGG,ACCAATTGAGAACACACAGG,458,S2
+Plate11,Dilution TE 1:2,ATCC Inactivated ,32000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,A12,Plate11-A12-1,GACTTGGTAC,CGTGTTGCAC,GACTTGGTACCGTGTTGCAC,506,S2
+Plate11,Dilution TE 1:2,ATCC Inactivated ,16000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,B01,Plate11-B01-1,ACCAATTGAG,AACACACAGG,ACCAATTGAGAACACACAGG,458,S2
 Plate11,cells to cDNA (2x),ATCC Inactivated ,16000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,B02,Plate11-B02-1,CCAGTCTAGA,ACGAGATAGG,CCAGTCTAGAACGAGATAGG,0,S2
 Plate11,cells to cDNA (2x),ATCC Inactivated ,16000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,B03,Plate11-B03-1,GCAACACGCA,GAGCTTATGG,GCAACACGCAGAGCTTATGG,0,S2
 Plate11,cells to cDNA (2x),ATCC Inactivated ,16000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,B04,Plate11-B04-1,CATCCGGTAG,TACGGATCAG,CATCCGGTAGTACGGATCAG,0,S2
@@ -982,8 +982,8 @@ Plate11,cells to cDNA (4x),ATCC Inactivated ,16000,N1_S2_RPP30,3,3,20uL,taqpath,
 Plate11,cells to cDNA (4x),ATCC Inactivated ,16000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,B09,Plate11-B09-1,CAAGAACAGT,CAGTTGATTG,CAAGAACAGTCAGTTGATTG,0,S2
 Plate11,Dilution TE 1:2,ATCC Inactivated ,16000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,B10,Plate11-B10-1,CCTTCCTAAC,TACTGTACGT,CCTTCCTAACTACTGTACGT,249,S2
 Plate11,Dilution TE 1:2,ATCC Inactivated ,16000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,B11,Plate11-B11-1,GACTAACCAT,ACCTTCTCCG,GACTAACCATACCTTCTCCG,0,S2
-Plate11,Dilution TE 1:2,ATCC Inactivated ,0,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,B12,Plate11-B12-1,GCTACTTAAC,TCGTGCTGTT,GCTACTTAACTCGTGCTGTT,103,S2
-Plate11,Dilution TE 1:2,ATCC Inactivated ,0,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,C01,Plate11-C01-1,GGTCTTCCTG,CCAATCGAAT,GGTCTTCCTGCCAATCGAAT,19,S2
+Plate11,Dilution TE 1:2,ATCC Inactivated ,16000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,B12,Plate11-B12-1,GCTACTTAAC,TCGTGCTGTT,GCTACTTAACTCGTGCTGTT,103,S2
+Plate11,Dilution TE 1:2,ATCC Inactivated ,8000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,C01,Plate11-C01-1,GGTCTTCCTG,CCAATCGAAT,GGTCTTCCTGCCAATCGAAT,19,S2
 Plate11,cells to cDNA (2x),ATCC Inactivated ,8000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,C02,Plate11-C02-1,TGGCGTCTAA,GCTGCTGGAT,TGGCGTCTAAGCTGCTGGAT,0,S2
 Plate11,cells to cDNA (2x),ATCC Inactivated ,8000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,C03,Plate11-C03-1,ATCTCGTACT,CCACCTATGC,ATCTCGTACTCCACCTATGC,0,S2
 Plate11,cells to cDNA (2x),ATCC Inactivated ,8000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,C04,Plate11-C04-1,GGAAGTACTG,ACCGTTAATC,GGAAGTACTGACCGTTAATC,0,S2
@@ -994,8 +994,8 @@ Plate11,cells to cDNA (4x),ATCC Inactivated ,8000,N1_S2_RPP30,3,3,20uL,taqpath,5
 Plate11,cells to cDNA (4x),ATCC Inactivated ,8000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,C09,Plate11-C09-1,GATGCATAAG,CGTCAATGCG,GATGCATAAGCGTCAATGCG,0,S2
 Plate11,Dilution TE 1:2,ATCC Inactivated ,8000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,C10,Plate11-C10-1,GCTACTATGT,TAACATGCCA,GCTACTATGTTAACATGCCA,0,S2
 Plate11,Dilution TE 1:2,ATCC Inactivated ,8000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,C11,Plate11-C11-1,CAACCTGTCC,TTCAGACTCT,CAACCTGTCCTTCAGACTCT,532,S2
-Plate11,Dilution TE 1:2,ATCC Inactivated ,0,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,C12,Plate11-C12-1,CAGAGAATCT,ATGACAGTCG,CAGAGAATCTATGACAGTCG,183,S2
-Plate11,Dilution TE 1:2,ATCC Inactivated ,0,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,D01,Plate11-D01-1,ACTGGATCGA,CTACGAGGTT,ACTGGATCGACTACGAGGTT,0,S2
+Plate11,Dilution TE 1:2,ATCC Inactivated ,8000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,C12,Plate11-C12-1,CAGAGAATCT,ATGACAGTCG,CAGAGAATCTATGACAGTCG,183,S2
+Plate11,Dilution TE 1:2,ATCC Inactivated ,4000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,D01,Plate11-D01-1,ACTGGATCGA,CTACGAGGTT,ACTGGATCGACTACGAGGTT,0,S2
 Plate11,cells to cDNA (2x),ATCC Inactivated ,4000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,D02,Plate11-D02-1,CCTCGTTATC,CACCATAACA,CCTCGTTATCCACCATAACA,0,S2
 Plate11,cells to cDNA (2x),ATCC Inactivated ,4000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,D03,Plate11-D03-1,CAACGCTCGA,GCATGAACGT,CAACGCTCGAGCATGAACGT,0,S2
 Plate11,cells to cDNA (2x),ATCC Inactivated ,4000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,D04,Plate11-D04-1,TCCGATGTGG,CGCAGAGGTT,TCCGATGTGGCGCAGAGGTT,0,S2
@@ -1006,8 +1006,8 @@ Plate11,cells to cDNA (4x),ATCC Inactivated ,4000,N1_S2_RPP30,3,3,20uL,taqpath,5
 Plate11,cells to cDNA (4x),ATCC Inactivated ,4000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,D09,Plate11-D09-1,GTTCAGTCGC,CTTGCGTTCC,GTTCAGTCGCCTTGCGTTCC,0,S2
 Plate11,Dilution TE 1:2,ATCC Inactivated ,4000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,D10,Plate11-D10-1,GCTATACGAT,CCAAGCATAT,GCTATACGATCCAAGCATAT,0,S2
 Plate11,Dilution TE 1:2,ATCC Inactivated ,4000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,D11,Plate11-D11-1,CCGTACGCTT,TTCTCCTACT,CCGTACGCTTTTCTCCTACT,183,S2
-Plate11,Dilution TE 1:2,ATCC Inactivated ,0,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,D12,Plate11-D12-1,AGGCGTAACG,TGGAAGCACG,AGGCGTAACGTGGAAGCACG,30,S2
-Plate11,Dilution TE 1:2,ATCC Inactivated ,0,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,E01,Plate11-E01-1,GGTACGTCAC,TCGCCTTCAG,GGTACGTCACTCGCCTTCAG,122,S2
+Plate11,Dilution TE 1:2,ATCC Inactivated ,4000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,D12,Plate11-D12-1,AGGCGTAACG,TGGAAGCACG,AGGCGTAACGTGGAAGCACG,30,S2
+Plate11,Dilution TE 1:2,ATCC Inactivated ,2000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,E01,Plate11-E01-1,GGTACGTCAC,TCGCCTTCAG,GGTACGTCACTCGCCTTCAG,122,S2
 Plate11,cells to cDNA (2x),ATCC Inactivated ,2000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,E02,Plate11-E02-1,AACAGTCGAT,AACAACGAGA,AACAGTCGATAACAACGAGA,0,S2
 Plate11,cells to cDNA (2x),ATCC Inactivated ,2000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,E03,Plate11-E03-1,TACTGTTGCC,TGGTTCATCA,TACTGTTGCCTGGTTCATCA,0,S2
 Plate11,cells to cDNA (2x),ATCC Inactivated ,2000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,E04,Plate11-E04-1,GTATCACTCC,ACGCATGGAA,GTATCACTCCACGCATGGAA,0,S2
@@ -1018,8 +1018,8 @@ Plate11,cells to cDNA (4x),ATCC Inactivated ,2000,N1_S2_RPP30,3,3,20uL,taqpath,5
 Plate11,cells to cDNA (4x),ATCC Inactivated ,2000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,E09,Plate11-E09-1,AATCCGATGG,CACAGGATCG,AATCCGATGGCACAGGATCG,0,S2
 Plate11,Dilution TE 1:2,ATCC Inactivated ,2000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,E10,Plate11-E10-1,TATAGCGATC,GGCTATTGGT,TATAGCGATCGGCTATTGGT,0,S2
 Plate11,Dilution TE 1:2,ATCC Inactivated ,2000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,E11,Plate11-E11-1,GTAAGATGGT,ACACTAGGCT,GTAAGATGGTACACTAGGCT,0,S2
-Plate11,Dilution TE 1:2,ATCC Inactivated ,0,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,E12,Plate11-E12-1,GAGCTTCCGT,CACGGACACA,GAGCTTCCGTCACGGACACA,0,S2
-Plate11,Dilution TE 1:2,ATCC Inactivated ,0,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,F01,Plate11-F01-1,CACGGACAAT,AAGTCGAACT,CACGGACAATAAGTCGAACT,65,S2
+Plate11,Dilution TE 1:2,ATCC Inactivated ,2000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,E12,Plate11-E12-1,GAGCTTCCGT,CACGGACACA,GAGCTTCCGTCACGGACACA,0,S2
+Plate11,Dilution TE 1:2,ATCC Inactivated ,1000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,F01,Plate11-F01-1,CACGGACAAT,AAGTCGAACT,CACGGACAATAAGTCGAACT,65,S2
 Plate11,cells to cDNA (2x),ATCC Inactivated ,1000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,F02,Plate11-F02-1,ATCTCGGAGG,CCAACCACTG,ATCTCGGAGGCCAACCACTG,0,S2
 Plate11,cells to cDNA (2x),ATCC Inactivated ,1000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,F03,Plate11-F03-1,TTGAACACAG,ACCACAAGAA,TTGAACACAGACCACAAGAA,0,S2
 Plate11,cells to cDNA (2x),ATCC Inactivated ,1000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,F04,Plate11-F04-1,ACGGTGGACT,CTACTACACA,ACGGTGGACTCTACTACACA,70,S2
@@ -1030,7 +1030,7 @@ Plate11,cells to cDNA (4x),ATCC Inactivated ,1000,N1_S2_RPP30,3,3,20uL,taqpath,5
 Plate11,cells to cDNA (4x),ATCC Inactivated ,1000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,F09,Plate11-F09-1,TTCGTGAATG,GCATACCTCA,TTCGTGAATGGCATACCTCA,1,S2
 Plate11,Dilution TE 1:2,ATCC Inactivated ,1000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,F10,Plate11-F10-1,CACGAGGATG,CTTCCGAAGG,CACGAGGATGCTTCCGAAGG,0,S2
 Plate11,Dilution TE 1:2,ATCC Inactivated ,1000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,F11,Plate11-F11-1,CGAGTCGGTA,TTGGCAAGGC,CGAGTCGGTATTGGCAAGGC,0,S2
-Plate11,Dilution TE 1:2,ATCC Inactivated ,0,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,F12,Plate11-F12-1,AGTTGGTACG,ACAATCTGTC,AGTTGGTACGACAATCTGTC,296,S2
+Plate11,Dilution TE 1:2,ATCC Inactivated ,1000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,F12,Plate11-F12-1,AGTTGGTACG,ACAATCTGTC,AGTTGGTACGACAATCTGTC,296,S2
 Plate11,Dilution TE 1:2,ATCC Inactivated ,0,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,G01,Plate11-G01-1,GCCGCAATTC,AACCATGCAA,GCCGCAATTCAACCATGCAA,0,S2
 Plate11,cells to cDNA (2x),ATCC Inactivated ,0,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,G02,Plate11-G02-1,CATAGTCTGA,AAGAGCGGCT,CATAGTCTGAAAGAGCGGCT,0,S2
 Plate11,cells to cDNA (2x),ATCC Inactivated ,0,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,G03,Plate11-G03-1,TCTGACATGT,ACATTCACGG,TCTGACATGTACATTCACGG,0,S2
@@ -2495,7 +2495,7 @@ Plate10, , ,NA,N1_S2_RPP30,3,2,20uL,taqpath,500,50,50, , ,H09,Plate10-H09-1,TAGT
 Plate10, , ,NA,N1_S2_RPP30,3,2,20uL,taqpath,500,50,50, , ,H10,Plate10-H10-1,CCATGGAATG,TAAGTCAGAG,CCATGGAATGTAAGTCAGAG,0,S2_spike
 Plate10, , ,NA,N1_S2_RPP30,3,2,20uL,taqpath,500,50,50, , ,H11,Plate10-H11-1,CTCTCTCACT,CACATTCGTG,CTCTCTCACTCACATTCGTG,0,S2_spike
 Plate10, , ,NA,N1_S2_RPP30,3,2,20uL,taqpath,500,50,50, , ,H12,Plate10-H12-1,TCCAGTGTAC,CCGCCATAGT,TCCAGTGTACCCGCCATAGT,0,S2_spike
-Plate11,Dilution TE 1:2,ATCC Inactivated ,0,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,A01,Plate11-A01-1,ACGATGAGTC,TCATGGTGGT,ACGATGAGTCTCATGGTGGT,19316,S2_spike
+Plate11,Dilution TE 1:2,ATCC Inactivated ,32000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,A01,Plate11-A01-1,ACGATGAGTC,TCATGGTGGT,ACGATGAGTCTCATGGTGGT,19316,S2_spike
 Plate11,cells to cDNA (2x),ATCC Inactivated ,32000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,A02,Plate11-A02-1,TAAGCGCTCA,CTTAGTCAGG,TAAGCGCTCACTTAGTCAGG,16151,S2_spike
 Plate11,cells to cDNA (2x),ATCC Inactivated ,32000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,A03,Plate11-A03-1,TTATCGTTGC,CGATTCCTCG,TTATCGTTGCCGATTCCTCG,6575,S2_spike
 Plate11,cells to cDNA (2x),ATCC Inactivated ,32000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,A04,Plate11-A04-1,TTCGCCACAG,ATGTTCTGAG,TTCGCCACAGATGTTCTGAG,25529,S2_spike
@@ -2506,8 +2506,8 @@ Plate11,cells to cDNA (4x),ATCC Inactivated ,32000,N1_S2_RPP30,3,3,20uL,taqpath,
 Plate11,cells to cDNA (4x),ATCC Inactivated ,32000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,A09,Plate11-A09-1,GTAGCCTATG,TTCAAGGCTA,GTAGCCTATGTTCAAGGCTA,31570,S2_spike
 Plate11,Dilution TE 1:2,ATCC Inactivated ,32000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,A10,Plate11-A10-1,CCAATGATCC,CTAATGAACG,CCAATGATCCCTAATGAACG,23455,S2_spike
 Plate11,Dilution TE 1:2,ATCC Inactivated ,32000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,A11,Plate11-A11-1,TACGTTCGCT,AACCGTACTA,TACGTTCGCTAACCGTACTA,10108,S2_spike
-Plate11,Dilution TE 1:2,ATCC Inactivated ,0,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,A12,Plate11-A12-1,GACTTGGTAC,CGTGTTGCAC,GACTTGGTACCGTGTTGCAC,2962,S2_spike
-Plate11,Dilution TE 1:2,ATCC Inactivated ,0,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,B01,Plate11-B01-1,ACCAATTGAG,AACACACAGG,ACCAATTGAGAACACACAGG,26914,S2_spike
+Plate11,Dilution TE 1:2,ATCC Inactivated ,32000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,A12,Plate11-A12-1,GACTTGGTAC,CGTGTTGCAC,GACTTGGTACCGTGTTGCAC,2962,S2_spike
+Plate11,Dilution TE 1:2,ATCC Inactivated ,16000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,B01,Plate11-B01-1,ACCAATTGAG,AACACACAGG,ACCAATTGAGAACACACAGG,26914,S2_spike
 Plate11,cells to cDNA (2x),ATCC Inactivated ,16000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,B02,Plate11-B02-1,CCAGTCTAGA,ACGAGATAGG,CCAGTCTAGAACGAGATAGG,631,S2_spike
 Plate11,cells to cDNA (2x),ATCC Inactivated ,16000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,B03,Plate11-B03-1,GCAACACGCA,GAGCTTATGG,GCAACACGCAGAGCTTATGG,3589,S2_spike
 Plate11,cells to cDNA (2x),ATCC Inactivated ,16000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,B04,Plate11-B04-1,CATCCGGTAG,TACGGATCAG,CATCCGGTAGTACGGATCAG,29896,S2_spike
@@ -2518,8 +2518,8 @@ Plate11,cells to cDNA (4x),ATCC Inactivated ,16000,N1_S2_RPP30,3,3,20uL,taqpath,
 Plate11,cells to cDNA (4x),ATCC Inactivated ,16000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,B09,Plate11-B09-1,CAAGAACAGT,CAGTTGATTG,CAAGAACAGTCAGTTGATTG,43197,S2_spike
 Plate11,Dilution TE 1:2,ATCC Inactivated ,16000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,B10,Plate11-B10-1,CCTTCCTAAC,TACTGTACGT,CCTTCCTAACTACTGTACGT,44419,S2_spike
 Plate11,Dilution TE 1:2,ATCC Inactivated ,16000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,B11,Plate11-B11-1,GACTAACCAT,ACCTTCTCCG,GACTAACCATACCTTCTCCG,35115,S2_spike
-Plate11,Dilution TE 1:2,ATCC Inactivated ,0,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,B12,Plate11-B12-1,GCTACTTAAC,TCGTGCTGTT,GCTACTTAACTCGTGCTGTT,22275,S2_spike
-Plate11,Dilution TE 1:2,ATCC Inactivated ,0,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,C01,Plate11-C01-1,GGTCTTCCTG,CCAATCGAAT,GGTCTTCCTGCCAATCGAAT,782,S2_spike
+Plate11,Dilution TE 1:2,ATCC Inactivated ,16000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,B12,Plate11-B12-1,GCTACTTAAC,TCGTGCTGTT,GCTACTTAACTCGTGCTGTT,22275,S2_spike
+Plate11,Dilution TE 1:2,ATCC Inactivated ,8000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,C01,Plate11-C01-1,GGTCTTCCTG,CCAATCGAAT,GGTCTTCCTGCCAATCGAAT,782,S2_spike
 Plate11,cells to cDNA (2x),ATCC Inactivated ,8000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,C02,Plate11-C02-1,TGGCGTCTAA,GCTGCTGGAT,TGGCGTCTAAGCTGCTGGAT,2124,S2_spike
 Plate11,cells to cDNA (2x),ATCC Inactivated ,8000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,C03,Plate11-C03-1,ATCTCGTACT,CCACCTATGC,ATCTCGTACTCCACCTATGC,7980,S2_spike
 Plate11,cells to cDNA (2x),ATCC Inactivated ,8000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,C04,Plate11-C04-1,GGAAGTACTG,ACCGTTAATC,GGAAGTACTGACCGTTAATC,8690,S2_spike
@@ -2530,8 +2530,8 @@ Plate11,cells to cDNA (4x),ATCC Inactivated ,8000,N1_S2_RPP30,3,3,20uL,taqpath,5
 Plate11,cells to cDNA (4x),ATCC Inactivated ,8000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,C09,Plate11-C09-1,GATGCATAAG,CGTCAATGCG,GATGCATAAGCGTCAATGCG,41770,S2_spike
 Plate11,Dilution TE 1:2,ATCC Inactivated ,8000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,C10,Plate11-C10-1,GCTACTATGT,TAACATGCCA,GCTACTATGTTAACATGCCA,8945,S2_spike
 Plate11,Dilution TE 1:2,ATCC Inactivated ,8000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,C11,Plate11-C11-1,CAACCTGTCC,TTCAGACTCT,CAACCTGTCCTTCAGACTCT,16739,S2_spike
-Plate11,Dilution TE 1:2,ATCC Inactivated ,0,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,C12,Plate11-C12-1,CAGAGAATCT,ATGACAGTCG,CAGAGAATCTATGACAGTCG,8773,S2_spike
-Plate11,Dilution TE 1:2,ATCC Inactivated ,0,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,D01,Plate11-D01-1,ACTGGATCGA,CTACGAGGTT,ACTGGATCGACTACGAGGTT,18760,S2_spike
+Plate11,Dilution TE 1:2,ATCC Inactivated ,8000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,C12,Plate11-C12-1,CAGAGAATCT,ATGACAGTCG,CAGAGAATCTATGACAGTCG,8773,S2_spike
+Plate11,Dilution TE 1:2,ATCC Inactivated ,4000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,D01,Plate11-D01-1,ACTGGATCGA,CTACGAGGTT,ACTGGATCGACTACGAGGTT,18760,S2_spike
 Plate11,cells to cDNA (2x),ATCC Inactivated ,4000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,D02,Plate11-D02-1,CCTCGTTATC,CACCATAACA,CCTCGTTATCCACCATAACA,9054,S2_spike
 Plate11,cells to cDNA (2x),ATCC Inactivated ,4000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,D03,Plate11-D03-1,CAACGCTCGA,GCATGAACGT,CAACGCTCGAGCATGAACGT,7406,S2_spike
 Plate11,cells to cDNA (2x),ATCC Inactivated ,4000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,D04,Plate11-D04-1,TCCGATGTGG,CGCAGAGGTT,TCCGATGTGGCGCAGAGGTT,9061,S2_spike
@@ -2542,8 +2542,8 @@ Plate11,cells to cDNA (4x),ATCC Inactivated ,4000,N1_S2_RPP30,3,3,20uL,taqpath,5
 Plate11,cells to cDNA (4x),ATCC Inactivated ,4000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,D09,Plate11-D09-1,GTTCAGTCGC,CTTGCGTTCC,GTTCAGTCGCCTTGCGTTCC,18486,S2_spike
 Plate11,Dilution TE 1:2,ATCC Inactivated ,4000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,D10,Plate11-D10-1,GCTATACGAT,CCAAGCATAT,GCTATACGATCCAAGCATAT,26412,S2_spike
 Plate11,Dilution TE 1:2,ATCC Inactivated ,4000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,D11,Plate11-D11-1,CCGTACGCTT,TTCTCCTACT,CCGTACGCTTTTCTCCTACT,18624,S2_spike
-Plate11,Dilution TE 1:2,ATCC Inactivated ,0,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,D12,Plate11-D12-1,AGGCGTAACG,TGGAAGCACG,AGGCGTAACGTGGAAGCACG,9993,S2_spike
-Plate11,Dilution TE 1:2,ATCC Inactivated ,0,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,E01,Plate11-E01-1,GGTACGTCAC,TCGCCTTCAG,GGTACGTCACTCGCCTTCAG,14655,S2_spike
+Plate11,Dilution TE 1:2,ATCC Inactivated ,4000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,D12,Plate11-D12-1,AGGCGTAACG,TGGAAGCACG,AGGCGTAACGTGGAAGCACG,9993,S2_spike
+Plate11,Dilution TE 1:2,ATCC Inactivated ,2000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,E01,Plate11-E01-1,GGTACGTCAC,TCGCCTTCAG,GGTACGTCACTCGCCTTCAG,14655,S2_spike
 Plate11,cells to cDNA (2x),ATCC Inactivated ,2000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,E02,Plate11-E02-1,AACAGTCGAT,AACAACGAGA,AACAGTCGATAACAACGAGA,14096,S2_spike
 Plate11,cells to cDNA (2x),ATCC Inactivated ,2000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,E03,Plate11-E03-1,TACTGTTGCC,TGGTTCATCA,TACTGTTGCCTGGTTCATCA,36714,S2_spike
 Plate11,cells to cDNA (2x),ATCC Inactivated ,2000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,E04,Plate11-E04-1,GTATCACTCC,ACGCATGGAA,GTATCACTCCACGCATGGAA,23745,S2_spike
@@ -2554,8 +2554,8 @@ Plate11,cells to cDNA (4x),ATCC Inactivated ,2000,N1_S2_RPP30,3,3,20uL,taqpath,5
 Plate11,cells to cDNA (4x),ATCC Inactivated ,2000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,E09,Plate11-E09-1,AATCCGATGG,CACAGGATCG,AATCCGATGGCACAGGATCG,14577,S2_spike
 Plate11,Dilution TE 1:2,ATCC Inactivated ,2000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,E10,Plate11-E10-1,TATAGCGATC,GGCTATTGGT,TATAGCGATCGGCTATTGGT,24260,S2_spike
 Plate11,Dilution TE 1:2,ATCC Inactivated ,2000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,E11,Plate11-E11-1,GTAAGATGGT,ACACTAGGCT,GTAAGATGGTACACTAGGCT,11807,S2_spike
-Plate11,Dilution TE 1:2,ATCC Inactivated ,0,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,E12,Plate11-E12-1,GAGCTTCCGT,CACGGACACA,GAGCTTCCGTCACGGACACA,24708,S2_spike
-Plate11,Dilution TE 1:2,ATCC Inactivated ,0,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,F01,Plate11-F01-1,CACGGACAAT,AAGTCGAACT,CACGGACAATAAGTCGAACT,54107,S2_spike
+Plate11,Dilution TE 1:2,ATCC Inactivated ,2000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,E12,Plate11-E12-1,GAGCTTCCGT,CACGGACACA,GAGCTTCCGTCACGGACACA,24708,S2_spike
+Plate11,Dilution TE 1:2,ATCC Inactivated ,1000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,F01,Plate11-F01-1,CACGGACAAT,AAGTCGAACT,CACGGACAATAAGTCGAACT,54107,S2_spike
 Plate11,cells to cDNA (2x),ATCC Inactivated ,1000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,F02,Plate11-F02-1,ATCTCGGAGG,CCAACCACTG,ATCTCGGAGGCCAACCACTG,11618,S2_spike
 Plate11,cells to cDNA (2x),ATCC Inactivated ,1000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,F03,Plate11-F03-1,TTGAACACAG,ACCACAAGAA,TTGAACACAGACCACAAGAA,13803,S2_spike
 Plate11,cells to cDNA (2x),ATCC Inactivated ,1000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,F04,Plate11-F04-1,ACGGTGGACT,CTACTACACA,ACGGTGGACTCTACTACACA,37950,S2_spike
@@ -2566,7 +2566,7 @@ Plate11,cells to cDNA (4x),ATCC Inactivated ,1000,N1_S2_RPP30,3,3,20uL,taqpath,5
 Plate11,cells to cDNA (4x),ATCC Inactivated ,1000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,F09,Plate11-F09-1,TTCGTGAATG,GCATACCTCA,TTCGTGAATGGCATACCTCA,34337,S2_spike
 Plate11,Dilution TE 1:2,ATCC Inactivated ,1000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,F10,Plate11-F10-1,CACGAGGATG,CTTCCGAAGG,CACGAGGATGCTTCCGAAGG,9036,S2_spike
 Plate11,Dilution TE 1:2,ATCC Inactivated ,1000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,F11,Plate11-F11-1,CGAGTCGGTA,TTGGCAAGGC,CGAGTCGGTATTGGCAAGGC,14914,S2_spike
-Plate11,Dilution TE 1:2,ATCC Inactivated ,0,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,F12,Plate11-F12-1,AGTTGGTACG,ACAATCTGTC,AGTTGGTACGACAATCTGTC,16105,S2_spike
+Plate11,Dilution TE 1:2,ATCC Inactivated ,1000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,F12,Plate11-F12-1,AGTTGGTACG,ACAATCTGTC,AGTTGGTACGACAATCTGTC,16105,S2_spike
 Plate11,Dilution TE 1:2,ATCC Inactivated ,0,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,G01,Plate11-G01-1,GCCGCAATTC,AACCATGCAA,GCCGCAATTCAACCATGCAA,23798,S2_spike
 Plate11,cells to cDNA (2x),ATCC Inactivated ,0,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,G02,Plate11-G02-1,CATAGTCTGA,AAGAGCGGCT,CATAGTCTGAAAGAGCGGCT,30536,S2_spike
 Plate11,cells to cDNA (2x),ATCC Inactivated ,0,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,G03,Plate11-G03-1,TCTGACATGT,ACATTCACGG,TCTGACATGTACATTCACGG,11921,S2_spike
@@ -4031,7 +4031,7 @@ Plate10, , ,NA,N1_S2_RPP30,3,2,20uL,taqpath,500,50,50, , ,H09,Plate10-H09-2,CATT
 Plate10, , ,NA,N1_S2_RPP30,3,2,20uL,taqpath,500,50,50, , ,H10,Plate10-H10-2,AAGGTGTTAG,GTTGAGATGG,AAGGTGTTAGGTTGAGATGG,0,RPP30
 Plate10, , ,NA,N1_S2_RPP30,3,2,20uL,taqpath,500,50,50, , ,H11,Plate10-H11-2,ACGTTGAAGG,CATGAAGTAC,ACGTTGAAGGCATGAAGTAC,0,RPP30
 Plate10, , ,NA,N1_S2_RPP30,3,2,20uL,taqpath,500,50,50, , ,H12,Plate10-H12-2,TCGTCTCATG,CGAGATCTTA,TCGTCTCATGCGAGATCTTA,0,RPP30
-Plate11,Dilution TE 1:2,ATCC Inactivated ,0,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,A01,Plate11-A01-2,CTCGCTATGT,GATCCGACAG,CTCGCTATGTGATCCGACAG,4546,RPP30
+Plate11,Dilution TE 1:2,ATCC Inactivated ,32000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,A01,Plate11-A01-2,CTCGCTATGT,GATCCGACAG,CTCGCTATGTGATCCGACAG,4546,RPP30
 Plate11,cells to cDNA (2x),ATCC Inactivated ,32000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,A02,Plate11-A02-2,AGGAACAGTC,CGTCCTTGTT,AGGAACAGTCCGTCCTTGTT,4496,RPP30
 Plate11,cells to cDNA (2x),ATCC Inactivated ,32000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,A03,Plate11-A03-2,ATAACCATGC,TCACCGATGG,ATAACCATGCTCACCGATGG,6257,RPP30
 Plate11,cells to cDNA (2x),ATCC Inactivated ,32000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,A04,Plate11-A04-2,TCCTGGTGAC,CTGGTCCGAA,TCCTGGTGACCTGGTCCGAA,5810,RPP30
@@ -4042,8 +4042,8 @@ Plate11,cells to cDNA (4x),ATCC Inactivated ,32000,N1_S2_RPP30,3,3,20uL,taqpath,
 Plate11,cells to cDNA (4x),ATCC Inactivated ,32000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,A09,Plate11-A09-2,CATCCTATGA,AAGAGTGCCA,CATCCTATGAAAGAGTGCCA,5314,RPP30
 Plate11,Dilution TE 1:2,ATCC Inactivated ,32000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,A10,Plate11-A10-2,ACACCTGACT,ACTAACGTGT,ACACCTGACTACTAACGTGT,3701,RPP30
 Plate11,Dilution TE 1:2,ATCC Inactivated ,32000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,A11,Plate11-A11-2,ACGACAGATT,CCAGGTTGTT,ACGACAGATTCCAGGTTGTT,6634,RPP30
-Plate11,Dilution TE 1:2,ATCC Inactivated ,0,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,A12,Plate11-A12-2,AGTGACTCGC,TGTCTGTAAC,AGTGACTCGCTGTCTGTAAC,4477,RPP30
-Plate11,Dilution TE 1:2,ATCC Inactivated ,0,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,B01,Plate11-B01-2,TGGCATGTTA,ACATAGTAGC,TGGCATGTTAACATAGTAGC,3714,RPP30
+Plate11,Dilution TE 1:2,ATCC Inactivated ,32000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,A12,Plate11-A12-2,AGTGACTCGC,TGTCTGTAAC,AGTGACTCGCTGTCTGTAAC,4477,RPP30
+Plate11,Dilution TE 1:2,ATCC Inactivated ,16000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,B01,Plate11-B01-2,TGGCATGTTA,ACATAGTAGC,TGGCATGTTAACATAGTAGC,3714,RPP30
 Plate11,cells to cDNA (2x),ATCC Inactivated ,16000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,B02,Plate11-B02-2,CGCTCAACTT,TGAACTGTGA,CGCTCAACTTTGAACTGTGA,7350,RPP30
 Plate11,cells to cDNA (2x),ATCC Inactivated ,16000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,B03,Plate11-B03-2,CGTTGGATTA,CCAAGTGATA,CGTTGGATTACCAAGTGATA,5204,RPP30
 Plate11,cells to cDNA (2x),ATCC Inactivated ,16000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,B04,Plate11-B04-2,CTGTCAGTGA,CTCCTAGGAC,CTGTCAGTGACTCCTAGGAC,5607,RPP30
@@ -4054,8 +4054,8 @@ Plate11,cells to cDNA (4x),ATCC Inactivated ,16000,N1_S2_RPP30,3,3,20uL,taqpath,
 Plate11,cells to cDNA (4x),ATCC Inactivated ,16000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,B09,Plate11-B09-2,CTAATCGTGC,GACATTGTGG,CTAATCGTGCGACATTGTGG,4536,RPP30
 Plate11,Dilution TE 1:2,ATCC Inactivated ,16000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,B10,Plate11-B10-2,GGACATGTTG,CATACTCCTA,GGACATGTTGCATACTCCTA,4252,RPP30
 Plate11,Dilution TE 1:2,ATCC Inactivated ,16000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,B11,Plate11-B11-2,TCAACAGAGT,GTGATCTTAC,TCAACAGAGTGTGATCTTAC,5952,RPP30
-Plate11,Dilution TE 1:2,ATCC Inactivated ,0,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,B12,Plate11-B12-2,CCTCCATCTG,TGAGATCAGT,CCTCCATCTGTGAGATCAGT,5981,RPP30
-Plate11,Dilution TE 1:2,ATCC Inactivated ,0,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,C01,Plate11-C01-2,TGAGCATTGT,CACGTAGACT,TGAGCATTGTCACGTAGACT,6946,RPP30
+Plate11,Dilution TE 1:2,ATCC Inactivated ,16000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,B12,Plate11-B12-2,CCTCCATCTG,TGAGATCAGT,CCTCCATCTGTGAGATCAGT,5981,RPP30
+Plate11,Dilution TE 1:2,ATCC Inactivated ,8000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,C01,Plate11-C01-2,TGAGCATTGT,CACGTAGACT,TGAGCATTGTCACGTAGACT,6946,RPP30
 Plate11,cells to cDNA (2x),ATCC Inactivated ,8000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,C02,Plate11-C02-2,CAACACACAA,ATCCGAGATC,CAACACACAAATCCGAGATC,8744,RPP30
 Plate11,cells to cDNA (2x),ATCC Inactivated ,8000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,C03,Plate11-C03-2,TAACTGTCGA,AGGTACCATC,TAACTGTCGAAGGTACCATC,6348,RPP30
 Plate11,cells to cDNA (2x),ATCC Inactivated ,8000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,C04,Plate11-C04-2,TTGCCGCTAT,CTTAGGTACC,TTGCCGCTATCTTAGGTACC,90,RPP30
@@ -4066,8 +4066,8 @@ Plate11,cells to cDNA (4x),ATCC Inactivated ,8000,N1_S2_RPP30,3,3,20uL,taqpath,5
 Plate11,cells to cDNA (4x),ATCC Inactivated ,8000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,C09,Plate11-C09-2,TAACACGGAC,ACGACGCCTA,TAACACGGACACGACGCCTA,5739,RPP30
 Plate11,Dilution TE 1:2,ATCC Inactivated ,8000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,C10,Plate11-C10-2,ACGAAGAACC,TGCACTCGAA,ACGAAGAACCTGCACTCGAA,4402,RPP30
 Plate11,Dilution TE 1:2,ATCC Inactivated ,8000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,C11,Plate11-C11-2,TGACTGAGTT,ATTGCATGCT,TGACTGAGTTATTGCATGCT,8761,RPP30
-Plate11,Dilution TE 1:2,ATCC Inactivated ,0,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,C12,Plate11-C12-2,ACCGCTGTAC,TCAGAGCTGT,ACCGCTGTACTCAGAGCTGT,6297,RPP30
-Plate11,Dilution TE 1:2,ATCC Inactivated ,0,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,D01,Plate11-D01-2,CATGATACCA,AATGTTCGTC,CATGATACCAAATGTTCGTC,3381,RPP30
+Plate11,Dilution TE 1:2,ATCC Inactivated ,8000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,C12,Plate11-C12-2,ACCGCTGTAC,TCAGAGCTGT,ACCGCTGTACTCAGAGCTGT,6297,RPP30
+Plate11,Dilution TE 1:2,ATCC Inactivated ,4000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,D01,Plate11-D01-2,CATGATACCA,AATGTTCGTC,CATGATACCAAATGTTCGTC,3381,RPP30
 Plate11,cells to cDNA (2x),ATCC Inactivated ,4000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,D02,Plate11-D02-2,CTCGTAATGA,GACGGAGTGA,CTCGTAATGAGACGGAGTGA,5775,RPP30
 Plate11,cells to cDNA (2x),ATCC Inactivated ,4000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,D03,Plate11-D03-2,ACGTCCTAGT,GGAGTGCCTA,ACGTCCTAGTGGAGTGCCTA,5187,RPP30
 Plate11,cells to cDNA (2x),ATCC Inactivated ,4000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,D04,Plate11-D04-2,CCGACCTTAA,GCAAGAGTCG,CCGACCTTAAGCAAGAGTCG,5293,RPP30
@@ -4078,8 +4078,8 @@ Plate11,cells to cDNA (4x),ATCC Inactivated ,4000,N1_S2_RPP30,3,3,20uL,taqpath,5
 Plate11,cells to cDNA (4x),ATCC Inactivated ,4000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,D09,Plate11-D09-2,CTTGGAGTAG,CGAGTATATG,CTTGGAGTAGCGAGTATATG,4886,RPP30
 Plate11,Dilution TE 1:2,ATCC Inactivated ,4000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,D10,Plate11-D10-2,TCTACCACGG,CCTTGCGGAA,TCTACCACGGCCTTGCGGAA,156,RPP30
 Plate11,Dilution TE 1:2,ATCC Inactivated ,4000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,D11,Plate11-D11-2,AATGGTTCAG,CACTTCCTGT,AATGGTTCAGCACTTCCTGT,246,RPP30
-Plate11,Dilution TE 1:2,ATCC Inactivated ,0,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,D12,Plate11-D12-2,ATTCCTAACC,ACCTAGATCA,ATTCCTAACCACCTAGATCA,521,RPP30
-Plate11,Dilution TE 1:2,ATCC Inactivated ,0,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,E01,Plate11-E01-2,CCTATAAGGT,TATCGTCATC,CCTATAAGGTTATCGTCATC,994,RPP30
+Plate11,Dilution TE 1:2,ATCC Inactivated ,4000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,D12,Plate11-D12-2,ATTCCTAACC,ACCTAGATCA,ATTCCTAACCACCTAGATCA,521,RPP30
+Plate11,Dilution TE 1:2,ATCC Inactivated ,2000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,E01,Plate11-E01-2,CCTATAAGGT,TATCGTCATC,CCTATAAGGTTATCGTCATC,994,RPP30
 Plate11,cells to cDNA (2x),ATCC Inactivated ,2000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,E02,Plate11-E02-2,CATGCAGATT,TCCTTAAGCC,CATGCAGATTTCCTTAAGCC,5143,RPP30
 Plate11,cells to cDNA (2x),ATCC Inactivated ,2000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,E03,Plate11-E03-2,AGGCCACTTC,ATGGCTGTGT,AGGCCACTTCATGGCTGTGT,5536,RPP30
 Plate11,cells to cDNA (2x),ATCC Inactivated ,2000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,E04,Plate11-E04-2,CTCATGACAC,GTGAACATTC,CTCATGACACGTGAACATTC,6968,RPP30
@@ -4090,8 +4090,8 @@ Plate11,cells to cDNA (4x),ATCC Inactivated ,2000,N1_S2_RPP30,3,3,20uL,taqpath,5
 Plate11,cells to cDNA (4x),ATCC Inactivated ,2000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,E09,Plate11-E09-2,CAGGATGTGA,GTGGCAATGT,CAGGATGTGAGTGGCAATGT,6384,RPP30
 Plate11,Dilution TE 1:2,ATCC Inactivated ,2000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,E10,Plate11-E10-2,ATCGTCCAGG,GTTGGTAACG,ATCGTCCAGGGTTGGTAACG,106,RPP30
 Plate11,Dilution TE 1:2,ATCC Inactivated ,2000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,E11,Plate11-E11-2,CCAGAAGCAA,ATGAGTCAGC,CCAGAAGCAAATGAGTCAGC,80,RPP30
-Plate11,Dilution TE 1:2,ATCC Inactivated ,0,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,E12,Plate11-E12-2,CGCAAGATAA,CTAGAGGTCG,CGCAAGATAACTAGAGGTCG,2157,RPP30
-Plate11,Dilution TE 1:2,ATCC Inactivated ,0,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,F01,Plate11-F01-2,CAATTAGCGC,AAGCAGTGTT,CAATTAGCGCAAGCAGTGTT,5504,RPP30
+Plate11,Dilution TE 1:2,ATCC Inactivated ,2000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,E12,Plate11-E12-2,CGCAAGATAA,CTAGAGGTCG,CGCAAGATAACTAGAGGTCG,2157,RPP30
+Plate11,Dilution TE 1:2,ATCC Inactivated ,1000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,F01,Plate11-F01-2,CAATTAGCGC,AAGCAGTGTT,CAATTAGCGCAAGCAGTGTT,5504,RPP30
 Plate11,cells to cDNA (2x),ATCC Inactivated ,1000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,F02,Plate11-F02-2,CGAGCCTAGT,AGTGGCTTAC,CGAGCCTAGTAGTGGCTTAC,5162,RPP30
 Plate11,cells to cDNA (2x),ATCC Inactivated ,1000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,F03,Plate11-F03-2,CTCGCCTCAT,TGCATGGATA,CTCGCCTCATTGCATGGATA,5637,RPP30
 Plate11,cells to cDNA (2x),ATCC Inactivated ,1000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,F04,Plate11-F04-2,GCTCGGTCTT,ACACTGTCTG,GCTCGGTCTTACACTGTCTG,6366,RPP30
@@ -4102,7 +4102,7 @@ Plate11,cells to cDNA (4x),ATCC Inactivated ,1000,N1_S2_RPP30,3,3,20uL,taqpath,5
 Plate11,cells to cDNA (4x),ATCC Inactivated ,1000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,F09,Plate11-F09-2,TGAGGACTTA,GCCATACCTG,TGAGGACTTAGCCATACCTG,6011,RPP30
 Plate11,Dilution TE 1:2,ATCC Inactivated ,1000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,F10,Plate11-F10-2,TCTGAGAATG,TAAGCCTAGG,TCTGAGAATGTAAGCCTAGG,5793,RPP30
 Plate11,Dilution TE 1:2,ATCC Inactivated ,1000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,F11,Plate11-F11-2,CCTCCGAAGA,TTCATGATGG,CCTCCGAAGATTCATGATGG,3539,RPP30
-Plate11,Dilution TE 1:2,ATCC Inactivated ,0,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,F12,Plate11-F12-2,GACGTTGTGG,TTGCCAATAC,GACGTTGTGGTTGCCAATAC,4360,RPP30
+Plate11,Dilution TE 1:2,ATCC Inactivated ,1000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,F12,Plate11-F12-2,GACGTTGTGG,TTGCCAATAC,GACGTTGTGGTTGCCAATAC,4360,RPP30
 Plate11,Dilution TE 1:2,ATCC Inactivated ,0,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,G01,Plate11-G01-2,TTCGCCTATA,TACAAGGTCG,TTCGCCTATATACAAGGTCG,41,RPP30
 Plate11,cells to cDNA (2x),ATCC Inactivated ,0,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,G02,Plate11-G02-2,ACCTTAGTCT,GTAACATCGT,ACCTTAGTCTGTAACATCGT,71,RPP30
 Plate11,cells to cDNA (2x),ATCC Inactivated ,0,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,G03,Plate11-G03-2,CCTGACTAAG,TGAGCGCTTA,CCTGACTAAGTGAGCGCTTA,202,RPP30
@@ -5567,7 +5567,7 @@ Plate10, , ,NA,N1_S2_RPP30,3,2,20uL,taqpath,500,50,50, , ,H09,Plate10-H09-2,CATT
 Plate10, , ,NA,N1_S2_RPP30,3,2,20uL,taqpath,500,50,50, , ,H10,Plate10-H10-2,AAGGTGTTAG,GTTGAGATGG,AAGGTGTTAGGTTGAGATGG,0,RPP30_spike
 Plate10, , ,NA,N1_S2_RPP30,3,2,20uL,taqpath,500,50,50, , ,H11,Plate10-H11-2,ACGTTGAAGG,CATGAAGTAC,ACGTTGAAGGCATGAAGTAC,0,RPP30_spike
 Plate10, , ,NA,N1_S2_RPP30,3,2,20uL,taqpath,500,50,50, , ,H12,Plate10-H12-2,TCGTCTCATG,CGAGATCTTA,TCGTCTCATGCGAGATCTTA,1,RPP30_spike
-Plate11,Dilution TE 1:2,ATCC Inactivated ,0,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,A01,Plate11-A01-2,CTCGCTATGT,GATCCGACAG,CTCGCTATGTGATCCGACAG,1623,RPP30_spike
+Plate11,Dilution TE 1:2,ATCC Inactivated ,32000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,A01,Plate11-A01-2,CTCGCTATGT,GATCCGACAG,CTCGCTATGTGATCCGACAG,1623,RPP30_spike
 Plate11,cells to cDNA (2x),ATCC Inactivated ,32000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,A02,Plate11-A02-2,AGGAACAGTC,CGTCCTTGTT,AGGAACAGTCCGTCCTTGTT,68,RPP30_spike
 Plate11,cells to cDNA (2x),ATCC Inactivated ,32000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,A03,Plate11-A03-2,ATAACCATGC,TCACCGATGG,ATAACCATGCTCACCGATGG,325,RPP30_spike
 Plate11,cells to cDNA (2x),ATCC Inactivated ,32000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,A04,Plate11-A04-2,TCCTGGTGAC,CTGGTCCGAA,TCCTGGTGACCTGGTCCGAA,298,RPP30_spike
@@ -5578,8 +5578,8 @@ Plate11,cells to cDNA (4x),ATCC Inactivated ,32000,N1_S2_RPP30,3,3,20uL,taqpath,
 Plate11,cells to cDNA (4x),ATCC Inactivated ,32000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,A09,Plate11-A09-2,CATCCTATGA,AAGAGTGCCA,CATCCTATGAAAGAGTGCCA,169,RPP30_spike
 Plate11,Dilution TE 1:2,ATCC Inactivated ,32000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,A10,Plate11-A10-2,ACACCTGACT,ACTAACGTGT,ACACCTGACTACTAACGTGT,503,RPP30_spike
 Plate11,Dilution TE 1:2,ATCC Inactivated ,32000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,A11,Plate11-A11-2,ACGACAGATT,CCAGGTTGTT,ACGACAGATTCCAGGTTGTT,1169,RPP30_spike
-Plate11,Dilution TE 1:2,ATCC Inactivated ,0,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,A12,Plate11-A12-2,AGTGACTCGC,TGTCTGTAAC,AGTGACTCGCTGTCTGTAAC,1535,RPP30_spike
-Plate11,Dilution TE 1:2,ATCC Inactivated ,0,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,B01,Plate11-B01-2,TGGCATGTTA,ACATAGTAGC,TGGCATGTTAACATAGTAGC,459,RPP30_spike
+Plate11,Dilution TE 1:2,ATCC Inactivated ,32000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,A12,Plate11-A12-2,AGTGACTCGC,TGTCTGTAAC,AGTGACTCGCTGTCTGTAAC,1535,RPP30_spike
+Plate11,Dilution TE 1:2,ATCC Inactivated ,16000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,B01,Plate11-B01-2,TGGCATGTTA,ACATAGTAGC,TGGCATGTTAACATAGTAGC,459,RPP30_spike
 Plate11,cells to cDNA (2x),ATCC Inactivated ,16000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,B02,Plate11-B02-2,CGCTCAACTT,TGAACTGTGA,CGCTCAACTTTGAACTGTGA,202,RPP30_spike
 Plate11,cells to cDNA (2x),ATCC Inactivated ,16000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,B03,Plate11-B03-2,CGTTGGATTA,CCAAGTGATA,CGTTGGATTACCAAGTGATA,231,RPP30_spike
 Plate11,cells to cDNA (2x),ATCC Inactivated ,16000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,B04,Plate11-B04-2,CTGTCAGTGA,CTCCTAGGAC,CTGTCAGTGACTCCTAGGAC,263,RPP30_spike
@@ -5590,8 +5590,8 @@ Plate11,cells to cDNA (4x),ATCC Inactivated ,16000,N1_S2_RPP30,3,3,20uL,taqpath,
 Plate11,cells to cDNA (4x),ATCC Inactivated ,16000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,B09,Plate11-B09-2,CTAATCGTGC,GACATTGTGG,CTAATCGTGCGACATTGTGG,162,RPP30_spike
 Plate11,Dilution TE 1:2,ATCC Inactivated ,16000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,B10,Plate11-B10-2,GGACATGTTG,CATACTCCTA,GGACATGTTGCATACTCCTA,627,RPP30_spike
 Plate11,Dilution TE 1:2,ATCC Inactivated ,16000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,B11,Plate11-B11-2,TCAACAGAGT,GTGATCTTAC,TCAACAGAGTGTGATCTTAC,892,RPP30_spike
-Plate11,Dilution TE 1:2,ATCC Inactivated ,0,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,B12,Plate11-B12-2,CCTCCATCTG,TGAGATCAGT,CCTCCATCTGTGAGATCAGT,1648,RPP30_spike
-Plate11,Dilution TE 1:2,ATCC Inactivated ,0,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,C01,Plate11-C01-2,TGAGCATTGT,CACGTAGACT,TGAGCATTGTCACGTAGACT,1610,RPP30_spike
+Plate11,Dilution TE 1:2,ATCC Inactivated ,16000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,B12,Plate11-B12-2,CCTCCATCTG,TGAGATCAGT,CCTCCATCTGTGAGATCAGT,1648,RPP30_spike
+Plate11,Dilution TE 1:2,ATCC Inactivated ,8000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,C01,Plate11-C01-2,TGAGCATTGT,CACGTAGACT,TGAGCATTGTCACGTAGACT,1610,RPP30_spike
 Plate11,cells to cDNA (2x),ATCC Inactivated ,8000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,C02,Plate11-C02-2,CAACACACAA,ATCCGAGATC,CAACACACAAATCCGAGATC,621,RPP30_spike
 Plate11,cells to cDNA (2x),ATCC Inactivated ,8000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,C03,Plate11-C03-2,TAACTGTCGA,AGGTACCATC,TAACTGTCGAAGGTACCATC,431,RPP30_spike
 Plate11,cells to cDNA (2x),ATCC Inactivated ,8000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,C04,Plate11-C04-2,TTGCCGCTAT,CTTAGGTACC,TTGCCGCTATCTTAGGTACC,1,RPP30_spike
@@ -5602,8 +5602,8 @@ Plate11,cells to cDNA (4x),ATCC Inactivated ,8000,N1_S2_RPP30,3,3,20uL,taqpath,5
 Plate11,cells to cDNA (4x),ATCC Inactivated ,8000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,C09,Plate11-C09-2,TAACACGGAC,ACGACGCCTA,TAACACGGACACGACGCCTA,364,RPP30_spike
 Plate11,Dilution TE 1:2,ATCC Inactivated ,8000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,C10,Plate11-C10-2,ACGAAGAACC,TGCACTCGAA,ACGAAGAACCTGCACTCGAA,364,RPP30_spike
 Plate11,Dilution TE 1:2,ATCC Inactivated ,8000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,C11,Plate11-C11-2,TGACTGAGTT,ATTGCATGCT,TGACTGAGTTATTGCATGCT,1766,RPP30_spike
-Plate11,Dilution TE 1:2,ATCC Inactivated ,0,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,C12,Plate11-C12-2,ACCGCTGTAC,TCAGAGCTGT,ACCGCTGTACTCAGAGCTGT,1423,RPP30_spike
-Plate11,Dilution TE 1:2,ATCC Inactivated ,0,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,D01,Plate11-D01-2,CATGATACCA,AATGTTCGTC,CATGATACCAAATGTTCGTC,576,RPP30_spike
+Plate11,Dilution TE 1:2,ATCC Inactivated ,8000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,C12,Plate11-C12-2,ACCGCTGTAC,TCAGAGCTGT,ACCGCTGTACTCAGAGCTGT,1423,RPP30_spike
+Plate11,Dilution TE 1:2,ATCC Inactivated ,4000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,D01,Plate11-D01-2,CATGATACCA,AATGTTCGTC,CATGATACCAAATGTTCGTC,576,RPP30_spike
 Plate11,cells to cDNA (2x),ATCC Inactivated ,4000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,D02,Plate11-D02-2,CTCGTAATGA,GACGGAGTGA,CTCGTAATGAGACGGAGTGA,530,RPP30_spike
 Plate11,cells to cDNA (2x),ATCC Inactivated ,4000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,D03,Plate11-D03-2,ACGTCCTAGT,GGAGTGCCTA,ACGTCCTAGTGGAGTGCCTA,476,RPP30_spike
 Plate11,cells to cDNA (2x),ATCC Inactivated ,4000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,D04,Plate11-D04-2,CCGACCTTAA,GCAAGAGTCG,CCGACCTTAAGCAAGAGTCG,264,RPP30_spike
@@ -5614,8 +5614,8 @@ Plate11,cells to cDNA (4x),ATCC Inactivated ,4000,N1_S2_RPP30,3,3,20uL,taqpath,5
 Plate11,cells to cDNA (4x),ATCC Inactivated ,4000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,D09,Plate11-D09-2,CTTGGAGTAG,CGAGTATATG,CTTGGAGTAGCGAGTATATG,106,RPP30_spike
 Plate11,Dilution TE 1:2,ATCC Inactivated ,4000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,D10,Plate11-D10-2,TCTACCACGG,CCTTGCGGAA,TCTACCACGGCCTTGCGGAA,23,RPP30_spike
 Plate11,Dilution TE 1:2,ATCC Inactivated ,4000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,D11,Plate11-D11-2,AATGGTTCAG,CACTTCCTGT,AATGGTTCAGCACTTCCTGT,7,RPP30_spike
-Plate11,Dilution TE 1:2,ATCC Inactivated ,0,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,D12,Plate11-D12-2,ATTCCTAACC,ACCTAGATCA,ATTCCTAACCACCTAGATCA,33,RPP30_spike
-Plate11,Dilution TE 1:2,ATCC Inactivated ,0,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,E01,Plate11-E01-2,CCTATAAGGT,TATCGTCATC,CCTATAAGGTTATCGTCATC,101,RPP30_spike
+Plate11,Dilution TE 1:2,ATCC Inactivated ,4000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,D12,Plate11-D12-2,ATTCCTAACC,ACCTAGATCA,ATTCCTAACCACCTAGATCA,33,RPP30_spike
+Plate11,Dilution TE 1:2,ATCC Inactivated ,2000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,E01,Plate11-E01-2,CCTATAAGGT,TATCGTCATC,CCTATAAGGTTATCGTCATC,101,RPP30_spike
 Plate11,cells to cDNA (2x),ATCC Inactivated ,2000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,E02,Plate11-E02-2,CATGCAGATT,TCCTTAAGCC,CATGCAGATTTCCTTAAGCC,256,RPP30_spike
 Plate11,cells to cDNA (2x),ATCC Inactivated ,2000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,E03,Plate11-E03-2,AGGCCACTTC,ATGGCTGTGT,AGGCCACTTCATGGCTGTGT,313,RPP30_spike
 Plate11,cells to cDNA (2x),ATCC Inactivated ,2000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,E04,Plate11-E04-2,CTCATGACAC,GTGAACATTC,CTCATGACACGTGAACATTC,420,RPP30_spike
@@ -5626,8 +5626,8 @@ Plate11,cells to cDNA (4x),ATCC Inactivated ,2000,N1_S2_RPP30,3,3,20uL,taqpath,5
 Plate11,cells to cDNA (4x),ATCC Inactivated ,2000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,E09,Plate11-E09-2,CAGGATGTGA,GTGGCAATGT,CAGGATGTGAGTGGCAATGT,354,RPP30_spike
 Plate11,Dilution TE 1:2,ATCC Inactivated ,2000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,E10,Plate11-E10-2,ATCGTCCAGG,GTTGGTAACG,ATCGTCCAGGGTTGGTAACG,3,RPP30_spike
 Plate11,Dilution TE 1:2,ATCC Inactivated ,2000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,E11,Plate11-E11-2,CCAGAAGCAA,ATGAGTCAGC,CCAGAAGCAAATGAGTCAGC,3,RPP30_spike
-Plate11,Dilution TE 1:2,ATCC Inactivated ,0,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,E12,Plate11-E12-2,CGCAAGATAA,CTAGAGGTCG,CGCAAGATAACTAGAGGTCG,133,RPP30_spike
-Plate11,Dilution TE 1:2,ATCC Inactivated ,0,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,F01,Plate11-F01-2,CAATTAGCGC,AAGCAGTGTT,CAATTAGCGCAAGCAGTGTT,320,RPP30_spike
+Plate11,Dilution TE 1:2,ATCC Inactivated ,2000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,E12,Plate11-E12-2,CGCAAGATAA,CTAGAGGTCG,CGCAAGATAACTAGAGGTCG,133,RPP30_spike
+Plate11,Dilution TE 1:2,ATCC Inactivated ,1000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,F01,Plate11-F01-2,CAATTAGCGC,AAGCAGTGTT,CAATTAGCGCAAGCAGTGTT,320,RPP30_spike
 Plate11,cells to cDNA (2x),ATCC Inactivated ,1000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,F02,Plate11-F02-2,CGAGCCTAGT,AGTGGCTTAC,CGAGCCTAGTAGTGGCTTAC,189,RPP30_spike
 Plate11,cells to cDNA (2x),ATCC Inactivated ,1000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,F03,Plate11-F03-2,CTCGCCTCAT,TGCATGGATA,CTCGCCTCATTGCATGGATA,277,RPP30_spike
 Plate11,cells to cDNA (2x),ATCC Inactivated ,1000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,F04,Plate11-F04-2,GCTCGGTCTT,ACACTGTCTG,GCTCGGTCTTACACTGTCTG,156,RPP30_spike
@@ -5638,7 +5638,7 @@ Plate11,cells to cDNA (4x),ATCC Inactivated ,1000,N1_S2_RPP30,3,3,20uL,taqpath,5
 Plate11,cells to cDNA (4x),ATCC Inactivated ,1000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,F09,Plate11-F09-2,TGAGGACTTA,GCCATACCTG,TGAGGACTTAGCCATACCTG,179,RPP30_spike
 Plate11,Dilution TE 1:2,ATCC Inactivated ,1000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,F10,Plate11-F10-2,TCTGAGAATG,TAAGCCTAGG,TCTGAGAATGTAAGCCTAGG,831,RPP30_spike
 Plate11,Dilution TE 1:2,ATCC Inactivated ,1000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,F11,Plate11-F11-2,CCTCCGAAGA,TTCATGATGG,CCTCCGAAGATTCATGATGG,183,RPP30_spike
-Plate11,Dilution TE 1:2,ATCC Inactivated ,0,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,F12,Plate11-F12-2,GACGTTGTGG,TTGCCAATAC,GACGTTGTGGTTGCCAATAC,201,RPP30_spike
+Plate11,Dilution TE 1:2,ATCC Inactivated ,1000,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,F12,Plate11-F12-2,GACGTTGTGG,TTGCCAATAC,GACGTTGTGGTTGCCAATAC,201,RPP30_spike
 Plate11,Dilution TE 1:2,ATCC Inactivated ,0,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,G01,Plate11-G01-2,TTCGCCTATA,TACAAGGTCG,TTCGCCTATATACAAGGTCG,2,RPP30_spike
 Plate11,cells to cDNA (2x),ATCC Inactivated ,0,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,G02,Plate11-G02-2,ACCTTAGTCT,GTAACATCGT,ACCTTAGTCTGTAACATCGT,3,RPP30_spike
 Plate11,cells to cDNA (2x),ATCC Inactivated ,0,N1_S2_RPP30,3,3,20uL,taqpath,500,50,50,Saliva;cells2cdna dilutions,copies_per_ml_lysate,G03,Plate11-G03-2,CCTGACTAAG,TGAGCGCTTA,CCTGACTAAGTGAGCGCTTA,3,RPP30_spike
