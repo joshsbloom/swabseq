@@ -6,7 +6,6 @@ outdir=paste0(swabseq.dir, 'analysis/manuscript/')
 #get table munging function
 source(paste0(swabseq.dir, 'code/helper_functions.R')) 
 
-
 #Figure 1 ========================================================================================================= 
 rundir=paste0(swabseq.dir, 'runs/v11/')
 dfs=mungeTables(paste0(rundir, 'countTable.RDS'))
@@ -117,6 +116,80 @@ ggsave('/data/Covid/swabseq/analysis/manuscript/fig2.svg')
 #========================================================================================================================
 
 
+# supplementary figures
+#------------------ linearity given high virus input -----------------------------------
+rundir=paste0(swabseq.dir, 'runs/v17/')
+dfsL=mungeTables(paste0(rundir, 'countTable.RDS'),lw=T)
+dfs=dfsL$dfs
+dfs$Plate_384=droplevels(dfs$Plate_384)
+dfs$virus_copy[dfs$virus_copy=='Negative Patient']='0.0'
+dfs$virus_copy=as.numeric(as.character(dfs$virus_copy))*1000
+dfs$virus_copy=droplevels(as.factor(dfs$virus_copy))
+dfs$virus_copy=factor(dfs$virus_copy, levels(dfs$virus_copy)[order(as.numeric(levels(dfs$virus_copy)))])
+dfs$virus_ident2=dfs$virus_identity
+dfs$virus_ident2[grepl('^N|^P', dfs$virus_identity)]='NegPatient'
+dfs$virus_copy=as.numeric(as.character(dfs$virus_copy))
+dfs$zeros=as.factor(dfs$virus_copy=='0')
+levels(dfs$zeros)=c('>0 Virus Added', 'No Virus Added')
+dfs$zeros=relevel(dfs$zeros,'No Virus Added')
+
+s1a=
+dfs %>% filter(Plate_ID!='Plate8') %>% filter(Stotal>2000) %>% filter(virus_ident2!='D1' & virus_ident2!='D2') %>% 
+ggplot( aes(x=virus_copy+1, y=S2_normalized_to_S2_spike))+geom_quasirandom(alpha=.75)+
+    scale_x_log10()+facet_grid(~zeros, scales='free_x', space='free_x')+
+    scale_y_log10() + annotation_logticks() + ylab('(S2+1)/(S2 spike+1)')+xlab('log10(copies/mL +1)')+
+    theme(axis.text.x = element_text(angle = 90, vjust=0.3))+theme_bw()
+
+s1b=
+dfs %>% filter(Plate_ID!='Plate8') %>% filter(Stotal>2000) %>% filter(virus_ident2!='D1' & virus_ident2!='D2') %>% 
+ggplot( aes(x=virus_copy+1, y=S2+1))+geom_quasirandom(alpha=.75)+
+    scale_x_log10()+facet_grid(~zeros, scales='free_x', space='free_x')+
+    scale_y_log10() + annotation_logticks() + ylab('S2+1')+xlab('log10(copies/mL +1)')+
+    theme(axis.text.x = element_text(angle = 90, vjust=0.3))+theme_bw()
+
+s1c=
+dfs %>% filter(Plate_ID!='Plate8') %>% filter(Stotal>2000) %>% filter(virus_ident2!='D1' & virus_ident2!='D2') %>% 
+ggplot( aes(x=virus_copy+1, y=S2_spike+1))+geom_quasirandom(alpha=.75)+
+    scale_x_log10()+facet_grid(~zeros, scales='free_x', space='free_x')+
+    scale_y_log10() + annotation_logticks() + ylab('S2 spike+1')+xlab('log10(copies/mL +1)')+
+    theme(axis.text.x = element_text(angle = 90, vjust=0.3))+theme_bw()
+
+s1bc=ggarrange(s1b,s1c, nrow=2)
+s1abc=ggarrange(s1bc, s1a, ncol=2)
+ggsave('/data/Covid/swabseq/analysis/manuscript/Sfig_linearity2.svg')
+ggsave('/data/Covid/swabseq/analysis/manuscript/Sfig_linearity2.png')
+# -------------------------------------------------------------------------------------------
+
+
+
+# with and without bleach wash ---------------------------------------------------------------
+#14 no bleach
+rundir=paste0(swabseq.dir, 'runs/v14/')
+df14=mungeTables(paste0(rundir, 'countTable.RDS'),lw=T)$df
+df14$bleach='No Bleach Wash'
+df14=df14 %>%filter(Plate_ID=='Plate9' | Plate_ID=='Plate10'| Plate_ID=='Plate11' |Plate_ID=='Plate12')
+#15 bleach 
+rundir=paste0(swabseq.dir, 'runs/v15/')
+df15=mungeTables(paste0(rundir, 'countTable.RDS'),lw=T)$df
+df15$bleach='With Bleach Wash'
+df15=df15 %>%filter(Plate_ID=='Plate13' | Plate_ID=='Plate14'| Plate_ID=='Plate15' |Plate_ID=='Plate16')
+dfb=rbind(df14,df15)
+
+dfb %>%
+  #filter(str_detect(amplicon, "spike")) %>%
+  ggplot(aes(x=Col, y=Row, fill=log10(Count))) + 
+  geom_raster() +
+  coord_equal() +
+  facet_grid(amplicon~bleach+Plate_384+Plate_ID) +
+  scale_fill_viridis_c(option = 'plasma')
+ggsave('/data/Covid/swabseq/analysis/manuscript/Sfig_bleachwash.svg')
+ggsave('/data/Covid/swabseq/analysis/manuscript/Sfig_bleachwash.png')
+#--------------------------------------------------------------------------------------------------------
+
+
+
+
+
 rundir=paste0(swabseq.dir, 'runs/v12/')
 dfs=mungeTables(paste0(rundir, 'countTable.RDS'))
 dfs$Plate_384=droplevels(dfs$Plate_384)
@@ -142,31 +215,4 @@ ggplot(aes(x=virus_copy, y=S2+1, group=virus_copy, color=Plate_ID))+geom_quasira
     theme(axis.text.x = element_text(angle = 90, vjust=0.3))+theme_bw()
 
 
-#v23
-swabseq.dir='/data/Covid/swabseq/'
-
-rundir=paste0(swabseq.dir, 'runs/v23/')
-outdir=paste0(swabseq.dir, 'analysis/v23/')
-
-dfL=mungeTables(paste0(rundir, 'countTable.RDS'),lw=T)
-df=dfL$df
-dfs=dfL$dfs
-
-#plate visualization 
-#plate visualization 
-df %>%
-  ggplot(aes(x=Col, y=Row, fill=log10(Count))) + 
-  geom_raster() +
-  coord_equal() +
-  facet_grid(amplicon~Plate_384+Plate_ID+Description) +
-  scale_fill_viridis_c(option = 'plasma')
-ggsave(paste0(outdir,'plateVis_all_indices.png'))
-
-df %>% filter(Description!='' & Description!=' ') %>%
-  ggplot(aes(x=Col, y=Row, fill=log10(Count))) + 
-  geom_raster() +
-  coord_equal() +
-  facet_grid(amplicon~Plate_384+Plate_ID+Description) +
-  scale_fill_viridis_c(option = 'plasma')
-ggsave(paste0(outdir,'plateVis_plates_run.png'))
 
