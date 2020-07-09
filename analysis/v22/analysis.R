@@ -1,23 +1,11 @@
-library(ShortRead)
-library(stringdist)
-library(tidyverse)
-library(ggbeeswarm)
-library(viridis)
+swabseq.dir='/data/Covid/swabseq/'
+source(paste0(swabseq.dir, 'code/helper_functions.R'))
+rundir=paste0(swabseq.dir, 'runs/v22/')
+outdir=paste0(swabseq.dir, 'analysis/v22/')
 
-#for example ... 
-rundir='/data/Covid/swabseq/runs/v22/'
-outdir='/data/Covid/swabseq/analysis/v22/'
-
-countTables=readRDS(paste0(rundir, 'countTable.RDS')) 
-df=do.call('rbind', countTables)
-df$virus_copy=as.factor(df$virus_copy) 
-df$Col=as.factor(gsub('^.', '', df$Sample_Well))
-df$Row=factor(gsub('..$', '', df$Sample_Well), levels=rev(toupper(letters[1:8])))
-df$Sample=paste0(df$Plate_ID, '-' ,df$Sample_Well)
-df$Plate_ID=as.factor(df$Plate_ID)
-df$Plate_ID=factor(df$Plate_ID, levels(df$Plate_ID)[order(as.numeric(gsub('Plate', '', levels(df$Plate_ID))))])  
-df$Plate_384=as.factor(df$Plate_384)
-df$amplicon=factor(df$amplicon, level=c('S2', 'S2_spike', 'RPP30', 'RPP30_spike'))
+dfL=mungeTables(paste0(rundir, 'countTable.RDS'),lw=T)
+df=dfL$df
+dfs=dfL$dfs
 
 #plate visualization 
 df %>%
