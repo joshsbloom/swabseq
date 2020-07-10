@@ -187,7 +187,89 @@ ggsave('/data/Covid/swabseq/analysis/manuscript/Sfig_bleachwash.png')
 #--------------------------------------------------------------------------------------------------------
 
 
+# luna vs taqpath ------------------------------------------------
+rundir=paste0(swabseq.dir, 'runs/v10/')
+dfs=mungeTables(paste0(rundir, 'countTable.RDS'))
+#Plates1 and Plate2 are taqpath
+dfs$RT=as.factor(dfs$Plate_ID %in% c("Plate1", "Plate2"))
+dfs$PositivePatient=as.factor(dfs$lysate %in% c('R003', 'O-003', 'R-005','C-009', 'R-014', 'R006', 'O-009', 'R-004', 'O-014', 'C-008'))
+levels(dfs$RT)=c('Luna', 'Taqpath')
+levels(dfs$PositivePatient)=c('Negative', 'Positive')
+dfsc = dfs %>% filter(Stotal>1000) %>% filter(grepl('^R|^O|^C', lysate)) #%>% filter( !(Col %in% c('09','10','11','12')))
 
+slt1=
+dfsc %>% filter(Stotal>1000) %>%
+    ggplot( aes(x=PositivePatient, y=S2_normalized_to_S2_spike))+geom_quasirandom(alpha=.75)+
+   facet_grid(~RT)+
+    scale_y_log10() + annotation_logticks() + ylab('(S2+1)/(S2 spike+1)')+xlab('Patient SARS-CoV-2 status')+
+    theme(axis.text.x = element_text(angle = 90, vjust=0.3))+theme_bw()
+slt2=
+dfsc %>% filter(Stotal>1000) %>%
+    ggplot( aes(x=PositivePatient, y=S2+1))+geom_quasirandom(alpha=.75)+
+   facet_grid(~RT)+
+    scale_y_log10() + annotation_logticks() + ylab('(S2+1)')+xlab('Patient SARS-CoV-2 status')+
+    theme(axis.text.x = element_text(angle = 90, vjust=0.3))+theme_bw()
+
+slt=ggarrange(slt1, slt2, nrow=2)
+ggsave('/data/Covid/swabseq/analysis/manuscript/Sfig_neb_v_luna.png')
+
+#-----------------------------------------------------------------
+
+
+
+#demonstration of hopping normalization ---------------------------------------------------
+rundir=paste0(swabseq.dir, 'runs/v15/')
+dfs=mungeTables(paste0(rundir, 'countTable.RDS'))
+dfs$lS2=log10(dfs$S2_normalized_to_S2_spike)
+library(lme4)
+#full.model=lmer(scale(log10(dfs$S2_normalized_to_S2_spike))~scale(log10(well_total))+(1|virus_copy)+(1|Sample_Well)+(1|Plate_ID)+(1|lysate), data=dfs)
+#reduced.model=lmer(scale(log10(dfs$S2_normalized_to_S2_spike))~scale(log10(well_total))+(1|virus_copy)+(1|Plate_ID)+(1|lysate), data=dfs)
+#summary(full.model)
+#anova(full.model, reduced.model)
+simpler.model=lmer(scale(log10(dfs$S2_normalized_to_S2_spike))~(1|Sample_Well)+(1|Plate_ID), data=dfs)
+dfs$lS2_corrected=residuals(simpler.model) #=log10(dfs$S2_normalized_to_S2_spike)
+dfn=dfs %>%
+ filter(Plate_ID %in% c('Plate5', 'Plate6', 'Plate7')) %>%
+ filter(lysate == 'SimulatedPatient') 
+
+dfn$Plate_384=droplevels(dfn$Plate_384)
+dfn$Plate_ID=droplevels(dfn$Plate_ID)
+dfn$virus_copy=droplevels(dfn$virus_copy)
+dfn$virus_copy=factor(dfn$virus_copy, levels(dfn$virus_copy)[order(as.numeric(levels(dfn$virus_copy)))])
+dfn$PositivePatient=dfn$virus_identity %in% c('U0002', 'U0003', 'U0004', 'U0070', 
+                                              'U0036', 'U0037', 'U0040', 'U0041', 'U0077', 'U0078')
+dfn$Ct=NA
+dfn$Ct[dfn$virus_identity=='U0002']=12.1
+dfn$Ct[dfn$virus_identity=='U0003']=23
+dfn$Ct[dfn$virus_identity=='U0004']=16.2
+dfn$Ct[dfn$virus_identity=='U0070']=31
+dfn$Ct[dfn$virus_identity=='U0036']=36.4
+dfn$Ct[dfn$virus_identity=='U0037']=11
+dfn$Ct[dfn$virus_identity=='U0040']=26.2
+dfn$Ct[dfn$virus_identity=='U0041']=22.7
+dfn$Ct[dfn$virus_identity=='U0077']=32.4
+dfn$Ct[dfn$virus_identity=='U0078']=34.7
+
+fn1=dfn %>% filter(Stotal>1000) %>% filter(Ct<32 | is.na(Ct) )%>%
+ggplot(aes(x=PositivePatient, y=S2_normalized_to_S2_spike, color=log10(S2_total_across_all_wells)))+
+    geom_quasirandom(alpha=.75,size=2.5)+
+    scale_y_log10() + 
+    annotation_logticks() +
+    scale_color_viridis(option = 'plasma',name='log10(S2 total per i7)')+
+    theme(axis.text.x = element_text(angle = 90, vjust=0.3))+theme_bw()+ylab('(S2+1)/(S2 spike+1)')
+
+fn2=dfn %>% filter(Stotal>1000) %>% filter(Ct<32 | is.na(Ct) )%>%
+ggplot(aes(x=PositivePatient, y=lS2_corrected, color=log10(S2_total_across_all_wells)))+
+    geom_quasirandom(alpha=.75,size=2)+
+    scale_color_viridis(option = 'plasma',name='log10(S2 total per i7)')+
+    theme(axis.text.x = element_text(angle = 90, vjust=0.3))+theme_bw()+ylab('Normalized (S2+1/S2 spike+1)') 
+sfigfn=ggarrange(fn1, fn2, ncol=2, labels=c('A', 'B'))
+
+library(patchwork)
+co=fn1+fn2 +plot_layout(guides='collect')
+ggsave('/data/Covid/swabseq/analysis/manuscript/Sfig_mm_correct.png')
+
+#---------------------------------------------------------------------------------
 
 
 rundir=paste0(swabseq.dir, 'runs/v12/')
