@@ -32,4 +32,9 @@ v9  |  MiSeq | 28.37 | 40 | 20 | NEB Luna | UDI | 50 and 60 | MTS in NS diluted;
 v8  |  MiSeq | 38.61 | 40 | 20 | NEB Luna | UDI | 40 and 50 | MTS in NS diluted                                                     | 1 | 95.06±0.83 | 98.29 | 475.38Mbp | 0.16±0.02 | 19,015,232 | 776±11 | 38 | 0.084/0.043 | 146±18 
 v7  |  MiSeq | 37.28 | 40 | 16 | NEB Luna | UDI | 40 |  MTS in TE diluted; Saliva in TE with Protease +/- dilution     | 1 | 92.71±0.99 | 97.26 | 218.65Mbp | 0.67±0.32 | 8,745,975 | 363±31 | 38 | 0.102/0.044 | 190±34   
 
+<style>
+table {
+    width:100%;
+}
+</style>
 
