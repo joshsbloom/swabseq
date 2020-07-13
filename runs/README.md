@@ -26,8 +26,8 @@ ___
 
 Run | Instrument | % PhiX Observed | % PhiX Targeted | Conc. Loaded (pM) | RT | Indexing Strategy | PCR cycles | Notes | Read | Cluster PF (%) | % ≥Q30 | Yield | Error Rate% | Reads PF | Density  | Tiles | Legacy Phas/Prephas (%) | Intensity 
 --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- 
-[v25](analysis/v25/) |  MiSeq | 36 | 40 | 25 | Taqpath | UDI | 50 | Saliva TBE+/tween; TE,RNASecure,Qiagen Protease; +/- 95 C heating 
-[v24](analysis/v24/) |  MiSeq |  42.21 | 40  | 25 | Taqpath | Semi-Combinatorial | 50 | Saliva +/- RNA Secure; NP in VTM, NS, or Amies; dilutions in water |  1  |	92.85±1.17 | 97.79 |  	483.40 Mbp 	| 0.14±0.04 |	19,336,026 | 	829±18 | 	38 |	0.014/0.040| 	183 ±28
+[v25](../analysis/v25/) |  MiSeq | 36 | 40 | 25 | Taqpath | UDI | 50 | Saliva TBE+/tween; TE,RNASecure,Qiagen Protease; +/- 95 C heating 
+[v24](../analysis/v24/) |  MiSeq |  42.21 | 40  | 25 | Taqpath | Semi-Combinatorial | 50 | Saliva +/- RNA Secure; NP in VTM, NS, or Amies; dilutions in water |  1  |	92.85±1.17 | 97.79 |  	483.40 Mbp 	| 0.14±0.04 |	19,336,026 | 	829±18 | 	38 |	0.014/0.040| 	183 ±28
 v23 |  MiSeq | 37.41  | 40 | 26 | Taqpath | UDI | 50 | NP in VTM diluted; eSwab(aimes); Saliva in cells2cdna; NP in NS diluted; increased lysate vol to 10uL; dilutions in TE | 1 |	92.69±0.86 | 	97.88 | 	570.91 Mbp | 	0.14±0.03 |	22,836,378 | 971±15 | 38 |	0.000/0.000 |	185 ±26
 v22 |  MiSeq   | 14.84 | 40   | 25 | Taqpath | Semi-Combinatorial | 40 and 50 | Saliva undiluted; NP into VTM +/- dilution; v14 rerun;                                            | 1 | 96.35±0.88 | 98.57 | 347.74Mbp | 0.20±0.31 | 13,909,713 | 560±20 | 38 | 0.135/0.107 | 195±34
 v21 |  NextSeq | 8.44   | 35  | 1.5 | Taqpath | UDI | 40 | NextSeq; mix of v18,v19,v20                                                                                                         | 1 | 95.54±0.45 | 98.48 | 0.17Gbp | 0.36±0.10 | 27,807,589 | 33±1 | 72 | 0.119/0.183 | 12741±809 
