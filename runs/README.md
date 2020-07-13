@@ -1,4 +1,4 @@
-data for each and the structure of each subfolder is:
+Data for each experiment. The structure of each subfolder is:
 ```
 runs/
 ├── v*
