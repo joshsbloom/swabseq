@@ -48,7 +48,7 @@ dfsR %>% filter(virus_ident2!='PosPatient') %>% filter(Stotal>2000) %>%
 ggplot(aes(x=virus_copy, y=S2_normalized_to_S2_spike, group=virus_copy))+ #log10(S2_total_across_all_wells)))+
     geom_quasirandom(alpha=.75)+
     scale_y_log10() + annotation_logticks() + ylab('(S2+1)/(S2 spike+1)')+xlab('GCE per mL')+
-    theme(axis.text.x = element_text(angle = 90, vjust=0.3))+ ggtitle('LoD - Purified RNA')+
+    theme(axis.text.x = element_text(angle = 90, vjust=0.3))+ ggtitle('NP, Purified RNA')+
     theme_bw()
 
 #LoD Saliva 
@@ -108,10 +108,42 @@ ggplot(aes(x=virus_ident2, y=S2_normalized_to_S2_spike))+ #, color=SARS_COV_2_De
     #scale_color_viridis(option = 'plasma')+
     #+    geom_hline(yintercept=.003, color='red') 
 
+
+#fig 2b version 2, NP in VTM 
+rundir=paste0(swabseq.dir, 'runs/v24/')
+dfL=mungeTables(paste0(rundir, 'countTable.RDS'),lw=T)
+df=dfL$df
+dfs=dfL$dfs
+fig2b2=dfs %>%  filter(grepl('VTM', Description)) %>%  filter(Stotal>2000) %>% filter(lysate=='VTM 1:4') %>%
+    ggplot(aes(x=virus_copy, y=S2_normalized_to_S2_spike, group=virus_copy))+
+    geom_quasirandom(alpha=.75, size=2)+
+    #facet_wrap(~lysate)+
+    scale_y_log10() + annotation_logticks() + ylab('(S2+1)/(S2 spike + 1)')+
+    xlab('copies per mL of lysate')+
+    theme_bw()+ggtitle('NP into VTM, diluted 1:4')
+
+
+# fig 2c version 2, saliva into water 
+rundir=paste0(swabseq.dir, 'runs/v25/')
+dfL=mungeTables(paste0(rundir, 'countTable.RDS'),lw=T)
+df=dfL$df
+dfs=dfL$dfs
+fig2c2=dfs %>%  filter(Plate_ID=='Plate9') %>%  filter(Stotal>1000) %>% filter(Row != 'A') %>% filter(lysate=='Saliva 1:2') %>% filter( treatment=='TBE+0.5% Tween') %>%
+ggplot(aes(x=virus_copy, y=S2_normalized_to_S2_spike, group=virus_copy))+
+    geom_quasirandom(alpha=.75, size=2)+
+    #facet_wrap(~lysate+treatment)+
+    scale_y_log10() + annotation_logticks() + ylab('(S2+1)/(S2 spike + 1)')+xlab('copies per mL of lysate')+
+    theme_bw()+ggtitle('Saliva, 95C for 15 min; TBE+0.5% Tween; diluted 1:2')
+
+
+
 ggarrange(fig2a,fig2b,fig2c,fig2d,fig2e, labels=c('A', 'B', 'C', 'D', 'E'),ncol=3, nrow=2)
 ggsave('/data/Covid/swabseq/analysis/manuscript/fig2.png')
 ggsave('/data/Covid/swabseq/analysis/manuscript/fig2.svg')
 
+ggarrange(fig2a,fig2b2,fig2c2,fig2d,fig2e, labels=c('A', 'B', 'C', 'D', 'E'),ncol=3, nrow=2)
+ggsave('/data/Covid/swabseq/analysis/manuscript/fig2v2.png')
+ggsave('/data/Covid/swabseq/analysis/manuscript/fig2v2.svg')
 
 #========================================================================================================================
 
@@ -297,4 +329,55 @@ ggplot(aes(x=virus_copy, y=S2+1, group=virus_copy, color=Plate_ID))+geom_quasira
     theme(axis.text.x = element_text(angle = 90, vjust=0.3))+theme_bw()
 
 
+
+
+
+#hamming distance between S2 and S2 amplicon ( and base quality)
+library(ShortRead)
+library(stringdist)
+rundir='/data/Covid/swabseq/runs/v18/'
+fastq_dir  <- paste0(rundir, 'bcls/out/')
+nbuffer=3e7
+in.fileI1  <- paste0(fastq_dir, 'Undetermined_S0_I1_001.fastq.gz')
+in.fileI2  <- paste0(fastq_dir, 'Undetermined_S0_I2_001.fastq.gz')
+in.fileR1  <- paste0(fastq_dir, 'Undetermined_S0_R1_001.fastq.gz')
+i1 <- FastqStreamer(in.fileI1, nbuffer, readerBlockSize = 1e9, verbose = T)
+i2 <- FastqStreamer(in.fileI2, nbuffer, readerBlockSize = 1e9, verbose = T)
+r1 <- FastqStreamer(in.fileR1, nbuffer, readerBlockSize = 1e9, verbose = T)
+rfq1 <- yield(i1) 
+rfq2 <- yield(i2) 
+rfq3 <- yield(r1) 
+ind1 <- sread(rfq1)
+ind2 <- sread(rfq2)
+rd1  <- sread(rfq3)
+
+test=quality(rfq3)
+test=as(quality(rfq3), "matrix") #test=quality(rfq3)
+#rmean=apply(test,2, mean)
+#rvar=apply(test,2, var)    
+q12=apply(test, 2, function(x) sum(x<12))
+#  1 in 16 chance of error  Q12 
+amplicons=list(
+    S2=      'TATCTTCAACCTAGGACTTTTCTATT',
+    S2_spike='ATAGAACAACCTAGGACTTTTCTATT',
+    RPP30   ='CGCAGAGCCTTCAGGTCAGAACCCGC'
+)
+png(file='/data/Covid/swabseq/analysis/manuscript/Sfig_ampdist.png',width=1024, height=512)
+barplot(q12/nrow(test)*100, ylab='percentage of reads' ,xlab='read 1 position', main='percentage of bases with Q<12 (base call accuracy <92%)', names.arg=1:26)
+dev.off()
+
+d1=stringdist(amplicons[[1]], rd1, method='hamming')
+d2=stringdist(amplicons[[2]], rd1, method='hamming')
+d3=stringdist(amplicons[[3]], rd1, method='hamming')
+distance_from_S2=d1
+distance_from_S2_Spike=d2
+d4=table(distance_from_S2,distance_from_S2_Spike)
+hdist.table=d4[1:8,1:8]
+write.table(hdist.table, file='/data/Covid/swabseq/analysis/manuscript/Sfig_ampdist_table.csv', row.names=T, col.names=T, quote=F)
+#library(gridExtra)
+#library(grid)
+#par(mfrow=c(2,1))
+#plot(0,0, type='n')
+#ad2=grid.table(hdist.table)
+  
 
