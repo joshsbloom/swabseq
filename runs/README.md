@@ -17,6 +17,6 @@ each subdirectory contains:
 + ExperimentSetup.xlsx an excel file describing experiment setup and goals
 + SwabSeq*.xlsx an excel file formatted for [platemap2samp.py](code/platemap2samp.py) for generating csv sample sheet
 + SampleSheet.csv a properly formatted sample sheet for Illumina instruments, also used to keep track of experiment variables for each sample
-+ countTable.csv a table of counts per amplicon
++ countTable.csv a table of counts per amplico n
 + countTable.RDS a version 2 RDS file of the counts per amplicon, loaded by scripts in [analysis](../analysis/)
 
