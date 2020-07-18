@@ -1,12 +1,84 @@
  #v23
+#EUA NextSeq Data 
 swabseq.dir='/data/Covid/swabseq/'
 source(paste0(swabseq.dir, 'code/helper_functions.R'))
-rundir=paste0(swabseq.dir, 'runs/v27/')
-outdir=paste0(swabseq.dir, 'analysis/v27/')
+rundir=paste0(swabseq.dir, 'runs/v21/')
+outdir=paste0(swabseq.dir, 'analysis/EUA/')
 
 dfL=mungeTables(paste0(rundir, 'countTable.RDS'),lw=T)
 df=dfL$df
 dfs=dfL$dfs
+
+
+dfs$virus_copy[dfs$virus_copy=='Negative Patient']='0'
+dfs$virus_copy=droplevels(dfs$virus_copy) #Plate_384=droplevels(dfs$Plate_384)
+dfs$virus_copy=factor(dfs$virus_copy, levels(dfs$virus_copy)[order(as.numeric(levels(dfs$virus_copy)))])
+dfs$virus_ident2=dfs$virus_identity
+dfs$virus_ident2[grepl('^N|^P', dfs$virus_identity)]='NegPatient'
+dfs$virus_ident2[grepl('^U', dfs$virus_identity)]='PosPatient'
+
+
+dfsRe=dfs %>% filter(Plate_ID=='Plate11' | Plate_ID=='Plate14') %>% filter(Stotal>2000)
+#dfsRe=dfsRe[-(which(grepl('01|02|03|04|05|06', dfsRe$Col))), ]
+#| dfsRe$virus_ident2=='TE'),]
+#dfsRe$virus_copy[dfsRe$virus_ident2=='PosPatient']='Positive Patient'
+#dfsRe$virus_copy=factor(dfsRe$virus_copy, unique(dfsRe$virus_copy)[c(2,8,7,6,5,4,3,1)]) #levels(dfsRe$virus_copy)[order(as.numeric(levels(dfsR$virus_copy)))])
+
+ggplot(dfsRe, aes(x=virus_copy, y=S2_normalized_to_S2_spike, group=virus_copy))+ #log10(S2_total_across_all_wells)))+
+    geom_quasirandom(alpha=.75)+
+    #facet_wrap(~virus_ident2)+ 
+    scale_y_log10() + annotation_logticks() + ylab('(S2+1)/(S2_spike+1)')+xlab('copies/mL')+
+    theme(axis.text.x = element_text(angle = 90, vjust=0.3))+
+    #scale_color_viridis(option = 'plasma')+
+    theme_bw()+ggtitle('Preliminary LoD')+
+    geom_hline(yintercept=.003, color='red') 
+ggsave(paste0(outdir,'PreliminaryLoD_NextSeq.png'))
+dfsRe %>% write_csv(paste0(outdir, 'PreliminaryLoD_NextSeq.csv'))
+
+
+
+dfsRe=dfs %>% filter(Plate_ID=='Plate8') %>%filter(Stotal>2000)
+dfsRe=dfsRe[dfsRe$virus_copy!='125',]
+ggplot(dfsRe, aes(x=virus_copy, y=S2_normalized_to_S2_spike, group=virus_copy))+ #log10(S2_total_across_all_wells)))+
+    geom_quasirandom(alpha=.75)+
+    #facet_wrap(~virus_ident2)+ 
+    scale_y_log10() +
+    annotation_logticks() + ylab('(S2+1)/(S2_spike+1)')+xlab('copies/mL')+
+    theme(axis.text.x = element_text(angle = 90, vjust=0.3))+
+    #scale_color_viridis(option = 'plasma')+
+    theme_bw()+ggtitle('LoD Confirmation')+
+    geom_hline(yintercept=.003, color='red')
+ggsave(paste0(outdir,'LoD_confirmation_NextSeq.png'))
+dfs %>% write_csv(paste0(outdir, 'LoD_confirmation_NextSeq.csv'))
+
+
+
+dfsR=dfs%>%filter(Plate_ID=='Plate1') %>% filter(SARS_COV_2_Detected!='Inconclusive')
+#dfsR=dfsR[dfsR$SARS_COV_2_Detected!='Inconclusive',]
+
+for.table=dfsR #dfsR[c(1:57,59,62,65),]
+#dfsRp=dfs
+ggplot(for.table, aes(x=virus_ident2, y=S2_normalized_to_S2_spike))+ #, color=SARS_COV_2_Detected))+ #spike+S2, group=virus_copy))+ #log10(S2_total_across_all_wells)))+
+    geom_quasirandom(alpha=.75)+
+    #facet_wrap(~virus_ident2)+ 
+    scale_y_log10() + annotation_logticks() + ylab('(S2+1)/(S2_spike+1)')+xlab('patient SARs-CoV-2 status')+
+    theme(axis.text.x = element_text(angle = 90, vjust=0.3))+
+    #scale_color_viridis(option = 'plasma')+
+    theme_bw()+ggtitle('Positive and Negative Patient Samples')+
+    geom_hline(yintercept=.003, color='red') 
+ggsave(paste0(outdir,'PositiveAndNegativePatients_Nextseq.png'))
+dfsR %>% write_csv(paste0(outdir, 'PositiveAndNegativePatients_Nextseq.csv'))
+
+
+
+
+
+
+
+
+
+
+
 
 #plate visualization 
 #plate visualization 
@@ -15,7 +87,7 @@ df %>%
   geom_raster() +
   coord_equal() +
   facet_grid(amplicon~Plate_384+Plate_ID+Description) +
-  scale_fill_viridis_c(option = 'plasma')+ggtitle('v27 Saliva; ED; Ashe')
+  scale_fill_viridis_c(option = 'plasma')+ggtitle('v28 Saliva; ED; Ashe')
 ggsave(paste0(outdir,'plateVis_all_indices.png'))
 
 df %>% filter(Description!='' & Description!=' ') %>%
@@ -23,7 +95,7 @@ df %>% filter(Description!='' & Description!=' ') %>%
   geom_raster() +
   coord_equal() +
   facet_grid(amplicon~Plate_384+Plate_ID+Description) +
-  scale_fill_viridis_c(option = 'plasma')+ggtitle('v27 Saliva; ED; Ashe')
+  scale_fill_viridis_c(option = 'plasma')+ggtitle('v28 Saliva; ED; Ashe')
 ggsave(paste0(outdir,'plateVis_plates_run.png'))
 
 library(ggpubr)
@@ -72,8 +144,62 @@ ggplot(aes(x=Col, y=Row,fill=Stotal>1000)) +
   facet_grid(~Plate_384+Plate_ID+Description) 
 ggsave(paste0(outdir,'plateVis_Stotal_gt_1000.png'))
 
+dfs$lysate[dfs$lysate=='Saliva 1:1'] = 'saliva'
 
-dfs %>%  filter(Plate_ID=='Plate1') %>%  filter(Stotal>1000) %>% 
+dfs %>%   filter(Stotal>1000) %>% 
+    ggplot(aes(x=virus_identity, y=S2_normalized_to_S2_spike))+
+    geom_point(alpha=.75, size=2)+
+     #geom_quasirandom(alpha=.75, size=2)+
+    facet_wrap(~lysate+treatment, scales='free_x')+
+    scale_y_log10() + annotation_logticks() + ylab('(S2+1)/(S2 spike + 1)')+
+    theme_bw()+
+     theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1))
+ggsave(paste0(outdir,'Ashe_ED_1.png'))
+ 
+ 
+
+dfs %>%  filter(Plate_ID=='Plate2' | Plate_ID=='Plate5') %>% 
+    filter(Stotal>1000) %>% filter(lysate=='saliva') %>% 
+       ggplot(aes(x=virus_copy, y=S2_normalized_to_S2_spike))+
+    #geom_point(alpha=.75, size=2)+
+     geom_quasirandom(alpha=.75, size=2)+
+    facet_wrap(~lysate+treatment+Plate_ID, scales='free_x')+
+    scale_y_log10() +  ylab('(S2+1)/(S2 spike + 1)')+
+    theme_bw()+
+     theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1))+ggtitle('Contrived for EUA')
+ggsave(paste0(outdir,'Contrived.png'))
+
+dfs %>%  filter(Plate_ID=='Plate2' | Plate_ID=='Plate5') %>% 
+    filter(Stotal>2000) %>% filter(lysate=='saliva') %>% 
+       ggplot(aes(x=virus_copy, y=S2+1))+
+    #geom_point(alpha=.75, size=2)+
+     geom_quasirandom(alpha=.75, size=2)+
+    facet_wrap(~lysate+treatment+Plate_ID, scales='free_x')+
+    scale_y_log10() +  ylab('(S2+1)')+
+    theme_bw()+
+     theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1))+ggtitle('Contrived for EUA')
+ggsave(paste0(outdir,'Contrived_S2.png'))
+
+
+
+dfs %>%   filter(Stotal>1000) %>% 
+    ggplot(aes(x=virus_identity, y=S2_normalized_to_S2_spike))+
+    geom_point(alpha=.75, size=2)+
+     #geom_quasirandom(alpha=.75, size=2)+
+    facet_wrap(~lysate+treatment, scales='free_x')+
+    scale_y_log10() + annotation_logticks() + ylab('(S2+1)/(S2 spike + 1)')+
+    theme_bw()+
+     theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1))
+
+
+ +geom_hline(yintercept=1e-2, color='red')+ggtitle('Plates 2 and 3')
+
+ ggsave(paste0(outdir,'Ashe_ED_plates.png'))
+
+
+
+
+dfs %>%  filter(Stotal>1000) %>% 
     ggplot(aes(x=virus_copy, y=S2_normalized_to_S2_spike))+
     geom_point(alpha=.75, size=2)+
      #geom_quasirandom(alpha=.75, size=2)+
@@ -81,19 +207,9 @@ dfs %>%  filter(Plate_ID=='Plate1') %>%  filter(Stotal>1000) %>%
     scale_y_log10() + annotation_logticks() + ylab('(S2+1)/(S2 spike + 1)')+
     theme_bw()+
      theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1))
- 
+
  
  +geom_hline(yintercept=1e-2, color='red')+ggtitle('Plates 2 and 3')
-
-dfs %>%  filter(Plate_ID=='Plate6' | Plate_ID=='Plate11') %>%  filter(Stotal>1000) %>% 
-    ggplot(aes(x=virus_identity, y=S2_normalized_to_S2_spike))+
-    geom_point(alpha=.75, size=2)+
-     #geom_quasirandom(alpha=.75, size=2)+
-    facet_wrap(~lysate+treatment, scales='free_x')+
-    scale_y_log10() + annotation_logticks() + ylab('(S2+1)/(S2 spike + 1)')+
-    theme_bw()+
-     theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1))+geom_hline(yintercept=1e-2, color='red')+ggtitle('Plates 2 and 3')
-ggsave(paste0(outdir,'Ashe_ED_plates.png'))
 
 dfs %>%  filter(Plate_ID=='Plate6' | Plate_ID=='Plate11') %>%  filter(Stotal>1000) %>% 
     ggplot(aes(x=virus_identity, y=S2))+
