@@ -1,8 +1,8 @@
  #v23
 swabseq.dir='/data/Covid/swabseq/'
 source(paste0(swabseq.dir, 'code/helper_functions.R'))
-rundir=paste0(swabseq.dir, 'runs/v29/')
-outdir=paste0(swabseq.dir, 'analysis/v29/')
+rundir=paste0(swabseq.dir, 'runs/v30/')
+outdir=paste0(swabseq.dir, 'analysis/v30/')
 
 dfL=mungeTables(paste0(rundir, 'countTable.RDS'),lw=T)
 df=dfL$df
@@ -15,7 +15,7 @@ df %>%
   geom_raster() +
   coord_equal() +
   facet_grid(amplicon~Plate_384+Plate_ID+Description) +
-  scale_fill_viridis_c(option = 'plasma')+ggtitle('v29 Saliva; Nasal; ED; Ashe')
+  scale_fill_viridis_c(option = 'plasma')+ggtitle('v30 Saliva; Nasal; ED; Ashe')
 ggsave(paste0(outdir,'plateVis_all_indices.png'))
 
 df %>% filter(Description!='' & Description!=' ') %>% 
@@ -23,7 +23,7 @@ df %>% filter(Description!='' & Description!=' ') %>%
   geom_raster() +
   coord_equal() +
   facet_grid(amplicon~Plate_384+Plate_ID+Description) +
-  scale_fill_viridis_c(option = 'plasma')+ggtitle('v29 Saliva; Nasal; ED; Ashe')
+  scale_fill_viridis_c(option = 'plasma')+ggtitle('v30 Saliva; Nasal; ED; Ashe')
 ggsave(paste0(outdir,'plateVis_plates_run.png'))
 
 library(ggpubr)
@@ -98,7 +98,10 @@ ggsave(paste0(outdir,'ED_saliva_and_AsheNasalSwabs.png'))
 
 
 
-dfs %>%   filter(Stotal>1000) %>% filter(Plate_ID!='Plate1')  %>% filter(lysate=='Saliva') %>% group_by(virus_identity)%>% 
+dfs %>%   filter(Stotal>1000) %>% filter(Plate_ID!='Plate5')  %>% filter(lysate=='Saliva') %>% 
+    filter(!grepl('^C', virus_identity))%>% 
+     filter(!grepl('^S',virus_identity)) %>%
+    group_by(virus_identity)%>% 
     mutate(two_hits=sum(S2_normalized_to_S2_spike>1e-2)>1) %>% 
 ggplot(aes(x=virus_identity, y=S2_normalized_to_S2_spike, color=two_hits))+
     geom_point(alpha=.75, size=2)+
@@ -107,7 +110,9 @@ ggplot(aes(x=virus_identity, y=S2_normalized_to_S2_spike, color=two_hits))+
     scale_y_log10() + annotation_logticks() + ylab('(S2+1)/(S2 spike + 1)')+
     theme_bw()+
      theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1))
+ggsave(paste0(outdir,'Ashe_Saliva.png'))
 
+368286765
 
 
 

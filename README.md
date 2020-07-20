@@ -12,6 +12,9 @@ ___
 
 Run | Instrument | Notes | % PhiX Observed | % PhiX Targeted | Conc. Loaded (pM) | RT | Indexing Strategy | PCR cycles | Read | Cluster PF (%) | % ≥Q30 | Yield | Error Rate% | Reads PF | Density  | Tiles | Legacy Phas/Prephas (%) | Intensity 
 --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- 
+[v30](analyis/v30/)  |  MiSeq | Saliva TBE .5X Tw20; 95C 30 min; Ashe; ED; | 30.38 | 35 | 25 | Taqpath | Semi-Combinatorial | 50 | 1 |	92.63±1.25 | 97.49 |	487.05Mbp |	0.31±0.07 |	19,482,174 |	815±32 |	38  |	0.000/0.000 | 	164 ±22
+[v29](analyis/v29/)  |  MiSeq | Saliva TBE .5X Tw20; 95C 30 min; Ashe; ED; | 27.5 | 35 | 25 | Taqpath | Semi-Combinatorial | 50 | 1 | 92.86±1.38 | 97.84 | 	624.03Mbp |	0.20±0.02 |	24,961,348| 	1,057±25  |	38 | 	0.000/0.000 |	198 ±28 	
+[v28](analyis/v28/)  |  MiSeq | Saliva TBE .5X Tw20; 95C 30 min; Ashe; ED; | 41 | 35 | 25 | Taqpath | Semi-Combinatorial | 50 |  1 | 	90.11±2.04 	| 97.21 |  	629.71Mbp |  	0.18±0.34 |	25,188,428 | 	1,117±14 |	38 	| 0.000/0.000 |	180±25 	
 [v27](analysis/v27/) |  MiSeq | Saliva TE,RNASecure,Qiagen Protease + 95C heating; ATCC after heat; ED; Ashe 2x TBE w/ 0.5% Tw20 7uL  | 18 | 30 | 25 | Taqpath | UDI | 50 | 1 |	94.15±1.28 | 	98.01 	| 556.26Mbp |	0.22±0.04 |  22,250,444 | 	923±23 | 	38 	| 0.009/0.000 | 	208±31 	
 [v26](analysis/v26/) |  MiSeq | Saliva TE/RNASecQP; 2X TBE; TBE + Tween ; VTM +95C heat before or after adding ATCC; ED   | 44  | 40 | 25 | Taqpath | Semi-Combinatorial | 50 | 1 |	93.29±1.14 | 97.87 |  550.14Mbp |	0.15±0.02 |	22,005,736 |921±16 | 	38 | 	0.004/0.007 | 	186±29
 [v25](analysis/v25/) |  MiSeq | Saliva TBE+/tween; TE,RNASecure,Qiagen Protease; +/- 95 C heating     | 36 | 40 | 25 | Taqpath | UDI | 50 | 
