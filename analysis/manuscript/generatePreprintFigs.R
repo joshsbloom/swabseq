@@ -79,6 +79,8 @@ levels(dfs$RT)=c('Luna', 'Taqpath')
 levels(dfs$PositivePatient)=c('Negative', 'Positive')
 dfsc = dfs %>% filter(RT=='Taqpath') %>% filter(Stotal>1000) %>% filter(grepl('^R|^O|^C', lysate)) #%>% filter( !(Col %in% c('09','10','11','12')))
 
+
+
 fig2d=
     ggplot(dfsc, aes(x=PositivePatient, y=S2_normalized_to_S2_spike, group=virus_copy))+
     geom_quasirandom(alpha=.75)+scale_colour_manual(values=c('blue', 'red'))+
@@ -103,7 +105,7 @@ ggplot(aes(x=virus_ident2, y=S2_normalized_to_S2_spike))+ #, color=SARS_COV_2_De
     geom_quasirandom(alpha=.75)+
     scale_y_log10() + annotation_logticks() + ylab('(S2+1)/(S2 spike+1)')+ #xlab('patient SARs-CoV-2 status')+
     theme(axis.text.x = element_text(angle = 90, vjust=0.3))+ xlab("")+
-    theme_bw()+ggtitle('Purifed Extract') 
+    theme_bw()+ggtitle('NP, Purified RNA') 
     #facet_wrap(~virus_ident2)+ 
     #scale_color_viridis(option = 'plasma')+
     #+    geom_hline(yintercept=.003, color='red') 
@@ -119,31 +121,64 @@ fig2b2=dfs %>%  filter(grepl('VTM', Description)) %>%  filter(Stotal>2000) %>% f
     geom_quasirandom(alpha=.75, size=2)+
     #facet_wrap(~lysate)+
     scale_y_log10() + annotation_logticks() + ylab('(S2+1)/(S2 spike + 1)')+
-    xlab('copies per mL of lysate')+
-    theme_bw()+ggtitle('NP into VTM, diluted 1:4')
+    #xlab('copies per mL of lysate')+
+    xlab('GCE per mL')+
+    theme_bw()+ggtitle("NP in VTM diluted 1:4, extraction-free")
+    #$ggtitle('NP into VTM, diluted 1:4')
 
 
 # fig 2c version 2, saliva into water 
-rundir=paste0(swabseq.dir, 'runs/v25/')
+#rundir=paste0(swabseq.dir, 'runs/v25/')
+#dfL=mungeTables(paste0(rundir, 'countTable.RDS'),lw=T)
+#df=dfL$df
+#dfs=dfL$dfs
+#fig2c2=dfs %>%  filter(Plate_ID=='Plate9') %>%  filter(Stotal>1000) %>% filter(Row != 'A') %>% filter(lysate=='Saliva 1:2') %>% filter( treatment=='TBE+0.5% Tween') %>%
+#ggplot(aes(x=virus_copy, y=S2_normalized_to_S2_spike, group=virus_copy))+
+#    geom_quasirandom(alpha=.75, size=2)+
+#    #facet_wrap(~lysate+treatment)+
+#    scale_y_log10() + annotation_logticks() + ylab('(S2+1)/(S2 spike + 1)')+xlab('copies per mL of lysate')+
+#    theme_bw()+ggtitle('Saliva, 95C for 15 min; TBE+0.5% Tween; diluted 1:2')
+rundir=paste0(swabseq.dir, 'runs/v26/')
 dfL=mungeTables(paste0(rundir, 'countTable.RDS'),lw=T)
 df=dfL$df
 dfs=dfL$dfs
-fig2c2=dfs %>%  filter(Plate_ID=='Plate9') %>%  filter(Stotal>1000) %>% filter(Row != 'A') %>% filter(lysate=='Saliva 1:2') %>% filter( treatment=='TBE+0.5% Tween') %>%
+fig2c2=
+    dfs %>%  filter(Plate_ID=='Plate4') %>%  filter(Stotal>1000) %>% filter(virus_identity!='ED') %>% filter(virus_copy!='NA')%>%
+   #filter(Row != 'A') %>%
 ggplot(aes(x=virus_copy, y=S2_normalized_to_S2_spike, group=virus_copy))+
     geom_quasirandom(alpha=.75, size=2)+
     #facet_wrap(~lysate+treatment)+
-    scale_y_log10() + annotation_logticks() + ylab('(S2+1)/(S2 spike + 1)')+xlab('copies per mL of lysate')+
-    theme_bw()+ggtitle('Saliva, 95C for 15 min; TBE+0.5% Tween; diluted 1:2')
+    scale_y_log10() + annotation_logticks() + ylab('(S2+1)/(S2 spike + 1)')+
+    #xlab('copies per mL of lysate')+
+    xlab('GCE per mL')+
+    theme_bw()+ggtitle('Saliva, extraction-free')
 
+rundir=paste0(swabseq.dir, 'runs/v11/')
+dfs=mungeTables(paste0(rundir, 'countTable.RDS'))
+dfs=dfs%>%filter(lysate=='MTS_TE-1_to_2')
+vc=(as.numeric(as.character((dfs$virus_copy))))
+vc.n=2*((1000*(vc/7))/2)
+dfs$vc.n=factor(vc.n) #factor(vc.n)
+levels(dfs$vc.n)=as.character(round(as.numeric(levels(dfs$vc.n))))
+
+fig2b3=
+dfs%>% 
+ggplot(aes(x=vc.n, y=S2_normalized_to_S2_spike))+geom_quasirandom(alpha=.75)+
+    scale_y_log10() + annotation_logticks() + ylab('(S2+1)/(S2 Spike + 1)')+xlab('GCE per mL')+
+    theme(axis.text.x = element_text(angle = 90, vjust=0.3))+theme_bw()+
+    ggtitle('MTS in TE, extraction-free')
 
 
 ggarrange(fig2a,fig2b,fig2c,fig2d,fig2e, labels=c('A', 'B', 'C', 'D', 'E'),ncol=3, nrow=2)
 ggsave('/data/Covid/swabseq/analysis/manuscript/fig2.png')
 ggsave('/data/Covid/swabseq/analysis/manuscript/fig2.svg')
 
-ggarrange(fig2a,fig2b2,fig2c2,fig2d,fig2e, labels=c('A', 'B', 'C', 'D', 'E'),ncol=3, nrow=2)
+ggarrange(fig2a,fig2b3,fig2c2,fig2e, fig2d, labels=c('A', 'B', 'C', 'D', 'E'),ncol=3, nrow=2)
 ggsave('/data/Covid/swabseq/analysis/manuscript/fig2v2.png')
 ggsave('/data/Covid/swabseq/analysis/manuscript/fig2v2.svg')
+
+ggarrange(fig2a,fig2b3,fig2c2,fig2e, fig2d, labels=c('A', 'B', 'C', 'D', 'E'),ncol=3, nrow=2)
+ggsave('/data/Covid/swabseq/analysis/manuscript/fig2v3.png')
 
 #========================================================================================================================
 
@@ -242,7 +277,8 @@ dfsc %>% filter(Stotal>1000) %>%
     scale_y_log10() + annotation_logticks() + ylab('(S2+1)')+xlab('Patient SARS-CoV-2 status')+
     theme(axis.text.x = element_text(angle = 90, vjust=0.3))+theme_bw()
 
-slt=ggarrange(slt1, slt2, nrow=2)
+slt=ggarrange(slt2, slt1, nrow=2)
+slt=ggarrange(slt2, slt1, nrow=2, labels=c('A' ,'B'))
 ggsave('/data/Covid/swabseq/analysis/manuscript/Sfig_neb_v_luna.png')
 
 #-----------------------------------------------------------------
@@ -302,6 +338,52 @@ co=fn1+fn2 +plot_layout(guides='collect')
 ggsave('/data/Covid/swabseq/analysis/manuscript/Sfig_mm_correct.png')
 
 #---------------------------------------------------------------------------------
+
+
+
+
+
+rundir=paste0(swabseq.dir, 'runs/v25/')
+dfL=mungeTables(paste0(rundir, 'countTable.RDS'),lw=T)
+df=dfL$df
+dfs=dfL$dfs
+#typo in sample sheet
+dfs$Description=gsub( '15', '30',dfs$Description)
+#plate visualization 
+nh1=df %>% filter(Description!='' & Description!=' ') %>% filter(Plate_ID=='Plate3') %>% # | Plate_ID=='Plate6') %>%
+  ggplot(aes(x=Col, y=Row, fill=log10(Count))) + 
+  geom_raster() +
+  coord_equal() +
+  facet_grid(amplicon~Plate_384) +
+  scale_fill_viridis_c(option = 'plasma')+ggtitle('A  no preheat')+theme(legend.position="bottom")
+
+nh2=df %>% filter(Description!='' & Description!=' ') %>% filter(Plate_ID=='Plate9') %>% # | Plate_ID=='Plate16') %>%
+  ggplot(aes(x=Col, y=Row, fill=log10(Count))) + 
+  geom_raster() +
+  coord_equal() +
+  facet_grid(amplicon~Plate_384) +
+  scale_fill_viridis_c(option = 'plasma')+ggtitle('B  preheat 95C for 30 min')+theme(legend.position="bottom")
+
+
+ggarrange(nh1, nh2, ncol=2, labels=c('A' ,'B'))
+ggsave(paste0(outdir,'Sfig_heat_treat_saliva.png'))
+
+nh1+nh2 +plot_layout(guides='collect')
+
+ggsave(paste0(outdir,'plateVis_plates_run.png'))
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 rundir=paste0(swabseq.dir, 'runs/v12/')
@@ -380,4 +462,79 @@ write.table(hdist.table, file='/data/Covid/swabseq/analysis/manuscript/Sfig_ampd
 #plot(0,0, type='n')
 #ad2=grid.table(hdist.table)
   
+
+
+#sup fig 14 VTM, Amies, Normal Saline
+
+rundir=paste0(swabseq.dir, 'runs/v24/')
+dfL=mungeTables(paste0(rundir, 'countTable.RDS'),lw=T)
+df=dfL$df
+dfs=dfL$dfs
+fig14a=dfs %>%  filter(grepl('VTM', Description)) %>%  filter(Stotal>2000) %>% filter(lysate=='VTM 1:4') %>%
+    ggplot(aes(x=virus_copy, y=S2_normalized_to_S2_spike, group=virus_copy))+
+    geom_quasirandom(alpha=.75, size=2)+
+    #facet_wrap(~lysate)+
+    scale_y_log10() + annotation_logticks() + ylab('(S2+1)/(S2 spike + 1)')+
+    #xlab('copies per mL of lysate')+
+    xlab('GCE per mL')+
+    theme_bw()+ggtitle("NP in VTM diluted 1:4, extraction-free")
+    #$ggtitle('NP into VTM, diluted 1:4')
+fig14b=dfs %>%  filter(lysate == "NS (1:4) ") %>%  filter(Stotal>2000) %>%
+    ggplot(aes(x=virus_copy, y=S2_normalized_to_S2_spike, group=virus_copy))+
+    geom_quasirandom(alpha=.75, size=2)+
+    #facet_wrap(~lysate)+
+    scale_y_log10() + annotation_logticks() + ylab('(S2+1)/(S2 spike + 1)')+
+    #xlab('copies per mL of lysate')+
+    xlab('GCE per mL')+
+    theme_bw()+ggtitle("NP in NS diluted 1:4, extraction-free")
+    #$ggtitle('NP into VTM, diluted 1:4')
+
+
+
+library(gdata)
+swabseq.dir='/data/Covid/swabseq/'
+source(paste0(swabseq.dir, 'code/helper_functions.R'))
+rundir=paste0(swabseq.dir, 'runs/v32/')
+outdir=paste0(swabseq.dir, 'analysis/v32/')
+
+dfL=mungeTables(paste0(rundir, 'countTable.RDS'),lw=T)
+df=dfL$df
+dfs=dfL$dfs
+amies=dfs %>%   filter(Stotal>1000) %>% filter(Plate_ID=='Plate1') 
+
+amies.ct=read.xls('/data/Covid/swabseq/2020_0706 DeIdentified POS COVID Samples.xlsx')
+amies.ct[,1]=gsub('VA','',amies.ct[,1])
+amies.ct[,1]=gsub('^0','',amies.ct[,1])
+amies.ct[,1]=paste0('Aimes ', amies.ct[,1])
+
+names(amies.ct)[1]='virus_identity'
+
+aa=right_join(amies, amies.ct)
+aa$virus_identity=gsub('Aimes ', 'Patient ', aa$virus_identity) 
+
+
+fig14c=aa %>%  filter(Row!='D') %>%  ggplot(aes(x=S.Gene.Ct.Value, y=S2_normalized_to_S2_spike, color=virus_identity))+
+    #geom_point(alpha=.75, size=2)+
+    geom_quasirandom(alpha=.75, size=2)+
+    #facet_wrap(~Description, scales='free_x')+
+    scale_x_reverse()+
+    scale_y_log10() + annotation_logticks() + ylab('(S2+1)/(S2 spike + 1)')+
+    theme_bw()+ xlab('S Gene Ct')+
+     theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1))+
+     ggtitle("Eswab into Amies, diluted 1:10, extraction-free")
+
+ggarrange(fig14a,fig14b,fig14c, labels=c('A', 'B', 'C'),ncol=3, nrow=1)
+ggsave('/data/Covid/swabseq/analysis/manuscript/figS_nswab_media.png')
+
+
+
+
+
+
+
+
+
+
+
+
 
