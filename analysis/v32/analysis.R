@@ -1,8 +1,8 @@
  #v23
 swabseq.dir='/data/Covid/swabseq/'
 source(paste0(swabseq.dir, 'code/helper_functions.R'))
-rundir=paste0(swabseq.dir, 'runs/v31/')
-outdir=paste0(swabseq.dir, 'analysis/v31/')
+rundir=paste0(swabseq.dir, 'runs/v32/')
+outdir=paste0(swabseq.dir, 'analysis/v32/')
 
 dfL=mungeTables(paste0(rundir, 'countTable.RDS'),lw=T)
 df=dfL$df
@@ -15,17 +15,99 @@ df %>%
   geom_raster() +
   coord_equal() +
   facet_grid(amplicon~Plate_384+Plate_ID+Description) +
-  scale_fill_viridis_c(option = 'plasma')+ggtitle('v31 TaqPath v Quantbio, contam test and ED;')
+  scale_fill_viridis_c(option = 'plasma')+ggtitle('v32 Amies, MNS,blanks, contam test and ED;')
 ggsave(paste0(outdir,'plateVis_all_indices.png'))
+
+#move this to helper functions
+col384=sprintf('%02d', 1:24)
+row384=toupper(letters[1:16])
+col384L=list(
+'A'=col384[seq(1,24,2)],
+'B'=col384[seq(2,24,2)],
+'C'=col384[seq(1,24,2)],
+'D'=col384[seq(2,24,2)])
+col384L=lapply(col384L, function(x) { names(x)=sprintf('%02d', 1:12); return(x); })
+
+row384L=list(
+'A'=row384[seq(1,16,2)],
+'B'=row384[seq(1,16,2)],
+'C'=row384[seq(2,16,2)],
+'D'=row384[seq(2,16,2)])
+row384L=lapply(row384L, function(x) { names(x)=toupper(letters[1:8]); return(x); })
+
+df$Row384=''
+df$Col384=''
+df$Row384[df$Plate_384_Quadrant=='A']=as.character(row384L[['A']][as.character(df$Row[df$Plate_384_Quadrant=='A'])])
+df$Row384[df$Plate_384_Quadrant=='B']=as.character(row384L[['B']][as.character(df$Row[df$Plate_384_Quadrant=='B'])])
+df$Row384[df$Plate_384_Quadrant=='C']=as.character(row384L[['C']][as.character(df$Row[df$Plate_384_Quadrant=='C'])])
+df$Row384[df$Plate_384_Quadrant=='D']=as.character(row384L[['D']][as.character(df$Row[df$Plate_384_Quadrant=='D'])])
+df$Col384[df$Plate_384_Quadrant=='A']=as.character(col384L[['A']][as.character(df$Col[df$Plate_384_Quadrant=='A'])])
+df$Col384[df$Plate_384_Quadrant=='B']=as.character(col384L[['B']][as.character(df$Col[df$Plate_384_Quadrant=='B'])])
+df$Col384[df$Plate_384_Quadrant=='C']=as.character(col384L[['C']][as.character(df$Col[df$Plate_384_Quadrant=='C'])])
+df$Col384[df$Plate_384_Quadrant=='D']=as.character(col384L[['D']][as.character(df$Col[df$Plate_384_Quadrant=='D'])])
+
+filled.plates=df %>% filter(Description!='' & Description!=' ') %>% filter(Plate_384!='')
+#filled.plates$Row384=droplevels(factor(filled.plates$Row384))
+#filled.plates$Col384=droplevels(factor(filled.plates$Col384))
+
+filled.plates$Row384=factor(filled.plates$Row384, levels=c(rev(toupper(letters[1:16]))))
+#filled.plates$Col384=factor(filled.plates$Col384, levels=c(sprintf('%2d', 1:24))) #rev(toupper(letters[1:16])))
+
+
+filled.plates %>% 
+    ggplot(aes(x=Col384, y=Row384, fill=log10(Count))) + 
+  geom_raster() +
+  coord_equal() +
+  facet_grid(amplicon~Plate_384) +
+  scale_fill_viridis_c(option = 'plasma')+ggtitle('v32 Amies,MNS, blanks, contam test and ED;')
+ggsave(paste0(outdir,'plateVis_384.png'))
+
 
 df %>% filter(Description!='' & Description!=' ') %>% 
     ggplot(aes(x=Col, y=Row, fill=log10(Count))) + 
   geom_raster() +
   coord_equal() +
   facet_grid(amplicon~Plate_384+Plate_ID+Description) +
-  scale_fill_viridis_c(option = 'plasma')+ggtitle('v31 TaqPath v Quantbio, contam test and ED;')
+  scale_fill_viridis_c(option = 'plasma')+ggtitle('v32 Amies,MNS, blanks, contam test and ED;')
 #ggtitle('v30 Saliva; Nasal; ED; Ashe')
 ggsave(paste0(outdir,'plateVis_plates_run.png'))
+
+
+
+
+library(gdata)
+
+amies=dfs %>%   filter(Stotal>1000) %>% filter(Plate_ID=='Plate1') 
+
+amies.ct=read.xls('/data/Covid/swabseq/2020_0706 DeIdentified POS COVID Samples.xlsx')
+amies.ct[,1]=gsub('VA','',amies.ct[,1])
+amies.ct[,1]=gsub('^0','',amies.ct[,1])
+amies.ct[,1]=paste0('Aimes ', amies.ct[,1])
+
+names(amies.ct)[1]='virus_identity'
+
+aa=right_join(amies, amies.ct)
+aa$virus_identity=gsub('Aimes ', 'Patient ', aa$virus_identity) 
+
+
+aa %>%  filter(Row!='D') %>%  ggplot(aes(x=S.Gene.Ct.Value, y=S2_normalized_to_S2_spike, color=virus_identity))+
+    #geom_point(alpha=.75, size=2)+
+    geom_quasirandom(alpha=.75, size=2)+
+    #facet_wrap(~Description, scales='free_x')+
+    scale_x_reverse()+
+    scale_y_log10() + annotation_logticks() + ylab('(S2+1)/(S2 spike + 1)')+
+    theme_bw()+
+     theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1))
+
+
+
+
+
+
+
+
+
+
 
 library(ggpubr)
 df %>% filter(Description!='' & Description!=' ') %>% 
