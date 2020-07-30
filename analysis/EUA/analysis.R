@@ -70,6 +70,96 @@ ggsave(paste0(outdir,'PositiveAndNegativePatients_Nextseq.png'))
 dfsR %>% write_csv(paste0(outdir, 'PositiveAndNegativePatients_Nextseq.csv'))
 
 
+#EUA MiSeq Data 
+
+#EUA NextSeq Data prelim LoD------------------------------------------- 
+swabseq.dir='/data/Covid/swabseq/'
+source(paste0(swabseq.dir, 'code/helper_functions.R'))
+rundir=paste0(swabseq.dir, 'runs/v19/')
+outdir=paste0(swabseq.dir, 'analysis/EUA/')
+dfL=mungeTables(paste0(rundir, 'countTable.RDS'),lw=T)
+df=dfL$df
+dfs=dfL$dfs
+
+dfsRe= dfs %>%  filter(Plate_ID=='Plate11')  %>% filter(Stotal>2000)
+dfsRe$virus_ident2=dfsRe$virus_identity
+dfsRe$virus_ident2[grepl('^N|^P', dfsRe$virus_identity)]='NegPatient'
+dfsRe$virus_ident2[grepl('^U', dfsRe$virus_identity)]='PosPatient'
+dfsRe$virus_copy=droplevels(dfsRe$virus_copy) #Plate_384=droplevels(dfsR$Plate_384)
+dfsRe$virus_copy=factor(dfsRe$virus_copy, levels(dfsRe$virus_copy)[order(as.numeric(levels(dfsRe$virus_copy)))])
+#dfsR$virus_copy=as.character(dfsR$virus_copy)
+
+dfsRe=dfsRe[-(which(grepl('01|02|03|04|05|06', dfsRe$Col))), ]
+ggplot(dfsRe, aes(x=virus_copy, y=S2_normalized_to_S2_spike, group=virus_copy))+ #log10(S2_total_across_all_wells)))+
+    geom_quasirandom(alpha=.75)+
+    #facet_wrap(~virus_ident2)+ 
+    scale_y_log10() + annotation_logticks() + ylab('(S2+1)/(S2_spike+1)')+xlab('copies/mL')+
+    theme(axis.text.x = element_text(angle = 90, vjust=0.3))+
+    #scale_color_viridis(option = 'plasma')+
+    theme_bw()+ggtitle('Preliminary LoD')+
+    geom_hline(yintercept=.003, color='red') 
+ggsave(paste0(rundir,'PreliminaryLoD.png'))
+dfsRe %>% write_csv(paste0(rundir, 'PreliminaryLoD_MiSeq.csv'))
+
+
+
+# EUA positive and negative patient samples ------------------------------------------
+dfsR=dfs %>%  
+  filter(Plate_ID=='Plate1' ) %>% filter(Stotal>2000) %>%
+  filter(virus_identity!='TE') 
+dfsR$virus_copy[dfsR$virus_copy=='Negative Patient']='0'
+dfsR$virus_copy=droplevels(dfsR$virus_copy) #Plate_384=droplevels(dfsR$Plate_384)
+dfsR$virus_copy=factor(dfsR$virus_copy, levels(dfsR$virus_copy)[order(as.numeric(levels(dfsR$virus_copy)))])
+#dfsR$virus_copy=as.character(dfsR$virus_copy)
+dfsR$virus_ident2=dfsR$virus_identity
+dfsR$virus_ident2[grepl('^N|^P', dfsR$virus_identity)]='Negative'
+dfsR$virus_ident2[grepl('^U', dfsR$virus_identity)]='Positive'
+
+for.table=dfsR #dfsR[c(1:57,59,62,65),]
+ggplot(for.table, aes(x=virus_ident2, y=S2_normalized_to_S2_spike))+ #, color=SARS_COV_2_Detected))+ #spike+S2, group=virus_copy))+ #log10(S2_total_across_all_wells)))+
+    geom_quasirandom(alpha=.75)+
+    #facet_wrap(~virus_ident2)+ 
+    scale_y_log10() + annotation_logticks() + ylab('(S2+1)/(S2_spike+1)')+xlab('patient SARs-CoV-2 status')+
+    theme(axis.text.x = element_text(angle = 90, vjust=0.3))+
+    #scale_color_viridis(option = 'plasma')+
+    theme_bw()+ggtitle('Positive and Negative Patient Samples')+
+    geom_hline(yintercept=.003, color='red') 
+for.table %>% write_csv(paste0(rundir, 'PositiveAndNegativePatients.csv'))
+
+
+
+#EUA confirmation of LoD
+swabseq.dir='/data/Covid/swabseq/'
+source(paste0(swabseq.dir, 'code/helper_functions.R'))
+rundir=paste0(swabseq.dir, 'runs/v20/')
+outdir=paste0(swabseq.dir, 'analysis/EUA/')
+dfL=mungeTables(paste0(rundir, 'countTable.RDS'),lw=T)
+df=dfL$df
+dfs=dfL$dfs
+
+#filters and reformat for plots 
+dfs= dfs %>% 
+  filter(Plate_ID=='Plate8') %>%filter(Stotal>2000)
+dfs$virus_copy=droplevels(dfs$virus_copy) #Plate_384=droplevels(dfs$Plate_384)
+dfs$virus_copy=factor(dfs$virus_copy, levels(dfs$virus_copy)[order(as.numeric(levels(dfs$virus_copy)))])
+dfs=dfs[dfs$virus_copy!='125',]
+ggplot(dfs, aes(x=virus_copy, y=S2_normalized_to_S2_spike, group=virus_copy))+ #log10(S2_total_across_all_wells)))+
+    geom_quasirandom(alpha=.75)+
+    scale_y_log10() + annotation_logticks() + ylab('(S2+1)/(S2_spike+1)')+xlab('copies/mL')+
+    theme(axis.text.x = element_text(angle = 90, vjust=0.3))+
+    theme_bw()+ggtitle('LoD Confirmation')+
+    geom_hline(yintercept=.003, color='red')
+ggsave(paste0(rundir,'LoD_confirmation.png'))
+dfs %>% write_csv(paste0(rundir, 'LoD_confirmation.csv'))
+
+
+
+
+
+
+
+
+
 
 
 

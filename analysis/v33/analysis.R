@@ -15,7 +15,7 @@ df %>%
   geom_raster() +
   coord_equal() +
   facet_grid(amplicon~Plate_384+Plate_ID+Description) +
-  scale_fill_viridis_c(option = 'plasma')+ggtitle('v32 Amies, MNS,blanks, contam test and ED;')
+  scale_fill_viridis_c(option = 'plasma')+ggtitle('v33, LoD, contam test and ED;')
 ggsave(paste0(outdir,'plateVis_all_indices.png'))
 
 #move this to helper functions
@@ -59,7 +59,7 @@ filled.plates %>%
   geom_raster() +
   coord_equal() +
   facet_grid(amplicon~Plate_384) +
-  scale_fill_viridis_c(option = 'plasma')+ggtitle('v32 Amies,MNS, blanks, contam test and ED;')
+  scale_fill_viridis_c(option = 'plasma')+ggtitle('v33, LoD, contam test and ED;')
 ggsave(paste0(outdir,'plateVis_384.png'))
 
 
@@ -68,9 +68,34 @@ df %>% filter(Description!='' & Description!=' ') %>%
   geom_raster() +
   coord_equal() +
   facet_grid(amplicon~Plate_384+Plate_ID+Description) +
-  scale_fill_viridis_c(option = 'plasma')+ggtitle('v32 Amies,MNS, blanks, contam test and ED;')
+  scale_fill_viridis_c(option = 'plasma')+ggtitle('v33, LoD, contam test and ED;')
 #ggtitle('v30 Saliva; Nasal; ED; Ashe')
 ggsave(paste0(outdir,'plateVis_plates_run.png'))
+
+
+#saliva
+dfs %>% filter(Plate_ID=='Plate10') %>% filter(Col!='06') %>% filter(Col!='07')%>% filter(Col!='08') %>%
+    filter(Stotal>1000) %>%
+    ggplot(aes(x=virus_copy, y=S2_normalized_to_S2_spike))+
+    #geom_point(alpha=.75, size=2)+
+    geom_quasirandom(alpha=.75, size=2)+
+    facet_wrap(~lysate, scales='free_x')+
+    scale_y_log10() + annotation_logticks() + ylab('(S2+1)/(S2 spike + 1)')+
+    theme_bw()+
+     theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1))
+ggsave(paste0(outdir,'XY_saliva_confirmatory_LoD.png'))
+
+
+dfs %>% filter(Plate_ID=='Plate5') %>% #filter(Col!='06'|Col!='07'|Col!='08') %>%
+    filter(Stotal>1000) %>%
+    ggplot(aes(x=virus_copy, y=S2_normalized_to_S2_spike))+
+    #geom_point(alpha=.75, size=2)+
+    geom_quasirandom(alpha=.75, size=2)+
+    facet_wrap(~lysate, scales='free_x')+
+    scale_y_log10() + annotation_logticks() + ylab('(S2+1)/(S2 spike + 1)')+
+    theme_bw()+
+     theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1))
+ggsave(paste0(outdir,'XY_MNS_prelim_LoD.png'))
 
 
 
