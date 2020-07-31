@@ -18,8 +18,17 @@ Rscript --vanilla "${basedir}code/countAmplicons.R" -r "${basedir}runs/v19/" -b 
 Rscript --vanilla "${basedir}code/countAmplicons.R" -r "${basedir}runs/v20/" -b 196002849 
 #nextseq run at TCGB core
 Rscript --vanilla "${basedir}code/countAmplicons.R" -r "${basedir}runs/v21/" 
-
 Rscript --vanilla "${basedir}code/countAmplicons.R" -r "${basedir}runs/v22/" -b 196030855 -e T
 Rscript --vanilla "${basedir}code/countAmplicons.R" -r "${basedir}runs/v23/" -b 196116944 -e T
-
-
+Rscript --vanilla "${basedir}code/countAmplicons.R" -r "${basedir}runs/v24/" -b 196133998 -e T
+#basespace upload fail for v25, had to pull bcls off of miseq manually
+Rscript --vanilla "${basedir}code/countAmplicons.R" -r "${basedir}runs/v25/" -e T
+Rscript --vanilla "${basedir}code/countAmplicons.R" -r "${basedir}runs/v26/" -b 196211019 -e T
+Rscript --vanilla "${basedir}code/countAmplicons.R" -r "${basedir}runs/v27/" -b 196203090 -e T
+Rscript --vanilla "${basedir}code/countAmplicons.R" -r "${basedir}runs/v28/" -b 196244058 -e T
+Rscript --vanilla "${basedir}code/countAmplicons.R" -r "${basedir}runs/v29/" -b 196340151 -e T
+Rscript --vanilla "${basedir}code/countAmplicons.R" -r "${basedir}runs/v30/" -b 196373205 -e T
+Rscript --vanilla "${basedir}code/countAmplicons.R" -r "${basedir}runs/v31/" -b 196423261 -e T
+Rscript --vanilla "${basedir}code/countAmplicons.R" -r "${basedir}runs/v32/" -b 196445335 -e T
+Rscript --vanilla "${basedir}code/countAmplicons.R" -r "${basedir}runs/v33/" -b 196530346 -e T
+Rscript --vanilla "${basedir}code/countAmplicons.R" -r "${basedir}runs/v34/" -b 196554422 -e T
