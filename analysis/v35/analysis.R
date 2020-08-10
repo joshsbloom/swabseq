@@ -1,14 +1,14 @@
  #v23
 swabseq.dir='/data/Covid/swabseq/'
 source(paste0(swabseq.dir, 'code/helper_functions.R'))
-rundir=paste0(swabseq.dir, 'runs/v34/')
-outdir=paste0(swabseq.dir, 'analysis/v34/')
+rundir=paste0(swabseq.dir, 'runs/v35/')
+outdir=paste0(swabseq.dir, 'analysis/v35/')
 
-dfL=mungeTables(paste0(rundir, 'countTable.RDS'),lw=T)
+dfL=mungeTables(paste0(rundir, 'countTable.RDS'),lw=T, Stotal_filt=1000)
 df=dfL$df
 dfs=dfL$dfs
 
-titl='v34 MNS,Saliva Conf LoD ... ED Pos/Neg'
+titl='v35 MNS,NS,saliva NEG,ED'
 
 #plate visualization 
 #plate visualization 
@@ -20,42 +20,7 @@ df %>%
   scale_fill_viridis_c(option = 'plasma')+ggtitle(titl)
 ggsave(paste0(outdir,'plateVis_all_indices.png'))
 
-#move this to helper functions
-col384=sprintf('%02d', 1:24)
-row384=toupper(letters[1:16])
-col384L=list(
-'A'=col384[seq(1,24,2)],
-'B'=col384[seq(2,24,2)],
-'C'=col384[seq(1,24,2)],
-'D'=col384[seq(2,24,2)])
-col384L=lapply(col384L, function(x) { names(x)=sprintf('%02d', 1:12); return(x); })
-
-row384L=list(
-'A'=row384[seq(1,16,2)],
-'B'=row384[seq(1,16,2)],
-'C'=row384[seq(2,16,2)],
-'D'=row384[seq(2,16,2)])
-row384L=lapply(row384L, function(x) { names(x)=toupper(letters[1:8]); return(x); })
-
-df$Row384=''
-df$Col384=''
-df$Row384[df$Plate_384_Quadrant=='A']=as.character(row384L[['A']][as.character(df$Row[df$Plate_384_Quadrant=='A'])])
-df$Row384[df$Plate_384_Quadrant=='B']=as.character(row384L[['B']][as.character(df$Row[df$Plate_384_Quadrant=='B'])])
-df$Row384[df$Plate_384_Quadrant=='C']=as.character(row384L[['C']][as.character(df$Row[df$Plate_384_Quadrant=='C'])])
-df$Row384[df$Plate_384_Quadrant=='D']=as.character(row384L[['D']][as.character(df$Row[df$Plate_384_Quadrant=='D'])])
-df$Col384[df$Plate_384_Quadrant=='A']=as.character(col384L[['A']][as.character(df$Col[df$Plate_384_Quadrant=='A'])])
-df$Col384[df$Plate_384_Quadrant=='B']=as.character(col384L[['B']][as.character(df$Col[df$Plate_384_Quadrant=='B'])])
-df$Col384[df$Plate_384_Quadrant=='C']=as.character(col384L[['C']][as.character(df$Col[df$Plate_384_Quadrant=='C'])])
-df$Col384[df$Plate_384_Quadrant=='D']=as.character(col384L[['D']][as.character(df$Col[df$Plate_384_Quadrant=='D'])])
-
-filled.plates=df %>% filter(Description!='' & Description!=' ') %>% filter(Plate_384!='')
-#filled.plates$Row384=droplevels(factor(filled.plates$Row384))
-#filled.plates$Col384=droplevels(factor(filled.plates$Col384))
-
-filled.plates$Row384=factor(filled.plates$Row384, levels=c(rev(toupper(letters[1:16]))))
-#filled.plates$Col384=factor(filled.plates$Col384, levels=c(sprintf('%2d', 1:24))) #rev(toupper(letters[1:16])))
-
-
+filled.plates=add384Mapping(df)
 filled.plates %>% 
     ggplot(aes(x=Col384, y=Row384, fill=log10(Count))) + 
   geom_raster() +
@@ -65,7 +30,7 @@ filled.plates %>%
 ggsave(paste0(outdir,'plateVis_384.png'))
 
 
-df %>% filter(Description!='' & Description!=' ') %>% filter(Plate_ID!='Plate1') %>%
+df %>% filter(Description!='' & Description!=' ') %>% #filter(Plate_ID!='Plate1') %>%
     ggplot(aes(x=Col, y=Row, fill=log10(Count))) + 
   geom_raster() +
   coord_equal() +
@@ -73,6 +38,74 @@ df %>% filter(Description!='' & Description!=' ') %>% filter(Plate_ID!='Plate1')
   scale_fill_viridis_c(option = 'plasma')+ggtitle(titl)
 #ggtitle('v30 Saliva; Nasal; ED; Ashe')
 ggsave(paste0(outdir,'plateVis_plates_run.png'))
+
+dfs$lysate[dfs$lysate=="368298517*"]="368298517"
+
+ed.table=read.delim('/data/Covid/swabseq/EDSamples080420.csv', stringsAsFactors=F, header=T, sep=',')
+edo=dfs[as.character(dfs$lysate) %in% ed.table$Matrix.Tube.Barcode | as.character(dfs$lysate) %in% ed.table$Deidenfied.ID,]
+mu=match(edo$lysate, ed.table$Matrix.Tube.Barcode)
+edo$virus_identity[!is.na(mu)]=na.omit(ed.table$Deidenfied.ID[mu])
+edo=merge(edo, ed.table, all.x=T, by.x='virus_identity', by.y='Deidenfied.ID')
+
+all.ed=edo[,c(1,2,3,4,5,6,8,26:36,40,52,53)]
+all.ed %>% write.csv(paste0(outdir, 'ED_rerun.csv'))
+
+
+
+
+
+
+
+swabseq.dir='/data/Covid/swabseq/'
+source(paste0(swabseq.dir, 'code/helper_functions.R'))
+rundir=paste0(swabseq.dir, 'runs/v34/')
+#outdir=paste0(swabseq.dir, 'analysis/v34/')
+dfL=mungeTables(paste0(rundir, 'countTable.RDS'),lw=T)
+#df=dfL$df
+dfsM=dfL$dfs
+munge=dfsM %>% filter(Plate_ID=='Plate11' | Plate_ID=='Plate2') %>% filter(Stotal>1000)
+munge$lysate=gsub( '^3.*' , 'EDneg',munge$lysate)
+munge$lysate=droplevels(factor(munge$lysate))
+#filter(Col!='06'|Col!='07'|Col!='08') %>%
+#'368309416'
+munge=munge %>%  filter(lysate=='EDneg' | lysate == 'saliva in 1XTBE+0.5%tw') %>% filter(virus_identity!='368309416')
+munge$virus_copy[is.na(munge$virus_copy)]=0
+munge$virus_present=(as.numeric(as.character(munge$virus_copy))>0)+0
+classifier=glm(virus_present~S2+S2_spike,data=munge, family='binomial')
+#log10(S2_normalized_to_S2_spike)
+
+#predict(classifier, type='response')
+#from v35
+
+all.ed$SARS_COV_2_prob=predict(classifier, newdata=all.ed, type='response')
+all.ed %>% write.csv(paste0(outdir, 'ED_rerun_logReg_v35.csv'))
+
+#from v34
+ed.table=read.delim('/data/Covid/swabseq/EDSamples080420.csv', stringsAsFactors=F, header=T, sep=',')
+edo=dfs[as.character(dfs$virus_identity) %in% ed.table$Matrix.Tube.Barcode | as.character(dfs$virus_identity) %in% ed.table$Deidenfied.ID,]
+mu=match(edo$virus_identity, ed.table$Matrix.Tube.Barcode)
+edo$virus_identity[!is.na(mu)]=na.omit(ed.table$Deidenfied.ID[mu])
+edo=merge(edo, ed.table, all.x=T, by.x='virus_identity', by.y='Deidenfied.ID')
+
+all.ed34=edo[,c(1,2,3,4,5,6,8,26:36,40,52,53)]
+all.ed34$SARS_COV_2_prob=predict(classifier, newdata=all.ed34, type='response')
+all.ed34 %>% write.csv(paste0(outdir, 'ED_rerun_logReg_v34.csv'))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 munge=dfs %>% filter(Plate_ID=='Plate11' | Plate_ID=='Plate2') %>% filter(Stotal>1000)

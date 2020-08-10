@@ -32,3 +32,6 @@ Rscript --vanilla "${basedir}code/countAmplicons.R" -r "${basedir}runs/v31/" -b 
 Rscript --vanilla "${basedir}code/countAmplicons.R" -r "${basedir}runs/v32/" -b 196445335 -e T
 Rscript --vanilla "${basedir}code/countAmplicons.R" -r "${basedir}runs/v33/" -b 196530346 -e T
 Rscript --vanilla "${basedir}code/countAmplicons.R" -r "${basedir}runs/v34/" -b 196554422 -e T
+Rscript --vanilla "${basedir}code/countAmplicons.R" -r "${basedir}runs/v35/" -b 196621430 -e T
+Rscript --vanilla "${basedir}code/countAmplicons.R" -r "${basedir}runs/v36/" -b 196640506 -e T
+Rscript --vanilla "${basedir}code/countAmplicons.R" -r "${basedir}runs/v37/" -b 196676520 -e T

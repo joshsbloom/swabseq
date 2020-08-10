@@ -12,12 +12,12 @@ dfs=mungeTables(paste0(rundir, 'countTable.RDS'))
 levels(dfs$virus_copy)=as.character(round(as.numeric(levels(dfs$virus_copy))))
 
 fig1e1=
-dfs%>%filter(lysate=='MTS_TE-1_to_2') %>% 
+dfs%>%filter(lysate=='MTS_TE-1_to_2') %>% filter(Stotal>1000) %>%  
 ggplot(aes(x=virus_copy, y=S2+1))+geom_quasirandom(alpha=.75)+
     scale_y_log10() + annotation_logticks() + ylab('(S2+1)')+xlab('GCE per reaction')+
     theme(axis.text.x = element_text(angle = 90, vjust=0.3))+theme_bw()
 fig1e2=
-dfs%>%filter(lysate=='MTS_TE-1_to_2') %>% 
+dfs%>%filter(lysate=='MTS_TE-1_to_2') %>% filter(Stotal>1000) %>%  
 ggplot(aes(x=virus_copy, y=S2_normalized_to_S2_spike))+geom_quasirandom(alpha=.75)+
     scale_y_log10() + annotation_logticks() + ylab('(S2+1)/(S2 Spike + 1)')+xlab('GCE per reaction')+
     theme(axis.text.x = element_text(angle = 90, vjust=0.3))+theme_bw()
@@ -44,12 +44,47 @@ dfsR$virus_ident2[grepl('^N|^P', dfsR$virus_identity)]='NegPatient'
 dfsR$virus_ident2[grepl('^U', dfsR$virus_identity)]='PosPatient'
 
 fig2a=
-dfsR %>% filter(virus_ident2!='PosPatient') %>% filter(Stotal>2000) %>%
-ggplot(aes(x=virus_copy, y=S2_normalized_to_S2_spike, group=virus_copy))+ #log10(S2_total_across_all_wells)))+
+dfsR=dfsR %>% filter(virus_ident2!='PosPatient') %>% filter(Stotal>2000)
+
+fig2a=ggplot(dfsR, aes(x=virus_copy, y=S2_normalized_to_S2_spike, group=virus_copy))+ #log10(S2_total_across_all_wells)))+
     geom_quasirandom(alpha=.75)+
     scale_y_log10() + annotation_logticks() + ylab('(S2+1)/(S2 spike+1)')+xlab('GCE per mL')+
-    theme(axis.text.x = element_text(angle = 90, vjust=0.3))+ ggtitle('NP, Purified RNA')+
+    theme(axis.text.x = element_text(angle = 90, vjust=0.3))+ ggtitle('Nasal Swab, Purified RNA')+
     theme_bw()
+
+# combine in data from EUA confirmation
+#EUA confirmation of LoD
+swabseq.dir='/data/Covid/swabseq/'
+source(paste0(swabseq.dir, 'code/helper_functions.R'))
+rundir=paste0(swabseq.dir, 'runs/v20/')
+outdir=paste0(swabseq.dir, 'analysis/EUA/')
+dfL=mungeTables(paste0(rundir, 'countTable.RDS'),lw=T)
+df=dfL$df
+dfsC=dfL$dfs
+
+#filters and reformat for plots 
+dfsC= dfsC %>% 
+  filter(Plate_ID=='Plate8') %>%filter(Stotal>2000)
+dfsC$virus_copy=droplevels(dfsC$virus_copy) #Plate_384=droplevels(dfsC$Plate_384)
+dfsC$virus_copy=factor(dfsC$virus_copy, levels(dfsC$virus_copy)[order(as.numeric(levels(dfsC$virus_copy)))])
+#dfsC=dfsC[dfsC$virus_copy!='125',]
+
+ggplot(dfsC, aes(x=virus_copy, y=S2_normalized_to_S2_spike, group=virus_copy))+ #log10(S2_total_across_all_wells)))+
+    geom_quasirandom(alpha=.75)+
+    scale_y_log10() + annotation_logticks() + ylab('(S2+1)/(S2_spike+1)')+xlab('copies/mL')+
+    theme(axis.text.x = element_text(angle = 90, vjust=0.3))+
+    theme_bw()+ggtitle('LoD Confirmation')+
+    geom_hline(yintercept=.003, color='red')
+dfsB=rbind(dfsR[,c('virus_copy', 'S2_normalized_to_S2_spike')],dfsC[,c('virus_copy', 'S2_normalized_to_S2_spike')])
+
+
+fig2a2=ggplot(dfsB, aes(x=virus_copy, y=S2_normalized_to_S2_spike, group=virus_copy))+ #log10(S2_total_across_all_wells)))+
+    geom_quasirandom(alpha=.75)+
+    scale_y_log10() + annotation_logticks() + ylab('(S2+1)/(S2 spike+1)')+xlab('GCE per mL')+
+    theme(axis.text.x = element_text(angle = 90, vjust=0.3))+ ggtitle('Nasal Swab, Purified RNA')+
+    theme_bw()
+
+
 
 #LoD Saliva 
 rundir=paste0(swabseq.dir, 'runs/v13/')
@@ -85,7 +120,8 @@ fig2d=
     ggplot(dfsc, aes(x=PositivePatient, y=S2_normalized_to_S2_spike, group=virus_copy))+
     geom_quasirandom(alpha=.75)+scale_colour_manual(values=c('blue', 'red'))+
        scale_y_log10() + annotation_logticks() + xlab("")+
-    theme(axis.text.x = element_text(angle = 90, vjust=0.3))+theme_bw()+ylab('(S2+1)/(S2 spike+1)')+ggtitle('NP in Normal Saline') #+geom_hline(yintercept=.003)
+    theme(axis.text.x = element_text(angle = 90, vjust=0.3))+theme_bw()+ylab('(S2+1)/(S2 spike+1)')+
+    ggtitle('Nasal Swab in Normal Saline, extraction-free') #+geom_hline(yintercept=.003)
 #------------------------------------------
 
 
@@ -105,7 +141,7 @@ ggplot(aes(x=virus_ident2, y=S2_normalized_to_S2_spike))+ #, color=SARS_COV_2_De
     geom_quasirandom(alpha=.75)+
     scale_y_log10() + annotation_logticks() + ylab('(S2+1)/(S2 spike+1)')+ #xlab('patient SARs-CoV-2 status')+
     theme(axis.text.x = element_text(angle = 90, vjust=0.3))+ xlab("")+
-    theme_bw()+ggtitle('NP, Purified RNA') 
+    theme_bw()+ggtitle('Nasal Swab, Purified RNA') 
     #facet_wrap(~virus_ident2)+ 
     #scale_color_viridis(option = 'plasma')+
     #+    geom_hline(yintercept=.003, color='red') 
@@ -141,17 +177,53 @@ fig2b2=dfs %>%  filter(grepl('VTM', Description)) %>%  filter(Stotal>2000) %>% f
 rundir=paste0(swabseq.dir, 'runs/v26/')
 dfL=mungeTables(paste0(rundir, 'countTable.RDS'),lw=T)
 df=dfL$df
-dfs=dfL$dfs
-fig2c2=
-    dfs %>%  filter(Plate_ID=='Plate4') %>%  filter(Stotal>1000) %>% filter(virus_identity!='ED') %>% filter(virus_copy!='NA')%>%
+dfs2c=dfL$dfs
+dfs2c=   dfs2c %>%  filter(Plate_ID=='Plate4') %>%  filter(Stotal>1000) %>% filter(virus_identity!='ED') %>% filter(virus_copy!='NA')
+#%>%
    #filter(Row != 'A') %>%
-ggplot(aes(x=virus_copy, y=S2_normalized_to_S2_spike, group=virus_copy))+
+fig2c2=
+ggplot(dfs2c,aes(x=virus_copy, y=S2_normalized_to_S2_spike, group=virus_copy))+
     geom_quasirandom(alpha=.75, size=2)+
     #facet_wrap(~lysate+treatment)+
     scale_y_log10() + annotation_logticks() + ylab('(S2+1)/(S2 spike + 1)')+
     #xlab('copies per mL of lysate')+
     xlab('GCE per mL')+
     theme_bw()+ggtitle('Saliva, extraction-free')
+
+swabseq.dir='/data/Covid/swabseq/'
+source(paste0(swabseq.dir, 'code/helper_functions.R'))
+rundir=paste0(swabseq.dir, 'runs/v34/')
+outdir=paste0(swabseq.dir, 'analysis/v34/')
+dfL=mungeTables(paste0(rundir, 'countTable.RDS'),lw=T)
+df=dfL$df
+dfsM=dfL$dfs
+munge=dfsM %>% filter(Plate_ID=='Plate11' | Plate_ID=='Plate2') %>% filter(Stotal>1000)
+munge$lysate=gsub( '^3.*' , 'EDneg',munge$lysate)
+munge$lysate=droplevels(factor(munge$lysate))
+#filter(Col!='06'|Col!='07'|Col!='08') %>%
+#'368309416'
+munge=munge %>%  filter(lysate=='EDneg' | lysate == 'saliva in 1XTBE+0.5%tw') %>% filter(virus_identity!='368309416')
+munge$virus_copy[is.na(munge$virus_copy)]=0
+
+dfs2c2=rbind(dfs2c[,c('virus_copy', 'S2_normalized_to_S2_spike')],munge[,c('virus_copy', 'S2_normalized_to_S2_spike')])
+
+dfs2c2$virus_copy=factor(as.numeric(as.character(dfs2c2$virus_copy)))
+  
+fig2c3=ggplot(dfs2c2,aes(x=virus_copy, y=S2_normalized_to_S2_spike, group=virus_copy))+
+    geom_quasirandom(alpha=.75, size=2)+
+    #facet_wrap(~lysate+treatment)+
+    scale_y_log10() + annotation_logticks() + ylab('(S2+1)/(S2 spike + 1)')+
+    #xlab('copies per mL of lysate')+
+    xlab('GCE per mL')+
+    theme_bw()+ggtitle('Saliva, extraction-free')
+
+
+
+
+
+
+
+
 
 rundir=paste0(swabseq.dir, 'runs/v11/')
 dfs=mungeTables(paste0(rundir, 'countTable.RDS'))
@@ -166,7 +238,12 @@ dfs%>%
 ggplot(aes(x=vc.n, y=S2_normalized_to_S2_spike))+geom_quasirandom(alpha=.75)+
     scale_y_log10() + annotation_logticks() + ylab('(S2+1)/(S2 Spike + 1)')+xlab('GCE per mL')+
     theme(axis.text.x = element_text(angle = 90, vjust=0.3))+theme_bw()+
-    ggtitle('MTS in TE, extraction-free')
+    ggtitle('Nasal Swab in TE, extraction-free')
+
+
+
+
+
 
 
 ggarrange(fig2a,fig2b,fig2c,fig2d,fig2e, labels=c('A', 'B', 'C', 'D', 'E'),ncol=3, nrow=2)
@@ -177,8 +254,13 @@ ggarrange(fig2a,fig2b3,fig2c2,fig2e, fig2d, labels=c('A', 'B', 'C', 'D', 'E'),nc
 ggsave('/data/Covid/swabseq/analysis/manuscript/fig2v2.png')
 ggsave('/data/Covid/swabseq/analysis/manuscript/fig2v2.svg')
 
-ggarrange(fig2a,fig2b3,fig2c2,fig2e, fig2d, labels=c('A', 'B', 'C', 'D', 'E'),ncol=3, nrow=2)
+ggarrange(fig2a,fig2e,fig2b3,fig2d,fig2c2, labels=c('A', 'B', 'C', 'D', 'E'),ncol=3, nrow=2)
 ggsave('/data/Covid/swabseq/analysis/manuscript/fig2v3.png')
+
+ggarrange(fig2a2,fig2e,fig2b3,fig2d,fig2c3, labels=c('A', 'B', 'C', 'D', 'E'),ncol=3, nrow=2)
+ggsave('/data/Covid/swabseq/analysis/manuscript/fig2v4.png')
+
+
 
 #========================================================================================================================
 
@@ -204,25 +286,25 @@ s1a=
 dfs %>% filter(Plate_ID!='Plate8') %>% filter(Stotal>2000) %>% filter(virus_ident2!='D1' & virus_ident2!='D2') %>% 
 ggplot( aes(x=virus_copy+1, y=S2_normalized_to_S2_spike))+geom_quasirandom(alpha=.75)+
     scale_x_log10()+facet_grid(~zeros, scales='free_x', space='free_x')+
-    scale_y_log10() + annotation_logticks() + ylab('(S2+1)/(S2 spike+1)')+xlab('log10(copies/mL +1)')+
+    scale_y_log10() + annotation_logticks() + ylab('(S2+1)/(S2 spike+1)')+xlab('copies/mL +1')+
     theme(axis.text.x = element_text(angle = 90, vjust=0.3))+theme_bw()
 
 s1b=
 dfs %>% filter(Plate_ID!='Plate8') %>% filter(Stotal>2000) %>% filter(virus_ident2!='D1' & virus_ident2!='D2') %>% 
 ggplot( aes(x=virus_copy+1, y=S2+1))+geom_quasirandom(alpha=.75)+
     scale_x_log10()+facet_grid(~zeros, scales='free_x', space='free_x')+
-    scale_y_log10() + annotation_logticks() + ylab('S2+1')+xlab('log10(copies/mL +1)')+
+    scale_y_log10() + annotation_logticks() + ylab('S2+1')+xlab('copies/mL +1')+
     theme(axis.text.x = element_text(angle = 90, vjust=0.3))+theme_bw()
 
 s1c=
 dfs %>% filter(Plate_ID!='Plate8') %>% filter(Stotal>2000) %>% filter(virus_ident2!='D1' & virus_ident2!='D2') %>% 
 ggplot( aes(x=virus_copy+1, y=S2_spike+1))+geom_quasirandom(alpha=.75)+
     scale_x_log10()+facet_grid(~zeros, scales='free_x', space='free_x')+
-    scale_y_log10() + annotation_logticks() + ylab('S2 spike+1')+xlab('log10(copies/mL +1)')+
+    scale_y_log10() + annotation_logticks() + ylab('S2 spike+1')+xlab('copies/mL +1')+
     theme(axis.text.x = element_text(angle = 90, vjust=0.3))+theme_bw()
 
-s1bc=ggarrange(s1b,s1c, nrow=2)
-s1abc=ggarrange(s1bc, s1a, ncol=2)
+s1bc=ggarrange(s1b,s1c, nrow=2, labels=c('A','B'))
+s1abc=ggarrange(s1bc, s1a, ncol=2, labels=c('A', 'C'))
 ggsave('/data/Covid/swabseq/analysis/manuscript/Sfig_linearity2.svg')
 ggsave('/data/Covid/swabseq/analysis/manuscript/Sfig_linearity2.png')
 # -------------------------------------------------------------------------------------------
@@ -235,20 +317,90 @@ rundir=paste0(swabseq.dir, 'runs/v14/')
 df14=mungeTables(paste0(rundir, 'countTable.RDS'),lw=T)$df
 df14$bleach='No Bleach Wash'
 df14=df14 %>%filter(Plate_ID=='Plate9' | Plate_ID=='Plate10'| Plate_ID=='Plate11' |Plate_ID=='Plate12')
+df14$Plate_384_Quadrant=''
+df14$Plate_384_Quadrant[df14$Plate_ID=='Plate9']='A'
+df14$Plate_384_Quadrant[df14$Plate_ID=='Plate10']='B'
+df14$Plate_384_Quadrant[df14$Plate_ID=='Plate11']='C'
+df14$Plate_384_Quadrant[df14$Plate_ID=='Plate12']='D'
+df14$Plate_384='No Bleach Wash'
+
+
+
+
 #15 bleach 
 rundir=paste0(swabseq.dir, 'runs/v15/')
 df15=mungeTables(paste0(rundir, 'countTable.RDS'),lw=T)$df
 df15$bleach='With Bleach Wash'
 df15=df15 %>%filter(Plate_ID=='Plate13' | Plate_ID=='Plate14'| Plate_ID=='Plate15' |Plate_ID=='Plate16')
+df15$Plate_384_Quadrant=''
+df15$Plate_384_Quadrant[df15$Plate_ID=='Plate13']='A'
+df15$Plate_384_Quadrant[df15$Plate_ID=='Plate14']='B'
+df15$Plate_384_Quadrant[df15$Plate_ID=='Plate15']='C'
+df15$Plate_384_Quadrant[df15$Plate_ID=='Plate16']='D'
+df15$Plate_384='Bleach Wash'
 dfb=rbind(df14,df15)
+
+dfb$Plate_384=factor(dfb$Plate_384, levels=c('No Bleach Wash', 'Bleach Wash'))
+#relevel(dfb$Plate_384)='No Bleach Wash'
+#move this to helper functions
+col384=sprintf('%02d', 1:24)
+row384=toupper(letters[1:16])
+col384L=list(
+'A'=col384[seq(1,24,2)],
+'B'=col384[seq(2,24,2)],
+'C'=col384[seq(1,24,2)],
+'D'=col384[seq(2,24,2)])
+col384L=lapply(col384L, function(x) { names(x)=sprintf('%02d', 1:12); return(x); })
+
+row384L=list(
+'A'=row384[seq(1,16,2)],
+'B'=row384[seq(1,16,2)],
+'C'=row384[seq(2,16,2)],
+'D'=row384[seq(2,16,2)])
+row384L=lapply(row384L, function(x) { names(x)=toupper(letters[1:8]); return(x); })
+
+dfb$Row384=''
+dfb$Col384=''
+dfb$Row384[dfb$Plate_384_Quadrant=='A']=as.character(row384L[['A']][as.character(dfb$Row[dfb$Plate_384_Quadrant=='A'])])
+dfb$Row384[dfb$Plate_384_Quadrant=='B']=as.character(row384L[['B']][as.character(dfb$Row[dfb$Plate_384_Quadrant=='B'])])
+dfb$Row384[dfb$Plate_384_Quadrant=='C']=as.character(row384L[['C']][as.character(dfb$Row[dfb$Plate_384_Quadrant=='C'])])
+dfb$Row384[dfb$Plate_384_Quadrant=='D']=as.character(row384L[['D']][as.character(dfb$Row[dfb$Plate_384_Quadrant=='D'])])
+dfb$Col384[dfb$Plate_384_Quadrant=='A']=as.character(col384L[['A']][as.character(dfb$Col[dfb$Plate_384_Quadrant=='A'])])
+dfb$Col384[dfb$Plate_384_Quadrant=='B']=as.character(col384L[['B']][as.character(dfb$Col[dfb$Plate_384_Quadrant=='B'])])
+dfb$Col384[dfb$Plate_384_Quadrant=='C']=as.character(col384L[['C']][as.character(dfb$Col[dfb$Plate_384_Quadrant=='C'])])
+dfb$Col384[dfb$Plate_384_Quadrant=='D']=as.character(col384L[['D']][as.character(dfb$Col[dfb$Plate_384_Quadrant=='D'])])
+
+filled.plates=df %>% filter(Description!='' & Description!=' ') %>% filter(Plate_384!='')
+#filled.plates$Row384=droplevels(factor(filled.plates$Row384))
+#filled.plates$Col384=droplevels(factor(filled.plates$Col384))
+
+dfb$Row384=factor(dfb$Row384, levels=c(rev(toupper(letters[1:16]))))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 dfb %>%
   #filter(str_detect(amplicon, "spike")) %>%
-  ggplot(aes(x=Col, y=Row, fill=log10(Count))) + 
+  ggplot(aes(x=Col384, y=Row384, fill=log10(Count))) + 
   geom_raster() +
   coord_equal() +
-  facet_grid(amplicon~bleach+Plate_384+Plate_ID) +
-  scale_fill_viridis_c(option = 'plasma')
+  facet_grid(amplicon~Plate_384) +
+  scale_fill_viridis_c(option = 'plasma')+xlab('Col')+ylab('Row')
 ggsave('/data/Covid/swabseq/analysis/manuscript/Sfig_bleachwash.svg')
 ggsave('/data/Covid/swabseq/analysis/manuscript/Sfig_bleachwash.png')
 #--------------------------------------------------------------------------------------------------------
