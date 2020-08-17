@@ -64,7 +64,7 @@ if(!file.exists(fastqR1)) {
     # run bcl2fastq to generate fastq.gz files (no demux is happening here)
     setwd(paste0(rundir,'bcls/'))
     #note this is using 64 threads and running on a workstation, reduce threads if necessary
-    system(paste("bcl2fastq --runfolder-dir . --output-dir out/ --create-fastq-for-index-reads  --ignore-missing-bcl --use-bases-mask=Y26,I10,I10 --processing-threads 64 --no-lane-splitting --sample-sheet /dev/null"))
+    system(paste("bcl2fastq --runfolder-dir . --output-dir out/ --create-fastq-for-index-reads  --ignore-missing-bcl --use-bases-mask=Y26,I10,I10 --processing-threads 8 --no-lane-splitting --sample-sheet /dev/null"))
     #for sharing, make tar of bcls directory
     system(paste("tar -cvf", paste0(rundir,'bcls.tar'), "../bcls/"))
     #-----------------------------------------------------------------------------------------------------
@@ -173,7 +173,7 @@ results=list(S2.table=S2.table, S2_spike.table=S2_spike.table, RPP30.table=RPP30
 if(extendedAmplicons){ results=list(S2.table=S2.table, S2_spike.table=S2_spike.table, RPP30.table=RPP30.table,RPP30_spike.table=RPP30_spike.table) }
 
 do.call('rbind', results) %>% write_csv(paste0(rundir, 'countTable.csv')) 
-saveRDS(results, file=paste0(rundir, 'countTable.RDS'))
+saveRDS(results, file=paste0(rundir, 'countTable.RDS'),version=2)
 
 # this is moved to mungeTables() in helper_functions.R
 #if(outputCountsOnly==FALSE) {

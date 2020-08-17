@@ -1,5 +1,6 @@
-basedir="/data/Covid/swabseq/"
+#basedir="/data/Covid/swabseq/"
 
+basedir="/mnt/e/swabseq/"
 #populate each run directory with XLSX file describing run or CSV sample sheet and then run the following
 # arguments are 
 Rscript --vanilla "${basedir}code/countAmplicons.R" -r "${basedir}runs/v7/"  -b 195116944  
@@ -35,3 +36,6 @@ Rscript --vanilla "${basedir}code/countAmplicons.R" -r "${basedir}runs/v34/" -b 
 Rscript --vanilla "${basedir}code/countAmplicons.R" -r "${basedir}runs/v35/" -b 196621430 -e T
 Rscript --vanilla "${basedir}code/countAmplicons.R" -r "${basedir}runs/v36/" -b 196640506 -e T
 Rscript --vanilla "${basedir}code/countAmplicons.R" -r "${basedir}runs/v37/" -b 196676520 -e T
+Rscript --vanilla "${basedir}code/countAmplicons.R" -r "${basedir}runs/v39/" -e T
+Rscript --vanilla "${basedir}code/countAmplicons.R" -r "${basedir}runs/v40/" -e T
+
