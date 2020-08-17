@@ -7,18 +7,24 @@ see [analysis](analysis/) for run-specific analysis scripts
 see [runs](runs/) for BCLs, gzipped fastqs and tables of amplicon counts for each experiment
 ___
 
-Statistics and notes for each sequencing run 
+Statistics and notes for each sequencing run: 
+___
+Run | Instrument | Notes | % PhiX Observed | % PhiX Targeted | Conc. Loaded (pM) | Cluster Density | Cluster PF (%) 
+--- | --- | --- | --- | --- | --- | --- | --- 
+[v40](analysis/v40/) | NextSeqM | - | 69 | 70 | 1.5 pM | 93K/mm2 | 94%PF
+[v39](analysis/v39/) | NextSeqH | - | 0.4 | 50 | 1.8pM | 126K/mm2 | 42%PF
 ___
 
 Run | Instrument | Notes | % PhiX Observed | % PhiX Targeted | Conc. Loaded (pM) | RT | Indexing Strategy | PCR cycles | Read | Cluster PF (%) | % ≥Q30 | Yield | Error Rate% | Reads PF | Density  | Tiles | Legacy Phas/Prephas (%) | Intensity 
 --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- 
-[v37](analyis/v37/) | MiSeq  | - | 29.90 | 35 | 25 | Taqpath | - | 50 | 1 | 80.96 ±6.08 |	96.03 |	559.02Mbp | 	0.35±0.32 | 22,360,804 | 	1,135±60 | 	38 |	0.002/0.002 | 	181±20
-[v36](analyis/v36/) | MiSeq  | - | 21.26 | 35 | 25 | Taqpath | - | 50 | 1  |	88.05±3.46 | 	96.10 | 614.70Mbp |	0.21±0.08 |	24,588,136 | 	1,118±29  |	38 |	0.005/0.000 |	149±25 	
-[v35](analyis/v35/) | MiSeq  | - | 26.89 | 35 | 25 | Taqpath | - | 50 | 1  |	89.50±2.29 | 96.79  |	638.27Mbp |	0.21±0.18 | 25,530,596 | 	1,133±27 | 	38 |	0.000/0.000 |	156±20 	
-[v34](analyis/v34/) | MiSeq  | - |  31.96 | 35 | 25 | Taqpath | - | 50 | 1 |	90.38±1.97 |	96.92 |	602.46Mbp |	0.26±0.34 |	24,098,420 | 	1,060±29 |	38 |  0.000/0.000 |	170±27 	
-[v33](analyis/v33/) | MiSeq  | - |  33.65 | 35 | 25 | Taqpath | - | 50 | 1 | 	89.05 ±1.85 | 	96.78 |	637.94Mbp |	0.16±0.02 | 25,517,552 |	1,146±15 | 	38 | 0.001/0.000 |	175±26 	
-[v32](analyis/v32/) | MiSeq  | - |   35.56 | 35 | 25 | Taqpath | - | 50 | 1 | 	92.27±1.46 | 	97.46 |	539.25Mbp |	0.23±0.05 |	21,570,046 | 924±14 | 38 | 	0.000 / 0.002 |	195±31
-[v31](analyis/v31/) | MiSeq  | - |  34.78 | 35 | 25 | Taqpath | - | 50 |    1 |	90.15±3.09 | 	96.87 |	564.97Mbp |	0.17±0.04 |	22,598,764 | 996±21 | 	38 |	0.004/0.001 | 	176±11 	
+[v38](analysis/v38/) | MiSeq | - | 
+[v37](analyis/v37/)  | MiSeq  | NS 1:5 | 29.90 | 35 | 25 | Taqpath | - | 50 | 1 | 80.96 ±6.08 |	96.03 |	559.02Mbp | 	0.35±0.32 | 22,360,804 | 	1,135±60 | 	38 |	0.002/0.002 | 	181±20
+[v36](analyis/v36/)  | MiSeq  | NS 1:4 and 1:5 | 21.26 | 35 | 25 | Taqpath | - | 50 | 1  |	88.05±3.46 | 	96.10 | 614.70Mbp |	0.21±0.08 |	24,588,136 | 	1,118±29  |	38 |	0.005/0.000 |	149±25 	
+[v35](analyis/v35/)  | MiSeq  | ED | 26.89 | 35 | 25 | Taqpath | - | 50 | 1  |	89.50±2.29 | 96.79  |	638.27Mbp |	0.21±0.18 | 25,530,596 | 	1,133±27 | 	38 |	0.000/0.000 |	156±20 	
+[v34](analyis/v34/)  | MiSeq  | ED |  31.96 | 35 | 25 | Taqpath | - | 50 | 1 |	90.38±1.97 |	96.92 |	602.46Mbp |	0.26±0.34 |	24,098,420 | 	1,060±29 |	38 |  0.000/0.000 |	170±27 	
+[v33](analyis/v33/)  | MiSeq  | - |  33.65 | 35 | 25 | Taqpath | - | 50 | 1 | 	89.05 ±1.85 | 	96.78 |	637.94Mbp |	0.16±0.02 | 25,517,552 |	1,146±15 | 	38 | 0.001/0.000 |	175±26 	
+[v32](analyis/v32/)  | MiSeq  | - |   35.56 | 35 | 25 | Taqpath | - | 50 | 1 | 	92.27±1.46 | 	97.46 |	539.25Mbp |	0.23±0.05 |	21,570,046 | 924±14 | 38 | 	0.000 / 0.002 |	195±31
+[v31](analyis/v31/)  | MiSeq  | - |  34.78 | 35 | 25 | Taqpath | - | 50 |    1 |	90.15±3.09 | 	96.87 |	564.97Mbp |	0.17±0.04 |	22,598,764 | 996±21 | 	38 |	0.004/0.001 | 	176±11 	
 [v30](analyis/v30/)  |  MiSeq | Saliva TBE .5X Tw20; 95C 30 min; Ashe; ED; | 30.38 | 35 | 25 | Taqpath | Semi-Combinatorial | 50 | 1 |	92.63±1.25 | 97.49 |	487.05Mbp |	0.31±0.07 |	19,482,174 |	815±32 |	38  |	0.000/0.000 | 	164 ±22
 [v29](analyis/v29/)  |  MiSeq | Saliva TBE .5X Tw20; 95C 30 min; Ashe; ED; | 27.5 | 35 | 25 | Taqpath | Semi-Combinatorial | 50 | 1 | 92.86±1.38 | 97.84 | 	624.03Mbp |	0.20±0.02 |	24,961,348| 	1,057±25  |	38 | 	0.000/0.000 |	198 ±28 	
 [v28](analyis/v28/)  |  MiSeq | Saliva TBE .5X Tw20; 95C 30 min; Ashe; ED; | 41 | 35 | 25 | Taqpath | Semi-Combinatorial | 50 |  1 | 	90.11±2.04 	| 97.21 |  	629.71Mbp |  	0.18±0.34 |	25,188,428 | 	1,117±14 |	38 	| 0.000/0.000 |	180±25 	
