@@ -1,14 +1,16 @@
- #v23
-swabseq.dir='/mnt/e/swabseq/'
+swabseq.dir="/mnt/e/swabseq/"
 source(paste0(swabseq.dir, 'code/helper_functions.R'))
-rundir=paste0(swabseq.dir, 'runs/v39/')
-outdir=paste0(swabseq.dir, 'analysis/v39/')
+rundir=paste0(swabseq.dir, 'runs/v41/')
+outdir=paste0(swabseq.dir, 'analysis/v41/')
 
 dfL=mungeTables(paste0(rundir, 'countTable.RDS'),lw=T, Stotal_filt=500)
 df=dfL$df
 dfs=dfL$dfs
+#usable swabseq reads
+#sum(df$Count)
+#17477902
 
-titl='v39 Contam Test'
+titl='v41 - Ashe Negative  + NS 1:4 Clinical Samples'
 
 #plate visualization 
 #plate visualization 
