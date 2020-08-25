@@ -11,8 +11,10 @@ Statistics and notes for each sequencing run:
 ___
 Run | Instrument | Notes | % PhiX Observed | % PhiX Targeted | Conc. Loaded (pM) | Cluster Density | Cluster PF (%) 
 --- | --- | --- | --- | --- | --- | --- | --- 
-[v40](analysis/v40/) | NextSeqM | - | 69 | 70 | 1.5 pM | 93K/mm2 | 94%PF
-[v39](analysis/v39/) | NextSeqH | - | 0.4 | 50 | 1.8pM | 126K/mm2 | 42%PF
+[v42](analysis/v42/) | NextSeqM | - | 31.9 | 40 | 1.75 pM | 113K/mm2 | 90%PF
+[v41](analysis/v41/) | NextSeqM | - | 59.6 | 50 | 2 pM |240/mm2 | 70%PF
+[v40](analysis/v40/) | NextSeqM | - | 69 | 70 | 1.5  | 93K/mm2 | 94%PF
+[v39](analysis/v39/) | NextSeqH | - | 0.4 | 37.5 | 1.5/2.5 pM (phiX/library 50:50) | 126K/mm2 | 42%PF
 ___
 
 Run | Instrument | Notes | % PhiX Observed | % PhiX Targeted | Conc. Loaded (pM) | RT | Indexing Strategy | PCR cycles | Read | Cluster PF (%) | % ≥Q30 | Yield | Error Rate% | Reads PF | Density  | Tiles | Legacy Phas/Prephas (%) | Intensity 
