@@ -121,10 +121,14 @@ ss$mergedIndex=paste0(ss$index, ss$index2)
 
 # this code would be obviated if indices designate wells, for most analyses here there are different indices for s2/s2spike and rpp30
 # subset of indices for S2/S2 spike
-ssS=ss[grep('-1$', ss$Sample_ID),]
-#subset of indices for RPP30
-ssR=ss[grep('-2$', ss$Sample_ID),]
-
+if(sum(grepl('-1$', ss$Sample_ID))==0){
+    ssS=ss
+    ssR=ss
+} else {
+    ssS=ss[grep('-1$', ss$Sample_ID),]
+    #subset of indices for RPP30
+    ssR=ss[grep('-2$', ss$Sample_ID),]
+}
 #initalize output count tables ------------------------------------------------------------
 S2.table=ssS; S2_spike.table=ssS; RPP30.table=ssR; RPP30_spike.table=ssR;
 S2.table$Count=0; S2_spike.table$Count=0; RPP30.table$Count=0; RPP30_spike.table$Count=0

@@ -18,7 +18,7 @@ Rscript --vanilla "${basedir}code/countAmplicons.R" -r "${basedir}runs/v18/" -b 
 Rscript --vanilla "${basedir}code/countAmplicons.R" -r "${basedir}runs/v19/" -b 195934811 
 Rscript --vanilla "${basedir}code/countAmplicons.R" -r "${basedir}runs/v20/" -b 196002849 
 #nextseq run at TCGB core
-Rscript --vanilla "${basedir}code/countAmplicons.R" -r "${basedir}runs/v21/" 
+Rscript --vanilla "${basedir}code/countAmplicons.R" -r "${basedir}runs/v21/" -e T 
 Rscript --vanilla "${basedir}code/countAmplicons.R" -r "${basedir}runs/v22/" -b 196030855 -e T
 Rscript --vanilla "${basedir}code/countAmplicons.R" -r "${basedir}runs/v23/" -b 196116944 -e T
 Rscript --vanilla "${basedir}code/countAmplicons.R" -r "${basedir}runs/v24/" -b 196133998 -e T
@@ -38,4 +38,8 @@ Rscript --vanilla "${basedir}code/countAmplicons.R" -r "${basedir}runs/v36/" -b 
 Rscript --vanilla "${basedir}code/countAmplicons.R" -r "${basedir}runs/v37/" -b 196676520 -e T
 Rscript --vanilla "${basedir}code/countAmplicons.R" -r "${basedir}runs/v39/" -e T
 Rscript --vanilla "${basedir}code/countAmplicons.R" -r "${basedir}runs/v40/" -e T
+Rscript --vanilla "${basedir}code/countAmplicons.R" -r "${basedir}runs/v41/" -e T
+Rscript --vanilla "${basedir}code/countAmplicons.R" -r "${basedir}runs/v42/" -e T
+Rscript --vanilla "${basedir}code/countAmplicons.R" -r "${basedir}runs/v43/" -e T
+Rscript --vanilla "${basedir}code/countAmplicons.R" -r "${basedir}runs/v44/" -e T
 

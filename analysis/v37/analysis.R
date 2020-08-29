@@ -4,7 +4,7 @@ source(paste0(swabseq.dir, 'code/helper_functions.R'))
 rundir=paste0(swabseq.dir, 'runs/v37/')
 outdir=paste0(swabseq.dir, 'analysis/v37/')
 
-dfL=mungeTables(paste0(rundir, 'countTable.RDS'),lw=T, Stotal_filt=1000)
+dfL=mungeTables(paste0(rundir, 'countTable.RDS'),lw=T, Stotal_filt=500)
 df=dfL$df
 dfs=dfL$dfs
 
@@ -42,7 +42,7 @@ ggsave(paste0(outdir,'plateVis_plates_run.png'))
 
 
 dfs %>%  filter(Plate_ID=='Plate5')  %>% filter(lysate!='TE') %>%
-    ggplot(aes(x=virus_copy, y=S2_normalized_to_S2_spike, color=Stotal>1000))+
+    ggplot(aes(x=virus_copy, y=S2_normalized_to_S2_spike, color=Stotal>500))+
     #geom_point(alpha=.75, size=2)+
     geom_quasirandom(alpha=.75, size=2)+
     facet_wrap(~lysate, scales='free_x')+
@@ -63,7 +63,7 @@ dfs %>%  filter(Plate_ID=='Plate5')  %>% filter(lysate!='TE') %>% filter(Col=='0
 
  library(ggrepel)
  dfs %>%  filter(Plate_ID=='Plate5')  %>% filter(lysate!='TE') %>%
-    ggplot(aes(x=virus_copy, y=S2+1, color=Stotal>1000, label=Sample_Well))+
+    ggplot(aes(x=virus_copy, y=S2+1, color=Stotal>500, label=Sample_Well))+
     geom_text_repel()+
     #geom_point(alpha=.75, size=2)+
     geom_quasirandom(alpha=.75, size=2)+
@@ -83,7 +83,7 @@ dfsF=merge(dfsF, pd, by.x='virus_identity', by.y='Sample')
 names(dfsF)[41]='CovidDetectedNP'
 
 dfsF %>%  
-    ggplot(aes(x=virus_identity, y=S2_normalized_to_S2_spike, color=Stotal>1000, label=S_gene))+
+    ggplot(aes(x=virus_identity, y=S2_normalized_to_S2_spike, color=Stotal>500, label=S_gene))+
     geom_text_repel()+
     geom_point(alpha=.75, size=2)+
     #geom_quasirandom(alpha=.75, size=2)+

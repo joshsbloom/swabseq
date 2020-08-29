@@ -51,14 +51,51 @@ pd$Sample[19]='R-006'
 dfsF =dfs %>%  filter(Plate_ID=='Plate15')
 dfsF=merge(dfsF, pd, by.x='virus_identity', by.y='Sample')
 names(dfsF)[41]='CovidDetectedNP'
+
+
+library(grid)
+
+names(dfsF)[38]='Ct'
+names(dfsF)[41]='NPResult'
+gt=ggplot(dfsF, aes(x=Ct, y=S2_normalized_to_S2_spike))+
+geom_quasirandom(size=2)+
+    scale_y_log10() + annotation_logticks(sides="l")+
+    geom_hline(yintercept=3e-3, color='red')+theme_bw()+
+    ylab('(S2 + 1)/(S2_spike + 1)')+
+    facet_grid(~NPResult, scales='free_x')
+
+gt2=ggplot_gtable(ggplot_build(gt))
+gt2$widths[5]=.3*gt2$widths[5]
+grid.draw(gt2)
+#png(paste0(outdir,'NS_patients.png'), width=512, height=400)
+#grid.draw(gt2)
+#dev.off()
+#ggsave(paste0(outdir,'NS_patients.png'))
+#ggarrange(gt2)
+
+
+
+
+
+
+
+
+
+
+
+
+
 library(ggrepel)
-dfsF %>%  
-    ggplot(aes(x=virus_identity, y=S2_normalized_to_S2_spike, color=Stotal>500, label=S_gene))+
+gt=dfsF %>%  
+gt=    ggplot(dfsF, aes(x=virus_identity, y=S2_normalized_to_S2_spike, color=Stotal>500, label=S_gene))+
     geom_text_repel()+
     geom_point(alpha=.75, size=2)+
     #geom_quasirandom(alpha=.75, size=2)+
     facet_wrap(~CovidDetectedNP, scales='free_x')+
     scale_y_log10() + 
-    annotation_logticks() + ylab('(S2+1)')+
+    annotation_logticks() + ylab('(S2+1)/(S2 spike +1)')+
     theme_bw()+
      theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1))+ggtitle('NS MNS 1:4 LoD')
+
+
+

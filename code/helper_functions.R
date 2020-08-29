@@ -2,12 +2,18 @@ library(tidyverse)
 library(ggbeeswarm)
 library(viridis)
 
-mungeTables=function(tables.RDS,lw=F,Stotal_filt=2000){
+mungeTables=function(tables.RDS,lw=F,Stotal_filt=2000,input=96){
     countTables=readRDS(tables.RDS) #paste0(rundir, 'countTable.RDS')) 
     df=do.call('rbind', countTables)
     df$virus_copy=as.factor(df$virus_copy) 
     df$Col=as.factor(gsub('^.', '', df$Sample_Well))
+    if(input==96) {
     df$Row=factor(gsub('..$', '', df$Sample_Well), levels=rev(toupper(letters[1:8])))
+    }
+    if(input==384) {
+    df$Row=factor(gsub('..$', '', df$Sample_Well), levels=rev(toupper(letters[1:16])))
+
+    }
     df$Sample=paste0(df$Plate_ID, '-' ,df$Sample_Well)
     df$Plate_ID=as.factor(df$Plate_ID)
     df$Plate_ID=factor(df$Plate_ID, levels(df$Plate_ID)[order(as.numeric(gsub('Plate', '', levels(df$Plate_ID))))])  

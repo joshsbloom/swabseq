@@ -1,4 +1,5 @@
 swabseq.dir="/mnt/e/swabseq/"
+swabseq.dir="/data/Covid/swabseq/"
 source(paste0(swabseq.dir, 'code/helper_functions.R'))
 rundir=paste0(swabseq.dir, 'runs/v42/')
 outdir=paste0(swabseq.dir, 'analysis/v42/')
