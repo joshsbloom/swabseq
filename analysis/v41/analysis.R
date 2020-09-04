@@ -48,15 +48,19 @@ library(gdata)
 pd=read.xls(paste0(swabseq.dir,'analysis/v37/', 'EUA_data.xlsx'), stringsAsFactors=F)
 pd$Sample[2]='R-003'
 pd$Sample[19]='R-006'
-dfsF =dfs %>%  filter(Plate_ID=='Plate15')
-dfsF=merge(dfsF, pd, by.x='virus_identity', by.y='Sample')
-names(dfsF)[41]='CovidDetectedNP'
-
-
-library(grid)
-
+#dfsF =dfs %>%  filter(Plate_ID=='Plate15')
+#dfsF=merge(dfsF, pd, by.x='virus_identity', by.y='Sample', all.x=T)
+#for genapsys
+dfsF=merge(dfs, pd, by.x='virus_identity', by.y='Sample', all.x=T)
+#names(dfsF)[41]='CovidDetectedNP'
 names(dfsF)[38]='Ct'
 names(dfsF)[41]='NPResult'
+
+dfsF=dfsF %>% filter(Plate_ID=='Plate4' | Plate_ID=='Plate5'| Plate_ID=='Plate10' | Plate_ID=='Plate15')
+dfsF$Ct[dfsF$Ct==0]=NA
+dfsF %>% filter(Plate_ID=='Plate15') %>% write.csv(paste0(outdir, 'resultsTable.csv'))
+library(grid)
+
 gt=ggplot(dfsF, aes(x=Ct, y=S2_normalized_to_S2_spike))+
 geom_quasirandom(size=2)+
     scale_y_log10() + annotation_logticks(sides="l")+

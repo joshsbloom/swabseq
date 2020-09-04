@@ -1,0 +1,105 @@
+swabseq.dir="/mnt/e/swabseq/"
+swabseq.dir="/data/Covid/swabseq/"
+source(paste0(swabseq.dir, 'code/helper_functions.R'))
+rundir=paste0(swabseq.dir, 'runs/v46/')
+outdir=paste0(swabseq.dir, 'analysis/v46/')
+
+dfL=mungeTables(paste0(rundir, 'countTable.RDS'),lw=T, Stotal_filt=2000, input=384)
+df=dfL$df
+dfs=dfL$dfs
+#usable swabseq reads
+#sum(df$Count)
+#17477902
+
+titl='v46 - NP Purified 40 cycles'
+
+#plate visualization 
+#plate visualization 
+df %>%
+  ggplot(aes(x=Col, y=Row, fill=log10(Count))) + 
+  geom_raster() +
+  coord_equal() +
+  facet_grid(amplicon~Plate_384+Plate_ID+Description) +
+  scale_fill_viridis_c(option = 'plasma')+ggtitle(titl)
+ggsave(paste0(outdir,'plateVis_all_indices.png'))
+
+
+df %>% filter(Description!='' & Description!=' ') %>% #filter(Plate_ID!='Plate1') %>%
+    ggplot(aes(x=Col, y=Row, fill=log10(Count))) + 
+  geom_raster() +
+  coord_equal() +
+  facet_grid(amplicon~Plate_384+Plate_ID+Description) +
+  scale_fill_viridis_c(option = 'plasma')+ggtitle(titl)
+#ggtitle('v30 Saliva; Nasal; ED; Ashe')
+ggsave(paste0(outdir,'plateVis_plates_run.png'))
+
+
+#ggsave(paste0(outdir,'plateVis_plates_run.png'))
+pid=c('U166',
+'U266',	
+'U201',	
+'U258',	
+'U215',	
+'U191',	
+'U241',	
+'U234',	
+'U281',	
+'U252',	
+'U267',	
+'U238',	
+'U225',	
+'U185',	
+'U176',	
+'U279',	
+'U228',	
+'U204',	
+'U247',	
+'U253')	
+
+
+pct=c(30.1545,
+30.5463,
+30.8456,
+30.3,
+30.5748,
+31.0232,
+31.1,
+30.3541,
+30.4169,
+31.0506,
+33.0172,
+33.1649,
+33.4889,
+33.0271,
+33.1793,
+33.8233,
+33.1,
+33.1893,
+34.9525, 35)
+
+
+
+
+dfct=data.frame(virus_identity=pid, Ct=pct)
+dfsM=merge(dfct, dfs, by='virus_identity', all.y=T)
+dfsM=dfsM %>%filter(Plate_ID=='Plate3')
+dfsM=dfsM[grep('^U|^N' , dfsM$virus_identity),]
+
+dfsM$NPResult=grepl('^U', dfsM$virus_identity)
+dfsM$Ct[is.na(dfsM$Ct)]=40
+    #names(dfsF)[38]='Ct'
+#names(dfsF)[41]='NPResult'
+dfsM= dfsM %>%filter(Stotal>2000)
+gt=ggplot(dfsM, aes(x=Ct, y=S2_normalized_to_S2_spike))+
+geom_quasirandom(size=2, alpha=.75)+
+    scale_y_log10() + annotation_logticks(sides="l")+
+    #geom_hline(yintercept=3e-3, color='red')+
+    theme_bw()+geom_hline(yintercept=3e-3)+
+    ylab('(S2 + 1)/(S2_spike + 1)')+
+    facet_grid(~NPResult, scales='free_x')+
+    ggtitle('Purified NP, high Ct')
+    
+
+gt2=ggplot_gtable(ggplot_build(gt))
+gt2$widths[5]=.3*gt2$widths[5]
+
