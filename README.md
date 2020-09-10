@@ -17,7 +17,7 @@ Run | Instrument | Notes | % PhiX Observed | % PhiX Targeted | Conc. Loaded (pM)
 [v44](analysis/v44/) | MiniSeq      | - | 31.4 | 40 | 1.8 pM | 147K/mm2 | 90%PF
 [v43](analysis/v43/) | NextSeqM     | - | 23.9 | 40 | 1.8 pM | 151K/mm2 | 92%PF
 [v42](analysis/v42/) | NextSeqM | - | 31.9 | 40 | 1.75 pM | 113K/mm2 | 90%PF
-[v41](analysis/v41/) | NextSeqM | - | 59.6 | 50 | 2 pM |240/mm2 | 70%PF
+[v41](analysis/v41/) | NextSeqM | - | 59.6 | 50 | 2 pM |240/mm2 but varying per lane | 70%PF
 [v40](analysis/v40/) | NextSeqM | - | 69 | 70 | 1.5  | 93K/mm2 | 94%PF
 [v39](analysis/v39/) | NextSeqH | - | 0.4 | 37.5 | 1.5/2.5 pM (phiX/library 50:50) | 126K/mm2 | 42%PF
 ___
