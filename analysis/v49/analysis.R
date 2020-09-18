@@ -1,17 +1,17 @@
 swabseq.dir="/mnt/e/swabseq/"
 swabseq.dir="/data/Covid/swabseq/"
 source(paste0(swabseq.dir, 'code/helper_functions.R'))
-rundir=paste0(swabseq.dir, 'runs/v47/')
-outdir=paste0(swabseq.dir, 'analysis/v47/')
+rundir=paste0(swabseq.dir, 'runs/v46/')
+outdir=paste0(swabseq.dir, 'analysis/v46/')
 
-dfL=mungeTables(paste0(rundir, 'countTable.RDS'),lw=T, Stotal_filt=500, input=384)
+dfL=mungeTables(paste0(rundir, 'countTable.RDS'),lw=T, Stotal_filt=2000, input=384)
 df=dfL$df
 dfs=dfL$dfs
 #usable swabseq reads
 #sum(df$Count)
 #17477902
 
-titl='v47 - Ashe / Gamma / S2 Spike dilutions'
+titl='v46 - NP Purified 40 cycles'
 
 #plate visualization 
 #plate visualization 
@@ -32,24 +32,6 @@ df %>% filter(Description!='' & Description!=' ') %>% #filter(Plate_ID!='Plate1'
   scale_fill_viridis_c(option = 'plasma')+ggtitle(titl)
 #ggtitle('v30 Saliva; Nasal; ED; Ashe')
 ggsave(paste0(outdir,'plateVis_plates_run.png'))
-
-# s2 spike dialing in
-dfs %>% filter(Description!='' & Description!=' ') %>% 
-    filter(virus_identity!='2xTBE+1%tw20') %>%
-    #filter(Plate_ID!='Plate1') %>%
-    ggplot(aes(x=lysate, y=S2_spike+1))+
-geom_quasirandom(size=2, alpha=.75)+
-    scale_y_log10() + annotation_logticks(sides="l")+
-    #geom_hline(yintercept=3e-3, color='red')+
-    theme_bw()+geom_hline(yintercept=3e-3)+
-    ylab('(S2_spike + 1)')
-
-
-+
-    facet_grid(~NPResult, scales='free_x')+
-    ggtitle('Purified NP, high Ct')
-    
-
 
 
 #ggsave(paste0(outdir,'plateVis_plates_run.png'))
