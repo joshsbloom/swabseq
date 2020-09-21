@@ -1,17 +1,17 @@
 swabseq.dir="/mnt/e/swabseq/"
 swabseq.dir="/data/Covid/swabseq/"
 source(paste0(swabseq.dir, 'code/helper_functions.R'))
-rundir=paste0(swabseq.dir, 'runs/v46/')
-outdir=paste0(swabseq.dir, 'analysis/v46/')
+rundir=paste0(swabseq.dir, 'runs/v49/')
+outdir=paste0(swabseq.dir, 'analysis/v49/')
 
-dfL=mungeTables(paste0(rundir, 'countTable.RDS'),lw=T, Stotal_filt=2000, input=384)
+dfL=mungeTables(paste0(rundir, 'countTable.RDS'),lw=T, Stotal_filt=500, input=384)
 df=dfL$df
 dfs=dfL$dfs
 #usable swabseq reads
 #sum(df$Count)
 #17477902
 
-titl='v46 - NP Purified 40 cycles'
+titl='v49 - Ashe / Gamma LoD Saliva'
 
 #plate visualization 
 #plate visualization 
@@ -32,6 +32,42 @@ df %>% filter(Description!='' & Description!=' ') %>% #filter(Plate_ID!='Plate1'
   scale_fill_viridis_c(option = 'plasma')+ggtitle(titl)
 #ggtitle('v30 Saliva; Nasal; ED; Ashe')
 ggsave(paste0(outdir,'plateVis_plates_run.png'))
+
+# Ashe samples 
+dfs %>% filter(grepl('^\\d\\d', virus_identity)) %>% 
+ggplot(aes(x=virus_identity, y=S2_normalized_to_S2_spike, color=SARS_COV_2_Detected,
+           fill =RPP30_Detected))+
+geom_point(size=2, alpha=.75)+
+    scale_y_log10() + annotation_logticks(sides="l")+
+    #geom_hline(yintercept=3e-3, color='red')+
+    theme_bw()+geom_hline(yintercept=3e-3)+
+    ylab('(S2 + 1)/(S2_spike + 1)')+
+    #facet_grid(~NPResult, scales='free_x')+
+    theme(axis.text.x = element_text(angle = 90))+
+    ggtitle('Ashe Samples')
+ggsave(paste0(outdir,'Ashe.png'))
+
+#LoD
+dfs %>% filter(lysate=='C' | lysate=='D') %>% filter(Stotal>500) %>%
+ggplot(aes(x=virus_copy, y=S2_normalized_to_S2_spike))+
+geom_quasirandom(size=2, alpha=.75)+
+    scale_y_log10() + annotation_logticks(sides="l")+
+    #geom_hline(yintercept=3e-3, color='red')+
+    theme_bw()+geom_hline(yintercept=3e-3)+
+    ylab('(S2 + 1)/(S2_spike + 1)')+
+    #facet_grid(~NPResult, scales='free_x')+
+    theme(axis.text.x = element_text(angle = 90))+
+    ggtitle('Gamma Saliva LoD')
+ggsave(paste0(outdir,'Gamma_saliva_LoD.png'))
+
+
+df %>% filter(Description!='' & Description!=' ') %>% filter(lysate=='C') %>% #filter(Plate_ID!='Plate1') %>%
+    ggplot(aes(x=Col, y=Row, fill=log10(Count))) + 
+  geom_raster() +
+  coord_equal() +
+  facet_grid(amplicon~Plate_384+Plate_ID+Description) +
+  scale_fill_viridis_c(option = 'plasma')+ggtitle(titl)
+#ggtitle('v30 Saliva; Nasal; ED; Ashe')
 
 
 #ggsave(paste0(outdir,'plateVis_plates_run.png'))

@@ -11,7 +11,7 @@ Statistics and notes for each sequencing run:
 ___
 Run | Instrument | Notes | % PhiX Observed | % PhiX Targeted | Conc. Loaded (pM) | Cluster Density | Cluster PF (%) 
 --- | --- | --- | --- | --- | --- | --- | --- 
-[v49](analysis/v49/) | NextSeqM     | - | 55 | 40 | 1.8 pM | 129K/mm2 | 82%PF
+[v49](analysis/v49/) | NextSeqM     | - | 55 | 40 | 1.5 pM | 129K/mm2 | 82%PF
 [v48](analysis/v48/) | MiniSeq Fast | - | 63.5 | 40 | 1.8 pM | 131K/mm2 but very low for lanes 2 and 3 | 84%PF
 [v47](analysis/v47/) | NextSeqM     | - | 31 | 40 | 1.7 pM | 155K/mm2 but very low for lanes 2 and 3 | 74%PF
 [v46](analysis/v46/) | NextSeqM     | - | 13 | 40 | 1.8 pM | 150K/mm2 but varying per lane | 87%PF
