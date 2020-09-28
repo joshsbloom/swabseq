@@ -11,6 +11,8 @@ dfs=dfL$dfs
 #usable swabseq reads
 #sum(df$Count)
 #17477902
+sum(dfs$S2)+sum(dfs$S2_spike)
+sum(dfs$RPP30)
 
 titl='v41 - Ashe Negative  + NS 1:4 Clinical Samples'
 

@@ -1,0 +1,16 @@
+[Header]
+IEMFileVersion,5
+Investigator Name,JB
+Experiment Name,v50
+Date,9/22/20
+Workflow,GenerateFASTQ
+Application,FASTQ Only
+Instrument Type,NextSeq
+Chemistry,Amplicon
+[Reads]
+26
+[Settings]
+
+[Data]
+Sample_ID,index,index2
+Plate1-A01,AAAAAAAAAA,AAAAAAAAAA

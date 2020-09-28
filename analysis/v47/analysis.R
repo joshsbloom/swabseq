@@ -11,6 +11,10 @@ dfs=dfL$dfs
 #sum(df$Count)
 #17477902
 
+sum(dfs$S2)+sum(dfs$S2_spike)
+
+sum(dfs$RPP30)
+
 titl='v47 - Ashe / Gamma / S2 Spike dilutions'
 
 #plate visualization 

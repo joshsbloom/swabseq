@@ -1,0 +1,1551 @@
+[Header]
+IEMFileVersion,5
+Investigator Name,v51
+Experiment Name,v51
+Date,9/25/20
+Workflow,GenerateFASTQ
+Application,FASTQ Only
+Instrument Type,NextSeq
+Chemistry,Amplicon
+[Reads]
+26
+[Settings]
+
+[Data]
+Plate_ID,virus_identity,virus_copy,quadrant_96,bc_set,Plate_384,Plate_384_Number,Plate_384_Quadrant,IndexSet,MasterMixVol,RT,SpikeCopies,S2_spike,RPP_strategy,PCR_cycles,Description,SpikeDilution,Heat,VirusUnits,Sample_Well,Sample_ID,index,index2
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,A01,Plate1-A01,GATACAGATG,CAAGTCTCAT
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,A02,Plate1-A02,TCTAAGCCTC,AGATAGCCTC
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,A03,Plate1-A03,GAACGGACAG,TCTTCAACGT
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,A04,Plate1-A04,ACGATGTTAC,CAGAGAATCT
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,A05,Plate1-A05,ACCAAGGTGG,TCTTGCCGTT
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,A06,Plate1-A06,ACTCTTGTAG,TTAGATCGCT
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,A07,Plate1-A07,AGCTACAAGG,CGTTCCAGAT
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,A08,Plate1-A08,CTACTGAGAC,CGTTGTATCG
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,A09,Plate1-A09,AGTACAGAAC,CGTGTAGTTC
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,A10,Plate1-A10,TAGGCGTACA,CGTTACCTTA
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,A11,Plate1-A11,ACTGCTCTAG,CTAGTTCTTG
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,A12,Plate1-A12,CCTACCAGAA,CGCAAGTTCG
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,A13,Plate1-A13,CTTACAAGAC,CGCTATGTGT
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,A14,Plate1-A14,GACTGACATG,CGCATAGTCT
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,A15,Plate1-A15,CTATACGGAA,CAAGCCAATG
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,A16,Plate1-A16,GTCACTGTAG,TCTATGAACG
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,A17,Plate1-A17,ACCGGATTAA,TACAGAGATG
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,A18,Plate1-A18,ACAACAGTAG,TATGGTCCAT
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,A19,Plate1-A19,GACTCACTGG,TACGCTCAAT
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,A20,Plate1-A20,GTGTTACATG,CGAATCAGGT
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,A21,Plate1-A21,CAAGCTACCG,CCGTTATGTT
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,A22,Plate1-A22,TGTTACACAG,CCGTATCGGT
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,A23,Plate1-A23,GTATGAGTCT,TCAACAGAGT
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,A24,Plate1-A24,CTCGCACTAA,CGTGACAATA
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,B01,Plate1-B01,CTACGTTGTG,ACGATCTTGT
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,B02,Plate1-B02,CAGCGTTGAT,CGTCTTCTAT
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,B03,Plate1-B03,AGCTACCTTC,CGATCCTGTG
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,B04,Plate1-B04,GTCCATCTGG,CGATTCGTGG
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,B05,Plate1-B05,CTACGATCCG,CGTTCTTCGT
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,B06,Plate1-B06,TCCATCGAAC,TCACTCACTT
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,B07,Plate1-B07,AAGCCGACTG,TCTATGCGGT
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,B08,Plate1-B08,AAGAGGCACC,CGAAGGATAG
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,B09,Plate1-B09,ATAGCCAGAA,CTCTCTATAC
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,B10,Plate1-B10,ACGACGAATG,AACATGTGTG
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,B11,Plate1-B11,TGAACTACGC,CCAGATGAGT
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,B12,Plate1-B12,AGTACGCGGA,TCCGGTTATC
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,B13,Plate1-B13,AACACGGTAG,CGTCCAAGGT
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,B14,Plate1-B14,GTACAAGAAG,ACGAGGATCT
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,B15,Plate1-B15,ACAAGAGTCC,CGTAGACAAG
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,B16,Plate1-B16,ACCAGTATTG,CGGTCATTGT
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,B17,Plate1-B17,AGAACACTAC,TACCATTGGT
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,B18,Plate1-B18,ACCTAGTCGG,CCGCTAAGTG
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,B19,Plate1-B19,ACATTGTTGG,CCATCATATG
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,B20,Plate1-B20,ACGTACAGTA,TCACGACATG
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,B21,Plate1-B21,CACCAGACAT,CGGTATAGAT
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,B22,Plate1-B22,AAGCCGTGAC,TACAGGATAC
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,B23,Plate1-B23,ACGGATGAAC,TTCACCATGG
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,B24,Plate1-B24,CGGAGTCCAT,TACAACCAGT
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,C01,Plate1-C01,CGTAACACGG,CTGATCACTT
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,C02,Plate1-C02,TCCGCATGAA,AAGATGGCGC
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,C03,Plate1-C03,AGACACTGTG,CGTCAATTCT
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,C04,Plate1-C04,ATCATAACCG,CGACTGTCAT
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,C05,Plate1-C05,TCTACATAGG,CGTTATCAGT
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,C06,Plate1-C06,CCAATAGTGG,CTGTGATCTG
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,C07,Plate1-C07,TCACGCATTA,CAGAGACATG
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,C08,Plate1-C08,AACGCACCTA,CGGTAGGATT
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,C09,Plate1-C09,GCTACGGTAG,AACCTCTGCG
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,C10,Plate1-C10,CCTAAGACCA,ACCTATACTC
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,C11,Plate1-C11,ACGAAGAACC,TAGAGACCAG
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,C12,Plate1-C12,AACACGCTCA,TACAATTGCG
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,C13,Plate1-C13,ACCGCTGTAC,CCAACGCTGT
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,C14,Plate1-C14,AACCGTGCTA,TACGTTGATC
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,C15,Plate1-C15,AACGACTTAG,CCGTTCCATT
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,C16,Plate1-C16,ACCAGGTTGA,CGTTCATTAG
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,C17,Plate1-C17,ACTCGTGCCT,CGTGAAGGTT
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,C18,Plate1-C18,ACCATCCGGA,CTCGGAGATT
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,C19,Plate1-C19,AGGCCGACAA,CGACAACATG
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,C20,Plate1-C20,ACAGCTAGTA,CATAGACACT
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,C21,Plate1-C21,GGAGACACGA,AACAGCTTGC
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,C22,Plate1-C22,CTACGCACGT,AAGACCATGT
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,C23,Plate1-C23,ACAGCTCTGA,CCGTATACTA
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,C24,Plate1-C24,ACAGGAGACT,TAGAGGCCTT
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,D01,Plate1-D01,ACAGAGTATC,CGTGTGTCGT
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,D02,Plate1-D02,AGTGGCGTAG,TCTTCTCGAT
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,D03,Plate1-D03,ACTATCCAGG,TAGACCTAGT
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,D04,Plate1-D04,ACCTAAGTAC,TAGATCCGTT
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,D05,Plate1-D05,ATAGCGAACA,CGGACAGAAT
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,D06,Plate1-D06,ACAAGGCTAG,AGGCCACAGT
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,D07,Plate1-D07,TACCTCAGGA,TCCAGGTGTG
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,D08,Plate1-D08,CTACTTACGA,TGATACCGTG
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,D09,Plate1-D09,TTCGACTCAA,CGTTGCTTGA
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,D10,Plate1-D10,GATCGGTCAC,CGCAACTCGT
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,D11,Plate1-D11,ATCATGGCGA,CCTCTGATCT
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,D12,Plate1-D12,CAGACTACTA,CGCTAGATTG
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,D13,Plate1-D13,AGAATTCCGT,TTAGGCCGTT
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,D14,Plate1-D14,TTCCAATAGG,CGATGAACGT
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,D15,Plate1-D15,ACGATCCACA,CCAAGGTCTT
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,D16,Plate1-D16,CAACATGGCG,TACTGATCGG
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,D17,Plate1-D17,CGGATCTGAC,CTGGACACCT
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,D18,Plate1-D18,AAGGCTGCGA,CGGTACATAG
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,D19,Plate1-D19,ACAGAGCAAG,CGGAATCTGT
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,D20,Plate1-D20,GTAATACACG,TGATCTCCTT
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,D21,Plate1-D21,ACAAGATGGA,TACGTGCATT
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,D22,Plate1-D22,TACGTCTGCA,CATCCAGAAC
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,D23,Plate1-D23,GGTTACGGAG,CCACTACCAT
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,D24,Plate1-D24,ACAGAATCTG,AGAGAGCTAT
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,E01,Plate1-E01,ACATGAATGG,ACGTCACCTT
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,E02,Plate1-E02,ACGTCGTTAG,CCGTACTAAT
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,E03,Plate1-E03,AAGACTCTGG,ACCAATGTCT
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,E04,Plate1-E04,AAGACTCAAC,TACGACAATC
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,E05,Plate1-E05,TGGAGATCGC,CCGGACAGTT
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,E06,Plate1-E06,CGTATGCCGA,CAATTACACG
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,E07,Plate1-E07,ATGAAGTCCG,CGTATGACAT
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,E08,Plate1-E08,CGGATACATC,TATCCTAGTG
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,E09,Plate1-E09,GGTATCACAG,CGCTCGTATT
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,E10,Plate1-E10,GTCAAGCTCT,CGAATTGTGT
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,E11,Plate1-E11,CCAGTAGAAG,TTGAACACAG
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,E12,Plate1-E12,AGCCGAATCT,CAGACCTTCT
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,E13,Plate1-E13,GATCACCTCA,CGTTGGCACT
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,E14,Plate1-E14,ACAGTTGGTC,AGAGAACACT
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,E15,Plate1-E15,AGCCAATTCG,TACAACACGG
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,E16,Plate1-E16,CTACCACAGA,CCGTCACAGT
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,E17,Plate1-E17,TACGGTCTAG,CGTCACTGTT
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,E18,Plate1-E18,TCGGAATCCA,CCACGTTACG
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,E19,Plate1-E19,CATTCGCACC,TCCGTCATAT
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,E20,Plate1-E20,TCTACGTCAA,CGCAAGATAA
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,E21,Plate1-E21,GACATCACGC,CGAATACTAG
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,E22,Plate1-E22,TAGCCGTTGG,CGTAGCTATT
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,E23,Plate1-E23,CCAAGACAGG,CCTCTCCGTT
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,E24,Plate1-E24,CATCTAGTGG,CTCTCGACAT
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,F01,Plate1-F01,GCCAACGATG,CTCTCTCACT
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,F02,Plate1-F02,ACTAGACTAC,TTAGACGTTG
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,F03,Plate1-F03,GCCACTGAGA,TCCTAAGCTT
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,F04,Plate1-F04,CAACGTGGTC,CCACTTGTTC
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,F05,Plate1-F05,GCCACGAACA,CGGTTCCAAG
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,F06,Plate1-F06,TGGAACCAAT,TCGATATGGT
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,F07,Plate1-F07,ACGTTGAAGG,CGCTTCCTGT
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,F08,Plate1-F08,GTTACGTACG,CGATAAGCAT
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,F09,Plate1-F09,AGGAGCACAT,TTCCGTTCAT
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,F10,Plate1-F10,GAGGCTACTC,CAAGAACAGT
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,F11,Plate1-F11,ATCATGGAAG,CGAAGCAAGG
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,F12,Plate1-F12,ACCAGTGCCA,CGGTATGTCG
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,F13,Plate1-F13,GATCACAACT,CGCTAATAGT
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,F14,Plate1-F14,GAACAGTGTA,CGATCTAACT
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,F15,Plate1-F15,GATTCGTCCG,CGATGTTCCT
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,F16,Plate1-F16,CGGATCTTGG,AGATACACTG
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,F17,Plate1-F17,ACATTCTCTC,TACCGATTAG
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,F18,Plate1-F18,GAATCGTCGC,CAACACTGAT
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,F19,Plate1-F19,CAGATGTACA,TCCGACTAGA
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,F20,Plate1-F20,AGACTAAGCC,TGATGAAGGC
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,F21,Plate1-F21,GATCCTGAAG,CGTTAGTTGG
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,F22,Plate1-F22,ACAAGGAAGA,CAGAGATAGT
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,F23,Plate1-F23,AGTCATGTCG,AACAACCTGG
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,F24,Plate1-F24,AATCCGAACT,TTAACCGTGT
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,G01,Plate1-G01,CAACGATGTA,AACACACTTC
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,G02,Plate1-G02,GAGTCGGAAT,CCGAATTCCT
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,G03,Plate1-G03,ACTTGAGAAG,CGCTCAACTT
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,G04,Plate1-G04,TCCGTGATTC,TCTGATCCAG
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,G05,Plate1-G05,GTCATCTCAG,CTCAGAACAT
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,G06,Plate1-G06,ACATCCATAG,TGACCATGTG
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,G07,Plate1-G07,CTCTCGATGG,CGCACGAAGT
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,G08,Plate1-G08,CTGAAGGCGA,CATCGTACTG
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,G09,Plate1-G09,TGTCGATAGG,CGACTTAAGT
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,G10,Plate1-G10,AACCGGATTG,TCAGACCATT
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,G11,Plate1-G11,TAATCCGACA,AACCAGTTGG
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,G12,Plate1-G12,ATGTTACGCA,CGTAATCCTA
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,G13,Plate1-G13,TGAACGTTGA,AGAGCCGAAC
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,G14,Plate1-G14,TCTAGACACA,CCACTCATGT
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,G15,Plate1-G15,ACTTAGATGG,TTCCATGCGT
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,G16,Plate1-G16,AGCTGTGTGG,TTCACGCTGT
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,G17,Plate1-G17,AGCACTCTCG,ACGATACGTG
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,G18,Plate1-G18,ATGTTGGCTC,TCCGCAACAT
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,G19,Plate1-G19,ACTCTGAGTG,TCTCACGATT
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,G20,Plate1-G20,GTCCTAGGAG,CCGTTCACTG
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,G21,Plate1-G21,ACCGTATGTC,CCATTATCCG
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,G22,Plate1-G22,TACCAAGGTA,CGATAAGGTG
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,G23,Plate1-G23,TAACCGTTCC,CCGTACGCTT
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,G24,Plate1-G24,GTCCGAATGC,CGTTGACGTT
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,H01,Plate1-H01,CCAAGCACGA,TTACCTCGTA
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,H02,Plate1-H02,GATAAGACAG,TTGCACTCGG
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,H03,Plate1-H03,AGATCATTCC,AGATCAGTGG
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,H04,Plate1-H04,TCATTGAACC,CGTGGTATGT
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,H05,Plate1-H05,ACCGTCTACC,CCAATGATCC
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,H06,Plate1-H06,GAGGCAACAT,TACGAACGAT
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,H07,Plate1-H07,CCAGAGTCAT,CGTCGCATAT
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,H08,Plate1-H08,GAGGAGTTGG,TACCTCTCCT
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,H09,Plate1-H09,AGCACATAGC,CGATTATGTC
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,H10,Plate1-H10,GGCAATGATA,TGAGATCCAT
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,H11,Plate1-H11,CTTGCCACAC,TCCTCAGATC
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,H12,Plate1-H12,AGACACGTCC,CCAACAACAT
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,H13,Plate1-H13,CATAATCGCA,CGATGAGAAC
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,H14,Plate1-H14,ACAAGTCGCT,TAACACCTGT
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,H15,Plate1-H15,TCTCGTTCAC,TTGATCGATG
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,H16,Plate1-H16,TGACTACCAG,TCCGAATGTT
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,H17,Plate1-H17,TCGGACTACC,CCAAGCCGTT
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,H18,Plate1-H18,AGCTCTAGAA,CGATAGACCA
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,H19,Plate1-H19,AGACGATGCG,CGATTGCATT
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,H20,Plate1-H20,GTAGCAGACC,CGAAGTGTTG
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,H21,Plate1-H21,GGCCTTGTAG,ACGGTGATAT
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,H22,Plate1-H22,CAGAACGATC,CGACAGGTTC
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,H23,Plate1-H23,GACTACGACG,TACGCTGTGT
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,H24,Plate1-H24,GTGGAATACA,TCTATCCTCA
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,I01,Plate1-I01,TACTACGGAG,AACAGTCGAT
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,I02,Plate1-I02,CTCATGACAC,CCGTAAGTCT
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,I03,Plate1-I03,AGTCTGCCGT,CGGATGATGT
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,I04,Plate1-I04,TGTCCACTAT,CGTTCTGATT
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,I05,Plate1-I05,AGTCTTGGTC,ACCAACTACT
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,I06,Plate1-I06,CTCCGGATCA,CCGGAATCTC
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,I07,Plate1-I07,ACTTCTGGAG,AACTCTACTG
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,I08,Plate1-I08,TTACGATTCC,GATAGAACTC
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,I09,Plate1-I09,ACAGATAAGG,CCGCATCTAT
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,I10,Plate1-I10,TCGCAGAGAC,TGGCCGATCT
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,I11,Plate1-I11,ATTCCGTAGG,ATCACTAGCT
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,I12,Plate1-I12,CATAACGTGG,CGTAGTGAGT
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,I13,Plate1-I13,GAGCATGTTC,ATCCTCACCT
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,I14,Plate1-I14,GGCTTCACTT,TAGACAGCTT
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,I15,Plate1-I15,ACAGTTAGAG,TCATGCGTGG
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,I16,Plate1-I16,TAGTGAGAAG,CTATCCGTCT
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,I17,Plate1-I17,GACACTCCTC,CGTATAGGAG
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,I18,Plate1-I18,TCACCGCAAC,CCAATCTTAC
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,I19,Plate1-I19,ACGATGTGCA,CGGATAGCTT
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,I20,Plate1-I20,ACATCGGTAC,TTACCAGTTG
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,I21,Plate1-I21,TAAGTCGAAC,TGGCCATTAC
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,I22,Plate1-I22,GAGATGACTA,CGCTACAGTC
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,I23,Plate1-I23,GGCACAACTC,TCTGACATGT
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,I24,Plate1-I24,TACGACCTTG,TTATAGCCGT
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,J01,Plate1-J01,ATACGCTGAA,AGGATTAGCC
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,J02,Plate1-J02,CGACTGCTTA,CTTCGTAGCC
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,J03,Plate1-J03,AGCCTCAGAC,ATAGGAAGCC
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,J04,Plate1-J04,GCCTACCTTG,CGAACAATGT
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,J05,Plate1-J05,CTAGCCGACA,TTACCGGAGT
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,J06,Plate1-J06,ACCATGAGAA,TGATCCACGG
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,J07,Plate1-J07,ACGTGAAGAA,CGTTGGTCTT
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,J08,Plate1-J08,ACAGCGATAA,CGTCCTTAGA
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,J09,Plate1-J09,GTGTCCGTTC,TAAGATCTCG
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,J10,Plate1-J10,GTAGTCACTA,CGTAACATTC
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,J11,Plate1-J11,TTAGACCAGA,AGAGCTATAC
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,J12,Plate1-J12,TTAGGCCAAC,TACGCTTACG
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,J13,Plate1-J13,TCATTCCACA,CGTGGAAGGA
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,J14,Plate1-J14,ACAAGTCCGG,TCAACCTCGT
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,J15,Plate1-J15,AGTGGCACGA,CCGCTATACG
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,J16,Plate1-J16,GTAGCCAAGA,CGAACGGTTA
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,J17,Plate1-J17,ACTCGACTTG,CGTAGAACTT
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,J18,Plate1-J18,ACGAAGTCGA,CGATCGCTCT
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,J19,Plate1-J19,AACACGATGC,AGGAAGCTTG
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,J20,Plate1-J20,TAGTACCTGG,CGTATGCGTG
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,J21,Plate1-J21,CATACATTGC,CCGTGAATGT
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,J22,Plate1-J22,GAATCGGTCT,ACAGAGAGTT
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,J23,Plate1-J23,TCCGAGGACT,CTCTACTGCT
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,J24,Plate1-J24,TCCGTATCAG,CTTGTCCGAT
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,K01,Plate1-K01,CGGTAACTGG,TTACGGTGAT
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,K02,Plate1-K02,GTACTACTAC,TACATACTGG
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,K03,Plate1-K03,ATTCCTACAG,TTAGGAACCG
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,K04,Plate1-K04,GACGACTAAC,CGGTGTTATG
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,K05,Plate1-K05,GTTCGTTCAG,CGTCGTGGTT
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,K06,Plate1-K06,GAGATTGGAT,TCCATTAGCT
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,K07,Plate1-K07,CGAAGCAGTC,CTCTACCTCG
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,K08,Plate1-K08,GGACGTTACC,CATTGGATCC
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,K09,Plate1-K09,ACTTGTAGGA,CAAGATTGCC
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,K10,Plate1-K10,AAGGCTGATC,TGGCCATATT
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,K11,Plate1-K11,AGGACATTCA,TACCGCTTGA
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,K12,Plate1-K12,TAACCAGGAG,ACCAATTGAG
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,K13,Plate1-K13,CAATCGGTTC,AGTCCGGTTG
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,K14,Plate1-K14,CCTCACAAGG,ATGCCGAAGT
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,K15,Plate1-K15,ACTTCCGCAA,CTTGCATCAG
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,K16,Plate1-K16,ACAGATGTAG,CGGACTATCT
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,K17,Plate1-K17,ACGAAGAGAG,TAAGCCTGGT
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,K18,Plate1-K18,GAGCAAGCAA,CCGAATATGC
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,K19,Plate1-K19,ACGCTTAAGA,TCTGTGCGTC
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,K20,Plate1-K20,CGCGCATAGA,AATGCAGGCC
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,K21,Plate1-K21,AGCAAGAGAC,TTCACACTAC
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,K22,Plate1-K22,TACGCGACTA,CCGCCATGTA
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,K23,Plate1-K23,CTCTGTGCGA,CGTTCATATC
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,K24,Plate1-K24,GATCCACGTA,TAATGGAGCC
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,L01,Plate1-L01,TTCGTTGTAG,CGTAACGACT
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,L02,Plate1-L02,GCTAACTACG,AATCCGATGG
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,L03,Plate1-L03,AGAGAAGGAC,TACTCCTTAC
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,L04,Plate1-L04,ATCCGATCAA,ACGCATCTTC
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,L05,Plate1-L05,CCATAAGCTC,CTGAAGATCT
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,L06,Plate1-L06,AGCCGGATGA,TACCTCATCG
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,L07,Plate1-L07,CCATGTTCGG,CCGATTCAAT
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,L08,Plate1-L08,ACGTTAATCG,CCGATGATTG
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,L09,Plate1-L09,AACGATGGAA,CCGATAGGTC
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,L10,Plate1-L10,ACCTTCTAGA,TTGCCGATTC
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,L11,Plate1-L11,ACGTAACCAG,TCTAACGTCT
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,L12,Plate1-L12,TTGATTGACC,CAAGGTATCC
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,L13,Plate1-L13,CCGCAGTACA,CGTGATGAGA
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,L14,Plate1-L14,CTCCGATTGT,ACGCAAGCTT
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,L15,Plate1-L15,GTAGCTGAAG,CGACAAGTAG
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,L16,Plate1-L16,GGATCGAAGG,AGGCCTTCCT
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,L17,Plate1-L17,GGCACTCATG,CTACATCACT
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,L18,Plate1-L18,GACTCGTAGG,CGACATGCCT
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,L19,Plate1-L19,CGGACACTTG,CGATGTCTGT
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,L20,Plate1-L20,TGGCTAAGAT,TTACCTACCT
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,L21,Plate1-L21,AGCTGTACCG,AGTAGCCGAT
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,L22,Plate1-L22,TCCGATGTGG,AAGTGGCCGT
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,L23,Plate1-L23,CGTCCACTGA,TTCCGCTCTG
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,L24,Plate1-L24,ACGATGAGTC,CACGGACTTG
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,M01,Plate1-M01,CCAGAGTTCC,CGCATTGACG
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,M02,Plate1-M02,TCACCGGACA,AGCATGATCC
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,M03,Plate1-M03,TGACGCGAAC,ACTCTAACAC
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,M04,Plate1-M04,TAGAGATTCC,GACGCTTGAT
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,M05,Plate1-M05,TCAGACACCG,TCACATTCCT
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,M06,Plate1-M06,TTAACGTCAG,CGCGCATGTT
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,M07,Plate1-M07,GGTATCTACC,CGCCTAAGTT
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,M08,Plate1-M08,AACGCATCGG,CAGTACGTAT
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,M09,Plate1-M09,AAGTCACTTG,AGGCATCCAT
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,M10,Plate1-M10,CGTTAGACAC,TCGATCTAGC
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,M11,Plate1-M11,TGGCAGAGTG,TACGGTAACT
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,M12,Plate1-M12,ACCAGATCCT,CACGCAGTCT
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,M13,Plate1-M13,TCAGAGACAC,ACGTTCATGC
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,M14,Plate1-M14,AGACGTGCCA,CGTTCTCACG
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,M15,Plate1-M15,GTTACGCGAC,CGTTACTCTG
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,M16,Plate1-M16,CTGTAAGAAG,CCTTACCGCT
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,M17,Plate1-M17,CGCCGAATAC,TACTCCATGT
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,M18,Plate1-M18,ACTTAGGAGA,TGAATCTCAC
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,M19,Plate1-M19,AAGTGACCAA,AGCTCTATCC
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,M20,Plate1-M20,CACGCCTACT,CGGAAGTAGT
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,M21,Plate1-M21,AATGAAGCGA,GGACATACAT
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,M22,Plate1-M22,CCACAGAGTA,CAATCCGCTT
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,M23,Plate1-M23,TCGCTATTGG,CATAGCCGTG
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,M24,Plate1-M24,AGAGACCATC,CTTAAGCAGG
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,N01,Plate1-N01,ACTCCAGATG,GACAAGTCTT
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,N02,Plate1-N02,ATCCGCTTCA,TATGACAGCC
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,N03,Plate1-N03,ACTACGTCGT,CCGATACTGT
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,N04,Plate1-N04,ACAGGAAGTG,AACACTGCTT
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,N05,Plate1-N05,CATCGTTAAG,CCGTAGATCG
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,N06,Plate1-N06,CCGCGATTAC,CCGGTTAGGT
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,N07,Plate1-N07,GTGTACTCAA,CTTGTGTACC
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,N08,Plate1-N08,CGGTTGAGTC,TTCCGAACGT
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,N09,Plate1-N09,CGATATATGG,CAACGTACCT
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,N10,Plate1-N10,ACGTCTATGG,ACTCCGGTCT
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,N11,Plate1-N11,CGCATTGCTC,CAATGATCAG
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,N12,Plate1-N12,GATTCCGTAC,TAGGCACTCC
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,N13,Plate1-N13,TTCCTTCAGG,AGTTCCGATG
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,N14,Plate1-N14,CCATACAGAC,CGGTACAACT
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,N15,Plate1-N15,AGAGCACCTG,TCGCGATAAT
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,N16,Plate1-N16,CCACATCATA,CGTTGGATTA
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,N17,Plate1-N17,AACGCCTAGA,TTGGTTCCAG
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,N18,Plate1-N18,CCTTCGGAAG,GAAGCTCGGT
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,N19,Plate1-N19,CTCGTAGAGG,CAACAACGCT
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,N20,Plate1-N20,GTGTGAGTGG,CAACGGAGTG
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,N21,Plate1-N21,AATTATGGCG,AGATCAGGAT
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,N22,Plate1-N22,CACGATTCGC,CGACGGAATT
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,N23,Plate1-N23,ATCGTCCAGG,CGAATCGCAT
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,N24,Plate1-N24,ACTCGCTAAG,CATGTACCGT
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,O01,Plate1-O01,ACAACGAACT,CGTGATTGGT
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,O02,Plate1-O02,GCCAAGCAAG,CTACCATGCT
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,O03,Plate1-O03,CTGACATTAG,ATGTCTACCG
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,O04,Plate1-O04,TCAGGCTCGA,CGCTATTCTA
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,O05,Plate1-O05,GTGATAAGAG,CCGTTAGTAG
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,O06,Plate1-O06,ATGCACTAGA,CAATTCTGAC
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,O07,Plate1-O07,CAGGTGAGGA,CCTGTTGCAG
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,O08,Plate1-O08,ATCTGGACAA,CCGTAAGATA
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,O09,Plate1-O09,TGGAGTCAAG,CCGGAATAGG
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,O10,Plate1-O10,GGTGAACAGA,TCTGAGCTCT
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,O11,Plate1-O11,AGATGTCGGA,AAGATCACGG
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,O12,Plate1-O12,ATAACTCGGA,CCGAATGCAG
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,O13,Plate1-O13,GGCTATCGGA,TGTTCTAGCC
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,O14,Plate1-O14,CATTAGTACG,AGACCTAATG
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,O15,Plate1-O15,GATTCGATAG,CGACGTTGGT
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,O16,Plate1-O16,AGCTGTTGAC,CTCGACAACG
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,O17,Plate1-O17,CCATTCCTAG,TCCGCTTCCT
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,O18,Plate1-O18,AACCAGAGCA,GGTAGATCTG
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,O19,Plate1-O19,CAAGACCGTA,ACGTATAAGC
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,O20,Plate1-O20,GCAATAGCCA,CGAACATGGA
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,O21,Plate1-O21,GACGCATTCA,CTAGATCGGA
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,O22,Plate1-O22,GATGTGCCGA,CACGGACAAT
+Plate1,,,A,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,O23,Plate1-O23,GTACACCTGA,TATAGTCACG
+Plate1,,,B,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,O24,Plate1-O24,AGATCGTAAC,ATCTTACCTG
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,P01,Plate1-P01,GATAGTACGG,CGAAGATTGG
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,P02,Plate1-P02,GACATTGGCG,CCACGGTAAT
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,P03,Plate1-P03,TTACGGACGC,TCAACATGCT
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,P04,Plate1-P04,TCAGTTACGC,TCGTAGTACT
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,P05,Plate1-P05,CCAGAAGCAA,CGTGTGCTAC
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,P06,Plate1-P06,GAGACTCCAA,TCCAAGACTG
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,P07,Plate1-P07,AAGCCAGAGG,CGATTCTCTT
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,P08,Plate1-P08,TCATGCCGAA,TAACCAGTCT
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,P09,Plate1-P09,CTCGTGGACA,TCAACGAAGC
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,P10,Plate1-P10,GAGACAAGAC,AGTCGACACT
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,P11,Plate1-P11,CACGGTAAGC,AGGCCACTTC
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,P12,Plate1-P12,GAGCACTTCC,TCCGATGCAT
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,P13,Plate1-P13,TCGGAGCTTG,TTCATCCGGT
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,P14,Plate1-P14,TGACAGAACC,TTCTTCCGTC
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,P15,Plate1-P15,GACGTATGAC,TCACTCCGTC
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,P16,Plate1-P16,CAGGATCTCC,ATCTCTGCAG
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,P17,Plate1-P17,TCGGTTGTCC,AGAATGCATG
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,P18,Plate1-P18,CAAGAATCAC,CCTAGCACAT
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,P19,Plate1-P19,AGGATGACCA,TCTACCACGG
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,P20,Plate1-P20,ATGCTAGAAG,CGGTGTACAG
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,P21,Plate1-P21,CAGACTGGAC,TCAGCCGTAC
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,P22,Plate1-P22,CTCAGTACGG,ACAGACCGTG
+Plate1,,,C,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,P23,Plate1-P23,CTCGTCACTC,AGTTGACCAG
+Plate1,,,D,N1_S2_RPP30,1,1, ,1,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,P24,Plate1-P24,TCAATTCCGA,CGTACTTGAG
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,A01,Plate2-A01,TGGCATGTTA,TACATTCCAG
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,A02,Plate2-A02,ATCCATGTAG,CCAGCAAGTT
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,A03,Plate2-A03,GAACCATTAG,GTCCGATCTT
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,A04,Plate2-A04,AGTCCAATAG,TATCTACCGG
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,A05,Plate2-A05,CTTGGAGTAG,CTTACACACG
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,A06,Plate2-A06,TACTCTACGC,CATCGATCCT
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,A07,Plate2-A07,ATCTGAACGC,TTAATTGCGC
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,A08,Plate2-A08,CTTGGCGATG,AACACAAGTG
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,A09,Plate2-A09,GAGAAGATGA,CATCTCATTG
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,A10,Plate2-A10,TGGCCTCAGA,CGATAGTCAG
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,A11,Plate2-A11,CTGATCCGTA,CGTGAATGAC
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,A12,Plate2-A12,CTGCTTATCC,CGCTTCAATG
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,A13,Plate2-A13,ATCCGTCTGA,GCAAGATCCG
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,A14,Plate2-A14,ATCCGTAGAC,TGGCGGATAC
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,A15,Plate2-A15,TAACACGGAC,ACCTTCTCCG
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,A16,Plate2-A16,CCATCATGAA,CGATTGTTCA
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,A17,Plate2-A17,AGAGGCTAGC,TAGGTTGCGC
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,A18,Plate2-A18,TTGCCTGACG,TAAGCCGTCG
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,A19,Plate2-A19,CTTAGGTAAG,ATCTTGCCAT
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,A20,Plate2-A20,ACCACACGCT,TCCGTCCGTT
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,A21,Plate2-A21,ACAAGCGACA,CGGTATTAGC
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,A22,Plate2-A22,CTGCCTTACA,AATGTCCGCA
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,A23,Plate2-A23,CACGGAACCT,TGATCTAGGT
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,A24,Plate2-A24,ACAGTGACGA,ACCATCCTAC
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,B01,Plate2-B01,GTCACGTTGG,AGATCTCTTG
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,B02,Plate2-B02,AACAGCACGA,CGCAAGTGAT
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,B03,Plate2-B03,TGAATGGAGA,CTACTCCAAC
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,B04,Plate2-B04,TACGGAATCG,CATCCGACGT
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,B05,Plate2-B05,TTGACAACGG,AAGAAGCGCT
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,B06,Plate2-B06,ATCCGACAGG,TATCTGCGCT
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,B07,Plate2-B07,ACCTATCGTA,CATCCGAATG
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,B08,Plate2-B08,CTCGGTATAG,CACGTTCTCG
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,B09,Plate2-B09,GGCAGTAAGA,CTTACTCTAC
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,B10,Plate2-B10,CTACCGTACC,ACCATGGATC
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,B11,Plate2-B11,ACGACAACCA,GTATCTTCCG
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,B12,Plate2-B12,GTATGGTCGG,TCGACACCAT
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,B13,Plate2-B13,CATTGCCGGA,CGCATTAGGC
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,B14,Plate2-B14,CCAGAGGATA,TCCATACCTC
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,B15,Plate2-B15,ACTTCGTATG,CGTACGCGAT
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,B16,Plate2-B16,ACGAGGACAA,ATTGACCGTT
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,B17,Plate2-B17,GTCAGTCACC,TACTCGATCC
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,B18,Plate2-B18,CATTCTAAGG,TTCGGATCCT
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,B19,Plate2-B19,GGTTCAGATA,CGATAGTATC
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,B20,Plate2-B20,TACTGGCACC,GACGGATCTC
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,B21,Plate2-B21,GATACCGGAG,ACCTGTGAGT
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,B22,Plate2-B22,CTTACCGAAG,TGTGCCGAAG
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,B23,Plate2-B23,TGTGTAGTAG,CGGTCGTGAT
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,B24,Plate2-B24,GTTCTGTGCA,CGGAAGCTCA
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,C01,Plate2-C01,CTCTAGTGTC,ATGAACCTAG
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,C02,Plate2-C02,AAGCGTCCAC,ACCTGAACTG
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,C03,Plate2-C03,GGCAATTGAC,TTGTATACGC
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,C04,Plate2-C04,GAACAGATTC,CCGATCATCT
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,C05,Plate2-C05,CCTAAGCAAC,CTCTTAGGCC
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,C06,Plate2-C06,GGCACTGTCA,TGGAATTGCC
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,C07,Plate2-C07,TAACCAATGG,CTACTCAATG
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,C08,Plate2-C08,AACGAGGTCC,AAGAGTGCTC
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,C09,Plate2-C09,ATCCGTTCGC,GCCATAGTCG
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,C10,Plate2-C10,AACTGCCGTA,ACGCATTACC
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,C11,Plate2-C11,ACCGTCGTAA,GAATCACGAT
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,C12,Plate2-C12,TTAGCGTGCC,TTCGCCACAG
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,C13,Plate2-C13,TTCTGCTTAG,TCCAATCCGT
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,C14,Plate2-C14,GTCCGGAAGA,CCGTATTGCC
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,C15,Plate2-C15,ATGGCTTCAC,ACCACTGACG
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,C16,Plate2-C16,ATCGTGCTAC,ATCCAGCAGC
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,C17,Plate2-C17,GAGGAGAGTA,CTAGTTCCGT
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,C18,Plate2-C18,ACATGGCACT,AATACTCCGT
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,C19,Plate2-C19,TCTGAGAATG,ATCTATCCGT
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,C20,Plate2-C20,ATCAGGAGTC,ATGATTCCGG
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,C21,Plate2-C21,CTCTACGACC,TAGAATCCGG
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,C22,Plate2-C22,TAACGCAAGA,ACTGTTCCGC
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,C23,Plate2-C23,ACTATCGTCC,TCGATGCAGG
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,C24,Plate2-C24,CTCGGTCCAA,AATCTGTTCC
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,D01,Plate2-D01,CGGAGTGACA,AGGAAGTTCC
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,D02,Plate2-D02,CAAGGCCAGA,TCATTCTTCC
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,D03,Plate2-D03,AGTACTCACC,TAAGGCTTCC
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,D04,Plate2-D04,TTGTCGGTAC,TTGTACTTCC
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,D05,Plate2-D05,TACGCCAACA,CTTGCATTCC
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,D06,Plate2-D06,GGAAGCAGGA,TGAGAACTCC
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,D07,Plate2-D07,GAACGAATAC,TCTGGTATCC
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,D08,Plate2-D08,GATACGGAAC,AATCACATCC
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,D09,Plate2-D09,AGAAGCGTAC,TACCTCGAGT
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,D10,Plate2-D10,GTGTCGTACC,TCGTGTTCCG
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,D11,Plate2-D11,TCCTCTGAAG,TTAAGTTCCG
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,D12,Plate2-D12,GTCACAACAG,TGAGTATCCG
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,D13,Plate2-D13,ACCGTCAGCA,CGTTGTTGTC
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,D14,Plate2-D14,TAGTTCTCGC,GATGTGGCCT
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,D15,Plate2-D15,ACACAGCCAT,GTCACATAGT
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,D16,Plate2-D16,GTTCGTAAGG,CGTCCTACCT
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,D17,Plate2-D17,TTCCTTGGTC,ACAACCACTG
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,D18,Plate2-D18,GATCGTTCCA,CTGATAACGC
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,D19,Plate2-D19,CTTAGCCTAA,TAGGCCTATC
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,D20,Plate2-D20,AGAGTCCTAG,TTGTTACCGG
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,D21,Plate2-D21,AATGGCGTGA,ACACACTCCG
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,D22,Plate2-D22,TTGTTCGGAA,TCCGGTGTCT
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,D23,Plate2-D23,GGAACGCAAG,CTCACATCTT
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,D24,Plate2-D24,TGTTGAGATG,AATCCGCGTG
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,E01,Plate2-E01,AGTTCAAGGA,CCGTTGTTCC
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,E02,Plate2-E02,GAAGACACAG,TGATGGCCTG
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,E03,Plate2-E03,CTGTTGTAAG,TTATAGGCAG
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,E04,Plate2-E04,TAGCTATCCA,CCACATAGCT
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,E05,Plate2-E05,CGAACCGTAG,ACCACAGTGT
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,E06,Plate2-E06,GTTCTACGAA,CGCTTGTGAC
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,E07,Plate2-E07,ATCACGAACC,CAAGTCGTAG
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,E08,Plate2-E08,TTGGAGCCAA,TACTCAACCA
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,E09,Plate2-E09,TCTGGCAACA,CGATCCTCCA
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,E10,Plate2-E10,AAGAAGCCAA,TGGCAACTGA
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,E11,Plate2-E11,AGGCGTAACG,ACACTCCTGG
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,E12,Plate2-E12,TCATTGGCGT,TTGGCCATGT
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,E13,Plate2-E13,CGACAGTCTA,TTCGCAACGC
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,E14,Plate2-E14,GTTGCACCAC,CGGTAACCTT
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,E15,Plate2-E15,ACCGACAAGC,ATGTCCGTAT
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,E16,Plate2-E16,GTTGAGGCAA,CTTCGCCACT
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,E17,Plate2-E17,ATCCGACTAC,TGATTACCGC
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,E18,Plate2-E18,GACTGCCAGA,TCTCAGTCTG
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,E19,Plate2-E19,TGTGCATCAA,CGGAACAAGA
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,E20,Plate2-E20,ACACGGACTA,CCAGCTTGGT
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,E21,Plate2-E21,GTGTTGTGGA,ATTCCTAACC
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,E22,Plate2-E22,ACGTGTCAAG,CTACCGACTT
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,E23,Plate2-E23,ATGCACCATG,TACAGTCGTG
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,E24,Plate2-E24,GCAACACGCA,ACTGGATCGA
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,F01,Plate2-F01,CGGATAGGCA,CAATTCGTCC
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,F02,Plate2-F02,GGACTATGTA,TTCTAGTCCG
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,F03,Plate2-F03,GGTACGAATA,TACAAGCTTC
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,F04,Plate2-F04,ACATCGTCGA,TTCCGTATTG
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,F05,Plate2-F05,CAACGCTCGA,TCTCTCGTTC
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,F06,Plate2-F06,TAGTGGTCGA,CGTCGAAGTC
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,F07,Plate2-F07,CTTCCGTCGA,TCCAGTGTAC
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,F08,Plate2-F08,GATCTCTCGA,CATCCTCGAC
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,F09,Plate2-F09,GCTCATCGCA,ATAGCATGAG
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,F10,Plate2-F10,GACCAGGAAC,TTCCGCAAGG
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,F11,Plate2-F11,AATCAGCGAA,CGTGCTTCCA
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,F12,Plate2-F12,GAATTCCTGG,CTTGGACGCT
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,F13,Plate2-F13,GACTAGAAGC,CGTAGATGGC
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,F14,Plate2-F14,CTTCTCCAGA,AGTAGCTTCC
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,F15,Plate2-F15,TACGAGTTGA,TTAGTCAACC
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,F16,Plate2-F16,TTGGCGATAA,TACGGTGGCA
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,F17,Plate2-F17,GAATACGCAC,CGACATAATC
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,F18,Plate2-F18,GTGAATCACT,TCACAGTGGT
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,F19,Plate2-F19,CTTGCCATGA,TCCAGGCAAC
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,F20,Plate2-F20,CATGCCAGAG,CCTTGAACCG
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,F21,Plate2-F21,TTCTCATCGA,GACGGTAGTC
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,F22,Plate2-F22,TCTCGGTGGA,ACCTAGAGAT
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,F23,Plate2-F23,AGTTCCTCGA,AGTGACTCGC
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,F24,Plate2-F24,GAGGTGGAGA,AATCTCCTCG
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,G01,Plate2-G01,AGGAATACGA,AAGTCTTCGC
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,G02,Plate2-G02,CCATCGGTGA,ATCACCACGT
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,G03,Plate2-G03,CCACGACTTA,TCCAGATCAC
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,G04,Plate2-G04,GACATACCTG,GACGTAGGTG
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,G05,Plate2-G05,CCGTCTGGTA,TTCGGACCAG
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,G06,Plate2-G06,GATAGCTACA,CCTACCGTGA
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,G07,Plate2-G07,ACGACAAGGT,TTCAAGGCTT
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,G08,Plate2-G08,AACAACGTAC,CAGATGCGTC
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,G09,Plate2-G09,TTCGAACATG,AGTCTACGTG
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,G10,Plate2-G10,CTCCGACACA,AAGTTGCGTG
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,G11,Plate2-G11,CGCACATGAC,TCTAGGACGT
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,G12,Plate2-G12,CTTACGATGC,CGTAAGGCGT
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,G13,Plate2-G13,CCACATACAC,GACAGATTGT
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,G14,Plate2-G14,GGTTAGTCGA,CCGATTCTTA
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,G15,Plate2-G15,GATATGGTGT,CCACCTTATT
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,G16,Plate2-G16,CTGAGTTACG,ACTGAGGTTG
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,G17,Plate2-G17,TACGCACGGA,TCTGATCTTC
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,G18,Plate2-G18,AACCTCGTAG,CGCCTTGGAT
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,G19,Plate2-G19,TGAAGAACGG,CAAGTATCTG
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,G20,Plate2-G20,GATCGTGACC,GTCCTTACGT
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,G21,Plate2-G21,TCCTGATACG,ACAGTATACG
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,G22,Plate2-G22,GCAATGGCAC,AGAGTGTTCC
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,G23,Plate2-G23,CCTTCTGTAC,TACCTTGTAC
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,G24,Plate2-G24,CATGATACCA,CGGCTAATTC
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,H01,Plate2-H01,CATGATAGAC,TCCGGAATAC
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,H02,Plate2-H02,GGACTGATAG,CGACTTCGTT
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,H03,Plate2-H03,TTGCTAAGGA,CGAAGCTAAC
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,H04,Plate2-H04,CCGTCCATCA,CGTGAGTGTA
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,H05,Plate2-H05,CGACTTAGAA,CACGCAGGTA
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,H06,Plate2-H06,AGCACGTGAA,CCGTACTCCA
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,H07,Plate2-H07,CGAGCAGATG,ATGAGTGCGT
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,H08,Plate2-H08,ATCGTCGATC,AGCGTACGAT
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,H09,Plate2-H09,GTACCGACGA,AACCTTATGC
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,H10,Plate2-H10,AACTACCACA,TTATCTCACG
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,H11,Plate2-H11,CGGACACCAA,CACGGTCTGT
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,H12,Plate2-H12,CGGAGAACCA,CCTAACGGTC
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,H13,Plate2-H13,CGGTAGATGA,TGGATGTACC
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,H14,Plate2-H14,ATGCCTTAAG,ATGTACGACG
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,H15,Plate2-H15,CACCACACTG,ATAGGCTACT
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,H16,Plate2-H16,AATACCTGGA,CATCCGGTAG
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,H17,Plate2-H17,TGTGTAGGCC,TCTCGCCTAG
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,H18,Plate2-H18,GAAGCTCTAA,CGTGACTTAA
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,H19,Plate2-H19,GCTCCGTAAG,GAACTATCCG
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,H20,Plate2-H20,GTTAACACAC,CAGCTGATGG
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,H21,Plate2-H21,ATATCGGTTG,ATCTCCGCCT
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,H22,Plate2-H22,AACTCAGGTC,AGGATGTCTG
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,H23,Plate2-H23,AATAACACCG,GATTCTACGT
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,H24,Plate2-H24,ATGCAAGGCA,CAGTCTAGCC
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,I01,Plate2-I01,TAGAGGTTAG,TCTACTCTTG
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,I02,Plate2-I02,ACTGAAGGTC,TTGACCTGTC
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,I03,Plate2-I03,AGGCGAAGTG,CCATCGGATT
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,I04,Plate2-I04,GTTACCTGAA,CGATAGGTAA
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,I05,Plate2-I05,CATAGCACGC,TGATCACGTC
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,I06,Plate2-I06,AGGTGTGGTA,CATCATTACC
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,I07,Plate2-I07,CTCTAGAAGA,TTCTCGAAGC
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,I08,Plate2-I08,GTCATCGGTA,ACCTGGTTCC
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,I09,Plate2-I09,CTCTCCGAGT,GTCGAATCGT
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,I10,Plate2-I10,TGACACATAC,CCACAATGTC
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,I11,Plate2-I11,CAGCCTTATG,TAAGGTTGCT
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,I12,Plate2-I12,AAGGCCTCCA,AGACCTATCA
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,I13,Plate2-I13,CGCCTAGATC,ACATGACGTT
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,I14,Plate2-I14,GTTGGAGTCA,CCTACCAACG
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,I15,Plate2-I15,AGCATGTAGA,CCTATTCCAC
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,I16,Plate2-I16,GTACCTTGGA,CAACATCAAC
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,I17,Plate2-I17,TTCACGTAGA,CGATCTCATA
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,I18,Plate2-I18,ACTAGTGGAC,CGTATGTTAG
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,I19,Plate2-I19,TGGCTCCATG,AACCGATGTT
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,I20,Plate2-I20,ACAATGCAGC,ATAACCATGC
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,I21,Plate2-I21,GTTAGCCGCA,CGCACTTATC
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,I22,Plate2-I22,CAACATCCGT,TTACGCGATT
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,I23,Plate2-I23,CGATACCTAT,GACGAACATT
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,I24,Plate2-I24,GTCGGTTAAC,CTGAAGTACC
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,J01,Plate2-J01,TTGAGCTTAC,CTTGAGCTCC
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,J02,Plate2-J02,TTCTCTGAGA,AGACTGAGGA
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,J03,Plate2-J03,GTCAACCGAA,TTCTACTCTC
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,J04,Plate2-J04,TCGCAAGTCC,CGGATATTCC
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,J05,Plate2-J05,GGACTACCGT,TGATGCGCGT
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,J06,Plate2-J06,AAGTCTCGGA,ACTTAGAGCC
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,J07,Plate2-J07,TCATATCCTG,AACGGTTGGT
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,J08,Plate2-J08,TCTAATACCG,GACGTGATGT
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,J09,Plate2-J09,CCACTCTTCA,GTCCAGGATT
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,J10,Plate2-J10,TCCTTACCGA,TAGCCGCATT
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,J11,Plate2-J11,ACCAATCCAA,GCCAGACATT
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,J12,Plate2-J12,TGTGTGGCGA,GATGACGTGT
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,J13,Plate2-J13,ATCTCACTCA,ACGCGAGTGT
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,J14,Plate2-J14,ACATTGCCAC,GATGCATGGT
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,J15,Plate2-J15,TTCCACTTCT,ACTGTACGGT
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,J16,Plate2-J16,ATCAACTCAC,GCTAGATCGT
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,J17,Plate2-J17,ACTTCACTTC,ATAGGACCGT
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,J18,Plate2-J18,AACACCTCTG,GACGCTAAGT
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,J19,Plate2-J19,CTCTACACAA,GTTAGAACCT
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,J20,Plate2-J20,ACCACCATGA,AGGCCTATAT
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,J21,Plate2-J21,ACTAACTCTG,CGCGAATCAT
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,J22,Plate2-J22,AACACAACAC,TCTCTAGCAT
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,J23,Plate2-J23,AACCGCAACC,GCATGTCGTG
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,J24,Plate2-J24,AACCATTGAC,AATTACCGTG
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,K01,Plate2-K01,TCACAATACC,CGTGGTTCTG
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,K02,Plate2-K02,ACTCCATTCC,GACGTTGTGG
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,K03,Plate2-K03,ACTGATCTCA,TCTATTGTGG
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,K04,Plate2-K04,GATCTGCTAA,ATCGACTCGG
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,K05,Plate2-K05,CAATCACCAC,TTAGTCGCGG
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,K06,Plate2-K06,ACAGACATCA,ATTGGTCCGG
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,K07,Plate2-K07,TTGCCGAACA,GTCTATACGG
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,K08,Plate2-K08,TGGATACCGA,TCACGCTAGG
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,K09,Plate2-K09,CACCAACCAC,TCTCACATCG
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,K10,Plate2-K10,CAAGATCCTC,ACTGACTGCG
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,K11,Plate2-K11,CTATAACCGA,CTCACTTCCG
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,K12,Plate2-K12,GATACCATCC,ACATGGTCCG
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,K13,Plate2-K13,CTCGTTCGTA,AACTGTTACG
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,K14,Plate2-K14,ACAACTGTTC,AAGTTCTACG
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,K15,Plate2-K15,AATGAACCAC,AACCGCAGAG
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,K16,Plate2-K16,ACATCTAGAC,CCATCTACAG
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,K17,Plate2-K17,TCAATTCACC,CGCTTAACAG
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,K18,Plate2-K18,TTATCGTCCA,CGCCAGTAAG
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,K19,Plate2-K19,TCTTATCACC,ACGTACGTTC
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,K20,Plate2-K20,CCTACATGCA,CCTCGAGTTC
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,K21,Plate2-K21,ACACACTGGA,GGATATCTTC
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,K22,Plate2-K22,TGTAGTTGAC,CATCAACTTC
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,K23,Plate2-K23,ATGGAGAGGA,ATCCATCGTC
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,K24,Plate2-K24,AGTCGATTAC,CTGACGAGTC
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,L01,Plate2-L01,AGTCACGCTA,TCTATCAGTC
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,L02,Plate2-L02,TCACCTATAC,CAGAGGTCTC
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,L03,Plate2-L03,TATACCGTCA,TTACCGCCTC
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,L04,Plate2-L04,CCATTAGGTA,CATTGACCTC
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,L05,Plate2-L05,CTCGTAATGA,CGTGTTCATC
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,L06,Plate2-L06,ACATGGTGAA,CCGCTTCATC
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,L07,Plate2-L07,TTCTACAGAC,TCCGTCTTGC
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,L08,Plate2-L08,AGTTGTGAAC,ACACCAATGC
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,L09,Plate2-L09,GATAGGAGTA,CATATCTGGC
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,L10,Plate2-L10,CTATCGCTAC,CTCTCTTCGC
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,L11,Plate2-L11,AACGCTCTCC,AGTTAACCGC
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,L12,Plate2-L12,CTAACGCATA,TTGGTGACGC
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,L13,Plate2-L13,TGTCTGTCAA,AACGTGACGC
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,L14,Plate2-L14,ATGTCATCCA,CATGACAAGC
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,L15,Plate2-L15,ATCTCAGACC,CGTAGTGTCC
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,L16,Plate2-L16,GAGAATTACC,TGTATGGTCC
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,L17,Plate2-L17,ATACACTACC,TTCAAGGTCC
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,L18,Plate2-L18,ACTACAGGAA,TCCTACGTCC
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,L19,Plate2-L19,TTCTTACCAC,ACGTCAGTCC
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,L20,Plate2-L20,TGAGGAGACA,ATAACTCTCC
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,L21,Plate2-L21,ACTCTTCACC,TACGTGCTCC
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,L22,Plate2-L22,CAACACACAA,TACTGTTGCC
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,L23,Plate2-L23,TCCTCTCTAC,CCAAGAAGCC
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,L24,Plate2-L24,CTTCGTTGGA,CAATACTACC
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,M01,Plate2-M01,AGTAACCGTA,AGTGAATACC
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,M02,Plate2-M02,CTTACTGGTA,TACGCAGTAC
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,M03,Plate2-M03,ATTGGAACAC,TCCAACTGAC
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,M04,Plate2-M04,GATCCAGCCA,AAGAGATGAC
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,M05,Plate2-M05,GAATGCCAAC,CCGTTAAGAC
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,M06,Plate2-M06,CTAGTACCTA,AGGTAGGCAC
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,M07,Plate2-M07,TTCTGTGAAC,TGGATGCCAC
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,M08,Plate2-M08,ATCCGAAGCA,CTAAGGCCAC
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,M09,Plate2-M09,GGAAGTTGAA,AACTGAGAAC
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,M10,Plate2-M10,CTATGTGACA,TGTGGCCATA
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,M11,Plate2-M11,AATGGTAGCA,CCACTGTGGA
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,M12,Plate2-M12,ACTCTTCCAA,CGTTAATGGA
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,M13,Plate2-M13,AGTAGGAGAA,CTTATCAGGA
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,M14,Plate2-M14,TATCCATGCA,CAATCTTGCA
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,M15,Plate2-M15,TCATCGCTAA,TCGATTCGCA
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,M16,Plate2-M16,TAGCCTTGAA,TCGGACAGCA
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,M17,Plate2-M17,GCATACCTAC,ACAGGTTGCC
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,M18,Plate2-M18,CTTGGTTGAC,TCACTCCAAG
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,M19,Plate2-M19,GCCTGATCGA,ATACCACATG
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,M20,Plate2-M20,GAGTCAGACA,CGTGTCTCTA
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,M21,Plate2-M21,ATGGCGCAAG,ACTATGTGAG
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,M22,Plate2-M22,GTCAGAGAGA,CCTCGACTGT
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,M23,Plate2-M23,GGCTTAAGGA,CCAGCCACTA
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,M24,Plate2-M24,TGGCATAGCT,ACTGTAGCTT
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,N01,Plate2-N01,CAGGACTGCT,ATGCCGTTCT
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,N02,Plate2-N02,ACTGGCGGTA,GCCAAGGTTC
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,N03,Plate2-N03,ACACTGGAGA,GACTCTATCG
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,N04,Plate2-N04,GTTATGACGA,TTACAACGTC
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,N05,Plate2-N05,AACGTAGACA,CTTGTCAAGG
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,N06,Plate2-N06,CACGTTGGAC,CAACTATGCC
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,N07,Plate2-N07,CTTCAAGAGA,TCATGATGTG
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,N08,Plate2-N08,GCTCATGTTA,TATTACCACG
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,N09,Plate2-N09,AACGAACAGA,TCTATTGCTC
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,N10,Plate2-N10,TATTGCCTCC,TGAGGAGCTC
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,N11,Plate2-N11,CGAGTATCAA,AGGATCGCGA
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,N12,Plate2-N12,CATCTCTGAA,AAGTCAGCAT
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,N13,Plate2-N13,CGTTGACTCA,AAGTCGTTGA
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,N14,Plate2-N14,CAACGTAAGG,CGTTCAGAGG
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,N15,Plate2-N15,TGTAGTTCCA,CGATGCTACG
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,N16,Plate2-N16,TAGGACGCTA,CTTAGTCCGC
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,N17,Plate2-N17,ATTGCTCAAC,CATACTCCAG
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,N18,Plate2-N18,ACCAATAGCC,AAGTGTGGCC
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,N19,Plate2-N19,GTGTCAACGA,CGTCATGTAC
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,N20,Plate2-N20,ACATCTGGCA,AATGCGCAGG
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,N21,Plate2-N21,GTAGCCTGAC,TTCATGCCGC
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,N22,Plate2-N22,GACAGTAGCA,TGTCGCAGAG
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,N23,Plate2-N23,ATGACGAGCA,TCGCTGATCC
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,N24,Plate2-N24,TTACACAGCA,TCGAATGCGA
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,O01,Plate2-O01,ACGAGTTCTA,GCTCAACGAC
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,O02,Plate2-O02,CAGGATGTGA,GGTACGTCAC
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,O03,Plate2-O03,CCACTTCTCT,GGAGATCAGT
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,O04,Plate2-O04,CCAGACGTGA,CTGAATTCTG
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,O05,Plate2-O05,AACGTCGCGA,ACCTTCGTGG
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,O06,Plate2-O06,GCTTAGTACA,TTGACCTAAG
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,O07,Plate2-O07,TTCCATGACC,ATTGACGTCG
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,O08,Plate2-O08,CTACTTGACC,ATGTCGCGTC
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,O09,Plate2-O09,TCCATGCTGA,TACATAGCAC
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,O10,Plate2-O10,AACAGCGTTA,CTGATCATAC
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,O11,Plate2-O11,CCAGTTCTAC,AACCATAACG
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,O12,Plate2-O12,CAGGTAGCCA,CCTAGCTGGA
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,O13,Plate2-O13,AGTTGGTACG,TACGTTCGCT
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,O14,Plate2-O14,CTACTCTCTA,ACGGATTCCG
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,O15,Plate2-O15,CGCTAACACA,TACTAACCGC
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,O16,Plate2-O16,AGCCGTTGTA,CCGAACCTAC
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,O17,Plate2-O17,TTCACCAGCC,TCTGGAGTCG
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,O18,Plate2-O18,CCTCTACTCA,ACCTTGACAG
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,O19,Plate2-O19,TACCTAAGCC,AAGTAGCTAG
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,O20,Plate2-O20,TGAGCTTAGA,TCTAGCTATG
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,O21,Plate2-O21,CAAGAAGTCG,TCGATGACCT
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,O22,Plate2-O22,CCATCTCAAC,GACACATGTT
+Plate2,,,A,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,O23,Plate2-O23,CTGTATCCAA,AGGTAATGCG
+Plate2,,,B,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,O24,Plate2-O24,TCCTGGATAA,ACGAACGCCA
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,P01,Plate2-P01,ACAGTTGCAA,CTCGATTACA
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,P02,Plate2-P02,TATCGGTCGT,CGAACTACTT
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,P03,Plate2-P03,AAGGCCTGAG,GTCATGGCCT
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,P04,Plate2-P04,CCTCGTGTAA,CGTTACCAAC
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,P05,Plate2-P05,CAAGGAGTTA,CATGGTCTAC
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,P06,Plate2-P06,TTCGTGAATG,ACGTCATGAT
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,P07,Plate2-P07,TTGTGACACC,ATGGAGTGCC
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,P08,Plate2-P08,GTTGTCTACA,TACCGACACG
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,P09,Plate2-P09,GTACTCCGTA,ATCTATGGCC
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,P10,Plate2-P10,ACACTGCTAA,GCTTGGCAAC
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,P11,Plate2-P11,GAGATGAAGT,ACACTTCGGT
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,P12,Plate2-P12,GTTCTAACAG,TGTGGTACCG
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,P13,Plate2-P13,ATGTACCGAA,CAGTCTTCCG
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,P14,Plate2-P14,CAGTTCCGAA,TGTTCGAATC
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,P15,Plate2-P15,ACCAGTTAAC,GTTCGACAAT
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,P16,Plate2-P16,GAGCCTACCA,ACCACGTCTA
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,P17,Plate2-P17,GGTTCCATAA,CTCTGGAACG
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,P18,Plate2-P18,ACAACGCCTC,GATGGCCAAT
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,P19,Plate2-P19,GTAGCCGGTA,CATGTTGACC
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,P20,Plate2-P20,TCACTAGAAC,AGTTCTGTCT
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,P21,Plate2-P21,GAGCTTCAAC,CGTGCGTAAG
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,P22,Plate2-P22,CAGTTACTCC,GAAGGACACT
+Plate2,,,C,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,P23,Plate2-P23,GATAGTGTAG,ACACAACAGT
+Plate2,,,D,N1_S2_RPP30,2,2, ,2,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,P24,Plate2-P24,CGGACTTGCA,AATCGCTCCG
+Plate3,368290382,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,A01,Plate3-A01,TCGGTGGAAG,AGTAGTTGCG
+Plate3,neg saliva + TBET,64000,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,A02,Plate3-A02,AGTGAGGATA,CTCTCAGTAG
+Plate3,368277372,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,A03,Plate3-A03,ACACGTGATG,GGAACACCTT
+Plate3,neg saliva + TBET,64000,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,A04,Plate3-A04,CTGAGCTGAT,ACTTCGCGGT
+Plate3,368290034,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,A05,Plate3-A05,AGGCACCTAA,CTATCTATCG
+Plate3,neg saliva + TBET,64000,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,A06,Plate3-A06,ATTGAGCTAG,CCGGATAACG
+Plate3,368318869,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,A07,Plate3-A07,ACAATCGTTG,ATTAGCGCTT
+Plate3,neg saliva + TBET,64000,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,A08,Plate3-A08,GCATGGAGAC,CGACTCTTGC
+Plate3,368293315,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,A09,Plate3-A09,TTAGTCCGAA,ATTGGCCAGA
+Plate3,neg saliva + TBET,64000,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,A10,Plate3-A10,ATGCCTCATA,AGGCAGCGTA
+Plate3,368318845,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,A11,Plate3-A11,TATCACACGC,GAAGCACTCG
+Plate3,neg saliva + TBET,64000,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,A12,Plate3-A12,CTTCAGCGTA,CCGCTAGTTA
+Plate3,368307057,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,A13,Plate3-A13,TGAGACAGTA,ACTGTGAACC
+Plate3,neg saliva + TBET,64000,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,A14,Plate3-A14,GTGACCAACC,AGAAGCTGAG
+Plate3,368274114,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,A15,Plate3-A15,ATACCGTGTC,ATGAACCGGT
+Plate3,neg saliva + TBET,64000,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,A16,Plate3-A16,CACGGTTGAA,CCGTTACCTC
+Plate3,368307064,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,A17,Plate3-A17,CGCTGTTGGA,CTCCATACCG
+Plate3,neg saliva + TBET,64000,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,A18,Plate3-A18,GCTGACAAGA,TTCACTTACC
+Plate3,368294786,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,A19,Plate3-A19,GATGACGATA,CGTTAAGTCC
+Plate3,neg saliva + TBET,64000,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,A20,Plate3-A20,TGGATCCTAA,CGTACTAACA
+Plate3,368293337,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,A21,Plate3-A21,CAGAACCACA,TCCTACGGTA
+Plate3,neg saliva + TBET,64000,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,A22,Plate3-A22,TGACCACGCA,GCACGAGTTG
+Plate3,368318890,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,A23,Plate3-A23,AAGCGAATCC,TCTTACTCCG
+Plate3,neg saliva + TBET,64000,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,A24,Plate3-A24,TTAACGCGAA,ATATAGGACC
+Plate3,neg saliva + TBET,64000,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,B01,Plate3-B01,TCGACGATGA,ACACGATTCT
+Plate3,368290382,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,B02,Plate3-B02,TAGCAAGACA,CTCGCTAACC
+Plate3,neg saliva + TBET,64000,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,B03,Plate3-B03,TTCTTCTCGG,CTAGACCATG
+Plate3,368277372,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,B04,Plate3-B04,GAGTGTCTAA,ACCTACGCGA
+Plate3,neg saliva + TBET,64000,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,B05,Plate3-B05,TCTACACGTA,GTACTCTCGG
+Plate3,368290034,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,B06,Plate3-B06,AAGCTGGCAA,CTTATATGCC
+Plate3,neg saliva + TBET,64000,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,B07,Plate3-B07,TCCGAGAGGT,AAGTAGGCTT
+Plate3,368318869,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,B08,Plate3-B08,AGGAGCAAGC,ATCGCGCTTG
+Plate3,neg saliva + TBET,64000,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,B09,Plate3-B09,GAGAATCGGA,AATGGTGTCC
+Plate3,368293315,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,B10,Plate3-B10,ACGCACACAA,TTGTGAGCTC
+Plate3,neg saliva + TBET,64000,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,B11,Plate3-B11,AATGTGGAAC,CATTGTTCGC
+Plate3,368318845,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,B12,Plate3-B12,GATTCTCTCC,CAGCAATCGC
+Plate3,neg saliva + TBET,64000,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,B13,Plate3-B13,GTGCTTACAC,TTGAGTCGAC
+Plate3,368307057,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,B14,Plate3-B14,CGTCCAATCC,CGATACGAGT
+Plate3,neg saliva + TBET,64000,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,B15,Plate3-B15,CGTTGGTGAA,ACCACTCTGC
+Plate3,368274114,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,B16,Plate3-B16,CGTCTATCAC,CGCTAAGGAC
+Plate3,neg saliva + TBET,64000,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,B17,Plate3-B17,CGTCGAACAA,TGGCTTACTA
+Plate3,368307064,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,B18,Plate3-B18,CGTTGTCCAA,CCAACGTTCA
+Plate3,neg saliva + TBET,64000,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,B19,Plate3-B19,ACTCACAGCA,GCTATGAGCC
+Plate3,368294786,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,B20,Plate3-B20,TACCGAACTC,TCTGCGTACG
+Plate3,neg saliva + TBET,64000,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,B21,Plate3-B21,ACGACGCGTA,GCTTGCTTGC
+Plate3,368293337,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,B22,Plate3-B22,CGATCTGGAA,TCCTTCCATG
+Plate3,neg saliva + TBET,64000,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,B23,Plate3-B23,TCGGATAGTG,GACGCACTAT
+Plate3,368318890,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,B24,Plate3-B24,TCTTACTGTC,AAGATCTGCT
+Plate3,368293297,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,C01,Plate3-C01,ATCGTATGGA,AGTGTCCAGC
+Plate3,neg saliva + TBET,32000,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,C02,Plate3-C02,CACTCCACGA,CGCCTTCCTA
+Plate3,368293311,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,C03,Plate3-C03,ACTCGTGAGA,TTGTGTGTCC
+Plate3,neg saliva + TBET,32000,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,C04,Plate3-C04,CCTGGAATCA,TGGTTGCGGA
+Plate3,368300437,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,C05,Plate3-C05,TCGAACCGGA,TACATGAAGC
+Plate3,neg saliva + TBET,32000,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,C06,Plate3-C06,GTCGCATTAG,ACATCATGCG
+Plate3,neg saliva + TBET,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,C07,Plate3-C07,GCCACACCTA,ATACTTCCGC
+Plate3,neg saliva + TBET,32000,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,C08,Plate3-C08,GCCGTGTAAC,ATAGTAGCAC
+Plate3,neg saliva + TBET,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,C09,Plate3-C09,GCCGATTCCA,TTGACACTGA
+Plate3,neg saliva + TBET,32000,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,C10,Plate3-C10,ACTCACGGAT,GATACGCGTT
+Plate3,neg saliva + TBET,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,C11,Plate3-C11,AAGCGTACGG,ATGCGTTGGT
+Plate3,neg saliva + TBET,32000,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,C12,Plate3-C12,GACCTTCTCA,CACGCTGAGA
+Plate3,neg saliva + TBET,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,C13,Plate3-C13,ATAGGCCTTA,CGCTCTTAAG
+Plate3,neg saliva + TBET,32000,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,C14,Plate3-C14,ATGGCCTACC,GGATCAAGCC
+Plate3,neg saliva + TBET,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,C15,Plate3-C15,GTTGAAGGCC,CAACCTACGC
+Plate3,neg saliva + TBET,32000,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,C16,Plate3-C16,TTCAATTCGG,AGACAACGTT
+Plate3,neg saliva + TBET,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,C17,Plate3-C17,GACACCAATA,ATCACACCGG
+Plate3,neg saliva + TBET,32000,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,C18,Plate3-C18,ACACCGCTTG,GACTCCTCGT
+Plate3,neg saliva + TBET,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,C19,Plate3-C19,CTGTTCGACA,CAACAGGCCA
+Plate3,neg saliva + TBET,32000,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,C20,Plate3-C20,GTAGGAATAG,CTTCAGGACG
+Plate3,neg saliva + TBET,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,C21,Plate3-C21,ATCATCGACA,ATGGACGTAC
+Plate3,neg saliva + TBET,32000,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,C22,Plate3-C22,GAACGCGATG,ATCCGCAATT
+Plate3,neg saliva + TBET,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,C23,Plate3-C23,ATAGGCGGAT,CCACGTGTGT
+Plate3,neg saliva + TBET,32000,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,C24,Plate3-C24,CTCCGCATTC,ATACAGCTGG
+Plate3,neg saliva + TBET,32000,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,D01,Plate3-D01,ACTGCCAACT,GATTCTGGCT
+Plate3,368293297,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,D02,Plate3-D02,AAGTACACGA,TAGGTCCGAC
+Plate3,neg saliva + TBET,32000,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,D03,Plate3-D03,ACCAGCTCAA,CCGCTTAGCA
+Plate3,368293311,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,D04,Plate3-D04,AACTCCGCAC,AAGTCTGTAC
+Plate3,neg saliva + TBET,32000,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,D05,Plate3-D05,CATTCAGCCT,TGAGCAGGTT
+Plate3,368300437,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,D06,Plate3-D06,CCAGGAACAG,GCCACAATCT
+Plate3,neg saliva + TBET,32000,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,D07,Plate3-D07,TGTCGACTCC,AGCCATTCTC
+Plate3,neg saliva + TBET,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,D08,Plate3-D08,CATTAGGCGA,TACTCCTCCG
+Plate3,neg saliva + TBET,32000,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,D09,Plate3-D09,CTCTCACCGT,GCATCGATGT
+Plate3,neg saliva + TBET,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,D10,Plate3-D10,ACTAATGACC,GGCAATATTC
+Plate3,neg saliva + TBET,32000,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,D11,Plate3-D11,AGGTCCACCA,TATCGTCCGC
+Plate3,neg saliva + TBET,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,D12,Plate3-D12,ATGCTACTGG,GACGATAGCT
+Plate3,neg saliva + TBET,32000,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,D13,Plate3-D13,ACTATGGCGG,GCTCCGAATT
+Plate3,neg saliva + TBET,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,D14,Plate3-D14,AACTGTGTTC,TTGAACAGCT
+Plate3,neg saliva + TBET,32000,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,D15,Plate3-D15,AGAGCCTGTC,TGTGTTGCCT
+Plate3,neg saliva + TBET,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,D16,Plate3-D16,AAGGAGTAAC,AGCGGTTACT
+Plate3,neg saliva + TBET,32000,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,D17,Plate3-D17,TTCCGACATC,GCATGCCAGT
+Plate3,neg saliva + TBET,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,D18,Plate3-D18,GGAGAAGGCA,CGCTCAATCA
+Plate3,neg saliva + TBET,32000,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,D19,Plate3-D19,CGTCTTGATA,TAATCATGCC
+Plate3,neg saliva + TBET,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,D20,Plate3-D20,GGACATGTTG,AACTGAGGCT
+Plate3,neg saliva + TBET,32000,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,D21,Plate3-D21,GAAGATGACC,AGTTATTGCC
+Plate3,neg saliva + TBET,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,D22,Plate3-D22,TCGATGTCTA,CGCATCATTA
+Plate3,neg saliva + TBET,32000,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,D23,Plate3-D23,TAGGCGAAGC,CTACGTACAG
+Plate3,neg saliva + TBET,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,D24,Plate3-D24,CCTCCATCTG,GACGGTCCTT
+Plate3,neg saliva + TBET,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,E01,Plate3-E01,GAGCCATCAC,TTAGGAGGCT
+Plate3,neg saliva + TBET,16000,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,E02,Plate3-E02,TCTTCTGCTA,AAGACTAGTC
+Plate3,neg saliva + TBET,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,E03,Plate3-E03,TGGCGAGACT,AACCGGCCTT
+Plate3,neg saliva + TBET,16000,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,E04,Plate3-E04,GCTTACACTA,TCGAGTAACC
+Plate3,neg saliva + TBET,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,E05,Plate3-E05,GCTCCTACAA,CCGGATCAGA
+Plate3,neg saliva + TBET,16000,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,E06,Plate3-E06,TGAGCCATGA,TGGCTTATGG
+Plate3,neg saliva + TBET,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,E07,Plate3-E07,AAGTGTCATC,CCTTATACGG
+Plate3,neg saliva + TBET,16000,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,E08,Plate3-E08,ACCTCTCACA,CGTAGGAACC
+Plate3,neg saliva + TBET,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,E09,Plate3-E09,AACTCCGTTG,GCCACTCTAT
+Plate3,neg saliva + TBET,16000,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,E10,Plate3-E10,TTAGCGGAAC,TAAGTATCGC
+Plate3,neg saliva + TBET,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,E11,Plate3-E11,ATCTCGGAGG,TGTTCCGCAT
+Plate3,neg saliva + TBET,16000,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,E12,Plate3-E12,GCTTCCATTG,ACGTTCGAAT
+Plate3,neg saliva + TBET,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,E13,Plate3-E13,AGCTGGAACA,GATGGTACCT
+Plate3,neg saliva + TBET,16000,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,E14,Plate3-E14,AGCCGTTCAG,GTCATCAGCG
+Plate3,neg saliva + TBET,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,E15,Plate3-E15,GAGGATGGCA,AAGGACCGGA
+Plate3,neg saliva + TBET,16000,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,E16,Plate3-E16,TAGTTGTGCC,AACTAACTCC
+Plate3,neg saliva + TBET,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,E17,Plate3-E17,GGATGGCGTA,AACTTCATCC
+Plate3,neg saliva + TBET,16000,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,E18,Plate3-E18,ATTACCGACC,GTCGAGTACG
+Plate3,neg saliva + TBET,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,E19,Plate3-E19,GTCATAGACC,TCTGTCTGAG
+Plate3,neg saliva + TBET,16000,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,E20,Plate3-E20,TCGGTCGACA,CGTGAACGCA
+Plate3,neg saliva + TBET,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,E21,Plate3-E21,GGCGAATACT,CGGCCTCATT
+Plate3,neg saliva + TBET,16000,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,E22,Plate3-E22,GAGAGACGCA,AACGTTCGTC
+Plate3,neg saliva + TBET,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,E23,Plate3-E23,TCCTTCACGC,CTTATTCGTC
+Plate3,neg saliva + TBET,16000,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,E24,Plate3-E24,GATCGTGTGA,TTGGCTCGTC
+Plate3,neg saliva + TBET,16000,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,F01,Plate3-F01,ATTGCAGATC,AGAACTCGTC
+Plate3,neg saliva + TBET,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,F02,Plate3-F02,TTGTATGGCA,CCATATCGTC
+Plate3,neg saliva + TBET,16000,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,F03,Plate3-F03,CGATGGCGAT,ACATTCACGT
+Plate3,neg saliva + TBET,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,F04,Plate3-F04,CTCCGTTCCA,TACCTCTAAC
+Plate3,neg saliva + TBET,16000,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,F05,Plate3-F05,GACCGTGTTG,TACAGTCTCT
+Plate3,neg saliva + TBET,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,F06,Plate3-F06,GTCGTATTCC,CATACAACCG
+Plate3,neg saliva + TBET,16000,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,F07,Plate3-F07,CATCACGTAA,ACTGCTCGTC
+Plate3,neg saliva + TBET,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,F08,Plate3-F08,TATAGCGATC,ATCACCAGAG
+Plate3,neg saliva + TBET,16000,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,F09,Plate3-F09,ACACAAGTTC,GATGCATAAG
+Plate3,neg saliva + TBET,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,F10,Plate3-F10,ACTGGAATAG,TACGTCCACG
+Plate3,neg saliva + TBET,16000,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,F11,Plate3-F11,TATGGCATTC,GAAGTGTCGT
+Plate3,neg saliva + TBET,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,F12,Plate3-F12,CCTCCATTAA,CAATGGACGC
+Plate3,neg saliva + TBET,16000,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,F13,Plate3-F13,CCTCGCAGTA,CGAGTCCTTC
+Plate3,neg saliva + TBET,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,F14,Plate3-F14,TATAGCACCA,TAACAGGCGC
+Plate3,neg saliva + TBET,16000,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,F15,Plate3-F15,ACTTGTTAGC,AGGATGCGGT
+Plate3,neg saliva + TBET,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,F16,Plate3-F16,TTCGTGTCGA,AGGTATCGAC
+Plate3,neg saliva + TBET,16000,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,F17,Plate3-F17,GGCAAGGTAT,ACGTTGAGCT
+Plate3,neg saliva + TBET,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,F18,Plate3-F18,TAGTCGTCAC,TCGACGTTCG
+Plate3,neg saliva + TBET,16000,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,F19,Plate3-F19,TGTACGCCTA,TCTAAGGTAC
+Plate3,neg saliva + TBET,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,F20,Plate3-F20,GTTCAATCCG,ATATCGACGT
+Plate3,neg saliva + TBET,16000,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,F21,Plate3-F21,GTGCCGTTAG,CTTACGGTCG
+Plate3,neg saliva + TBET,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,F22,Plate3-F22,GTAGCCTATG,GACAGGCCAT
+Plate3,neg saliva + TBET,16000,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,F23,Plate3-F23,TAAGCGCTCA,AGTAACAACC
+Plate3,neg saliva + TBET,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,F24,Plate3-F24,TCGTCGTGTC,AGCGGACAAG
+Plate3,neg saliva + TBET,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,G01,Plate3-G01,TCAGTATGAC,AGAGTACGTC
+Plate3,neg saliva + TBET,8000,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,G02,Plate3-G02,GCAATTCCTC,ACATACAGCT
+Plate3,neg saliva + TBET,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,G03,Plate3-G03,CTCATGCCTA,AGGCGTGATT
+Plate3,neg saliva + TBET,8000,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,G04,Plate3-G04,GGCACGTTCT,TACTGTCCGT
+Plate3,neg saliva + TBET,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,G05,Plate3-G05,ACAACCTGTA,AGCGTTGTCG
+Plate3,neg saliva + TBET,8000,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,G06,Plate3-G06,ATGTGGAAGA,TTAGCTCCAC
+Plate3,neg saliva + TBET,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,G07,Plate3-G07,GTCAGCAAGC,CATGTCCACT
+Plate3,neg saliva + TBET,8000,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,G08,Plate3-G08,CCACTGAAGG,CCAATCCACT
+Plate3,neg saliva + TBET,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,G09,Plate3-G09,AGAACCGACG,ACCAAGGAAT
+Plate3,neg saliva + TBET,8000,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,G10,Plate3-G10,TAGTCGAATG,TGACACGACT
+Plate3,neg saliva + TBET,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,G11,Plate3-G11,ATGTTCCTCC,AGACGTCTTC
+Plate3,neg saliva + TBET,8000,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,G12,Plate3-G12,TATGTGTGAC,GAACTGTACT
+Plate3,neg saliva + TBET,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,G13,Plate3-G13,CCAGTAACCA,TGTGCGTTCT
+Plate3,neg saliva + TBET,8000,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,G14,Plate3-G14,AGCACTTACA,GATTGTCGTC
+Plate3,neg saliva + TBET,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,G15,Plate3-G15,ACTCAGACAG,GTGAGTCTGT
+Plate3,neg saliva + TBET,8000,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,G16,Plate3-G16,AGGAGGCTAA,TAGTACAAGC
+Plate3,neg saliva + TBET,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,G17,Plate3-G17,GTCACGATAC,CGGTTATCGC
+Plate3,neg saliva + TBET,8000,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,G18,Plate3-G18,TGTGTACCTA,AGCGATCTTA
+Plate3,neg saliva + TBET,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,G19,Plate3-G19,AACGAAGCTC,TCAGAGGTCG
+Plate3,neg saliva + TBET,8000,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,G20,Plate3-G20,GCCGAAGTAG,CATCACTCGT
+Plate3,neg saliva + TBET,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,G21,Plate3-G21,GAATCTGGAC,CATCTTCAGC
+Plate3,neg saliva + TBET,8000,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,G22,Plate3-G22,TCTTCCAGAC,AGCATTCAGC
+Plate3,neg saliva + TBET,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,G23,Plate3-G23,CTCTCCGCTA,CAGCCATACC
+Plate3,neg saliva + TBET,8000,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,G24,Plate3-G24,CTGTAGGTGG,CTCGCCATTG
+Plate3,neg saliva + TBET,8000,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,H01,Plate3-H01,CTGTCGCTTA,TCTTAGGCGG
+Plate3,neg saliva + TBET,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,H02,Plate3-H02,ACTAGGCCGA,GTGATTACCT
+Plate3,neg saliva + TBET,8000,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,H03,Plate3-H03,GGAGTACTCA,CGGAGGTTGA
+Plate3,neg saliva + TBET,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,H04,Plate3-H04,CGACGTTCAC,AGCGTGGTTC
+Plate3,neg saliva + TBET,8000,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,H05,Plate3-H05,CGCTTCTACA,AGTGGTAGGC
+Plate3,neg saliva + TBET,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,H06,Plate3-H06,TGGTCGCTCA,TTGTGGAGGC
+Plate3,neg saliva + TBET,8000,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,H07,Plate3-H07,TGTCGTCGCA,CATCAGAGGC
+Plate3,neg saliva + TBET,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,H08,Plate3-H08,TCCTGGTGAC,ATCATCAGGC
+Plate3,neg saliva + TBET,8000,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,H09,Plate3-H09,AAGCGTTAGC,AATAACAGGC
+Plate3,neg saliva + TBET,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,H10,Plate3-H10,ATCGCTCAGA,ATTCCAAGGC
+Plate3,neg saliva + TBET,8000,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,H11,Plate3-H11,ACTTGTTCCA,TTAACAAGGC
+Plate3,neg saliva + TBET,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,H12,Plate3-H12,CAGTGCAACC,AAGTAGAGGC
+Plate3,neg saliva + TBET,8000,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,H13,Plate3-H13,TAGCGTAAGT,TGTATGGCTT
+Plate3,neg saliva + TBET,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,H14,Plate3-H14,CGACTACTCC,AACTGGTCGC
+Plate3,neg saliva + TBET,8000,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,H15,Plate3-H15,AAGCAGACAC,TAGAGCTCAT
+Plate3,neg saliva + TBET,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,H16,Plate3-H16,GAAGGTGGTA,AGCGAACCTT
+Plate3,neg saliva + TBET,8000,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,H17,Plate3-H17,CAGTGATGTC,TAATGCCATG
+Plate3,neg saliva + TBET,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,H18,Plate3-H18,GTCAGATTCA,CGATCCAGGA
+Plate3,neg saliva + TBET,8000,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,H19,Plate3-H19,GAGTAGTCTC,AGTGCGATGT
+Plate3,neg saliva + TBET,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,H20,Plate3-H20,GTGCGCTGTA,TCTGAACAAC
+Plate3,neg saliva + TBET,8000,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,H21,Plate3-H21,ACACCGGAAG,GTGGCTCGAT
+Plate3,neg saliva + TBET,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,H22,Plate3-H22,ACTGTAGTAC,GACAACGGAT
+Plate3,neg saliva + TBET,8000,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,H23,Plate3-H23,AGAGCCTTGG,AGGACGACGT
+Plate3,neg saliva + TBET,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,H24,Plate3-H24,ATGCTCCGGA,TCTAATCGAC
+Plate3,neg saliva + TBET,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,I01,Plate3-I01,CCAATGTGTC,GGTGACACCT
+Plate3,neg saliva + TBET,4000,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,I02,Plate3-I02,AACGCTTCAA,TAACGAGACC
+Plate3,neg saliva + TBET,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,I03,Plate3-I03,ACTGGCTATC,CGTTCCACTC
+Plate3,neg saliva + TBET,4000,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,I04,Plate3-I04,GGTCTGTTGA,ATCAGTGTCC
+Plate3,neg saliva + TBET,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,I05,Plate3-I05,GTATCACTCC,ATATCCAACG
+Plate3,neg saliva + TBET,4000,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,I06,Plate3-I06,GACAGATCAA,CGTCATCGAA
+Plate3,neg saliva + TBET,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,I07,Plate3-I07,GAGATGCGAA,GCAGTGATAC
+Plate3,neg saliva + TBET,4000,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,I08,Plate3-I08,GTCCTTCCTC,TCGCTGAAGT
+Plate3,neg saliva + TBET,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,I09,Plate3-I09,TGTACATACC,ATCGTGCGGT
+Plate3,neg saliva + TBET,4000,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,I10,Plate3-I10,GTCACCTCTC,CAGCAAGAGT
+Plate3,neg saliva + TBET,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,I11,Plate3-I11,GTGAGACATC,AGGTCTCCAG
+Plate3,neg saliva + TBET,4000,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,I12,Plate3-I12,TCGTCTACCA,GCATAAGGCC
+Plate3,neg saliva + TBET,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,I13,Plate3-I13,GTGCGACTAG,TAACAGCTAG
+Plate3,neg saliva + TBET,4000,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,I14,Plate3-I14,CAGCTCGTTC,TTAGCTGGAT
+Plate3,neg saliva + TBET,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,I15,Plate3-I15,AATGTCCAAG,TATTGTGCGG
+Plate3,neg saliva + TBET,4000,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,I16,Plate3-I16,TGGCGACTTG,TGAGGCCACT
+Plate3,neg saliva + TBET,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,I17,Plate3-I17,ACACTTATCG,GTTGAACGTG
+Plate3,neg saliva + TBET,4000,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,I18,Plate3-I18,GAATTGCGGA,CCATGGAATG
+Plate3,neg saliva + TBET,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,I19,Plate3-I19,GGTCTCTTAG,AACGACACGT
+Plate3,neg saliva + TBET,4000,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,I20,Plate3-I20,ACAACTTAGC,GATAAGTTCG
+Plate3,neg saliva + TBET,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,I21,Plate3-I21,GGTTGGTCAG,ATAAGGCGTG
+Plate3,neg saliva + TBET,4000,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,I22,Plate3-I22,CATCGTAACA,GTCGATATTG
+Plate3,neg saliva + TBET,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,I23,Plate3-I23,TCAGACTCTC,TGATCGTCTC
+Plate3,neg saliva + TBET,4000,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,I24,Plate3-I24,TCGGTCTGCT,TAGCAACGGT
+Plate3,neg saliva + TBET,4000,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,J01,Plate3-J01,CCTTCGACTA,CCTAGTGACG
+Plate3,neg saliva + TBET,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,J02,Plate3-J02,GTGTCGCTCT,AGTTCGACTT
+Plate3,neg saliva + TBET,4000,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,J03,Plate3-J03,GTGCGTCAGA,AATTCTAGGC
+Plate3,neg saliva + TBET,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,J04,Plate3-J04,ATGATGCGAC,ATCGAGTGTT
+Plate3,neg saliva + TBET,4000,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,J05,Plate3-J05,TACTTGCGAC,AACCGAAGGC
+Plate3,neg saliva + TBET,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,J06,Plate3-J06,AGTGTGCTTA,TAAGCTAGCC
+Plate3,neg saliva + TBET,4000,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,J07,Plate3-J07,GCTTGTGAGG,CCTCTAGAGT
+Plate3,neg saliva + TBET,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,J08,Plate3-J08,GTGATCGCAT,AGCGATGTAT
+Plate3,neg saliva + TBET,4000,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,J09,Plate3-J09,AGTCTCGTAA,TCCTATTCGA
+Plate3,neg saliva + TBET,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,J10,Plate3-J10,GGCATCTTAC,GACGAGTGGT
+Plate3,neg saliva + TBET,4000,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,J11,Plate3-J11,GAGAGATACG,TTAGTTGGCG
+Plate3,neg saliva + TBET,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,J12,Plate3-J12,TGGCGTCTAA,ATCGCACGAC
+Plate3,neg saliva + TBET,4000,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,J13,Plate3-J13,GTGAAGGCAG,AATGCACACT
+Plate3,neg saliva + TBET,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,J14,Plate3-J14,TTCACAGAGG,ACACGTTAGT
+Plate3,neg saliva + TBET,4000,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,J15,Plate3-J15,TGTTCGTTAC,CAATGTCTCG
+Plate3,neg saliva + TBET,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,J16,Plate3-J16,CAGCCAGGAA,TGTTGGCTAG
+Plate3,neg saliva + TBET,4000,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,J17,Plate3-J17,TATGACCTAC,GAACCTCACG
+Plate3,neg saliva + TBET,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,J18,Plate3-J18,AGACAGGCAA,GTTGTTGCCA
+Plate3,neg saliva + TBET,4000,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,J19,Plate3-J19,GCTGAGTCTA,TCTGCTCAGC
+Plate3,neg saliva + TBET,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,J20,Plate3-J20,ATCTACATGC,CTTGCGAATC
+Plate3,neg saliva + TBET,4000,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,J21,Plate3-J21,AGTCCTTCAC,CGGAGAAGGT
+Plate3,neg saliva + TBET,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,J22,Plate3-J22,TTGAACTCCA,GCTGAGATAG
+Plate3,neg saliva + TBET,4000,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,J23,Plate3-J23,ATTAGCTGAC,GACATCTGGT
+Plate3,neg saliva + TBET,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,J24,Plate3-J24,TATGTCGTTG,GGATCCAATT
+Plate3,neg saliva + TBET,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,K01,Plate3-K01,TATGTCTCGG,GGATCTGTAT
+Plate3,neg saliva + TBET,2000,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,K02,Plate3-K02,CAGCTTGAAG,TCGTGTGGCT
+Plate3,neg saliva + TBET,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,K03,Plate3-K03,TTGAGCAGGA,ACTTGTGTCG
+Plate3,neg saliva + TBET,2000,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,K04,Plate3-K04,CTGACGTATG,ATCACGCCTT
+Plate3,neg saliva + TBET,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,K05,Plate3-K05,TTGCCTTCTC,AAGGCGCTTC
+Plate3,neg saliva + TBET,2000,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,K06,Plate3-K06,CGAGCACAAT,TCAAGGCCAT
+Plate3,neg saliva + TBET,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,K07,Plate3-K07,GATCATTGGA,ACGTCTTAAC
+Plate3,neg saliva + TBET,2000,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,K08,Plate3-K08,CCATGAGTGC,TGTTAAGCTC
+Plate3,neg saliva + TBET,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,K09,Plate3-K09,CCTGACTAAG,ACGCCTTGTT
+Plate3,neg saliva + TBET,2000,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,K10,Plate3-K10,TGAATGCGTC,ATAGCAACCT
+Plate3,neg saliva + TBET,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,K11,Plate3-K11,AAGCTATTGC,CATCGCTTGC
+Plate3,neg saliva + TBET,2000,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,K12,Plate3-K12,TGTTATGGTG,CGACACATCT
+Plate3,neg saliva + TBET,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,K13,Plate3-K13,GCCTTGCCAA,GTCAGACTTG
+Plate3,neg saliva + TBET,2000,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,K14,Plate3-K14,AGCGACGTTG,CTAGGTACTT
+Plate3,neg saliva + TBET,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,K15,Plate3-K15,GAGAGTATCC,TTAGATACGG
+Plate3,neg saliva + TBET,2000,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,K16,Plate3-K16,GTTACATCGG,AGCGAGTCCT
+Plate3,neg saliva + TBET,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,K17,Plate3-K17,TTAACTGGTC,ATGATGCTCG
+Plate3,neg saliva + TBET,2000,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,K18,Plate3-K18,GCTCCGTGTA,AGCTCTTGCG
+Plate3,neg saliva + TBET,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,K19,Plate3-K19,GGTCGATACA,ATAGCCTCGA
+Plate3,neg saliva + TBET,2000,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,K20,Plate3-K20,ACTCGAGTCA,GGTCTTCGAC
+Plate3,neg saliva + TBET,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,K21,Plate3-K21,TTACCACACC,GACTATCGTG
+Plate3,neg saliva + TBET,2000,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,K22,Plate3-K22,ACCGTAACCT,CGAGTTATCT
+Plate3,neg saliva + TBET,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,K23,Plate3-K23,GAAGTCCGTG,GCCGTGAGTT
+Plate3,neg saliva + TBET,2000,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,K24,Plate3-K24,GATCGATGAA,AACTGGCTGG
+Plate3,neg saliva + TBET,2000,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,L01,Plate3-L01,TCACAGCACT,GATACTTCCT
+Plate3,neg saliva + TBET,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,L02,Plate3-L02,CTGACTCGAA,GACGGAGTGA
+Plate3,neg saliva + TBET,2000,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,L03,Plate3-L03,CACGTAGTAA,TAACAACAGC
+Plate3,neg saliva + TBET,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,L04,Plate3-L04,GTCGTTCTAA,TGAACAGCCA
+Plate3,neg saliva + TBET,2000,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,L05,Plate3-L05,CATGCCTTGG,CTCGCCTCAT
+Plate3,neg saliva + TBET,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,L06,Plate3-L06,AGACGAAGAA,TTCGCCTATA
+Plate3,neg saliva + TBET,2000,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,L07,Plate3-L07,ACACCTCGAA,GGTTGCGAAT
+Plate3,neg saliva + TBET,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,L08,Plate3-L08,TGTGCTTGTC,GGATGTGTCG
+Plate3,neg saliva + TBET,2000,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,L09,Plate3-L09,GGATTGCTAC,TTACTACGCG
+Plate3,neg saliva + TBET,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,L10,Plate3-L10,AAGCCATGCG,CTGAAGCCAT
+Plate3,neg saliva + TBET,2000,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,L11,Plate3-L11,AGAATGGTCG,ATTCCAGCGG
+Plate3,neg saliva + TBET,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,L12,Plate3-L12,TTACCAACAG,GTATTCGACG
+Plate3,neg saliva + TBET,2000,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,L13,Plate3-L13,AGGAGTGTAG,ACTCTCGACG
+Plate3,neg saliva + TBET,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,L14,Plate3-L14,CCAGCTATGC,TTCCGAGGTT
+Plate3,neg saliva + TBET,2000,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,L15,Plate3-L15,CTCGATCGAC,TAGGTATACC
+Plate3,neg saliva + TBET,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,L16,Plate3-L16,ATACCGATCG,GCCGTAGACT
+Plate3,neg saliva + TBET,2000,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,L17,Plate3-L17,GATGGTCGAA,GACGGTTAGA
+Plate3,neg saliva + TBET,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,L18,Plate3-L18,ACACAGAACG,GTGTGACCTT
+Plate3,neg saliva + TBET,2000,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,L19,Plate3-L19,TGGTTCGCTT,TACCGTAGTT
+Plate3,neg saliva + TBET,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,L20,Plate3-L20,GGCTTAGCAT,GCCTTATTGT
+Plate3,neg saliva + TBET,2000,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,L21,Plate3-L21,CAGTGGCTTC,GGATATAGCT
+Plate3,neg saliva + TBET,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,L22,Plate3-L22,GTGATGCTTC,TTAGCGATGG
+Plate3,neg saliva + TBET,2000,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,L23,Plate3-L23,TATCATGGTC,GAATCTCCAG
+Plate3,neg saliva + TBET,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,L24,Plate3-L24,TGAGGTATGC,CAGTACACTC
+Plate3,neg saliva + TBET,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,M01,Plate3-M01,GGTGAGTTCA,GGATCTATGC
+Plate3,neg saliva + TBET,0,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,M02,Plate3-M02,CTATGGTGGA,GATTGCAAGC
+Plate3,neg saliva + TBET,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,M03,Plate3-M03,GACGTTGCTA,TTACTTCTCC
+Plate3,neg saliva + TBET,0,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,M04,Plate3-M04,CTGGCATGGA,TAATAGCTCC
+Plate3,neg saliva + TBET,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,M05,Plate3-M05,TCGGTTCTGA,ATGCTCTTAC
+Plate3,neg saliva + TBET,0,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,M06,Plate3-M06,TCGTTAGCAA,AGTCACTGAC
+Plate3,neg saliva + TBET,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,M07,Plate3-M07,TGAGGACTTA,TTACTGTCAC
+Plate3,neg saliva + TBET,0,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,M08,Plate3-M08,GTAGGTTGCA,CTCTGGTCAC
+Plate3,neg saliva + TBET,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,M09,Plate3-M09,CAGTGTTAGA,TCCGGTATTA
+Plate3,neg saliva + TBET,0,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,M10,Plate3-M10,TCCTGTCAGA,TAGACCTCTA
+Plate3,neg saliva + TBET,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,M11,Plate3-M11,GTCCTATCCA,TCCTCAATGA
+Plate3,neg saliva + TBET,0,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,M12,Plate3-M12,AAGGTTCACA,TACTCCTGGA
+Plate3,neg saliva + TBET,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,M13,Plate3-M13,AGTGTTCGAA,CCTCCGAAGA
+Plate3,neg saliva + TBET,0,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,M14,Plate3-M14,CAACCGTCAA,CACGTACGCA
+Plate3,neg saliva + TBET,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,M15,Plate3-M15,GGCAATCTAA,ATTACCTCCA
+Plate3,neg saliva + TBET,0,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,M16,Plate3-M16,GACACGTTAA,TATATGGCCA
+Plate3,neg saliva + TBET,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,M17,Plate3-M17,ACACTCACAG,AACCGCTAAT
+Plate3,neg saliva + TBET,0,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,M18,Plate3-M18,ACGCATGGTG,GTTCACTGAT
+Plate3,neg saliva + TBET,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,M19,Plate3-M19,ACCAGGTACG,GAGAGTACTT
+Plate3,neg saliva + TBET,0,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,M20,Plate3-M20,CATGCACTTA,GATAGCTCTT
+Plate3,neg saliva + TBET,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,M21,Plate3-M21,ACGGTGTAGC,AAGCTACATC
+Plate3,neg saliva + TBET,0,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,M22,Plate3-M22,GAGCCGATAA,TCGTCGTAGA
+Plate3,neg saliva + TBET,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,M23,Plate3-M23,GTGTAGCTGA,GGATCAGTTC
+Plate3,neg saliva + TBET,0,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,M24,Plate3-M24,GACATGCATA,CTCAGGTTGC
+Plate3,neg saliva + TBET,0,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,N01,Plate3-N01,GGATTCATCA,TGAGAGGCTA
+Plate3,neg saliva + TBET,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,N02,Plate3-N02,TCTAACTTGC,TCACGTAGTC
+Plate3,neg saliva + TBET,0,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,N03,Plate3-N03,AATGGAACGG,CTCCAAGCCT
+Plate3,neg saliva + TBET,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,N04,Plate3-N04,AGGCTACGAA,AGTGTCGCCA
+Plate3,neg saliva + TBET,0,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,N05,Plate3-N05,GCATATTAGC,TGATATTCGC
+Plate3,neg saliva + TBET,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,N06,Plate3-N06,GTTACTCTCA,ATATCATCGC
+Plate3,neg saliva + TBET,0,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,N07,Plate3-N07,TGACGAGGAT,ATCCGGATAT
+Plate3,neg saliva + TBET,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,N08,Plate3-N08,GCTACGCTGA,TAGCATAGGC
+Plate3,neg saliva + TBET,0,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,N09,Plate3-N09,TATCTGTAGC,GACAATGACT
+Plate3,neg saliva + TBET,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,N10,Plate3-N10,CTGTGATTCA,TAACGCTGTC
+Plate3,neg saliva + TBET,0,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,N11,Plate3-N11,GTGGTGGCTA,GACTTGGTAC
+Plate3,neg saliva + TBET,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,N12,Plate3-N12,GGACTTCTAA,CTGAGTTGGC
+Plate3,neg saliva + TBET,0,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,N13,Plate3-N13,GAATGTTCAC,ATTACTTGGC
+Plate3,neg saliva + TBET,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,N14,Plate3-N14,GAGTCGCATA,AAGGATTGGC
+Plate3,neg saliva + TBET,0,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,N15,Plate3-N15,GTATGTCTGA,TATTGGTGGC
+Plate3,neg saliva + TBET,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,N16,Plate3-N16,TTCTGGCTAC,ATCTCGTGGC
+Plate3,neg saliva + TBET,0,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,N17,Plate3-N17,GTATATCCAC,TGTACGTGGC
+Plate3,neg saliva + TBET,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,N18,Plate3-N18,TGTGAGACAA,TGAGAGTGGC
+Plate3,neg saliva + TBET,0,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,N19,Plate3-N19,TACCACTGCC,GGTTACTGGC
+Plate3,neg saliva + TBET,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,N20,Plate3-N20,GACAGTTCGC,ACCTACTGGC
+Plate3,neg saliva + TBET,0,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,N21,Plate3-N21,GACCTTAGAC,CTTCACTGGC
+Plate3,neg saliva + TBET,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,N22,Plate3-N22,ATTCGCAACA,CAGGTATGGC
+Plate3,neg saliva + TBET,0,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,N23,Plate3-N23,CCTGTCATTA,CCTCTATGGC
+Plate3,neg saliva + TBET,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,N24,Plate3-N24,TCGAGGCGAA,TTCGGATGGC
+Plate3,neg saliva + TBET,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,O01,Plate3-O01,TTGCTAGTAC,ATTGAATGGC
+Plate3,neg saliva + TBET,0,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,O02,Plate3-O02,TCATGGCATA,CTAGCTGCTA
+Plate3,neg saliva + TBET,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,O03,Plate3-O03,TATCGCTTCT,GGATCACTGT
+Plate3,neg saliva + TBET,0,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,O04,Plate3-O04,GTGCCACAAC,GCACGTCAAC
+Plate3,neg saliva + TBET,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,O05,Plate3-O05,TGAAGGTCCT,CCAGACACGT
+Plate3,neg saliva + TBET,0,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,O06,Plate3-O06,GTTCATAGTG,CTTGCAACTT
+Plate3,neg saliva + TBET,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,O07,Plate3-O07,GTAAGATCAC,GCTTCCGGAT
+Plate3,neg saliva + TBET,0,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,O08,Plate3-O08,TCTGGCTTGG,GTCCAAGTTG
+Plate3,neg saliva + TBET,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,O09,Plate3-O09,CCACCTAGTG,GTGTCCGACT
+Plate3,neg saliva + TBET,0,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,O10,Plate3-O10,TCAACTAGGA,CAGTGCTCAC
+Plate3,neg saliva + TBET,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,O11,Plate3-O11,CTCGAACGGT,CTGTGCGGTT
+Plate3,neg saliva + TBET,0,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,O12,Plate3-O12,GTCCAGCTAA,TCACAGTTCA
+Plate3,neg saliva + TBET,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,O13,Plate3-O13,TAACCGAGTA,GCCGTTACAT
+Plate3,neg saliva + TBET,0,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,O14,Plate3-O14,ACTCTGCTTC,GATCATGCCG
+Plate3,neg saliva + TBET,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,O15,Plate3-O15,GTGTGGTTAA,ACGTCGGACA
+Plate3,neg saliva + TBET,0,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,O16,Plate3-O16,CCTTCCTAAC,TCCTGTAGGC
+Plate3,neg saliva + TBET,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,O17,Plate3-O17,TCGTAGGATC,TTGGCAGCCT
+Plate3,neg saliva + TBET,0,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,O18,Plate3-O18,TGTGTCTAGA,TTAACCACTC
+Plate3,neg saliva + TBET,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,O19,Plate3-O19,TGATCAGACG,ACGGTGGACT
+Plate3,neg saliva + TBET,0,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,O20,Plate3-O20,GGTTGAATGC,TGTTAGCGAT
+Plate3,neg saliva + TBET,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,O21,Plate3-O21,CAGTAGTTAC,TCGTCTCATG
+Plate3,neg saliva + TBET,0,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,O22,Plate3-O22,GTTCAGCCAG,TAGCTCTTAG
+Plate3,neg saliva + TBET,0,A,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,O23,Plate3-O23,GGATTAATGG,TCGCCTACTG
+Plate3,neg saliva + TBET,0,B,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,O24,Plate3-O24,AGCTCAAGCT,GGAGGAAGCT
+Plate3,neg saliva + TBET,0,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,P01,Plate3-P01,TACTCGGACT,TAACGTCGGT
+Plate3,neg saliva + TBET,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,P02,Plate3-P02,TGTCCAGGTC,CATCTCCTGT
+Plate3,neg saliva + TBET,0,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,P03,Plate3-P03,GTTACCTTGC,TACAGAGCCT
+Plate3,neg saliva + TBET,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,P04,Plate3-P04,GAACTTAGCA,TACGCCAGTT
+Plate3,neg saliva + TBET,0,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,P05,Plate3-P05,GTGCTTGTAT,GGATGGTGGT
+Plate3,neg saliva + TBET,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,P06,Plate3-P06,CTGCATGTCA,CTAATGCGAT
+Plate3,neg saliva + TBET,0,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,P07,Plate3-P07,CAACTACGTG,TCAGCGTGTT
+Plate3,neg saliva + TBET,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,P08,Plate3-P08,TCCTAGTAAG,CATCATGGAT
+Plate3,neg saliva + TBET,0,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,P09,Plate3-P09,CCACAAGAAT,GCATCTACTT
+Plate3,neg saliva + TBET,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,P10,Plate3-P10,AATTCCTTGC,TAGGCGTCGT
+Plate3,neg saliva + TBET,0,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,P11,Plate3-P11,GCCTTGAATC,TGTGCAACTC
+Plate3,neg saliva + TBET,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,P12,Plate3-P12,GAGGTTGGTC,CATGCAGATT
+Plate3,neg saliva + TBET,0,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,P13,Plate3-P13,CCGACTTACC,GCTGACGGTT
+Plate3,neg saliva + TBET,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,P14,Plate3-P14,ACCATCTGAT,CTCATGCAGT
+Plate3,neg saliva + TBET,0,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,P15,Plate3-P15,GGTCGTGGAA,AACTTGTACC
+Plate3,neg saliva + TBET,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,P16,Plate3-P16,TCGTTGTCGG,TTCGTCGGAT
+Plate3,neg saliva + TBET,0,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,P17,Plate3-P17,GGTGGAAGTG,TAGTCCAGCT
+Plate3,neg saliva + TBET,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,P18,Plate3-P18,CATTGTGGTG,CTTGGCAGTT
+Plate3,neg saliva + TBET,0,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,P19,Plate3-P19,GCTAACGTAA,TTCAGGCGCA
+Plate3,neg saliva + TBET,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,P20,Plate3-P20,TTCCATCCTA,ACACCTTCAG
+Plate3,neg saliva + TBET,0,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,P21,Plate3-P21,GGAGTTCCTA,ACAGTGTCTT
+Plate3,neg saliva + TBET,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,P22,Plate3-P22,GTGCAAGGTC,TTGCGCTTCG
+Plate3,neg saliva + TBET,0,C,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,P23,Plate3-P23,TATAGGTCTG,GAACATCTCT
+Plate3,neg saliva + TBET,0,D,N1_S2_RPP30,3,3, ,3,20uL,taqpath,500,3.5,50,50,Ashe/ED/gamma,924dil4,,copies_per_ml_lysate,P24,Plate3-P24,ACGTTCCTAA,CCGACCTTAA
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,A01,Plate4-A01,CGGATTACTG,TTGCTAGCTT
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,A02,Plate4-A02,GCTACTTAAC,GATGTCTGCC
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,A03,Plate4-A03,TACGAGAGAA,CATGTCGAGA
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,A04,Plate4-A04,AGCTGACTAA,TCATCACTGC
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,A05,Plate4-A05,GAACAGTCGG,TAGCTCCTCT
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,A06,Plate4-A06,GAGCTGTATA,TAGCCTCCAG
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,A07,Plate4-A07,GACGCAACTG,CTAATCTCCT
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,A08,Plate4-A08,CATGTCCTAA,AATTCACAGC
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,A09,Plate4-A09,CGACCTTGTA,GTAACGAATG
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,A10,Plate4-A10,AATTGCATGG,TGAGCTGTGG
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,A11,Plate4-A11,CTGTACTGAC,AATTGAGTGC
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,A12,Plate4-A12,AGGTCTTAGA,AGTCTTAGCT
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,A13,Plate4-A13,ATTAGGCATC,CAGTCTGACT
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,A14,Plate4-A14,CTATCGTAGT,ACAAGCATGT
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,A15,Plate4-A15,GCATTGTCCT,TGTTCCATCT
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,A16,Plate4-A16,TGAGAGATGT,CGTCTACATT
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,A17,Plate4-A17,GTAATGTCCG,TAAGGCGAGG
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,A18,Plate4-A18,GGTCACTAGG,AACGAGTCTG
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,A19,Plate4-A19,GGATAACGAA,CAAGCGATAC
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,A20,Plate4-A20,GAGTAACTGC,AAGTCCATTC
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,A21,Plate4-A21,CCAACGCCAA,CGGTTGTATA
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,A22,Plate4-A22,AAGGTGTTAG,ACACCAACCG
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,A23,Plate4-A23,GCAATGGTGA,TGTGTCCGTG
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,A24,Plate4-A24,GCATTGTATG,CTCCTTGTGT
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,B01,Plate4-B01,GAGGATCCTA,CTCCTAATCT
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,B02,Plate4-B02,GGTGGTACTA,CTCCTCTGAT
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,B03,Plate4-B03,CCTCTTGAAC,CTCCTATCGG
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,B04,Plate4-B04,CTCTGACTTA,CTCCTTCTAG
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,B05,Plate4-B05,TATCACTTGG,GCAGATCTAT
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,B06,Plate4-B06,GTTCGGAGAG,GTATCCGTGG
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,B07,Plate4-B07,AGGCTTGACA,CTGTTCTCGA
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,B08,Plate4-B08,GGAAGTGTGC,TGTAGTCTGG
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,B09,Plate4-B09,GCAACCTTGA,TGTAGGTTCG
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,B10,Plate4-B10,CATAGTCTGA,TGTACTGTCG
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,B11,Plate4-B11,AAGGCATGTA,TGTAACTCTC
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,B12,Plate4-B12,CTAACACCAG,GTCCACGCAT
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,B13,Plate4-B13,GTGGCTATCA,CTAGGCATCT
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,B14,Plate4-B14,GTTCGTCCTA,AGTGTGTCAC
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,B15,Plate4-B15,GGAACTCTTA,TATAGAGGCG
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,B16,Plate4-B16,CATCCTATGA,CTGTGAAGTA
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,B17,Plate4-B17,CGCTGATCAA,CTGTGTGGAA
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,B18,Plate4-B18,GCCTTAGATA,ATAGCCGTCC
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,B19,Plate4-B19,CACGTAATCC,GGACAATTCC
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,B20,Plate4-B20,ACCGCTTATG,CGAAGCTCTG
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,B21,Plate4-B21,GGTAGAGTAA,CTAAGCTTGA
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,B22,Plate4-B22,TAGGCACATG,TGACTGCTAT
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,B23,Plate4-B23,CCGATCACAA,GTAACCGATT
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,B24,Plate4-B24,ATCAGTCCTC,GTGAGGTTCT
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,C01,Plate4-C01,TAAGGCACGC,GATCTTGGTG
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,C02,Plate4-C02,TATTCGCTCG,GAACTGCTCG
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,C03,Plate4-C03,CCAGTCTAGA,CGAGTCTATG
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,C04,Plate4-C04,ACGTTGGCGA,GTCTCTGACG
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,C05,Plate4-C05,ATGCCAATCA,CAGCTTCACT
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,C06,Plate4-C06,CAACTGGATA,TGGCAGTTGC
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,C07,Plate4-C07,AGTATGGTGA,CATGACGTCC
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,C08,Plate4-C08,TCACCGTATG,GGTTCTCGTT
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,C09,Plate4-C09,GGTAACCGAC,CCACAATCAG
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,C10,Plate4-C10,CAGTGGACAA,TCAGCTTCAA
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,C11,Plate4-C11,CAAGGTCGCA,TTCGAGTGCA
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,C12,Plate4-C12,GCTAAGATGC,TGAGCCTCTG
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,C13,Plate4-C13,ATACACCGCT,GATCCGTAGT
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,C14,Plate4-C14,CGCCAATTGA,TGGCGTTATC
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,C15,Plate4-C15,TTCACCGATC,GACTTCAGTC
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,C16,Plate4-C16,GTCTCACCTC,CGAGACTCCT
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,C17,Plate4-C17,CCAGTCAGTG,CAGTACTGTG
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,C18,Plate4-C18,AACCTTGCAT,GACTACAGGT
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,C19,Plate4-C19,TCACTATCTC,TTCGACGAGT
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,C20,Plate4-C20,GTTAACTCGA,CGAGGAATCG
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,C21,Plate4-C21,TGTTGTGACT,ATGGTGGTGT
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,C22,Plate4-C22,AATGCTTGAC,ATCTGTCTCG
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,C23,Plate4-C23,GTCCGTTGTC,CTGTGTCAAT
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,C24,Plate4-C24,TGTCATGCAT,GGATCATCCT
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,D01,Plate4-D01,GTGTGCATAG,TCCGTTGACG
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,D02,Plate4-D02,TCCTTGGTAG,ACGGTGTGTG
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,D03,Plate4-D03,TCGGTAAGTA,TTGCAGTGTA
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,D04,Plate4-D04,CTCCTCGCTT,GTCGTCTGTT
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,D05,Plate4-D05,TCTTGCTTCA,CTAGGATAGC
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,D06,Plate4-D06,TGGAAGTCAT,GACTGGATAT
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,D07,Plate4-D07,ATTCAGAGAC,TGTCACAATG
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,D08,Plate4-D08,CTCAAGCTAC,GGTTAGATCC
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,D09,Plate4-D09,CCTACGTAGC,CCGTGATCCT
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,D10,Plate4-D10,ACATTGCGTA,GCTCTATTAC
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,D11,Plate4-D11,CTGGAGAAGC,GTGGTCCTAT
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,D12,Plate4-D12,GCCGCATATA,CTATATAGGC
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,D13,Plate4-D13,AAGGTTGGAG,TGTCCGCGTT
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,D14,Plate4-D14,TATCTGTGTG,GTTATTCCGT
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,D15,Plate4-D15,AATCAGCTCT,GCCGTTCTCT
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,D16,Plate4-D16,CTATGCTCTC,TGACTCGTTG
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,D17,Plate4-D17,GGCACACAGA,GATAAGCCGT
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,D18,Plate4-D18,TCGCTTGTTG,TAACTTGGCT
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,D19,Plate4-D19,CTACTAACTC,CGAAGGAGCT
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,D20,Plate4-D20,CATTGCTATC,CTGTTCATGG
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,D21,Plate4-D21,GCCGTTATGA,TAGCACCATC
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,D22,Plate4-D22,GGAATGTCGA,GCCGCAATTC
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,D23,Plate4-D23,TATCTCTGGT,GTGGCTTCTT
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,D24,Plate4-D24,CGTTGCAACA,GAAGTCTCTC
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,E01,Plate4-E01,ATACTGCACG,GGTTCTTACT
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,E02,Plate4-E02,TTCGCTCTCA,AACTTCGACT
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,E03,Plate4-E03,GGAGGATATG,AGCTACACCT
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,E04,Plate4-E04,CCTTCACCAG,GCCTTAAGCT
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,E05,Plate4-E05,GACACTAGGC,CTGTACCTTC
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,E06,Plate4-E06,CAGCTTAGTC,CGACCTCTAG
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,E07,Plate4-E07,ATGGTATAGG,TATACGTGCT
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,E08,Plate4-E08,TTGTTAGGCT,TCCGAGCCTT
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,E09,Plate4-E09,ATAGCGAGTG,CTGGCGTTGT
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,E10,Plate4-E10,ATTAGTCGGT,TCAGGCGCTT
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,E11,Plate4-E11,GTAGGTAGAT,CTGTTGGCGT
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,E12,Plate4-E12,ATAAGTGAGG,TACGTGGCGT
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,E13,Plate4-E13,ACGCTCGCTA,GTCGTCCTTG
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,E14,Plate4-E14,CGCTGTATGC,CTGTGAGCAT
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,E15,Plate4-E15,TATGAGCGTG,GCAGTCAATT
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,E16,Plate4-E16,GGAGCTATTG,GGTGTTCACT
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,E17,Plate4-E17,AACAGTGAAG,GTTCCTCACT
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,E18,Plate4-E18,ATGTGGCGAT,TGTAAGCAGT
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,E19,Plate4-E19,TTCTGAGTTG,CCATGTGCAT
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,E20,Plate4-E20,GCTATACCGC,CCGAGTGTTC
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,E21,Plate4-E21,GCCACTTCAA,CCGAGTAGTA
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,E22,Plate4-E22,TCATCATCGG,GCATATCCGT
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,E23,Plate4-E23,GAGTAGGACC,CAACCTGTCC
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,E24,Plate4-E24,AGAGTAACGG,TCTGCTTCTG
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,F01,Plate4-F01,GGTCTAGGTT,AACCTCGGTT
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,F02,Plate4-F02,TATTCTTGCG,GGTACCATGG
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,F03,Plate4-F03,GGTGATCGTA,CCGCCGTTAT
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,F04,Plate4-F04,ATACTTGTGG,CTGGCTAATG
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,F05,Plate4-F05,GGTCAGGATC,GCCATTAGAG
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,F06,Plate4-F06,CTCGTTAGCT,AGCTCATCGT
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,F07,Plate4-F07,TATGGACAAG,GCTCGGTCTT
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,F08,Plate4-F08,TAAGACTCCA,ATACAGTGCA
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,F09,Plate4-F09,ATCGTGTTGG,TTGATGTGCT
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,F10,Plate4-F10,CTTGACTAGT,CGAGCCTAGT
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,F11,Plate4-F11,CTCTCCTTCA,ATCACTGCGC
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,F12,Plate4-F12,GAGTCATAGC,CGTATATCCG
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,F13,Plate4-F13,TGACTAGTGC,GAACCTTGTC
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,F14,Plate4-F14,AATGGCCGAC,TCATGTGATC
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,F15,Plate4-F15,ATCTGTCGAA,CGAGCTTGAC
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,F16,Plate4-F16,CTGCTAGTCG,TCTTCGAAGG
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,F17,Plate4-F17,AAGCAACGTG,GGTACGCTTG
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,F18,Plate4-F18,GTCCTCGTAC,AGCCTGAAGG
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,F19,Plate4-F19,AGATGTCCAT,AACCAGGCGT
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,F20,Plate4-F20,TAGGACTTGC,CGACCGATAT
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,F21,Plate4-F21,ATCGACTTCC,TAGCGTGATG
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,F22,Plate4-F22,CCAAGTCCTA,CGAAGACTTC
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,F23,Plate4-F23,ACATGTCTGC,CAGCCACTCT
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,F24,Plate4-F24,AAGACAGGAG,GATGCTCCTG
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,G01,Plate4-G01,GCCTGGACTA,AACGTCTGGC
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,G02,Plate4-G02,AAGCTGTGGA,GGTTGCCATG
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,G03,Plate4-G03,CCTTGCATAA,GGAACCTGGT
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,G04,Plate4-G04,AAGCCTGTTG,GTCTCAGGCT
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,G05,Plate4-G05,ATCCTCGCAA,CTCTGGCTGT
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,G06,Plate4-G06,CAGCATTGCA,GGTACATGCT
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,G07,Plate4-G07,TATGCGTCAG,GCTTGTCTAG
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,G08,Plate4-G08,CTCAACGTAG,TGTCATCTCT
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,G09,Plate4-G09,ACATAAGTCG,GACTAACCAT
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,G10,Plate4-G10,ACACCTGACT,GTTCAGTACT
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,G11,Plate4-G11,TGATCGCAGC,TGACTCTGAG
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,G12,Plate4-G12,TGTTCGGTGG,CAGTCTTGTT
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,G13,Plate4-G13,GTGGCCTTAA,GGAGCATAAC
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,G14,Plate4-G14,GGTTGAGCCA,CGAGCACGTA
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,G15,Plate4-G15,GGTACTACGA,AGTCTATCGA
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,G16,Plate4-G16,AGCTATCACG,GCTGATTATG
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,G17,Plate4-G17,CATTGACTGG,CTCCATAGAT
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,G18,Plate4-G18,ATGTAAGGAC,CTCCATTATC
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,G19,Plate4-G19,TCACTGAGAG,GCTCGTCATG
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,G20,Plate4-G20,AGGACTAGAG,GTTGCTACGG
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,G21,Plate4-G21,TCAATCGGAG,GCCATTCTTG
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,G22,Plate4-G22,TTGCCTCTTG,GGTCCATCAT
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,G23,Plate4-G23,GTATCCAGAG,AAGTACGAGT
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,G24,Plate4-G24,ACAGCAGCTC,ACGCTGTTCG
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,H01,Plate4-H01,GTGCCTAGTC,GGTCAGATGT
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,H02,Plate4-H02,AAGGCAACCG,GGTCGTAACT
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,H03,Plate4-H03,ACTAGCATCG,GACTGATCCT
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,H04,Plate4-H04,AGATCTCCGC,GTGTACAGGC
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,H05,Plate4-H05,ACCGCATTGC,CACGAGGATG
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,H06,Plate4-H06,CTTCGTGTGC,TAGGCTGGTT
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,H07,Plate4-H07,GGTTCAGCGT,GCTAATGCTT
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,H08,Plate4-H08,GTGCTAGACA,GACTGGTCTG
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,H09,Plate4-H09,GTAGAACGAC,ATTGCGTCCT
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,H10,Plate4-H10,AGATGTTAGG,TGTTCTCCGG
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,H11,Plate4-H11,TTGCTCACTG,TGTAACCGCT
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,H12,Plate4-H12,AGTAGGCAGG,TGTAGAAGCT
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,H13,Plate4-H13,GATGCGTTAC,CAGTCGCCTT
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,H14,Plate4-H14,TGAGTACATG,ACGTAGACGT
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,H15,Plate4-H15,GTTCTGATAC,ACAAGTAGGC
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,H16,Plate4-H16,ATGCTTGTTC,GGTCTTCCTG
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,H17,Plate4-H17,GTGCTCTTGA,GGTCGTATAG
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,H18,Plate4-H18,GCCTAATCTC,CTGTAGAGTT
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,H19,Plate4-H19,GCTTCAATAC,CTGTATGCCT
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,H20,Plate4-H20,GTATAGTTCC,CTGTACTAGG
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,H21,Plate4-H21,TAGTGTGCAT,GTGGCACTGT
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,H22,Plate4-H22,AGGAGTATTC,TTGCCGCTAT
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,H23,Plate4-H23,TTGCTCTAGT,GGTAGGTTGT
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,H24,Plate4-H24,GAGCTTCCGT,GGTAATTCGT
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,I01,Plate4-I01,ACCTCACTAT,GGTATCGAGT
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,I02,Plate4-I02,CCTATTCATG,GGTACGGACT
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,I03,Plate4-I03,AGCTTAACTC,GATATGCACT
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,I04,Plate4-I04,GTCGACGACA,GAGTGAGATT
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,I05,Plate4-I05,GATCTTATCC,GTACTTCATG
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,I06,Plate4-I06,ATCATTCGTG,GAAGCTGATT
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,I07,Plate4-I07,CGTCAGCTAG,GCTAATGGCG
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,I08,Plate4-I08,TAGCTATGTC,ATAGCTTGCT
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,I09,Plate4-I09,TAGGATGCCT,CACGGTGGTT
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,I10,Plate4-I10,CATTCTGTCG,TTCTCTCCTG
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,I11,Plate4-I11,GGTGAAGCTA,GATGGCTTAG
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,I12,Plate4-I12,TCGATGGTAT,GGAGCTTGTT
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,I13,Plate4-I13,TAATCTCGTG,GTTCCGGCTT
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,I14,Plate4-I14,GCTTGTGGTA,CAACGACATC
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,I15,Plate4-I15,AGTCCTGTGA,CTGTAGCACG
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,I16,Plate4-I16,CAGGCAACGA,CGAGTGACTG
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,I17,Plate4-I17,CTCTAAGTCA,CGAGTCGGTA
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,I18,Plate4-I18,AGGATAGACT,CGGTTAAGCT
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,I19,Plate4-I19,GGTGATGGAT,GTTCTGACCT
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,I20,Plate4-I20,ACCGAAGATG,GCAGCATTCT
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,I21,Plate4-I21,GTGCTAATTG,GATGTCCGGT
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,I22,Plate4-I22,ACGCTGTAAT,GTTACCGCGT
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,I23,Plate4-I23,TATGCATCCT,GATTAACGGT
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,I24,Plate4-I24,CGATACAGCG,GCTTCAGTGG
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,J01,Plate4-J01,GTTGGTAACC,AACCACTAGC
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,J02,Plate4-J02,GCAAGTTAGA,GGTATTGTCT
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,J03,Plate4-J03,CCTGTAACTC,GTCCGTCGAT
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,J04,Plate4-J04,TATTGCTAGG,GTCAGACCGT
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,J05,Plate4-J05,TAGGACTGAA,TAGCAGCGCA
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,J06,Plate4-J06,CAGATTGGTA,TCGACCTCAC
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,J07,Plate4-J07,TTGCCTGTGT,GCAGCCTCTT
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,J08,Plate4-J08,CTGCCTGAAT,GCATCTTGCT
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,J09,Plate4-J09,AGTCACGAAG,GTACTCGTGT
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,J10,Plate4-J10,GTATGATTGC,GGTCGTTGTG
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,J11,Plate4-J11,CAGTCTCTGC,GGTATTGATG
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,J12,Plate4-J12,GATTAGTTGC,GGAATTCTCG
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,J13,Plate4-J13,CTAATCGTGC,GGTAACCTCG
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,J14,Plate4-J14,GTGCCATTGC,GGTACCTAAG
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,J15,Plate4-J15,TTGTTCGTGC,GGTCTATATC
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,J16,Plate4-J16,TTGCGTATGC,GGAGTTCTGC
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,J17,Plate4-J17,GCAATTGGCT,CTAGGCGAGT
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,J18,Plate4-J18,AGTAGGTAAC,CAGGCGAATT
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,J19,Plate4-J19,AACCATCCGC,GGTTCTAATG
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,J20,Plate4-J20,AAGCACCGAT,GGTGTATCTT
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,J21,Plate4-J21,TTGCTTGGAG,GGTGTAAGGT
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,J22,Plate4-J22,TAGCTTCGAT,GAAGCAGCGT
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,J23,Plate4-J23,ATGACAACTC,GTGATTCGTT
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,J24,Plate4-J24,TGGAGGACGA,TTGCGATCTA
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,K01,Plate4-K01,CTGTCAGTGA,CTAGGATGTT
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,K02,Plate4-K02,AGTCGGTGAG,GCAGCATGTG
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,K03,Plate4-K03,AGTTAGTAGC,CAGAGTGCCT
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,K04,Plate4-K04,GCAATCTTCG,GTGAGGAGTT
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,K05,Plate4-K05,CTGCCATAGG,GATTCACCTT
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,K06,Plate4-K06,GACCTTAAGG,CGGACTGGTT
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,K07,Plate4-K07,GTAACTTGCC,CTGTGTCCTC
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,K08,Plate4-K08,AGTTGCATTC,GGAGTCTTCT
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,K09,Plate4-K09,CATGTTATGC,GATCTCGGAT
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,K10,Plate4-K10,ACCAACATTC,CCGGCTTAAG
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,K11,Plate4-K11,GGAACATTGC,GATACTGTTC
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,K12,Plate4-K12,CTGCCTAGCT,AGCCGCTCTT
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,K13,Plate4-K13,GCCAATGGAA,GGTCTCACTA
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,K14,Plate4-K14,TGTGCTCTCC,AGCTCGGTAT
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,K15,Plate4-K15,GGAGTGTTGG,TGTCGGTATT
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,K16,Plate4-K16,GTCTTCGTGA,TGTCGTGTTG
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,K17,Plate4-K17,CCGAAGACAC,GTCTTACTAG
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,K18,Plate4-K18,CTAATCTGAG,GCTAATCCGG
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,K19,Plate4-K19,GACCGTTGAG,GAGAACGTAG
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,K20,Plate4-K20,GCTAGGTTCC,GGTAAGAAGG
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,K21,Plate4-K21,GCTAGGTATA,GGATTGTGCC
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,K22,Plate4-K22,GCTGTTCAAC,GGTGGCTAAC
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,K23,Plate4-K23,TCAATGTTGC,GGATGCAGTG
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,K24,Plate4-K24,TTGCTGATAG,GCTAAGTCCT
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,L01,Plate4-L01,GCAAGAGAAG,GCTGAGAACT
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,L02,Plate4-L02,TGATTGAGAC,GTCTCAATGT
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,L03,Plate4-L03,CCTCATCACG,GTCTCGTTAT
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,L04,Plate4-L04,GGATCGTGAG,GTCGGACGTT
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,L05,Plate4-L05,ACCGCAGGAT,GAGATTCTCT
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,L06,Plate4-L06,GAGACGTTGC,GCTGACTCAT
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,L07,Plate4-L07,ATCCTCCTGC,GCTGACATTC
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,L08,Plate4-L08,TCTCGATTGC,GCTTGTACTC
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,L09,Plate4-L09,TTCTATGTGC,GCTCAGACTC
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,L10,Plate4-L10,CAGCACTAAG,GCTCCATACT
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,L11,Plate4-L11,GAAGAATGTC,ATTGGCGTTC
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,L12,Plate4-L12,GTAACCATCA,CGTGGCGTTA
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,L13,Plate4-L13,GATTCGCCAA,GACGTCTCAA
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,L14,Plate4-L14,AACTCGTCAT,CACTTGAGAT
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,L15,Plate4-L15,ATGCTAAGTC,GTGATAGTGT
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,L16,Plate4-L16,GCTGTGTAGA,GATTCATGAC
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,L17,Plate4-L17,TATTGGAGAG,GTCTAGGTCG
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,L18,Plate4-L18,TAGAGTGGAG,ATGAGGACTG
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,L19,Plate4-L19,GCTTATGTCC,GCTGTTAAGG
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,L20,Plate4-L20,TTCGTCGTCC,GTCTAGTAGT
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,L21,Plate4-L21,AATGCGCTAT,GTCAGTTCCT
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,L22,Plate4-L22,AACAAGGACG,GATCGTGCTT
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,L23,Plate4-L23,TTGGTCTTCA,ACGTGCCATA
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,L24,Plate4-L24,TTCTTGACTC,TGTCCTATGT
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,M01,Plate4-M01,TCTGAAGACA,TGTCCTAACG
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,M02,Plate4-M02,GGTGTTAGCA,TGTCCTCATC
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,M03,Plate4-M03,CTAGTTAAGC,TGTCCATCGC
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,M04,Plate4-M04,CGCTGTTACC,GTTGCTCTTC
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,M05,Plate4-M05,ACTCACCGTC,GACTGTGGAT
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,M06,Plate4-M06,TCCTGTACCT,AGCTCGCAGT
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,M07,Plate4-M07,GCTCTAGTCT,CCGACCAAGT
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,M08,Plate4-M08,CTCTTGCATC,GCACGACCTT
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,M09,Plate4-M09,AAGTTGCACT,GACCTAGCTT
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,M10,Plate4-M10,CATGTGTGCA,TGTCAGTAAC
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,M11,Plate4-M11,GTGCCAGAGT,GAGAATGCGT
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,M12,Plate4-M12,CTTGGACATA,CTATGGCAGC
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,M13,Plate4-M13,TTGCATGAGA,GGATAACAGC
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,M14,Plate4-M14,TCAAGCAATC,AATTGGCGCG
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,M15,Plate4-M15,CTAATGATGG,CTCACCTGGT
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,M16,Plate4-M16,GCAATAACAG,GTAGTGCCTG
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,M17,Plate4-M17,GCTTGACGGA,CAATTAGCGC
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,M18,Plate4-M18,GCTAGAAGAA,GCCTTGCACT
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,M19,Plate4-M19,GCTCGTATCA,GCCGTGCTTA
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,M20,Plate4-M20,AGGTATTCGG,TGTCTGGAGT
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,M21,Plate4-M21,TTGTCAGTCG,TGTCTGACTG
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,M22,Plate4-M22,GCATATCACA,TGTCTGGTTA
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,M23,Plate4-M23,GCATGCTGTA,GATTGCTGTG
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,M24,Plate4-M24,GGAAGCGATA,TAGCTGACTT
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,N01,Plate4-N01,GCAAGAGTGT,GTGTGTTGTT
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,N02,Plate4-N02,AGTGTGAGAG,GTGTTACGGT
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,N03,Plate4-N03,GCATTCTGAG,GGTGGATTAT
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,N04,Plate4-N04,GCTAGTTGAG,GGTGGTTAGG
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,N05,Plate4-N05,CCATGACCTG,GAGACCGGTT
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,N06,Plate4-N06,GAGATCCTGC,GTTCTCTCTT
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,N07,Plate4-N07,GCTCTTCTGC,GTGTTGGATT
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,N08,Plate4-N08,ATAGAGTTGC,GTCTCTTGGT
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,N09,Plate4-N09,TTATCGTTGC,GTCCATGTCT
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,N10,Plate4-N10,TAAGATGTGC,GTGGTTGACT
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,N11,Plate4-N11,ATGTGGTTGC,GTGAATCTTG
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,N12,Plate4-N12,ATGTCAATGC,GTAAGCTGTG
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,N13,Plate4-N13,GTACATATGC,GTGAGAGGTG
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,N14,Plate4-N14,TTAGACATGC,GTCCTCTATG
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,N15,Plate4-N15,TGTATCCTGC,GTTCTCGAGG
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,N16,Plate4-N16,TGGTCGATGC,GTGTATAACG
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,N17,Plate4-N17,AGATAGGTGC,GTTGTACAAG
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,N18,Plate4-N18,GCAGTCAGGA,TTGAAGCTGC
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,N19,Plate4-N19,GGCTTATACG,GGTGAGTAGT
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,N20,Plate4-N20,GTTGTCCTGC,GGTGATATCG
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,N21,Plate4-N21,TAGGAGTATG,TGTAGCTCGT
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,N22,Plate4-N22,CCGCAACCAA,GACGTAACGA
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,N23,Plate4-N23,ATACGCTATG,ACCGTTGTGT
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,N24,Plate4-N24,CTTGTCTCCG,ACCGGAAGGT
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,O01,Plate4-O01,GAGCCTGAGA,ACCGTTAGGC
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,O02,Plate4-O02,ATGCATTGCG,GTGGTAAGCT
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,O03,Plate4-O03,GCTATTGTAC,GTAACTCAGC
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,O04,Plate4-O04,CGTACGGTAC,ATACGATGGC
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,O05,Plate4-O05,ATTAGCACGG,AGCATGCAAT
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,O06,Plate4-O06,GTGCTACTCT,GTCGCCACTT
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,O07,Plate4-O07,GGACGGATCA,ATACTAGTCC
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,O08,Plate4-O08,GCTTCTCAGT,GCCAGTAGGT
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,O09,Plate4-O09,GTATCAGCAC,GACTGCGATC
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,O10,Plate4-O10,GTCTGGATTC,TTAAGGCGGT
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,O11,Plate4-O11,GCTAACAGTG,GCCTAGAGTG
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,O12,Plate4-O12,GCCTCTATAA,GTGAATTAGG
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,O13,Plate4-O13,ATCGCTCTAT,ATCCACTGGT
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,O14,Plate4-O14,TCGGAGTGAG,CTATATGCGG
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,O15,Plate4-O15,AGAGTAGTGA,GACTTGTTGA
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,O16,Plate4-O16,GGTATGTGAA,GACTCAGTAA
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,O17,Plate4-O17,CCTGTGTTGC,CTGAGGCTAG
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,O18,Plate4-O18,CAGGTCTATA,CTGCTCTGTG
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,O19,Plate4-O19,CATTCAAGCA,AAGCTCTTCA
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,O20,Plate4-O20,GGTGTTCTAG,GCTTATACCT
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,O21,Plate4-O21,GTTACAGACA,TTGCTGTGGC
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,O22,Plate4-O22,AGTAATGCTC,GGTACTAGTC
+Plate4,,,A,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,O23,Plate4-O23,GGCCATGTGA,GGTGTATTGC
+Plate4,,,B,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,O24,Plate4-O24,GATGTAGCAA,GGTATGCTCA
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,P01,Plate4-P01,GAGTATGCAG,CAGAGGCTGT
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,P02,Plate4-P02,AGTTGGAGTG,CTGCTCAGGT
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,P03,Plate4-P03,TCTGACGAGG,AGCTATAGGT
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,P04,Plate4-P04,GTATGTACCA,AAGCATGCCA
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,P05,Plate4-P05,GGCATCAGAT,TGTCTTCGGT
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,P06,Plate4-P06,GCTGAAGTGA,GTTCGTTGCT
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,P07,Plate4-P07,GCTAGGACAC,GTAAGCCACT
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,P08,Plate4-P08,GCTTCCTCTC,GTGGAAGAAT
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,P09,Plate4-P09,GCTAGTCTTC,GTATAACCTG
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,P10,Plate4-P10,GCTCATAAGC,GTGGTATCTC
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,P11,Plate4-P11,GTGGTTCAGC,GAGGAAGGTT
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,P12,Plate4-P12,GCCAATCAGC,GAGGACATTG
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,P13,Plate4-P13,TGATGAACCA,GGTACTCTGC
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,P14,Plate4-P14,CTGCAGACAA,AGTCTCTCTC
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,P15,Plate4-P15,GTGCAACACG,GTGGACAAGT
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,P16,Plate4-P16,AATCAGTCCA,ATGCGGAACC
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,P17,Plate4-P17,GCAATGTAGT,GACTGGCGTT
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,P18,Plate4-P18,GCTATGACTG,GTGTCTAAGT
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,P19,Plate4-P19,TTGCAGGCTC,CTGTCGTTCG
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,P20,Plate4-P20,ATGCGTACAA,CTGTCGGATC
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,P21,Plate4-P21,ATACCAGCTT,GGTAGCAGTT
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,P22,Plate4-P22,AGTACCAGTG,GGCATCTGTG
+Plate4,,,C,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,P23,Plate4-P23,GCTTCCTAGG,GTCTGTGTGT
+Plate4,,,D,N1_S2_RPP30,4,4, ,4,20uL,taqpath,500,3.5,50,50,,,,copies_per_ml_lysate,P24,Plate4-P24,ACTTGGTCTC,CGGATTCGCT

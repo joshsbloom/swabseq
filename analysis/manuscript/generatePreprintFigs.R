@@ -242,6 +242,44 @@ ggplot(aes(x=vc.n, y=S2_normalized_to_S2_spike))+geom_quasirandom(alpha=.75)+
 
 
 
+#NP vs normal saline swabs
+swabseq.dir="/mnt/e/swabseq/"
+swabseq.dir="/data/Covid/swabseq/"
+source(paste0(swabseq.dir, 'code/helper_functions.R'))
+rundir=paste0(swabseq.dir, 'runs/v41/')
+outdir=paste0(swabseq.dir, 'analysis/v41/')
+dfL=mungeTables(paste0(rundir, 'countTable.RDS'),lw=T, Stotal_filt=500)
+df=dfL$df
+dfs=dfL$dfs
+#usable swabseq reads
+#sum(df$Count)
+#17477902
+library(gdata)
+pd=read.xls(paste0(swabseq.dir,'analysis/v37/', 'EUA_data.xlsx'), stringsAsFactors=F)
+pd$Sample[2]='R-003'
+pd$Sample[19]='R-006'
+dfsF =dfs %>%  filter(Plate_ID=='Plate15')
+dfsF=merge(dfsF, pd, by.x='virus_identity', by.y='Sample')
+names(dfsF)[41]='CovidDetectedNP'
+
+
+library(grid)
+
+names(dfsF)[38]='Ct'
+names(dfsF)[41]='NPResult'
+gt=ggplot(dfsF, aes(x=Ct, y=S2_normalized_to_S2_spike))+
+geom_quasirandom(size=2, alpha=.75)+
+    scale_y_log10() + annotation_logticks(sides="l")+
+    #geom_hline(yintercept=3e-3, color='red')+
+    theme_bw()+
+    ylab('(S2 + 1)/(S2_spike + 1)')+
+    facet_grid(~NPResult, scales='free_x')+
+    ggtitle('Nasal Swab in Normal Saline, extraction-free')
+    
+
+gt2=ggplot_gtable(ggplot_build(gt))
+gt2$widths[5]=.3*gt2$widths[5]
+#grid.draw(gt2)
 
 
 
@@ -259,6 +297,9 @@ ggsave('/data/Covid/swabseq/analysis/manuscript/fig2v3.png')
 
 ggarrange(fig2a2,fig2e,fig2b3,fig2d,fig2c3, labels=c('A', 'B', 'C', 'D', 'E'),ncol=3, nrow=2)
 ggsave('/data/Covid/swabseq/analysis/manuscript/fig2v4.png')
+
+ggarrange(fig2a2,fig2e,fig2b3,gt2,fig2c3, labels=c('A', 'B', 'C', 'D', 'E'),ncol=3, nrow=2)
+ggsave('/data/Covid/swabseq/analysis/manuscript/fig2v5.png')
 
 
 
@@ -762,41 +803,6 @@ gt1$widths[5]=.3*gt1$widths[5]
 grid.draw(gt1)
 
 
-
-swabseq.dir="/mnt/e/swabseq/"
-swabseq.dir="/data/Covid/swabseq/"
-source(paste0(swabseq.dir, 'code/helper_functions.R'))
-rundir=paste0(swabseq.dir, 'runs/v41/')
-outdir=paste0(swabseq.dir, 'analysis/v41/')
-dfL=mungeTables(paste0(rundir, 'countTable.RDS'),lw=T, Stotal_filt=500)
-df=dfL$df
-dfs=dfL$dfs
-#usable swabseq reads
-#sum(df$Count)
-#17477902
-library(gdata)
-pd=read.xls(paste0(swabseq.dir,'analysis/v37/', 'EUA_data.xlsx'), stringsAsFactors=F)
-pd$Sample[2]='R-003'
-pd$Sample[19]='R-006'
-dfsF =dfs %>%  filter(Plate_ID=='Plate15')
-dfsF=merge(dfsF, pd, by.x='virus_identity', by.y='Sample')
-names(dfsF)[41]='CovidDetectedNP'
-
-
-library(grid)
-
-names(dfsF)[38]='Ct'
-names(dfsF)[41]='NPResult'
-gt=ggplot(dfsF, aes(x=Ct, y=S2_normalized_to_S2_spike))+
-geom_quasirandom(size=2)+
-    scale_y_log10() + annotation_logticks(sides="l")+
-    geom_hline(yintercept=3e-3, color='red')+theme_bw()+
-    ylab('(S2 + 1)/(S2_spike + 1)')+
-    facet_grid(~NPResult, scales='free_x')
-
-gt2=ggplot_gtable(ggplot_build(gt))
-gt2$widths[5]=.3*gt2$widths[5]
-#grid.draw(gt2)
 
 library(ggpubr)
 ggarrange(gt1,gt2, nrow=2, labels=c('A','B'))

@@ -1,8 +1,8 @@
 swabseq.dir="/mnt/e/swabseq/"
 swabseq.dir="/data/Covid/swabseq/"
 source(paste0(swabseq.dir, 'code/helper_functions.R'))
-rundir=paste0(swabseq.dir, 'runs/v49/')
-outdir=paste0(swabseq.dir, 'analysis/v49/')
+rundir=paste0(swabseq.dir, 'runs/v50/')
+outdir=paste0(swabseq.dir, 'analysis/v50/')
 
 dfL=mungeTables(paste0(rundir, 'countTable.RDS'),lw=T, Stotal_filt=500, input=384)
 df=dfL$df
@@ -10,12 +10,36 @@ dfs=dfL$dfs
 #usable swabseq reads
 #sum(df$Count)
 #17477902
-
 sum(dfs$S2)+sum(dfs$S2_spike)
-
 sum(dfs$RPP30)
 
-titl='v49 - Ashe / Gamma LoD Saliva'
+dfa=dfs %>% filter(Plate_ID=='Plate1') %>% filter(quadrant_96=='D') 
+p1.s2=sum(dfa$S2)
+p1.s2_spike=sum(dfa$S2_spike)
+p1.rpp30=sum(dfa$RPP30)
+
+
+dfa=dfs %>% filter(Plate_ID=='Plate2') %>% filter(quadrant_96=='B') 
+
+p2.s2=sum(dfa$S2)
+p2.s2_spike=sum(dfa$S2_spike)
+p2.rpp30=sum(dfa$RPP30)
+par(mfrow=c(2,1))
+barplot(c(p1.s2,p1.s2_spike, p1.rpp30)/sum(c(p1.s2,p1.s2_spike, p1.rpp30)))
+barplot(c(p2.s2,p2.s2_spike, p2.rpp30)/sum(c(p2.s2,p2.s2_spike, p2.rpp30)))
+
+#plate1
+sum(dfa$S2)+sum(dfa$S2_spike)
+[1] 1265516
+R> sum(dfa$RPP30)
+[1] 3777930
+#plate 2
+ sum(dfa$S2)+sum(dfa$S2_spike)
+[1] 5015819
+R> sum(dfa$RPP30)
+[1] 4097354
+
+titl='v50 - Ashe / Gamma LoD Saliva'
 
 #plate visualization 
 #plate visualization 
@@ -52,8 +76,11 @@ geom_point(size=2, alpha=.75)+
 ggsave(paste0(outdir,'Ashe.png'))
 
 #LoD
-dfs %>% filter(lysate=='C' | lysate=='D') %>% filter(Stotal>500) %>%
-ggplot(aes(x=virus_copy, y=S2_normalized_to_S2_spike))+
+dfs %>% filter(quadrant_96=='B' | quadrant_96=='C') %>% 
+    filter(Plate_ID=='Plate2') %>%
+    filter(Stotal>500) %>%
+ggplot(aes(x=log10(as.numeric(as.character(virus_copy))
+                  +1), y=S2_normalized_to_S2_spike))+
 geom_quasirandom(size=2, alpha=.75)+
     scale_y_log10() + annotation_logticks(sides="l")+
     #geom_hline(yintercept=3e-3, color='red')+
@@ -63,6 +90,49 @@ geom_quasirandom(size=2, alpha=.75)+
     theme(axis.text.x = element_text(angle = 90))+
     ggtitle('Gamma Saliva LoD')
 ggsave(paste0(outdir,'Gamma_saliva_LoD.png'))
+
+
+
+
+dfs %>% filter(quadrant_96=='B' | quadrant_96=='C') %>% 
+    filter(Plate_ID=='Plate2') %>%
+    filter(Stotal>500) %>%
+ggplot(aes(x=virus_copy, y=S2_normalized_to_S2_spike))+
+geom_quasirandom(size=2, alpha=.75)+
+    scale_y_log10() + annotation_logticks(sides="l")+
+    #geom_hline(yintercept=3e-3, color='red')+
+    theme_bw()+geom_hline(yintercept=3e-3)+
+    ylab('(S2 + 1)/(S2_spike + 1)')+
+    #facet_grid(~NPResult, scales='free_x')+
+    theme(axis.text.x = element_text(angle = 90))+
+    ggtitle('Gamma Saliva LoD')
+
+dfa=dfs %>% filter(quadrant_96=='B' | quadrant_96=='C') %>% 
+    filter(Plate_ID=='Plate2') %>%
+    filter(Stotal>500)
+
+plot(log10(as.numeric(as.character(dfa$virus_copy))+1),
+           log10(dfa$S2_normalized_to_S2_spike))
+abline(lm(log10(dfa$S2_normalized_to_S2_spike)~log10(as.numeric(as.character(dfa$virus_copy))+1)))
+
+
+
+
+dfa=dfs %>% filter(quadrant_96=='D') %>% # | quadrant_96=='C') %>% 
+    filter(Plate_ID=='Plate1') %>%
+    filter(Stotal>500)
+
+plot(log10(as.numeric(as.character(dfa$virus_copy))+1),
+           log10(dfa$S2_normalized_to_S2_spike))
+abline(lm(log10(dfa$S2_normalized_to_S2_spike)~log10(as.numeric(as.character(dfa$virus_copy))+1)))
+
+
+
+
+
+
+lm(log10(dfa$S2_normalized_to_S2_spike)~log10(as.numeric(as.character(dfa$virus_copy))+1))
+
 
 
 df %>% filter(Description!='' & Description!=' ') %>% filter(lysate=='C') %>% #filter(Plate_ID!='Plate1') %>%

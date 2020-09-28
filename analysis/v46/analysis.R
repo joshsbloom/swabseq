@@ -11,6 +11,9 @@ dfs=dfL$dfs
 #sum(df$Count)
 #17477902
 
+sum(dfs$S2)+sum(dfs$S2_spike)
+sum(dfs$RPP30)
+
 titl='v46 - NP Purified 40 cycles'
 
 #plate visualization 
@@ -129,3 +132,47 @@ gt2$widths[5]=.3*gt2$widths[5]
 library(ggpubr)
 ggarrange(gt2)
 ggsave(paste0(outdir,'purifiedNP_v_Ct.png'))
+
+
+
+#Combine with higher CT samples 
+
+out$virus_ident2=''
+out$virus_ident2[out$NPResult==TRUE]='Positive'
+out$virus_ident2[out$NPResult==FALSE]='Negative'
+
+
+
+
+
+rundir=paste0(swabseq.dir, 'runs/v19/')
+dfsR=mungeTables(paste0(rundir, 'countTable.RDS'))
+dfsR$Plate_384=droplevels(dfsR$Plate_384)
+dfsR$virus_copy[dfsR$virus_copy=='Negative Patient']='0'
+dfsR$virus_copy=droplevels(dfsR$virus_copy) #Plate_384=droplevels(dfsR$Plate_384)
+dfsR$virus_copy=factor(dfsR$virus_copy, levels(dfsR$virus_copy)[order(as.numeric(levels(dfsR$virus_copy)))])
+#dfsR$virus_copy=as.character(dfsR$virus_copy)
+dfsR$virus_ident2=dfsR$virus_identity
+dfsR$virus_ident2[grepl('^N|^P', dfsR$virus_identity)]='Negative'
+dfsR$virus_ident2[grepl('^U', dfsR$virus_identity)]='Positive'
+dfsR=dfsR[dfsR$SARS_COV_2_Detected!='Inconclusive',]
+
+highCT=dfsR %>% filter(virus_ident2=='Negative' | virus_ident2=='Positive') %>% filter(SARS_COV_2_Detected!='Inconclusive')
+
+
+comb=data.frame(virus_ident2=c(highCT$virus_ident2, out$virus_ident2),
+            S2_normalized_to_S2_spike=c(highCT$S2_normalized_to_S2_spike, out$S2_normalized_to_S2_spike))
+
+fig2e=dfsR %>% filter(virus_ident2=='Negative' | virus_ident2=='Positive') %>% filter(SARS_COV_2_Detected!='Inconclusive') %>% 
+ggplot(comb,aes(x=virus_ident2, y=S2_normalized_to_S2_spike))+ #, color=SARS_COV_2_Detected))+ #spike+S2, group=virus_copy))+ #log10(S2_total_across_all_wells)))+
+    geom_quasirandom(alpha=.75)+
+    scale_y_log10() + annotation_logticks(sides='l') + ylab('(S2+1)/(S2 spike+1)')+ #xlab('patient SARs-CoV-2 status')+
+    theme(axis.text.x = element_text(angle = 90, vjust=0.3))+ xlab("")+
+    geom_hline(yintercept=.003, color='red') +
+
+    theme_bw()+ggtitle('Nasal Swab, Purified RNA') 
+ggsave('/data/Covid/swabseq/analysis/v46/purified_combined.png')
+
+    #facet_wrap(~virus_ident2)+ 
+    #scale_color_viridis(option = 'plasma')+
+    +    
