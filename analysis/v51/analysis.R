@@ -110,6 +110,9 @@ dfa=dfs %>% filter(quadrant_96=='B' | quadrant_96=='C') %>%
 plot(log10(as.numeric(as.character(dfa$virus_copy))+1),
            log10(dfa$S2_normalized_to_S2_spike))
 abline(lm(log10(dfa$S2_normalized_to_S2_spike)~log10(as.numeric(as.character(dfa$virus_copy))+1)))
+dfa2=dfa[dfa$virus_copy!='0',]
+(lm(log10(dfa2$S2_normalized_to_S2_spike)~log10(as.numeric(as.character(dfa2$virus_copy))+1)))
+
 
 
 
@@ -121,7 +124,6 @@ dfa=dfs %>% filter(quadrant_96=='D') %>% # | quadrant_96=='C') %>%
 plot(log10(as.numeric(as.character(dfa$virus_copy))+1),
            log10(dfa$S2_normalized_to_S2_spike))
 abline(lm(log10(dfa$S2_normalized_to_S2_spike)~log10(as.numeric(as.character(dfa$virus_copy))+1)))
-
 
 
 

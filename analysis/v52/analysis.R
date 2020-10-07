@@ -1,8 +1,8 @@
 swabseq.dir="/mnt/e/swabseq/"
 swabseq.dir="/data/Covid/swabseq/"
 source(paste0(swabseq.dir, 'code/helper_functions.R'))
-rundir=paste0(swabseq.dir, 'runs/v51/')
-outdir=paste0(swabseq.dir, 'analysis/v51/')
+rundir=paste0(swabseq.dir, 'runs/v52/')
+outdir=paste0(swabseq.dir, 'analysis/v52/')
 
 dfL=mungeTables(paste0(rundir, 'countTable.RDS'),lw=T, Stotal_filt=500, input=384)
 df=dfL$df
@@ -30,7 +30,7 @@ sum(dfs$RPP30)
 #barplot(c(p2.s2,p2.s2_spike, p2.rpp30)/sum(c(p2.s2,p2.s2_spike, p2.rpp30)))
 
 
-titl='v51 - Ashe /ED / Gamma LoD Saliva'
+titl='v52 - Ashe /ED / Gamma LoD Saliva'
 
 #plate visualization 
 #plate visualization 
@@ -53,27 +53,9 @@ df %>% filter(Description!='' & Description!=' ') %>% #filter(Plate_ID!='Plate1'
 ggsave(paste0(outdir,'plateVis_plates_run.png'))
 
 
-#sample sheet mistake
-#dfs$virus_identity[dfs$Plate_ID=='Plate3']=dfs$virus_identity[dfs$Plate_ID=='Plate1']
-#annotation mistake
-
-# Ashe samples 
-dfs %>% filter(dfs$Plate_ID=='Plate3') %>% filter(grepl('^\\d\\d', virus_identity)) %>%  
-ggplot(aes(x=virus_identity, y=S2_normalized_to_S2_spike, color=SARS_COV_2_Detected,
-           fill =RPP30_Detected))+
-geom_point(size=2, alpha=.75)+
-    scale_y_log10() + annotation_logticks(sides="l")+
-    #geom_hline(yintercept=3e-3, color='red')+
-    theme_bw()+geom_hline(yintercept=3e-3)+
-    ylab('(S2 + 1)/(S2_spike + 1)')+
-    #facet_grid(~NPResult, scales='free_x')+
-    theme(axis.text.x = element_text(angle = 90))+
-    ggtitle('Ashe Samples')
-ggsave(paste0(outdir,'Ashe.png'))
-
 #LoD
 dfs %>% filter(quadrant_96=='B' | quadrant_96=='C') %>% 
-    filter(Plate_ID=='Plate3') %>%
+    filter(Plate_ID=='Plate4') %>%
     filter(Stotal>500) %>%
 ggplot(aes(x=log10(as.numeric(as.character(virus_copy))
                   +1), y=S2_normalized_to_S2_spike))+
@@ -104,13 +86,50 @@ geom_quasirandom(size=2, alpha=.75)+
     ggtitle('Gamma Saliva LoD')
 
 dfa=dfs %>% filter(quadrant_96=='B' | quadrant_96=='C') %>% 
-    filter(Plate_ID=='Plate3') %>%
+    filter(Plate_ID=='Plate4') %>%
     filter(Stotal>500)
 
-plot(log10(as.numeric(as.character(dfa$virus_copy))+1),
-           log10(dfa$S2_normalized_to_S2_spike))
-abline(lm(log10(dfa$S2_normalized_to_S2_spike)~log10(as.numeric(as.character(dfa$virus_copy))+1)))
 
+plot(log10(as.numeric(as.character(dfa$virus_copy))/285+1),
+           log10(dfa$S2_normalized_to_S2_spike))
+#abline(lm(log10(dfa$S2_normalized_to_S2_spike)~log10(as.numeric(as.character(dfa$virus_copy))/285+1)))
+dfa2=dfa[dfa$virus_copy!='0',]
+
+
+abline(lm(log10(dfa2$S2_normalized_to_S2_spike)~log10(as.numeric(as.character(dfa2$virus_copy))/285+1)))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#sample sheet mistake
+#dfs$virus_identity[dfs$Plate_ID=='Plate3']=dfs$virus_identity[dfs$Plate_ID=='Plate1']
+#annotation mistake
+
+# Ashe samples 
+dfs %>% filter(dfs$Plate_ID=='Plate3') %>% filter(grepl('^\\d\\d', virus_identity)) %>%  
+ggplot(aes(x=virus_identity, y=S2_normalized_to_S2_spike, color=SARS_COV_2_Detected,
+           fill =RPP30_Detected))+
+geom_point(size=2, alpha=.75)+
+    scale_y_log10() + annotation_logticks(sides="l")+
+    #geom_hline(yintercept=3e-3, color='red')+
+    theme_bw()+geom_hline(yintercept=3e-3)+
+    ylab('(S2 + 1)/(S2_spike + 1)')+
+    #facet_grid(~NPResult, scales='free_x')+
+    theme(axis.text.x = element_text(angle = 90))+
+    ggtitle('Ashe Samples')
+ggsave(paste0(outdir,'Ashe.png'))
 
 
 
