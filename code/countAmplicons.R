@@ -75,7 +75,6 @@ nbuffer=3e7
 #nbuffer=as.numeric(args$lbuffer)
 #print(nbuffer)
 
-
 # error correct the indices and count amplicons
 errorCorrectIdxAndCountAmplicons=function(rid, count.table, ind1,ind2,e=1){
         # get set of unique expected index1 and index2 sequences
@@ -83,8 +82,8 @@ errorCorrectIdxAndCountAmplicons=function(rid, count.table, ind1,ind2,e=1){
         index2=unique(count.table$index2)
         # for subset of reads where matching amplicon of interest (rid)
         # match observed index sequences to expected sequences allowing for e hamming distance
-        i1m=amatch(ind1[rid],index1, method='hamming', maxDist=e, matchNA=F)
-        i2m=amatch(ind2[rid],index2, method='hamming', maxDist=e, matchNA=F)
+        i1m=amatch(ind1[rid],index1, method='hamming', maxDist=e, matchNA=F, nthread=6)
+        i2m=amatch(ind2[rid],index2, method='hamming', maxDist=e, matchNA=F, nthread=6)
         # combine the error corrected indices together per read
         idm=paste0(index1[i1m], index2[i2m])
         #match error corrected indices to lookup table and count
@@ -144,6 +143,9 @@ i1 <- FastqStreamer(in.fileI1, nbuffer, readerBlockSize = 1e9, verbose = T)
 i2 <- FastqStreamer(in.fileI2, nbuffer, readerBlockSize = 1e9, verbose = T)
 r1 <- FastqStreamer(in.fileR1, nbuffer, readerBlockSize = 1e9, verbose = T)
 
+amp.match.summary.table=rep(0, length(amplicons)+1)
+names(amp.match.summary.table)=c(names(amplicons),'no_align')
+
 repeat{
     rfq1 <- yield(i1) 
     if(length(rfq1) == 0 ) { break }
@@ -154,13 +156,21 @@ repeat{
     rd1  <- sread(rfq3)
                        
     #match amplicon
-    amp.match=lapply(amplicons, function(x) {amatch(rd1, x, method='hamming', maxDist=1, matchNA=F)})
+    amp.match=lapply(amplicons, function(x) {amatch(rd1, x, method='hamming', maxDist=1, matchNA=F, nthread=6)})
 
     #summary
-    print(sapply(amp.match, function(x) sum(!is.na(x))))
-
-    #convert to indices
+    amp.match.summary = (sapply(amp.match, function(x) sum(!is.na(x))))
     am.mat=do.call('cbind', amp.match)
+
+    amt=am.mat
+    amt[is.na(amt)]=0
+    amt=rowSums(amt)
+    no_align=sum(amt==0)
+    amp.match.summary <- c(amp.match.summary, no_align)
+    names(amp.match.summary) <- c(names(amp.match.summary[-length(amp.match.summary)]),"no_align")
+    amp.match.summary.table = amp.match.summary.table+amp.match.summary 
+    
+    #convert to indices
     per.amplicon.row.index=apply(!is.na(am.mat), 2, function(x) which(x==TRUE))
     
     #for each amplicon of interest count up reads where indices match expected samples
@@ -178,6 +188,72 @@ if(extendedAmplicons){ results=list(S2.table=S2.table, S2_spike.table=S2_spike.t
 
 do.call('rbind', results) %>% write_csv(paste0(rundir, 'countTable.csv')) 
 saveRDS(results, file=paste0(rundir, 'countTable.RDS'),version=2)
+#saveRDS(amp.match.summary.table, file=paste0(rundir, 'ampCounts.RDS'),version=2)
+
+BiocManager::install("Rqc")
+BiocManager::install("savR")
+
+library(savR)
+sav=savR(paste0(rundir, 'bcls/'))
+tMet=tileMetrics(sav)
+phiX=mean(tMet$value[tMet$code=='300'])
+clusterPF=mean(tMet$value[tMet$code=='103']/tMet$value[tMet$code=='102'], na.rm=T)
+clusterDensity=mean(tMet$value[tMet$code=='100']/1000)
+clusterDensity_perLane=sapply(split(tMet, tMet$lane), function(x) mean(x$value[x$code=='100']/1000))    
+seq.metrics=data.frame("totalReads"=format(sum(amp.match.summary.table),  big.mark=','),
+                       "totalReadsPassedQC"=format(sum(amp.match.summary.table[!(names(amp.match.summary.table) %in% 'no_align')]), big.mark=','),
+                       "phiX"=paste(round(phiX,2), "%"), "clusterPF"=paste(round(clusterPF*100,1), "%"),
+                       "clusterDensity"=paste(round(clusterDensity,1), 'K/mm^2'), 
+                       "clusterDensity_perLane"=paste(sapply(clusterDensity_perLane, round,1),collapse=' '))
+
+library(Rqc)
+qcRes = rqc(path = paste0(rundir, 'bcls/out/'), pattern = ".fastq.gz", openBrowser=FALSE, n=1e5)
+read_quality <- rqcCycleQualityBoxPlot(qcRes) + ylim(0,NA)
+seq_cont_per_cycle <- rqcCycleBaseCallsLinePlot(qcRes)
+read_freq_plot <- rqcReadFrequencyPlot(qcRes)
+base_calls_plot <- rqcCycleBaseCallsLinePlot(qcRes)
+
+swabseq.dir="/data/Covid/swabseq/"
+source(paste0(swabseq.dir, 'code/helper_functions.R'))
+dfL=mungeTables(paste0(rundir, 'countTable.RDS'),lw=T, Stotal_filt=500, input=384)
+dwide=data.frame(dfL$dfs)
+
+results.summary=data.frame(
+'TotalSamplesPocessed'=sum(dwide$virus_identity!='' ),                         
+'Inconclusives'=sum(dwide$SARS_COV_2_Detected[dwide$virus_identity!='']=='Inconclusive'),
+'NoVirusDetected'=sum(dwide$SARS_COV_2_Detected[dwide$virus_identity!='']=='FALSE'),
+'VirusDetected'=sum(dwide$SARS_COV_2_Detected[dwide$virus_identity!='']=='TRUE'))
+
+params <- list(
+        experiment = strsplit(rundir,"/") %>% unlist() %>% tail(1),
+        amp.match.summary = amp.match.summary.table,
+        seq.metrics=seq.metrics,
+        results = results,
+        # qcRes = qcRes,
+        read_quality = read_quality,
+        seq_cont_per_cycle = seq_cont_per_cycle,
+        read_freq_plot = read_freq_plot,
+        base_calls_plot = base_calls_plot,
+        results.summary = results.summary,
+        dlong=dfL$df,
+        dwide=dwide
+ )
+
+rmarkdown::render(
+        input = "../../code/qc_report.Rmd",
+        output_file = paste0(params$experiment,".html"),
+        output_dir = rundir,
+        params = params,
+        envir = new.env(parent = globalenv())
+    )
+
+
+
+
+
+
+
+
 
 # this is moved to mungeTables() in helper_functions.R
 #if(outputCountsOnly==FALSE) {
