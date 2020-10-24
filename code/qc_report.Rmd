@@ -10,6 +10,7 @@ output:
         # toc_float: yes
 params:
   experiment: NA
+  bcl.dir:NA
   amp.match.summary: NA
   seq.metrics: NA
   results: NA
@@ -23,6 +24,7 @@ params:
 ---
 
 # `r paste("Experiment:", params$experiment)`
+# `r paste(params$bcl.dir)`
 
 
 ```{r include=FALSE}

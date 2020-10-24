@@ -253,7 +253,8 @@ results.summary=data.frame(
 
 
 params <- list(
-        experiment = strsplit(rundir,"/") %>% unlist() %>% tail(1),
+        experiment = paste(strsplit(rundir,"/") %>% unlist() %>% tail(1),
+        bcl.dir = gsub('/', '', bcl.dir),                   
         amp.match.summary = amp.match.summary.table,
         seq.metrics=seq.metrics,
         results = results,
