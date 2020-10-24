@@ -302,7 +302,7 @@ params$dlong=x
 
 
 rmarkdown::render(
-        input = "/data/Covid/swabseq/code/qc_report.Rmd",
+        input = "../../code/qc_report.Rmd",
         output_file = paste0(params$experiment,".html"),
         output_dir = rundir,
         params = params,
