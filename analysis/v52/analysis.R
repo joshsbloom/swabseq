@@ -70,6 +70,25 @@ geom_quasirandom(size=2, alpha=.75)+
 ggsave(paste0(outdir,'Gamma_saliva_LoD.png'))
 
 
+dfs %>% filter(quadrant_96=='B' | quadrant_96=='C') %>% 
+    filter(Plate_ID=='Plate4') %>%
+    #filter(Stotal>500) %>%
+ggplot(aes(x=virus_copy, y=S2_normalized_to_S2_spike))+
+geom_quasirandom(size=2, alpha=.75)+
+    scale_y_log10() + annotation_logticks(sides="l")+
+    #geom_hline(yintercept=3e-3, color='red')+
+    theme_bw()+geom_hline(yintercept=3e-3)+
+    ylab('(S2 + 1)/(S2_spike + 1)')+
+    #facet_grid(~NPResult, scales='free_x')+
+    theme(axis.text.x = element_text(angle = 90))+
+    ggtitle('Gamma Saliva LoD')
+ggsave(paste0(outdir,'Gamma_saliva_LoD.png'))
+
+
+dfs %>% filter(quadrant_96=='B' | quadrant_96=='C') %>% 
+    filter(Plate_ID=='Plate4') %>% write.csv(paste0(rundir, 'report_saliva_LOD_v52.csv'))
+
+
 
 
 dfs %>% filter(quadrant_96=='B' | quadrant_96=='C') %>% 

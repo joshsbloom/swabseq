@@ -3,7 +3,7 @@ title: "QC Report"
 date: "Updated: `r format(Sys.time())`"
 output:
       html_document:
-        highlight: tango
+      highlight: tango
         # number_sections: yes
         # toc: yes
         # toc_depth: 2
@@ -37,13 +37,11 @@ library(knitr)
 ```
 
 
-
 ## Sequencer metrics
 ```{r echo=FALSE}
 params$seq.metrics %>%
 kable()
 ```
-
 
 ## Alignment summary
 ```{r echo=FALSE}
@@ -51,7 +49,7 @@ data.frame(num_reads = params$amp.match.summary) %>%
 kable()
 ```
 
-## Plate maps
+## Plate maps (384)
 ```{r echo=FALSE, fig.height=10, fig.width=12}
 params$dlong %>% 
 ggplot(aes(x=Col, y=Row, fill=log10(Count))) + 
@@ -61,17 +59,70 @@ ggplot(aes(x=Col, y=Row, fill=log10(Count))) +
   scale_fill_viridis_c(option = 'plasma')+ggtitle(params$experiment)
 ```
 
+## S2 and S2 spike QC (384)
 ```{r echo=FALSE, fig.height=10, fig.width=12}
-params$dlong %>% 
-ggplot(aes(x=Col, y=Row, fill=log10(Count))) + 
+params$dwide %>% 
+ggplot(aes(x=Col, y=Row, fill=Stotal>500)) + 
+  geom_raster() +
+  coord_equal() +
+  facet_grid(~Plate_384+Plate_ID+Description) +
+  #scale_fill_viridis_c(option = 'plasma')+
+  ggtitle(params$experiment)
+```
+
+## RPP30 QC (384)
+```{r echo=FALSE, fig.height=10, fig.width=12}
+params$dwide %>% 
+ggplot(aes(x=Col, y=Row, fill=RPP30_Detected)) + 
+  geom_raster() +
+  coord_equal() +
+  facet_grid(~Plate_384+Plate_ID+Description) +
+  #scale_fill_viridis_c(option = 'plasma')+
+  ggtitle(params$experiment)
+```
+
+## Plate maps (96)
+```{r echo=FALSE, fig.height=10, fig.width=12}
+psplit=split(params$dlong, params$dlong$Plate_384)
+lapply(psplit, function(x) {
+           x%>%
+ggplot(aes(x=Col96, y=Row96, fill=log10(Count))) + 
   geom_raster() +
   coord_equal() +
   facet_grid(amplicon~Plate_384+Plate_ID+quadrant_96+Description) +
   scale_fill_viridis_c(option = 'plasma')+ggtitle(params$experiment)
+})
+```
+
+## S2 and S2 spike QC (96)
+```{r echo=FALSE, fig.height=10, fig.width=12}
+psplit=split(params$dwide, params$dwide$Plate_384)
+lapply(psplit, function(x) {
+           x%>%
+ggplot(aes(x=Col96, y=Row96, fill=Stotal>500)) + 
+  geom_raster() +
+  coord_equal() +
+  facet_grid(~Plate_384+Plate_ID+quadrant_96+Description) +
+  #scale_fill_viridis_c(option = 'plasma')+
+  ggtitle(params$experiment)
+})
+```
+
+## RPP30 QC (96)
+```{r echo=FALSE, fig.height=10, fig.width=12}
+psplit=split(params$dwide, params$dwide$Plate_384)
+lapply(psplit, function(x) {
+           x%>%
+ggplot(aes(x=Col96, y=Row96, fill=RPP30_Detected)) + 
+  geom_raster() +
+  coord_equal() +
+  facet_grid(~Plate_384+Plate_ID+quadrant_96+Description) +
+  #scale_fill_viridis_c(option = 'plasma')+
+  ggtitle(params$experiment)
+})
 ```
 
 ## Sequence quality per base/cycle
-
 ```{r echo=FALSE}
 eval(params$read_quality)
 ```
@@ -99,78 +150,3 @@ eval(params$read_freq_plot)
 
 
 
-<!--
-
-## Format Results
-
-```{r echo=FALSE}
-df <- do.call('rbind', params$results)
-
-##################
-# Modify columns #
-##################
-df$Col=as.factor(gsub('^.', '', df$Sample_Well))
-df$Row=factor(gsub('..$', '', df$Sample_Well), levels=rev(toupper(letters[1:8])))
-df$Sample=paste0(df$Plate_ID, '-' ,df$Sample_Well)
-df$Plate_ID=as.factor(df$Plate_ID)
-df$Plate_ID=factor(df$Plate_ID, levels(df$Plate_ID)[order(as.numeric(gsub('Plate', '', levels(df$Plate_ID))))])  
-# df$Plate_384=as.factor(df$Plate_384)
-# df$amplicon=factor(df$amplicon, level=c('S2', 'S2_spike', 'RPP30', 'RPP30_spike'))
-
-################################################
-# Filter samples that had < 2000 S2 + S2 spike #
-################################################
-
-remove <- df %>%
-  filter(amplicon != "RPP30") %>% 
-  dplyr::select(mergedIndex, amplicon, Count) %>% 
-  pivot_wider(names_from = amplicon, values_from = Count) %>% 
-  filter(S2 + S2_spike < 500) %>% 
-  pull(mergedIndex)
-```
-
-## Caryover Contamination
-
-```{r echo=FALSE}
-df %>% 
-  group_by(Plate_384_Number,
-           Plate_384_Quadrant) %>% 
-  summarise(Count = sum(Count)) %>% 
-  ggplot(aes(y = Plate_384_Quadrant,
-             x = Plate_384_Number,
-             fill = log10(Count))) +
-  # geom_bar(stat = "identity") +
-  geom_raster() +
-  # facet_grid(Plate_384_Quadrant ~ Plate_384_Number) +
-  # scale_y_log10() +
-  theme_bw() +
-  scale_fill_viridis_c(option = 'plasma')
-
-```
-
-## Plate Map Plot
-
-```{r echo=FALSE, fig.height=10, fig.width=12}
-df %>%
-  filter(!is.na(Plate_ID)) %>% 
-  ggplot(aes(x=Col, y=Row, fill=log10(Count))) + 
-  geom_raster() +
-  coord_equal() +
-  facet_grid(amplicon~Plate_ID) +
-  scale_fill_viridis_c(option = 'plasma')
-
-```
-
-## Plate Map of Missing Values
-
-```{r echo=FALSE, fig.height=10, fig.width=12}
-df %>%
-  filter(!is.na(Plate_ID)) %>% 
-  ggplot(aes(x=Col, y=Row, fill=mergedIndex %in% remove)) + 
-  geom_raster() +
-  coord_equal() +
-  facet_grid(amplicon~Plate_ID) +
-  scale_fill_manual(name = "S2 + S2 Spike < 500",
-                    values = c("#FFFFFF", "#000000"))
-``` 
--->

@@ -15,7 +15,6 @@
 #  -e, --extendedAmplicons  additional swabseq amplicons [default:
 #                           FALSE]
 
-
 #parse command line arguments and exit fast if run with -h
 library(argparser)
 p = arg_parser("utility to count amplicons for SwabSeq")
@@ -23,8 +22,8 @@ p=add_argument(p,"--rundir",  default=".", help="path containing SampleSheet")
 p=add_argument(p,"--basespaceID",  default=1000, help="BaseSpace Run ID")
 #p=add_argument(p,"--countsOnly",  default=TRUE, help="only output table of counts")
 p=add_argument(p,"--extendedAmplicons", default=F, help="additional swabseq amplicons")
-#p=add_argument(p,"--lbuffer", default=30000001, help="how many reads to load into ram at a time")
-#p=add_argument(p,"--threads", default=64, help="number of threads for bcl2fastq")
+p=add_argument(p,"--lbuffer", default=30000001, help="how many reads to load into ram at a time")
+p=add_argument(p,"--threads", default=8, help="number of threads for bcl2fastq")
 args=parse_args(p) 
 
 #load required packages
@@ -33,13 +32,17 @@ library(stringdist)
 library(tidyverse)
 library(ggbeeswarm)
 library(viridis)
-#for example ... 
-#rundir='/data/Covid/swabseq/runs/SwabSeqV17/'
-#basespaceID="195853687"
+library(reader)
+
 rundir=args$rundir
 basespaceID=args$basespaceID
 outputCountsOnly=args$countsOnly
 extendedAmplicons=args$extendedAmplicons
+threads=args$threads
+nbuffer=as.integer(as.numeric(args$lbuffer))
+#nbuffer=as.numeric(args$lbuffer) 13e7
+print(nbuffer)
+
 #requires BCLs (or basespaceID), python3.7 in path, bcl2fastq in path and SampleSheet.csv (or xls)
 
 # Generate sample sheet from XLS file ----------------------------------------------------------------
@@ -54,26 +57,41 @@ if(!file.exists(sampleCSV)) {
 }
 #-----------------------------------------------------------------------------------------------------
 
-# if fastqs don't exist grab them from basespace
-fastqR1  <- paste0(rundir, 'bcls/out/Undetermined_S0_R1_001.fastq.gz')
-if(!file.exists(fastqR1)) { 
+#extract bcl directory name ----------------------------------------------------------------------------
+ff=find.file('RunInfo.xml', dir=paste(rundir, list.files(rundir), '/', sep=''))
+if(ff=="") {
     #Pull BCLs from basespace [skip this section if you already placed bcls in rundir/bcls/] ------------
     #if running miseq then paste run id here
     #if miseq run then grab from basespace, otherwise place bcls here and skip lines 12-23 
-    system(paste("bs download run --id", basespaceID, "-o bcls/"))
+
+    if(basespaceID!=1000) {   system(paste("bs download run --id", basespaceID, "-o bcls/")) }
+}
+ff=find.file('RTAComplete.txt', dir=paste(rundir, list.files(rundir), '/', sep=''))
+if(ff==""){
+    print("bcl directory not found")
+    quit(save="no")
+}
+ff=strsplit(ff,'/')[[1]]
+bcl.dirname=ff[length(ff)-1]
+bcl.dir=paste0(rundir,bcl.dirname,'/')
+#---------------------------------------------------------------------------------------------------------
+
+#move to bcl directory
+setwd(bcl.dir)
+
+# if fastqs don't exist run bcl2fastq to generate them 
+fastqR1  <- paste0(bcl.dir, 'out/Undetermined_S0_R1_001.fastq.gz')
+if(!file.exists(fastqR1)) { 
+      
     # run bcl2fastq to generate fastq.gz files (no demux is happening here)
-    setwd(paste0(rundir,'bcls/'))
     #note this is using 64 threads and running on a workstation, reduce threads if necessary
-    system(paste("bcl2fastq --runfolder-dir . --output-dir out/ --create-fastq-for-index-reads  --ignore-missing-bcl --use-bases-mask=Y26,I10,I10 --processing-threads 8 --no-lane-splitting --sample-sheet /dev/null"))
+    system(paste("bcl2fastq --runfolder-dir . --output-dir out/ --create-fastq-for-index-reads  --ignore-missing-bcl --use-bases-mask=Y26,I10,I10 --processing-threads", threads, "--no-lane-splitting --sample-sheet /dev/null"))
     #for sharing, make tar of bcls directory
-    system(paste("tar -cvf", paste0(rundir,'bcls.tar'), "../bcls/"))
+    system(paste("tar -cvf", paste0(rundir,'bcls.tar'),  bcl.dir))
     #-----------------------------------------------------------------------------------------------------
 }
 
 # read in n reads at a time (reduce if RAM limited)
-nbuffer=3e7
-#nbuffer=as.numeric(args$lbuffer)
-#print(nbuffer)
 
 # error correct the indices and count amplicons
 errorCorrectIdxAndCountAmplicons=function(rid, count.table, ind1,ind2,e=1){
@@ -82,8 +100,8 @@ errorCorrectIdxAndCountAmplicons=function(rid, count.table, ind1,ind2,e=1){
         index2=unique(count.table$index2)
         # for subset of reads where matching amplicon of interest (rid)
         # match observed index sequences to expected sequences allowing for e hamming distance
-        i1m=amatch(ind1[rid],index1, method='hamming', maxDist=e, matchNA=F, nthread=6)
-        i2m=amatch(ind2[rid],index2, method='hamming', maxDist=e, matchNA=F, nthread=6)
+        i1m=amatch(ind1[rid],index1, method='hamming', maxDist=e, matchNA=F, nthread=threads)
+        i2m=amatch(ind2[rid],index2, method='hamming', maxDist=e, matchNA=F, nthread=threads)
         # combine the error corrected indices together per read
         idm=paste0(index1[i1m], index2[i2m])
         #match error corrected indices to lookup table and count
@@ -134,7 +152,7 @@ S2.table$Count=0; S2_spike.table$Count=0; RPP30.table$Count=0; RPP30_spike.table
 S2.table$amplicon='S2'; S2_spike.table$amplicon='S2_spike'; RPP30.table$amplicon='RPP30'; RPP30_spike.table$amplicon='RPP30_spike'
 #------------------------------------------------------------------------------------------
 
-fastq_dir  <- paste0(rundir, 'bcls/out/')
+fastq_dir  <- paste0(bcl.dir, 'out/')
 in.fileI1  <- paste0(fastq_dir, 'Undetermined_S0_I1_001.fastq.gz')
 in.fileI2  <- paste0(fastq_dir, 'Undetermined_S0_I2_001.fastq.gz')
 in.fileR1  <- paste0(fastq_dir, 'Undetermined_S0_R1_001.fastq.gz')
@@ -156,7 +174,7 @@ repeat{
     rd1  <- sread(rfq3)
                        
     #match amplicon
-    amp.match=lapply(amplicons, function(x) {amatch(rd1, x, method='hamming', maxDist=1, matchNA=F, nthread=6)})
+    amp.match=lapply(amplicons, function(x) {amatch(rd1, x, method='hamming', maxDist=1, matchNA=F, nthread=threads)})
 
     #summary
     amp.match.summary = (sapply(amp.match, function(x) sum(!is.na(x))))
@@ -190,11 +208,11 @@ do.call('rbind', results) %>% write_csv(paste0(rundir, 'countTable.csv'))
 saveRDS(results, file=paste0(rundir, 'countTable.RDS'),version=2)
 #saveRDS(amp.match.summary.table, file=paste0(rundir, 'ampCounts.RDS'),version=2)
 
-BiocManager::install("Rqc")
-BiocManager::install("savR")
+#BiocManager::install("Rqc")
+#BiocManager::install("savR")
 
 library(savR)
-sav=savR(paste0(rundir, 'bcls/'))
+sav=savR(bcl.dir)
 tMet=tileMetrics(sav)
 phiX=mean(tMet$value[tMet$code=='300'])
 clusterPF=mean(tMet$value[tMet$code=='103']/tMet$value[tMet$code=='102'], na.rm=T)
@@ -207,22 +225,32 @@ seq.metrics=data.frame("totalReads"=format(sum(amp.match.summary.table),  big.ma
                        "clusterDensity_perLane"=paste(sapply(clusterDensity_perLane, round,1),collapse=' '))
 
 library(Rqc)
-qcRes = rqc(path = paste0(rundir, 'bcls/out/'), pattern = ".fastq.gz", openBrowser=FALSE, n=1e5)
+qcRes = rqc(path = paste0(bcl.dir, 'out/'), pattern = ".fastq.gz", openBrowser=FALSE, n=1e5)
 read_quality <- rqcCycleQualityBoxPlot(qcRes) + ylim(0,NA)
 seq_cont_per_cycle <- rqcCycleBaseCallsLinePlot(qcRes)
 read_freq_plot <- rqcReadFrequencyPlot(qcRes)
 base_calls_plot <- rqcCycleBaseCallsLinePlot(qcRes)
 
-swabseq.dir="/data/Covid/swabseq/"
-source(paste0(swabseq.dir, 'code/helper_functions.R'))
+setwd(rundir)
+source('../../code/helper_functions.R')
 dfL=mungeTables(paste0(rundir, 'countTable.RDS'),lw=T, Stotal_filt=500, input=384)
 dwide=data.frame(dfL$dfs)
+dwide %>% filter(Description!='') %>% write.csv(paste0(rundir, 'report.csv'))
 
+#dwide %>% filter(grepl('^\\d', virus_identity)) %>% write.csv(paste0(rundir, 'report_patient_samples.csv'))
+#dwide %>% filter(grepl('MNS NS', virus_identity)) %>% write.csv(paste0(rundir, 'report_MNS_NS_LOD.csv'))
+
+
+empty_well_set=c('', 'TBET')
+
+rsample=!(dwide$virus_identity%in%empty_well_set )
+#!='' & dwide$virus_identity!='TBET') #& dwide$virus_identity!='TBET') & dwide$virus_copy!='0' 
 results.summary=data.frame(
-'TotalSamplesPocessed'=sum(dwide$virus_identity!='' ),                         
-'Inconclusives'=sum(dwide$SARS_COV_2_Detected[dwide$virus_identity!='']=='Inconclusive'),
-'NoVirusDetected'=sum(dwide$SARS_COV_2_Detected[dwide$virus_identity!='']=='FALSE'),
-'VirusDetected'=sum(dwide$SARS_COV_2_Detected[dwide$virus_identity!='']=='TRUE'))
+'TotalSamplesPocessed'=sum(rsample),                         
+'Inconclusives'=sum(dwide$SARS_COV_2_Detected[rsample]=='Inconclusive'),
+'NoVirusDetected'=sum(dwide$SARS_COV_2_Detected[rsample]=='FALSE'),
+'VirusDetected'=sum(dwide$SARS_COV_2_Detected[rsample]=='TRUE'))
+
 
 params <- list(
         experiment = strsplit(rundir,"/") %>% unlist() %>% tail(1),
@@ -239,15 +267,45 @@ params <- list(
         dwide=dwide
  )
 
+x=params$dwide #psplit[[1]] 
+x$Row96=x$Row
+for(l in c('A','B','C','D')){
+    y=droplevels(x$Row[x$quadrant_96==l])
+    levels(y)=toupper(rev(letters[1:8]))
+    x$Row96[x$quadrant_96==l]=y
+}
+x$Col96=x$Col
+for(l in c('A','B','C','D')){
+    y=droplevels(x$Col[x$quadrant_96==l])
+    levels(y)=sprintf('%02d', 1:12)
+    x$Col96[x$quadrant_96==l]=y
+}
+params$dwide=x
+
+x=params$dlong #psplit[[1]] 
+x$Row96=x$Row
+for(l in c('A','B','C','D')){
+    y=droplevels(x$Row[x$quadrant_96==l])
+    levels(y)=toupper(rev(letters[1:8]))
+    x$Row96[x$quadrant_96==l]=y
+}
+x$Col96=x$Col
+for(l in c('A','B','C','D')){
+    y=droplevels(x$Col[x$quadrant_96==l])
+    levels(y)=sprintf('%02d', 1:12)
+    x$Col96[x$quadrant_96==l]=y
+}
+params$dlong=x
+
+
+
 rmarkdown::render(
-        input = "../../code/qc_report.Rmd",
+        input = "/data/Covid/swabseq/code/qc_report.Rmd",
         output_file = paste0(params$experiment,".html"),
         output_dir = rundir,
         params = params,
         envir = new.env(parent = globalenv())
     )
-
-
 
 
 

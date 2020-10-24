@@ -90,7 +90,23 @@ library(ggpubr)
 ggarrange(a,b)
 ggsave(paste0(outdir,'Gamma_saliva_LoD_NEB_vs_Taqpath.png'))
 
+dfs %>% filter(quadrant_96=='C' | quadrant_96=='D') %>% 
+    filter(Plate_ID=='Plate1') %>% filter(virus_identity!='IGNORE') %>%
+     filter(virus_identity!='TE') %>%
+ggplot(aes(x=virus_copy,
+                  y=S2_normalized_to_S2_spike))+
+geom_quasirandom(size=2, alpha=.75)+
+    scale_y_log10() + annotation_logticks(sides="l")+
+    #geom_hline(yintercept=3e-3, color='red')+
+    theme_bw()+geom_hline(yintercept=3e-3)+
+    ylab('(S2 + 1)/(S2_spike + 1)')+
+    #facet_grid(~NPResult, scales='free_x')+
+    theme(axis.text.x = element_text(angle = 90))+
+    ggtitle('Gamma Saliva LoD _ Taqpath _ index plate 1 v53')
 
+dfs %>% filter(quadrant_96=='C' | quadrant_96=='D') %>% 
+    filter(Plate_ID=='Plate1') %>% filter(virus_identity!='IGNORE') %>%
+     filter(virus_identity!='TE') %>% write.csv(paste0(rundir, 'report_saliva_LOD_v53.csv'))
 
 #lusis experiment
 table_out=dfs %>% filter(quadrant_96=='A' | quadrant_96=='B') %>% 
