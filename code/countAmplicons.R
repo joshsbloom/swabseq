@@ -58,7 +58,7 @@ if(!file.exists(sampleCSV)) {
 #-----------------------------------------------------------------------------------------------------
 
 #extract bcl directory name ----------------------------------------------------------------------------
-ff=find.file('RunInfo.xml', dir=paste(rundir, list.files(rundir), '/', sep=''))
+ff=find.file('RTAComplete.txt', dir=paste(rundir, list.files(rundir), '/', sep=''))
 if(ff=="") {
     #Pull BCLs from basespace [skip this section if you already placed bcls in rundir/bcls/] ------------
     #if running miseq then paste run id here

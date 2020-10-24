@@ -10,7 +10,7 @@ output:
         # toc_float: yes
 params:
   experiment: NA
-  bcl.dir:NA
+  bcl.dir: NA
   amp.match.summary: NA
   seq.metrics: NA
   results: NA
