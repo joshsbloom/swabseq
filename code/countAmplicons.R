@@ -206,10 +206,11 @@ if(extendedAmplicons){ results=list(S2.table=S2.table, S2_spike.table=S2_spike.t
 
 do.call('rbind', results) %>% write_csv(paste0(rundir, 'countTable.csv')) 
 saveRDS(results, file=paste0(rundir, 'countTable.RDS'),version=2)
-#saveRDS(amp.match.summary.table, file=paste0(rundir, 'ampCounts.RDS'),version=2)
+saveRDS(amp.match.summary.table, file=paste0(rundir, 'ampCounts.RDS'),version=2)
 
 #BiocManager::install("Rqc")
 #BiocManager::install("savR")
+amp.match.summary.table=readRDS(paste0(rundir, 'ampCounts.RDS'))
 
 library(savR)
 sav=savR(bcl.dir)
@@ -253,8 +254,8 @@ results.summary=data.frame(
 
 
 params <- list(
-        experiment = paste(strsplit(rundir,"/") %>% unlist() %>% tail(1),
-        bcl.dir = gsub('/', '', bcl.dir),                   
+        experiment = strsplit(rundir,"/") %>% unlist() %>% tail(1),
+        bcl.dir = bcl.dirname,                   
         amp.match.summary = amp.match.summary.table,
         seq.metrics=seq.metrics,
         results = results,
