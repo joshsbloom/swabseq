@@ -96,8 +96,12 @@ errorCorrectIdxAndCountAmpliconsOld=function(rid, count.table, ind1,ind2,e=1, th
         return(count.table)
 }
 
-#error correct the indices and count amplicons, equivalent base R
+#error correct the indices and count amplicons, equivalent base R, faster
 errorCorrectIdxAndCountAmplicons=function(rid, count.table, ind1,ind2){
+    # get set of unique expected index1 and index2 sequences
+    index1=unique(count.table$index)
+    index2=unique(count.table$index2)
+
     i1h=lapply(index1, make_hamming1_sequences)
     names(i1h)=index1
     ih1=Biobase::reverseSplit(i1h)
