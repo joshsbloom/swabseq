@@ -54,6 +54,73 @@ mungeTables=function(tables.RDS,lw=F,Stotal_filt=2000,input=96){
 }
 
 
+make_hamming1_sequences=function(x) {
+    eseq=s2c(x)
+    eseqs=c(c2s(eseq))
+    for(i in 1:length(eseq)){
+        eseq2=eseq
+        eseq2[i]='A'
+        eseqs=c(eseqs,c2s(eseq2))
+        eseq2[i]='C'
+        eseqs=c(eseqs,c2s(eseq2))
+        eseq2[i]='T'
+        eseqs=c(eseqs,c2s(eseq2))
+        eseq2[i]='G'
+        eseqs=c(eseqs,c2s(eseq2))
+        eseq2[i]='N'
+        eseqs=c(eseqs,c2s(eseq2))
+
+    }
+    eseqs=unique(eseqs)
+    return(eseqs)
+}
+
+
+# error correct the indices and count amplicons using amatch
+errorCorrectIdxAndCountAmpliconsOld=function(rid, count.table, ind1,ind2,e=1, threads=threads){
+        # get set of unique expected index1 and index2 sequences
+        index1=unique(count.table$index)
+        index2=unique(count.table$index2)
+        # for subset of reads where matching amplicon of interest (rid)
+        # match observed index sequences to expected sequences allowing for e hamming distance
+        i1m=amatch(ind1[rid],index1, method='hamming', maxDist=e, matchNA=F, nthread=threads)
+        i2m=amatch(ind2[rid],index2, method='hamming', maxDist=e, matchNA=F, nthread=threads)
+        # combine the error corrected indices together per read
+        idm=paste0(index1[i1m], index2[i2m])
+        #match error corrected indices to lookup table and count
+        tS2=table(match(idm, count.table$mergedIndex))
+        #get index in lookup table for indices with at least one observed count
+        tbix=match(as.numeric(names(tS2)), 1:nrow(count.table))
+        #increment these samples by count per sample
+        count.table$Count[tbix]=as.vector(tS2)+count.table$Count[tbix]
+        return(count.table)
+}
+
+#error correct the indices and count amplicons, equivalent base R
+errorCorrectIdxAndCountAmplicons=function(rid, count.table, ind1,ind2){
+    i1h=lapply(index1, make_hamming1_sequences)
+    names(i1h)=index1
+    ih1=Biobase::reverseSplit(i1h)
+    ih1.elements=names(ih1)
+    ih1.indices=as.vector(unlist(ih1))
+    i1m=ih1.indices[match(ind1[rid],ih1.elements)]
+
+    i2h=lapply(index2, make_hamming1_sequences)
+    names(i2h)=index2
+    ih2=Biobase::reverseSplit(i2h)
+    ih2.elements=names(ih2)
+    ih2.indices=as.vector(unlist(ih2))
+    i2m=ih2.indices[match(ind2[rid],ih2.elements)]
+    
+    idm=paste0(i1m,i2m)
+    tS2=table(match(idm, count.table$mergedIndex))
+    tbix=match(as.numeric(names(tS2)), 1:nrow(count.table))
+    count.table$Count[tbix]=as.vector(tS2)+count.table$Count[tbix]
+    return(count.table)
+}
+
+
+
 #add Row384 and Col384 information for 384-well plates used
 add384Mapping=function(df){
     #move this to helper functions

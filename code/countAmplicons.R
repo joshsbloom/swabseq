@@ -24,7 +24,7 @@ p=add_argument(p,"--basespaceID",  default=1000, help="BaseSpace Run ID")
 p=add_argument(p,"--extendedAmplicons", default=F, help="additional swabseq amplicons")
 p=add_argument(p,"--lbuffer", default=30000001, help="how many reads to load into ram at a time")
 p=add_argument(p,"--threads", default=8, help="number of threads for bcl2fastq")
-args=parse_args(p) 
+p=add_argument(p,"--generateSampleSheet", default=F, help="use barcode csv file to generate sample sheet")
 
 #load required packages
 library(ShortRead)
@@ -34,28 +34,17 @@ library(ggbeeswarm)
 library(viridis)
 library(reader)
 
+args=parse_args(p) 
 rundir=args$rundir
+print(rundir)
 basespaceID=args$basespaceID
 outputCountsOnly=args$countsOnly
 extendedAmplicons=args$extendedAmplicons
 threads=args$threads
 nbuffer=as.integer(as.numeric(args$lbuffer))
+gSampleSheet=args$generateSampleSheet
 #nbuffer=as.numeric(args$lbuffer) 13e7
 print(nbuffer)
-
-#requires BCLs (or basespaceID), python3.7 in path, bcl2fastq in path and SampleSheet.csv (or xls)
-
-# Generate sample sheet from XLS file ----------------------------------------------------------------
-# using octant python script [skip this section if you already have SampleSheet.csv in rundir/
-# see https://github.com/octantbio/SwabSeq
-sampleXLS=paste0(rundir,'SwabSeq.xlsx')
-sampleCSV=paste0(rundir,'SampleSheet.csv')
-setwd(rundir)
-# if csv sample sheet doesn't exist, make it 
-if(!file.exists(sampleCSV)) {
-    system(paste("python3.7 ../../code/platemap2samp.py", sampleXLS,  '--o', sampleCSV))
-}
-#-----------------------------------------------------------------------------------------------------
 
 #extract bcl directory name ----------------------------------------------------------------------------
 ff=find.file('RTAComplete.txt', dir=paste(rundir, list.files(rundir), '/', sep=''))
@@ -76,6 +65,25 @@ bcl.dirname=ff[length(ff)-1]
 bcl.dir=paste0(rundir,bcl.dirname,'/')
 #---------------------------------------------------------------------------------------------------------
 
+setwd(rundir)
+source('../../code/helper_functions.R')
+source('../../code/create_samplesheet.R')
+
+
+if(gSampleSheet) { makeSS(rundir,bcl.dir) }
+
+#requires BCLs (or basespaceID), python3.7 in path, bcl2fastq in path and SampleSheet.csv (or xls)
+# Generate sample sheet from XLS file ----------------------------------------------------------------
+# using octant python script [skip this section if you already have SampleSheet.csv in rundir/
+# see https://github.com/octantbio/SwabSeq
+sampleXLS=paste0(rundir,'SwabSeq.xlsx')
+sampleCSV=paste0(rundir,'SampleSheet.csv')
+setwd(rundir)
+# if csv sample sheet doesn't exist, make it 
+if(!file.exists(sampleCSV)) {
+    system(paste("python3.7 ../../code/platemap2samp.py", sampleXLS,  '--o', sampleCSV))
+}
+#-----------------------------------------------------------------------------------------------------
 #move to bcl directory
 setwd(bcl.dir)
 
@@ -93,25 +101,6 @@ if(!file.exists(fastqR1)) {
 
 # read in n reads at a time (reduce if RAM limited)
 
-# error correct the indices and count amplicons
-errorCorrectIdxAndCountAmplicons=function(rid, count.table, ind1,ind2,e=1){
-        # get set of unique expected index1 and index2 sequences
-        index1=unique(count.table$index)
-        index2=unique(count.table$index2)
-        # for subset of reads where matching amplicon of interest (rid)
-        # match observed index sequences to expected sequences allowing for e hamming distance
-        i1m=amatch(ind1[rid],index1, method='hamming', maxDist=e, matchNA=F, nthread=threads)
-        i2m=amatch(ind2[rid],index2, method='hamming', maxDist=e, matchNA=F, nthread=threads)
-        # combine the error corrected indices together per read
-        idm=paste0(index1[i1m], index2[i2m])
-        #match error corrected indices to lookup table and count
-        tS2=table(match(idm, count.table$mergedIndex))
-        #get index in lookup table for indices with at least one observed count
-        tbix=match(as.numeric(names(tS2)), 1:nrow(count.table))
-        #increment these samples by count per sample
-        count.table$Count[tbix]=as.vector(tS2)+count.table$Count[tbix]
-        return(count.table)
-}
 
 #expected amplicons, note will update for RPP30 spike-in 
 #RPP
@@ -146,11 +135,16 @@ if(sum(grepl('-1$', ss$Sample_ID))==0){
     #subset of indices for RPP30
     ssR=ss[grep('-2$', ss$Sample_ID),]
 }
+
 #initalize output count tables ------------------------------------------------------------
-S2.table=ssS; S2_spike.table=ssS; RPP30.table=ssR; RPP30_spike.table=ssR;
-S2.table$Count=0; S2_spike.table$Count=0; RPP30.table$Count=0; RPP30_spike.table$Count=0
-S2.table$amplicon='S2'; S2_spike.table$amplicon='S2_spike'; RPP30.table$amplicon='RPP30'; RPP30_spike.table$amplicon='RPP30_spike'
-#------------------------------------------------------------------------------------------
+count.tables=list()
+for(a in names(amplicons)){
+    if(grepl('^S',a)){    count.tables[[a]]=ssS   } 
+    if(grepl('^R',a)){    count.tables[[a]]=ssR   } 
+        count.tables[[a]]$Count=0
+        count.tables[[a]]$amplicon=a
+}
+#--------------------------------------------------------------------------------------------
 
 fastq_dir  <- paste0(bcl.dir, 'out/')
 in.fileI1  <- paste0(fastq_dir, 'Undetermined_S0_I1_001.fastq.gz')
@@ -172,37 +166,35 @@ repeat{
     ind1 <- sread(rfq1)
     ind2 <- sread(rfq2)
     rd1  <- sread(rfq3)
-                       
+    
     #match amplicon
-    amp.match=lapply(amplicons, function(x) {amatch(rd1, x, method='hamming', maxDist=1, matchNA=F, nthread=threads)})
+    amph1=lapply(amplicons, make_hamming1_sequences)
+    amph1=Biobase::reverseSplit(amph1)
+    amph1.elements=names(amph1)
+    amph1.indices=as.vector(unlist(amph1))
+    amp.match=amph1.indices[match(rd1, amph1.elements)]
+    no_align=sum(is.na(amp.match))
 
-    #summary
-    amp.match.summary = (sapply(amp.match, function(x) sum(!is.na(x))))
-    am.mat=do.call('cbind', amp.match)
-
-    amt=am.mat
-    amt[is.na(amt)]=0
-    amt=rowSums(amt)
-    no_align=sum(amt==0)
-    amp.match.summary <- c(amp.match.summary, no_align)
+    #summarize amplicon matches
+    amp.match.summary=table(amp.match)
+    amp.match.summary=amp.match.summary[match(names(amplicons),names(amp.match.summary))]
+    amp.match.summary=c(amp.match.summary, no_align)
     names(amp.match.summary) <- c(names(amp.match.summary[-length(amp.match.summary)]),"no_align")
-    amp.match.summary.table = amp.match.summary.table+amp.match.summary 
-    
+
     #convert to indices
-    per.amplicon.row.index=apply(!is.na(am.mat), 2, function(x) which(x==TRUE))
-    
+    per.amplicon.row.index=lapply(names(amplicons), function(x) which(amp.match==x))
+    names(per.amplicon.row.index)=names(amplicons)
+
     #for each amplicon of interest count up reads where indices match expected samples
-    S2.table       = errorCorrectIdxAndCountAmplicons(per.amplicon.row.index$S2, S2.table, ind1,ind2, 1)
-    S2_spike.table = errorCorrectIdxAndCountAmplicons(per.amplicon.row.index$S2_spike, S2_spike.table, ind1,ind2,1)
-    RPP30.table    = errorCorrectIdxAndCountAmplicons(per.amplicon.row.index$RPP30, RPP30.table, ind1,ind2,1)
-    if(extendedAmplicons){
-        RPP30_spike.table    = errorCorrectIdxAndCountAmplicons(per.amplicon.row.index$RPP30_spike, RPP30_spike.table, ind1,ind2,1)
+    for(a in names(count.tables)){
+      count.tables[[a]]= errorCorrectIdxAndCountAmplicons(per.amplicon.row.index[[a]], count.tables[[a]], ind1,ind2)
     }
 
 }
 close(i1); close(i2); close(r1);
-results=list(S2.table=S2.table, S2_spike.table=S2_spike.table, RPP30.table=RPP30.table)
-if(extendedAmplicons){ results=list(S2.table=S2.table, S2_spike.table=S2_spike.table, RPP30.table=RPP30.table,RPP30_spike.table=RPP30_spike.table) }
+#results=list(S2.table=S2.table, S2_spike.table=S2_spike.table, RPP30.table=RPP30.table)
+#if(extendedAmplicons){ results=list(S2.table=S2.table, S2_spike.table=S2_spike.table, RPP30.table=RPP30.table,RPP30_spike.table=RPP30_spike.table) }
+names(count.tables)=paste0(names(count.tables), '.table')
 
 do.call('rbind', results) %>% write_csv(paste0(rundir, 'countTable.csv')) 
 saveRDS(results, file=paste0(rundir, 'countTable.RDS'),version=2)
@@ -233,7 +225,6 @@ read_freq_plot <- rqcReadFrequencyPlot(qcRes)
 base_calls_plot <- rqcCycleBaseCallsLinePlot(qcRes)
 
 setwd(rundir)
-source('../../code/helper_functions.R')
 dfL=mungeTables(paste0(rundir, 'countTable.RDS'),lw=T, Stotal_filt=500, input=384)
 dwide=data.frame(dfL$dfs)
 dwide %>% filter(Description!='') %>% write.csv(paste0(rundir, 'report.csv'))
