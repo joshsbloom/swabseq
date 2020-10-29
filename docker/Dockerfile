@@ -61,7 +61,10 @@ RUN install2.r --error \
     data.table \
     ggpubr \
     viridis \
-    reader 
+    reader \
+    plater \
+    XML \
+    seqinr 
 
 # Install github packages
 #RUN installGithub.r \
