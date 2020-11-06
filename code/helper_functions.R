@@ -27,9 +27,9 @@ mungeTables=function(tables.RDS,lw=F,Stotal_filt=2000,input=96){
     #  count(Sample_Well, wt=Count, name='S2_total_across_all_wells') %>%
     #  right_join(df)
     dfs= df %>%filter(amplicon=='S2'|amplicon=='S2_spike') %>%  
-      count(Sample, wt=Count, name='Stotal') %>%
-      right_join(dfs)
-    dfs= dfs %>% count(Sample, wt=Count, name='well_total') %>%
+      dplyr::count(Sample, wt=Count, name='Stotal') %>%
+      right_join(df)
+    dfs= dfs %>% dplyr::count(Sample, wt=Count, name='well_total') %>%
       right_join(dfs)
     #modify code to track indices
     s2.indices=dfs%>%filter(amplicon=='S2')%>%select(Sample, index,index2)

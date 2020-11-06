@@ -146,65 +146,70 @@ for(a in names(amplicons)){
 }
 #--------------------------------------------------------------------------------------------
 
-fastq_dir  <- paste0(bcl.dir, 'out/')
-in.fileI1  <- paste0(fastq_dir, 'Undetermined_S0_I1_001.fastq.gz')
-in.fileI2  <- paste0(fastq_dir, 'Undetermined_S0_I2_001.fastq.gz')
-in.fileR1  <- paste0(fastq_dir, 'Undetermined_S0_R1_001.fastq.gz')
+if(!file.exists(paste0(rundir, 'countTable.RDS'))) { 
+
+    fastq_dir  <- paste0(bcl.dir, 'out/')
+    in.fileI1  <- paste0(fastq_dir, 'Undetermined_S0_I1_001.fastq.gz')
+    in.fileI2  <- paste0(fastq_dir, 'Undetermined_S0_I2_001.fastq.gz')
+    in.fileR1  <- paste0(fastq_dir, 'Undetermined_S0_R1_001.fastq.gz')
+            
+    i1 <- FastqStreamer(in.fileI1, nbuffer, readerBlockSize = 1e9, verbose = T)
+    i2 <- FastqStreamer(in.fileI2, nbuffer, readerBlockSize = 1e9, verbose = T)
+    r1 <- FastqStreamer(in.fileR1, nbuffer, readerBlockSize = 1e9, verbose = T)
+
+    amp.match.summary.table=rep(0, length(amplicons)+1)
+    names(amp.match.summary.table)=c(names(amplicons),'no_align')
+
+    repeat{
+        rfq1 <- yield(i1) 
+        if(length(rfq1) == 0 ) { break }
+        rfq2 <- yield(i2) 
+        rfq3 <- yield(r1) 
+        ind1 <- sread(rfq1)
+        ind2 <- sread(rfq2)
+        rd1  <- sread(rfq3)
         
-i1 <- FastqStreamer(in.fileI1, nbuffer, readerBlockSize = 1e9, verbose = T)
-i2 <- FastqStreamer(in.fileI2, nbuffer, readerBlockSize = 1e9, verbose = T)
-r1 <- FastqStreamer(in.fileR1, nbuffer, readerBlockSize = 1e9, verbose = T)
+        #match amplicon
+        amph1=lapply(amplicons, make_hamming1_sequences)
+        amph1=Biobase::reverseSplit(amph1)
+        amph1.elements=names(amph1)
+        amph1.indices=as.vector(unlist(amph1))
+        amp.match=amph1.indices[match(rd1, amph1.elements)]
+        no_align=sum(is.na(amp.match))
 
-amp.match.summary.table=rep(0, length(amplicons)+1)
-names(amp.match.summary.table)=c(names(amplicons),'no_align')
+        #summarize amplicon matches
+        amp.match.summary=table(amp.match)
+        amp.match.summary=amp.match.summary[match(names(amplicons),names(amp.match.summary))]
+        amp.match.summary=c(amp.match.summary, no_align)
+        names(amp.match.summary) <- c(names(amp.match.summary[-length(amp.match.summary)]),"no_align")
+        amp.match.summary.table=amp.match.summary.table+amp.match.summary
 
-repeat{
-    rfq1 <- yield(i1) 
-    if(length(rfq1) == 0 ) { break }
-    rfq2 <- yield(i2) 
-    rfq3 <- yield(r1) 
-    ind1 <- sread(rfq1)
-    ind2 <- sread(rfq2)
-    rd1  <- sread(rfq3)
-    
-    #match amplicon
-    amph1=lapply(amplicons, make_hamming1_sequences)
-    amph1=Biobase::reverseSplit(amph1)
-    amph1.elements=names(amph1)
-    amph1.indices=as.vector(unlist(amph1))
-    amp.match=amph1.indices[match(rd1, amph1.elements)]
-    no_align=sum(is.na(amp.match))
+        #convert to indices
+        per.amplicon.row.index=lapply(names(amplicons), function(x) which(amp.match==x))
+        names(per.amplicon.row.index)=names(amplicons)
 
-    #summarize amplicon matches
-    amp.match.summary=table(amp.match)
-    amp.match.summary=amp.match.summary[match(names(amplicons),names(amp.match.summary))]
-    amp.match.summary=c(amp.match.summary, no_align)
-    names(amp.match.summary) <- c(names(amp.match.summary[-length(amp.match.summary)]),"no_align")
+        #for each amplicon of interest count up reads where indices match expected samples
+        for(a in names(count.tables)){
+          count.tables[[a]]= errorCorrectIdxAndCountAmplicons(per.amplicon.row.index[[a]], count.tables[[a]], ind1,ind2)
+        }
 
-    #convert to indices
-    per.amplicon.row.index=lapply(names(amplicons), function(x) which(amp.match==x))
-    names(per.amplicon.row.index)=names(amplicons)
-
-    #for each amplicon of interest count up reads where indices match expected samples
-    for(a in names(count.tables)){
-      count.tables[[a]]= errorCorrectIdxAndCountAmplicons(per.amplicon.row.index[[a]], count.tables[[a]], ind1,ind2)
     }
+    close(i1); close(i2); close(r1);
+    #results=list(S2.table=S2.table, S2_spike.table=S2_spike.table, RPP30.table=RPP30.table)
+    #if(extendedAmplicons){ results=list(S2.table=S2.table, S2_spike.table=S2_spike.table, RPP30.table=RPP30.table,RPP30_spike.table=RPP30_spike.table) }
+    names(count.tables)=paste0(names(count.tables), '.table')
 
+    results=count.tables
+
+    do.call('rbind', results) %>% write_csv(paste0(rundir, 'countTable.csv')) 
+    saveRDS(results, file=paste0(rundir, 'countTable.RDS'),version=2)
+    saveRDS(amp.match.summary.table, file=paste0(rundir, 'ampCounts.RDS'),version=2)
 }
-close(i1); close(i2); close(r1);
-#results=list(S2.table=S2.table, S2_spike.table=S2_spike.table, RPP30.table=RPP30.table)
-#if(extendedAmplicons){ results=list(S2.table=S2.table, S2_spike.table=S2_spike.table, RPP30.table=RPP30.table,RPP30_spike.table=RPP30_spike.table) }
-names(count.tables)=paste0(names(count.tables), '.table')
-
-results=count.tables
-
-do.call('rbind', results) %>% write_csv(paste0(rundir, 'countTable.csv')) 
-saveRDS(results, file=paste0(rundir, 'countTable.RDS'),version=2)
-saveRDS(amp.match.summary.table, file=paste0(rundir, 'ampCounts.RDS'),version=2)
 
 #BiocManager::install("Rqc")
 #BiocManager::install("savR")
 amp.match.summary.table=readRDS(paste0(rundir, 'ampCounts.RDS'))
+results=readRDS(paste0(rundir, 'countTable.RDS'))
 
 library(savR)
 sav=savR(bcl.dir)
@@ -226,18 +231,22 @@ seq_cont_per_cycle <- rqcCycleBaseCallsLinePlot(qcRes)
 read_freq_plot <- rqcReadFrequencyPlot(qcRes)
 base_calls_plot <- rqcCycleBaseCallsLinePlot(qcRes)
 
+
+
+empty_well_set=c('', 'TBET', 'No Tube', 'NO TUBE', 'Empty', 'EMPTY', ' ', 'NA')
+
+
 setwd(rundir)
 dfL=mungeTables(paste0(rundir, 'countTable.RDS'),lw=T, Stotal_filt=500, input=384)
 dwide=data.frame(dfL$dfs)
-dwide %>% filter(Description!='') %>% write.csv(paste0(rundir, 'report.csv'))
+rsample=!(dwide$virus_identity%in%empty_well_set | is.na(dwide$virus_identity))
+
 
 #dwide %>% filter(grepl('^\\d', virus_identity)) %>% write.csv(paste0(rundir, 'report_patient_samples.csv'))
 #dwide %>% filter(grepl('MNS NS', virus_identity)) %>% write.csv(paste0(rundir, 'report_MNS_NS_LOD.csv'))
 
 
-empty_well_set=c('', 'TBET')
 
-rsample=!(dwide$virus_identity%in%empty_well_set )
 #!='' & dwide$virus_identity!='TBET') #& dwide$virus_identity!='TBET') & dwide$virus_copy!='0' 
 results.summary=data.frame(
 'TotalSamplesPocessed'=sum(rsample),                         
@@ -261,6 +270,7 @@ params <- list(
         dlong=dfL$df,
         dwide=dwide
  )
+dwide %>% filter(rsample) %>% write.csv(paste0(rundir, params$experiment,'_report.csv'))
 
 x=params$dwide #psplit[[1]] 
 x$Row96=x$Row
