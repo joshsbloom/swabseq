@@ -83,6 +83,7 @@ makeSS=function(rundir, bcl.dir){
     experiment.key=read_plates(new.key.file, well_ids_column='Sample_Well')
     experiment.key=gather(experiment.key, Plate_384_long, virus_identity, 3:ncol(experiment.key))
     experiment.key$virus_identity[experiment.key$virus_identity=='#REF!']=''
+    experiment.key$virus_identity=gsub('\"', '', experiment.key$virus_identity) 
     experiment.key$Plate_384_long=gsub("::", ": : ", experiment.key$Plate_384_long)
 
     #plate #, barcode, primer set"
