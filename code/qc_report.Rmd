@@ -57,7 +57,7 @@ params$dlong %>%
 ggplot(aes(x=Col, y=Row, fill=log10(Count))) + 
   geom_raster() +
   coord_equal() +
-  facet_grid(amplicon~Plate_384+Plate_ID+Description) +
+  facet_grid(amplicon~Plate_384+Plate_ID) +
   scale_fill_viridis_c(option = 'plasma')+ggtitle(params$experiment)
 ```
 
@@ -67,7 +67,7 @@ params$dwide %>%
 ggplot(aes(x=Col, y=Row, fill=Stotal>500)) + 
   geom_raster() +
   coord_equal() +
-  facet_grid(~Plate_384+Plate_ID+Description) +
+  facet_grid(~Plate_384+Plate_ID) +
   #scale_fill_viridis_c(option = 'plasma')+
   ggtitle(params$experiment)
 ```
@@ -78,7 +78,7 @@ params$dwide %>%
 ggplot(aes(x=Col, y=Row, fill=RPP30_Detected)) + 
   geom_raster() +
   coord_equal() +
-  facet_grid(~Plate_384+Plate_ID+Description) +
+  facet_grid(~Plate_384+Plate_ID) +
   #scale_fill_viridis_c(option = 'plasma')+
   ggtitle(params$experiment)
 ```
@@ -91,7 +91,7 @@ lapply(psplit, function(x) {
 ggplot(aes(x=Col96, y=Row96, fill=log10(Count))) + 
   geom_raster() +
   coord_equal() +
-  facet_grid(amplicon~Plate_384+Plate_ID+quadrant_96+Description) +
+  facet_grid(amplicon~Plate_384+Plate_ID+quadrant_96) +
   scale_fill_viridis_c(option = 'plasma')+ggtitle(params$experiment)
 })
 ```
@@ -104,7 +104,7 @@ lapply(psplit, function(x) {
 ggplot(aes(x=Col96, y=Row96, fill=Stotal>500)) + 
   geom_raster() +
   coord_equal() +
-  facet_grid(~Plate_384+Plate_ID+quadrant_96+Description) +
+  facet_grid(~Plate_384+Plate_ID+quadrant_96) +
   #scale_fill_viridis_c(option = 'plasma')+
   ggtitle(params$experiment)
 })
@@ -118,7 +118,7 @@ lapply(psplit, function(x) {
 ggplot(aes(x=Col96, y=Row96, fill=RPP30_Detected)) + 
   geom_raster() +
   coord_equal() +
-  facet_grid(~Plate_384+Plate_ID+quadrant_96+Description) +
+  facet_grid(~Plate_384+Plate_ID+quadrant_96) +
   #scale_fill_viridis_c(option = 'plasma')+
   ggtitle(params$experiment)
 })

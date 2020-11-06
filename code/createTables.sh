@@ -42,4 +42,21 @@ Rscript --vanilla "${basedir}code/countAmplicons.R" -r "${basedir}runs/v41/" -e 
 Rscript --vanilla "${basedir}code/countAmplicons.R" -r "${basedir}runs/v42/" -e T
 Rscript --vanilla "${basedir}code/countAmplicons.R" -r "${basedir}runs/v43/" -e T
 Rscript --vanilla "${basedir}code/countAmplicons.R" -r "${basedir}runs/v44/" -e T
+Rscript --vanilla "${basedir}code/countAmplicons.R" -r "${basedir}runs/v45/" -e T
+Rscript --vanilla "${basedir}code/countAmplicons.R" -r "${basedir}runs/v46/" -e T
+Rscript --vanilla "${basedir}code/countAmplicons.R" -r "${basedir}runs/v47/" -e T
+Rscript --vanilla "${basedir}code/countAmplicons.R" -r "${basedir}runs/v48/" -e T
+Rscript --vanilla "${basedir}code/countAmplicons.R" -r "${basedir}runs/v49/" -e T
+Rscript --vanilla "${basedir}code/countAmplicons.R" -r "${basedir}runs/v50/" -e T
+Rscript --vanilla "${basedir}code/countAmplicons.R" -r "${basedir}runs/v51/" -e T
+Rscript --vanilla "${basedir}code/countAmplicons.R" -r "${basedir}runs/v52/" -e T
+Rscript --vanilla "${basedir}code/countAmplicons.R" -r "${basedir}runs/v53/" -e T
+
+Rscript --vanilla "${basedir}code/countAmplicons.R" -r "${basedir}runs/v55/" -e T -t 32
+
+Rscript --vanilla "${basedir}code/countAmplicons.R" -r "${basedir}runs/v56/" -e T -t 32 -l 140000000
+Rscript --vanilla "${basedir}code/countAmplicons.R" -r "${basedir}runs/v57/" -e T -t 32
+
+
+
 

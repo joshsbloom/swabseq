@@ -5,7 +5,7 @@ library(viridis)
 mungeTables=function(tables.RDS,lw=F,Stotal_filt=2000,input=96){
     countTables=readRDS(tables.RDS) #paste0(rundir, 'countTable.RDS')) 
     df=do.call('rbind', countTables)
-    df$virus_copy=as.factor(df$virus_copy) 
+    if(!is.null(df$virus_copy)){   df$virus_copy=as.factor(df$virus_copy)  }
     df$Col=as.factor(gsub('^.', '', df$Sample_Well))
     if(input==96) {
     df$Row=factor(gsub('..$', '', df$Sample_Well), levels=rev(toupper(letters[1:8])))
@@ -23,9 +23,9 @@ mungeTables=function(tables.RDS,lw=F,Stotal_filt=2000,input=96){
     } else {    df$amplicon=factor(df$amplicon, level=c('S2', 'S2_spike', 'RPP30', 'RPP30_spike')) }
 
     #assay results
-    dfs= df %>%filter(amplicon=='S2') %>%  
-      count(Sample_Well, wt=Count, name='S2_total_across_all_wells') %>%
-      right_join(df)
+    #dfs= df %>%filter(amplicon=='S2') %>%  
+    #  count(Sample_Well, wt=Count, name='S2_total_across_all_wells') %>%
+    #  right_join(df)
     dfs= df %>%filter(amplicon=='S2'|amplicon=='S2_spike') %>%  
       count(Sample, wt=Count, name='Stotal') %>%
       right_join(dfs)

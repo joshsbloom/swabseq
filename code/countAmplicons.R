@@ -196,6 +196,8 @@ close(i1); close(i2); close(r1);
 #if(extendedAmplicons){ results=list(S2.table=S2.table, S2_spike.table=S2_spike.table, RPP30.table=RPP30.table,RPP30_spike.table=RPP30_spike.table) }
 names(count.tables)=paste0(names(count.tables), '.table')
 
+results=count.tables
+
 do.call('rbind', results) %>% write_csv(paste0(rundir, 'countTable.csv')) 
 saveRDS(results, file=paste0(rundir, 'countTable.RDS'),version=2)
 saveRDS(amp.match.summary.table, file=paste0(rundir, 'ampCounts.RDS'),version=2)
