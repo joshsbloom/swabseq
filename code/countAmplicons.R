@@ -225,7 +225,7 @@ seq.metrics=data.frame("totalReads"=format(sum(amp.match.summary.table),  big.ma
                        "clusterDensity_perLane"=paste(sapply(clusterDensity_perLane, round,1),collapse=' '))
 
 library(Rqc)
-qcRes = rqc(path = paste0(bcl.dir, 'out/'), pattern = ".fastq.gz", openBrowser=FALSE, n=1e5)
+qcRes = rqc(path = paste0(bcl.dir, 'out/'), pattern = ".fastq.gz", openBrowser=FALSE, n=1e5, workers=1)
 read_quality <- rqcCycleQualityBoxPlot(qcRes) + ylim(0,NA)
 seq_cont_per_cycle <- rqcCycleBaseCallsLinePlot(qcRes)
 read_freq_plot <- rqcReadFrequencyPlot(qcRes)
