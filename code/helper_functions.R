@@ -45,8 +45,8 @@ mungeTables=function(tables.RDS,lw=F,Stotal_filt=2000,input=96){
       mutate(RPP30_Detected=RPP30>10) %>%  
       #filter(Plate_ID!='Plate8') %>%
       mutate(SARS_COV_2_Detected=S2_normalized_to_S2_spike>.003)
-   
-    dfs$SARS_COV_2_Detected[!dfs$RPP30_Detected]='Inconclusive'
+   # fix this  
+    dfs$SARS_COV_2_Detected[!dfs$RPP30_Detected & !dfs$SARS_COV_2_Detected]='Inconclusive'
     dfs$SARS_COV_2_Detected[dfs$Stotal<Stotal_filt]='Inconclusive' 
     if(lw) { return(list(df=df,dfs=dfs))} 
     return(dfs)
