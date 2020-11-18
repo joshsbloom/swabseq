@@ -241,7 +241,6 @@ dfL=mungeTables(paste0(rundir, 'countTable.RDS'),lw=T, Stotal_filt=500, input=38
 dwide=data.frame(dfL$dfs)
 rsample=!(dwide$virus_identity%in%empty_well_set | is.na(dwide$virus_identity))
 
-
 #dwide %>% filter(grepl('^\\d', virus_identity)) %>% write.csv(paste0(rundir, 'report_patient_samples.csv'))
 #dwide %>% filter(grepl('MNS NS', virus_identity)) %>% write.csv(paste0(rundir, 'report_MNS_NS_LOD.csv'))
 
@@ -253,7 +252,6 @@ results.summary=data.frame(
 'Inconclusives'=sum(dwide$SARS_COV_2_Detected[rsample]=='Inconclusive'),
 'NoVirusDetected'=sum(dwide$SARS_COV_2_Detected[rsample]=='FALSE'),
 'VirusDetected'=sum(dwide$SARS_COV_2_Detected[rsample]=='TRUE'))
-
 
 params <- list(
         experiment = strsplit(rundir,"/") %>% unlist() %>% tail(1),
@@ -267,41 +265,13 @@ params <- list(
         read_freq_plot = read_freq_plot,
         base_calls_plot = base_calls_plot,
         results.summary = results.summary,
-        dlong=dfL$df,
-        dwide=dwide
+        dlong=add96Mapping(dfL$df),
+        dwide=add96Mapping(dwide),
+        dsummary.reduced=add96Mapping(dwide) %>% filter(rsample) %>%  select(virus_identity, Plate_96_BC,Pos96, quadrant_96, Plate_384,S2,S2_spike,RPP30,SARS_COV_2_Detected)
  )
-dwide %>% filter(rsample) %>% write.csv(paste0(rundir, params$experiment,'_report.csv'))
 
-x=params$dwide #psplit[[1]] 
-x$Row96=x$Row
-for(l in c('A','B','C','D')){
-    y=droplevels(x$Row[x$quadrant_96==l])
-    levels(y)=toupper(rev(letters[1:8]))
-    x$Row96[x$quadrant_96==l]=y
-}
-x$Col96=x$Col
-for(l in c('A','B','C','D')){
-    y=droplevels(x$Col[x$quadrant_96==l])
-    levels(y)=sprintf('%02d', 1:12)
-    x$Col96[x$quadrant_96==l]=y
-}
-params$dwide=x
-
-x=params$dlong #psplit[[1]] 
-x$Row96=x$Row
-for(l in c('A','B','C','D')){
-    y=droplevels(x$Row[x$quadrant_96==l])
-    levels(y)=toupper(rev(letters[1:8]))
-    x$Row96[x$quadrant_96==l]=y
-}
-x$Col96=x$Col
-for(l in c('A','B','C','D')){
-    y=droplevels(x$Col[x$quadrant_96==l])
-    levels(y)=sprintf('%02d', 1:12)
-    x$Col96[x$quadrant_96==l]=y
-}
-params$dlong=x
-
+#output summary table as csv
+params$dwide %>% filter(rsample)  %>% write.csv(paste0(rundir, params$experiment,'_report.csv'))
 
 
 rmarkdown::render(

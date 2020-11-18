@@ -21,6 +21,7 @@ params:
   results.summary: NA
   dlong: NA
   dwide: NA
+  dsummary.reduced: NA
 ---
 
 # `r paste("Experiment:", params$experiment)`
@@ -30,6 +31,7 @@ params:
 ```{r include=FALSE}
 library(ggplot2)
 library(knitr)
+library(DT)
 # library(ggpubr)
 ```
 ## Results Summary
@@ -149,6 +151,10 @@ eval(params$read_freq_plot)
 ```
 
 
+## Results
+```{r echo=FALSE}
+params$dsummary.reduced %>% datatable()
+```
 
 
 

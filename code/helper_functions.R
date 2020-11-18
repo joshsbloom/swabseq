@@ -53,6 +53,27 @@ mungeTables=function(tables.RDS,lw=F,Stotal_filt=2000,input=96){
     
 }
 
+#add in mapping from 384 to 96 well plate position
+add96Mapping=function(x) {
+    x$Row96=x$Row
+    for(l in c('A','B','C','D')){
+        y=droplevels(x$Row[x$quadrant_96==l])
+        levels(y)=toupper(rev(letters[1:8]))
+        x$Row96[x$quadrant_96==l]=y
+    }
+    x$Col96=x$Col
+    for(l in c('A','B','C','D')){
+        y=droplevels(x$Col[x$quadrant_96==l])
+        levels(y)=sprintf('%02d', 1:12)
+        x$Col96[x$quadrant_96==l]=y
+    }
+    x$Pos96=paste0(x$Row96,x$Col96)
+    #fix this dplyr::relocate would be better
+    x=x[,c(1:10,ncol(x),ncol(x)-2,ncol(x)-1,11:(ncol(x)-3))]
+    return(x)
+}
+
+
 
 make_hamming1_sequences=function(x) {
     eseq=s2c(x)
