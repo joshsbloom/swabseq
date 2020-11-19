@@ -25,8 +25,14 @@ findFlowCellFile=function(rundir, findDir=T){
 }
 
 
-unzipDirAndFixKey=function(rundir){
+#unzipDirAndFixKey=function(rundir){
+#      return(c(flowcell,new.key.file))
+#}
+
+makeSS=function(rundir, bcl.dir){
     setwd(rundir)
+    
+    # tried to functionalize this -------------------------------------
     # look for zip file from box and unzip
     zipfile=list.files(rundir, pattern='.zip', full.names=F)
     if(identical(zipfile, character(0))){
@@ -50,12 +56,12 @@ unzipDirAndFixKey=function(rundir){
         quit(save="no")
     }
     flowcell=findFlowCellFile(rundir, findDir=F)
-    return(flowcell)
-}
+   # -------------------------------------------------------------------------
 
-makeSS=function(rundir, bcl.dir){
-    setwd(rundir)
-       
+    #remove first column and row
+    new.key.file=paste0(zipdir, 'keyfile.csv')
+    system(paste("sed 1d", key.file, "| cut -f1 -d ',' --complement - >", new.key.file))
+   
     # need to have it do this
     # bs list runs
     # save output to file, parse and look for flowcell ID and then for example :
@@ -79,10 +85,7 @@ makeSS=function(rundir, bcl.dir){
     if(chemistry=="MiniSeq Rapid High" | chemistry=="MiSeq") {i5RC.toggle=F} 
 
 
-    #remove first column and row
-    new.key.file=paste0(zipdir, 'keyfile.csv')
-    system(paste("sed 1d", key.file, "| cut -f1 -d ',' --complement - >", new.key.file))
-
+  
     # setup indices -----------------------------------------------------
     setwd(rundir)
     i7s=read_plates('../../reference/s2_r.csv', well_ids_column="Sample_Well")

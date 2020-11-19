@@ -70,8 +70,8 @@ source('../../code/helper_functions.R')
 source('../../code/create_samplesheet.R')
 
 if(gSampleSheet) { 
-    flowcell=unzipDirAndFixKey(rundir)
-    print(flowcell)
+    #flowcell=unzipDirAndFixKey(rundir)
+    #print(flowcell)
     makeSS(rundir,bcl.dir) 
 }
 
