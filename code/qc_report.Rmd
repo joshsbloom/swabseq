@@ -15,19 +15,11 @@ params:
   amp.match.summary: NA
   seq.metrics: NA
   results: NA
-   results.summary: NA
+  results.summary: NA
   dlong: NA
   dwide: NA
   dsummary.reduced: NA
 ---
-
-<!--
-read_quality: NA
-  seq_cont_per_cycle: NA
-  read_freq_plot: NA
-  base_calls_plot: NA
-  -->
-
 
 # `r paste("Experiment:", params$experiment)`
 # `r paste(params$bcl.dir)`
@@ -171,31 +163,6 @@ ggplot(aes(x=Col96, y=Row96, fill=id_tubes)) +
   ggtitle(params$experiment)
 })
 ```
-<!--
-## Sequence quality per base/cycle
-```{r echo=FALSE}
-eval(params$read_quality)
-```
-
-## Sequence content per base/cycle
-
-```{r echo=FALSE}
-eval(params$seq_cont_per_cycle)
-```
-
-## Base calls per cycle
-
-```{r echo=FALSE}
-eval(params$base_calls_plot)
-```
-
-
-## Read frequency plot
-
-```{r echo=FALSE}
-eval(params$read_freq_plot)
-```
--->
 
 ## Results
 ```{r echo=FALSE}

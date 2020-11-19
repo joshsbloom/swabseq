@@ -289,6 +289,37 @@ rmarkdown::render(
     )
 
 
+#<!--
+# read_quality: NA
+#  seq_cont_per_cycle: NA
+#  read_freq_plot: NA
+#  base_calls_plot: NA
+#  -->
+#<!--
+### Sequence quality per base/cycle
+#```{r echo=FALSE}
+#eval(params$read_quality)
+#```
+#
+### Sequence content per base/cycle
+#
+#```{r echo=FALSE}
+#eval(params$seq_cont_per_cycle)
+#```
+#
+### Base calls per cycle
+#
+#```{r echo=FALSE}
+#eval(params$base_calls_plot)
+#```
+#
+#
+### Read frequency plot
+#
+#```{r echo=FALSE}
+#eval(params$read_freq_plot)
+#```
+#-->
 
 
 
