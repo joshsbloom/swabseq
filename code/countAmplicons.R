@@ -227,12 +227,12 @@ seq.metrics=data.frame("totalReads"=format(sum(amp.match.summary.table),  big.ma
                        "clusterDensity"=paste(round(clusterDensity,1), 'K/mm^2'), 
                        "clusterDensity_perLane"=paste(sapply(clusterDensity_perLane, round,1),collapse=' '))
 
-library(Rqc)
-qcRes = rqc(path = paste0(bcl.dir, 'out/'), pattern = ".fastq.gz", openBrowser=FALSE, n=1e5, workers=1)
-read_quality <- rqcCycleQualityBoxPlot(qcRes) + ylim(0,NA)
-seq_cont_per_cycle <- rqcCycleBaseCallsLinePlot(qcRes)
-read_freq_plot <- rqcReadFrequencyPlot(qcRes)
-base_calls_plot <- rqcCycleBaseCallsLinePlot(qcRes)
+#library(Rqc)
+#qcRes = rqc(path = paste0(bcl.dir, 'out/'), pattern = ".fastq.gz", openBrowser=FALSE, n=1e5, workers=1)
+#read_quality <- rqcCycleQualityBoxPlot(qcRes) + ylim(0,NA)
+#seq_cont_per_cycle <- rqcCycleBaseCallsLinePlot(qcRes)
+#read_freq_plot <- rqcReadFrequencyPlot(qcRes)
+#base_calls_plot <- rqcCycleBaseCallsLinePlot(qcRes)
 
 
 empty_well_set=c('', 'TBET', 'No Tube', 'NO TUBE', 'Empty', 'EMPTY', ' ', 'NA')
@@ -263,10 +263,10 @@ params <- list(
         seq.metrics=seq.metrics,
         results = results,
         # qcRes = qcRes,
-        read_quality = read_quality,
-        seq_cont_per_cycle = seq_cont_per_cycle,
-        read_freq_plot = read_freq_plot,
-        base_calls_plot = base_calls_plot,
+        #read_quality = read_quality,
+        #seq_cont_per_cycle = seq_cont_per_cycle,
+        #read_freq_plot = read_freq_plot,
+        #base_calls_plot = base_calls_plot,
         results.summary = results.summary,
         dlong=add96Mapping(dfL$df),
         dwide=add96Mapping(dwide),
