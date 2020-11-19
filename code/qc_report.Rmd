@@ -64,6 +64,17 @@ ggplot(aes(x=Col, y=Row, fill=log10(Count))) +
   scale_fill_viridis_c(option = 'plasma')+ggtitle(params$experiment)
 ```
 
+## Swabseq Calls (384)
+```{r echo=FALSE, fig.height=10, fig.width=12}
+params$dwide %>% 
+ggplot(aes(x=Col, y=Row, fill=SARS_COV_2_Detected)) + 
+  geom_raster() +
+  coord_equal() +
+  facet_grid(~Plate_384+Plate_ID) +
+  #scale_fill_viridis_c(option = 'plasma')+
+  ggtitle(params$experiment)
+```
+
 ## S2 and S2 spike QC (384)
 ```{r echo=FALSE, fig.height=10, fig.width=12}
 params$dwide %>% 
@@ -119,6 +130,19 @@ psplit=split(params$dwide, params$dwide$Plate_384)
 lapply(psplit, function(x) {
            x%>%
 ggplot(aes(x=Col96, y=Row96, fill=RPP30_Detected)) + 
+  geom_raster() +
+  coord_equal() +
+  facet_grid(~Plate_384+Plate_ID+quadrant_96) +
+  #scale_fill_viridis_c(option = 'plasma')+
+  ggtitle(params$experiment)
+})
+```
+## Swabseq Calls (96)
+```{r echo=FALSE, fig.height=10, fig.width=12}
+psplit=split(params$dwide, params$dwide$Plate_384)
+lapply(psplit, function(x) {
+           x%>%
+ggplot(aes(x=Col96, y=Row96, fill=SARS_COV_2_Detected)) + 
   geom_raster() +
   coord_equal() +
   facet_grid(~Plate_384+Plate_ID+quadrant_96) +
