@@ -9,6 +9,7 @@ output:
         # toc_depth: 2
         # toc_float: yes
 params:
+  loo.key: NA
   experiment: NA
   bcl.dir: NA
   amp.match.summary: NA
@@ -126,6 +127,23 @@ ggplot(aes(x=Col96, y=Row96, fill=RPP30_Detected)) +
 })
 ```
 
+## Leave Out Tubes QC (96)
+```{r echo=FALSE, fig.height=10, fig.width=12}
+p=params$dwide
+p$id_tubes=p$virus_identity %in% params$loo.key$ID
+
+psplit=split(p, p$Plate_384)
+lapply(psplit, function(x) {
+           x%>%
+ggplot(aes(x=Col96, y=Row96, fill=id_tubes)) + 
+  geom_raster() +
+  coord_equal() +
+  facet_grid(~Plate_384+Plate_ID+quadrant_96) +
+  #scale_fill_viridis_c(option = 'plasma')+
+  ggtitle(params$experiment)
+})
+```
+
 ## Sequence quality per base/cycle
 ```{r echo=FALSE}
 eval(params$read_quality)
@@ -153,7 +171,7 @@ eval(params$read_freq_plot)
 
 ## Results
 ```{r echo=FALSE}
-params$dsummary.reduced %>% datatable()
+params$dsummary.reduced %>% datatable(options=list(pageLength=25,order=list(list(9,'desc'))))
 ```
 
 

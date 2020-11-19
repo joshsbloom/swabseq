@@ -52,9 +52,9 @@ if(ff=="") {
     #Pull BCLs from basespace [skip this section if you already placed bcls in rundir/bcls/] ------------
     #if running miseq then paste run id here
     #if miseq run then grab from basespace, otherwise place bcls here and skip lines 12-23 
-
     if(basespaceID!=1000) {   system(paste("bs download run --id", basespaceID, "-o bcls/")) }
 }
+
 ff=find.file('RTAComplete.txt', dir=paste(rundir, list.files(rundir), '/', sep=''))
 if(ff==""){
     print("bcl directory not found")
@@ -69,8 +69,11 @@ setwd(rundir)
 source('../../code/helper_functions.R')
 source('../../code/create_samplesheet.R')
 
-
-if(gSampleSheet) { makeSS(rundir,bcl.dir) }
+if(gSampleSheet) { 
+    flowcell=unzipDirAndFixKey(rundir)
+    print(flowcell)
+    makeSS(rundir,bcl.dir) 
+}
 
 #requires BCLs (or basespaceID), python3.7 in path, bcl2fastq in path and SampleSheet.csv (or xls)
 # Generate sample sheet from XLS file ----------------------------------------------------------------
@@ -232,9 +235,7 @@ read_freq_plot <- rqcReadFrequencyPlot(qcRes)
 base_calls_plot <- rqcCycleBaseCallsLinePlot(qcRes)
 
 
-
 empty_well_set=c('', 'TBET', 'No Tube', 'NO TUBE', 'Empty', 'EMPTY', ' ', 'NA')
-
 
 setwd(rundir)
 dfL=mungeTables(paste0(rundir, 'countTable.RDS'),lw=T, Stotal_filt=500, input=384)
@@ -244,7 +245,8 @@ rsample=!(dwide$virus_identity%in%empty_well_set | is.na(dwide$virus_identity))
 #dwide %>% filter(grepl('^\\d', virus_identity)) %>% write.csv(paste0(rundir, 'report_patient_samples.csv'))
 #dwide %>% filter(grepl('MNS NS', virus_identity)) %>% write.csv(paste0(rundir, 'report_MNS_NS_LOD.csv'))
 
-
+loo.key=read.csv('../../reference/MatrixWaterTubes.csv', header=F, stringsAsFactors=F, colClasses=c('character', 'character', 'character'))
+names(loo.key)=c('type','Pos96', 'ID')
 
 #!='' & dwide$virus_identity!='TBET') #& dwide$virus_identity!='TBET') & dwide$virus_copy!='0' 
 results.summary=data.frame(
@@ -254,6 +256,7 @@ results.summary=data.frame(
 'VirusDetected'=sum(dwide$SARS_COV_2_Detected[rsample]=='TRUE'))
 
 params <- list(
+               loo.key=loo.key,
         experiment = strsplit(rundir,"/") %>% unlist() %>% tail(1),
         bcl.dir = bcl.dirname,                   
         amp.match.summary = amp.match.summary.table,
@@ -270,14 +273,15 @@ params <- list(
         dsummary.reduced=add96Mapping(dwide) %>% filter(rsample) %>%  select(virus_identity, Plate_96_BC,Pos96, quadrant_96, Plate_384,S2,S2_spike,RPP30,SARS_COV_2_Detected)
  )
 
+dir.create(paste0(rundir, '/results/'))
 #output summary table as csv
-params$dwide %>% filter(rsample)  %>% write.csv(paste0(rundir, params$experiment,'_report.csv'))
+params$dwide %>% filter(rsample)  %>% write.csv(paste0(rundir,'/results/', params$experiment,'_report.csv'))
 
 
 rmarkdown::render(
         input = "../../code/qc_report.Rmd",
         output_file = paste0(params$experiment,".html"),
-        output_dir = rundir,
+        output_dir = paste0(rundir, 'results/'),
         params = params,
         envir = new.env(parent = globalenv())
     )

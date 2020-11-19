@@ -64,7 +64,8 @@ RUN install2.r --error \
     reader \
     plater \
     XML \
-    seqinr 
+    seqinr \
+    DT 
 
 # Install github packages
 #RUN installGithub.r \
@@ -74,7 +75,7 @@ RUN install2.r --error \
 RUN R --slave -e "BiocManager::install(c('savR', 'Rqc', 'ShortRead'))"
 
 RUN echo "basedir=/data/Covid/swabseq" >> /root/.bashrc
-RUN echo alias swabseq=\'Rscript --vanilla \"$'basedir'/code/countAmplicons.R\" -r \"$'PWD'/\" -t 32 -l 150000000\' >> /root/.bashrc
+RUN echo alias swabseq=\'Rscript --vanilla \"$'basedir'/code/countAmplicons.R\" -r \"$'PWD'/\" -t 32 -l 150000000 -g T\' >> /root/.bashrc
 WORKDIR /home/rstudio 
 
 #RUN apt-get update --fix-missing && \
@@ -84,7 +85,8 @@ WORKDIR /home/rstudio
 #    && apt-get clean \
 #    && rm -rf /var/lib/apt/lists/*
 
-
+#need to automate basespace authorization and git clone
+#bs auth --scopes "BROWSE GLOBAL,READ GLOBAL,CREATE GLOBAL,MOVETOTRASH GLOBAL,START APPLICATIONS,MANAGE APPLICATIONS" --force
 
 
 

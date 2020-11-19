@@ -4,10 +4,64 @@ library(seqinr)
 library(data.table)
 revcomp=function (x) {    toupper(c2s(rev(comp(s2c(x)))))}
 
+findFlowCellFile=function(rundir, findDir=T){
+     possible.dirs=paste(rundir, list.files(rundir), '/', sep='')
+     for(d in possible.dirs) {
+            dl=list.files(d, full=T)
+            find.flowcell=grepl('flow.*.txt', dl)
+            if(sum(find.flowcell)==1){
+                if(findDir){
+                 h=strsplit(dl[find.flowcell],'/')[[1]]
+                 h=h[h!=""]
+                 return(h[length(h)-1])
+                } else{
+                 return(system(paste("cat", dl[find.flowcell]), intern=T))
+                }
+            }else {
+                print("more than one flowcell file found")
+                quit(save="no")
+            }
+    }
+}
+
+
+unzipDirAndFixKey=function(rundir){
+    setwd(rundir)
+    # look for zip file from box and unzip
+    zipfile=list.files(rundir, pattern='.zip', full.names=F)
+    if(identical(zipfile, character(0))){
+        zipfile=findFlowCellFile(rundir)
+        if(is.null(zipfile)){
+            print(".zip directory not found")
+            quit(save="no")
+        } else{
+            zipfile=paste0(zipfile, '.zip')
+        }
+    } else {
+        system(paste('unzip', zipfile))
+    }
+
+    # locate key file 
+    zipdir=paste0(rundir, gsub('.zip', '/', zipfile))
+    setwd(zipdir)
+    key.file=system('grep -iRl ",,1,1,2,2,3,3,4,4,5,5"', intern=T)
+    if(identical(key.file, character(0))){
+        print(".csv key file not found")
+        quit(save="no")
+    }
+    flowcell=findFlowCellFile(rundir, findDir=F)
+    return(flowcell)
+}
+
 makeSS=function(rundir, bcl.dir){
-    #rundir='/data/Covid/swabseq/runs/vSS/'
-    #bcl.dir='/data/Covid/swabseq/runs/vSS/201016_MN01365_0006_A000H37HTT/'
-    #bcl.dirname='201016_MN01365_0006_A000H37HTT'
+    setwd(rundir)
+       
+    # need to have it do this
+    # bs list runs
+    # save output to file, parse and look for flowcell ID and then for example :
+    # bs download run --id 198391193 -o 201117_MN01371_0004_A000H37HM3/
+    #logic to automate basespace download goes here 
+
     xmlinfo=xmlToList(xmlParse(paste0(bcl.dir, 'RunParameters.xml')))
     chemistry=xmlinfo$Chemistry
     #MiniSeq High / MiniSeq Rapid High / NextSeq Mid / NextSeq High
@@ -24,24 +78,6 @@ makeSS=function(rundir, bcl.dir){
     i5RC.toggle=TRUE
     if(chemistry=="MiniSeq Rapid High" | chemistry=="MiSeq") {i5RC.toggle=F} 
 
-
-    # look for zip file from box and unzip
-    zipfile=list.files(rundir, pattern='.zip', full.names=F)
-    if(identical(zipfile, character(0))){
-       print(".zip directory not found")
-        quit(save="no")
-    }
-    setwd(rundir)
-    system(paste('unzip', zipfile))
-
-    # locate key file 
-    zipdir=paste0(rundir, gsub('.zip', '/', zipfile))
-    setwd(zipdir)
-    key.file=system('grep -iRl ",,1,1,2,2,3,3,4,4,5,5"', intern=T)
-    if(identical(key.file, character(0))){
-        print(".csv key file not found")
-        quit(save="no")
-    }
 
     #remove first column and row
     new.key.file=paste0(zipdir, 'keyfile.csv')
