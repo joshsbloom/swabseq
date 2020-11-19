@@ -277,7 +277,7 @@ dir.create(paste0(rundir, '/results/'))
 #output summary table as csv
 rsample2= !(dwide$virus_identity%in%empty_well_set | is.na(dwide$virus_identity) | dwide$virus_identity %in% params$loo.key$ID)
 
-params$dwide %>% filter(rsample)  %>% write.csv(paste0(rundir,'/results/', params$experiment,'_report.csv'))
+params$dwide %>% filter(rsample2)  %>% write.csv(paste0(rundir,'/results/', params$experiment,'_report.csv'))
 
 
 rmarkdown::render(
